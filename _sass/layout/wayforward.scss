@@ -54,37 +54,45 @@ section#wayforward {
         
         &:hover {
           cursor: pointer;
-          background: linear-gradient(color.adjust($lessdark, $lightness: +15%, $space: hsl), $lessdark);
+          background: linear-gradient(
+            color.adjust($lessdark, $lightness: +15%, $space: hsl)
+            , $lessdark);
         }
       }
 
       .box-2 {
-        background-color: color.adjust($dark, $lightness: +12%, $space: hsl);
+        //background-color: color.adjust($dark, $lightness: +12%, $space: hsl);
+        background-color: lighten($dark, 10%);
         border-radius: 20% 2% 30% 30%;
 
         &:hover {
           cursor: pointer;
-          background: linear-gradient(color.adjust($dark, $lightness: +20%, $space: hsl), color.adjust($dark, $lightness: +12%, $space: hsl));
+          //background: linear-gradient(color.adjust($dark, $lightness: +20%, $space: hsl), color.adjust($dark, $lightness: +12%, $space: hsl));
+          background: linear-gradient(lighten($dark, +20%), lighten($dark, +10%));
         }
       }
 
       .box-3 {
-        background-color: color.adjust($secondary, $lightness: -20%, $space: hsl);
+        //background-color: color.adjust($secondary, $lightness: -20%, $space: hsl);
+        background-color: darken($secondary, 20%);
         border-radius: 20% 40% 2% 20%;
 
         &:hover {
           cursor: pointer;
-          background: linear-gradient(color.adjust($secondary, $lightness: -20%, $space: hsl), $lesssecondary);
+          //background: linear-gradient(color.adjust($secondary, $lightness: -20%, $space: hsl), $lesssecondary);
+          background: linear-gradient(darken($secondary, 20%), $lesssecondary);
         }
       }
 
       .box-4 {
-        background-color: color.adjust($secondary, $lightness: -12%, $space: hsl);
+        //background-color: color.adjust($secondary, $lightness: -12%, $space: hsl);
+        background-color: darken($secondary, 12%);
         border-radius: 15% 35% 35% 2%;
         
         &:hover {
           cursor: pointer;
-          background: linear-gradient(color.adjust($secondary, $lightness: -12%, $space: hsl), $secondary);
+          //background: linear-gradient(color.adjust($secondary, $lightness: -12%, $space: hsl), $secondary);
+          background: linear-gradient(darken($secondary, 12%), $secondary);
         }
       }
     }
