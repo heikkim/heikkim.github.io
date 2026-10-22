@@ -23,11 +23,6 @@
 
   <title>{% if page.meta.title %}{{ page.meta.title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-  {% comment %}
-  <!-- FA -->
-  <link href="/assets/css/fa-all.min.css" rel="stylesheet" type="text/css" />
-  {% endcomment %}
-
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -54,7 +49,3 @@
   </style>
   {% endif %}
 </head>
-
-{% if site.DEBUG and (page.title == null or page.title == "") %} 
-<span class="bg-danger text-white">Page title missing! Page:{{ page }}</span>
-{% endif %}
