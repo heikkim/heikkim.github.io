@@ -1,0 +1,49 @@
+{% assign curlang = site.languages | where: "code", page.lang | first %}
+{% assign contentSection = site.data.sitetext.wayforward %}
+{% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
+  {% assign contentSection = site.data.sitetext[curlang.locale].wayforward %}
+{% endif %}
+<!-- About -->
+<section id="wayforward">
+  <div class="container">
+
+    <h2 class="section-heading">{{ contentSection.title | default: "" }}</h2>
+    {% if contentSection.text != "" and contentSection.text != null %} 
+    <h3 class="section-subheading text-muted">{{ contentSection.text | default: "" }}</h3>
+    {% endif %}
+
+    <div class="row row-4-box">
+      
+      <div class="box-1 col-md-3 align-self-start block">
+        <h5>{{ contentSection.contentlist[0].header }}</h5>  
+        <p>
+          {{ contentSection.contentlist[0].body }}
+        </p>
+      </div>  
+      
+      <div class="box-2 col-md-3 align-self-end float-right align-self-right block">
+          <h5>{{ contentSection.contentlist[1].header }}</h5>
+          <p>
+            {{ contentSection.contentlist[1].body }}
+          </p>
+      </div>  
+
+      <div class="box-3 col-md-3 align-self-start block">
+          <h5>{{ contentSection.contentlist[2].header }}</h5>
+          <p>
+            {{ contentSection.contentlist[2].body }}
+          </p>
+      </div>  
+      
+      <div class="box-4 col-md-3 align-self-end float-right block">
+        <h5>{{ contentSection.contentlist[3].header }}</h5>  
+        <p>
+          {{ contentSection.contentlist[3].body }}
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- End About -->

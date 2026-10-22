@@ -3,3 +3,6 @@ _site
 .jekyll-metadata
 .jekyll-cache
 Gemfile.lock
+**/.DS_Store
+.liquidrc
+.vscode

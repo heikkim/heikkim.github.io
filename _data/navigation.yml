@@ -5,7 +5,7 @@
 # locale: "en-US"  [YOUR PREFERRED LOCALE]
 #
 # How to use:
-# {{ site.data.navigation[site.locale].nav.<var_name> | default: 'text' }}
+# {{ site.data.navigation[curlang.locale].nav.<var_name> | default: 'text' }}
 
 # English (default)
 # -----------------
@@ -13,18 +13,21 @@ en: &DEFAULT_EN
   nav:
     - title: "Services"
       section: services
-    - title: "Portfolio"
-      section: portfolio
-    - title: "About"
+      url: /#services
+#    - title: "Portfolio"
+#      section: portfolio
+#    - title: "Timeline"
+#      section: timeline
+#    - title: "Team"
+#      section: team
+    - title: "Experience"
       section: about
-    - title: "Timeline"
-      section: timeline
-    - title: "Team"
-      section: team
+      url: /#about
     - title: "Contact"
-      section: contact
-    - title: "Theme Source"
-      url: https://github.com/raviriley/agency-jekyll-theme/
+      section: contact # Check spc.js where this has a binding.
+      url: /#contact
+#    - title: "Theme Source"
+#      url: https://github.com/raviriley/agency-jekyll-theme/
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -34,25 +37,26 @@ en-GB:
 en-AU:
   <<: *DEFAULT_EN
 
-# Spanish
+# Finnish
 # -------
-es: &DEFAULT_ES
+fi: &DEFAULT_FI
   nav:
-    - title: "Servicios"
-      section: servicios
-    - title: "Portafolio"
-      section: portafolio
-    - title: "Sobre Nosotros"
-      section: nosotros
-    - title: "Cronología"
-      section: cronologia
-    - title: "Equipo"
-      section: equipo
-    - title: "Contáctenos"
-      section: contacto
-    - title: "Fuente de la plantilla"
-      url: https://github.com/raviriley/agency-jekyll-theme/
-es-ES:
-  <<: *DEFAULT_ES
-es-CO:
-  <<: *DEFAULT_ES
+    - title: "Palvelut"
+      section: services
+      url: /fi/#services
+#    - title: "Portafolio"
+#      section: portafolio
+#    - title: "Sobre Nosotros"
+#      section: nosotros
+#    - title: "Cronología"
+#      section: cronologia
+    - title: "Kokemus"
+      section: about
+      url: /fi/#about
+    - title: "Yhteys"
+      section: contact # Check spc.js where this has a binding.
+      url: /fi/#contact
+#    - title: "Fuente de la plantilla"
+#      url: https://github.com/raviriley/agency-jekyll-theme/
+fi-FI:
+  <<: *DEFAULT_FI

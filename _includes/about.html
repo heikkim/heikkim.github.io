@@ -1,0 +1,30 @@
+{% assign curlang = site.languages | where: "code", page.lang | first %}
+{% assign contentSection = site.data.sitetext.about %}
+{% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
+  {% assign contentSection = site.data.sitetext[curlang.locale].about %}
+{% endif %}
+<!-- About -->
+<section id="about">
+  <div class="container">
+
+    <h2 class="section-heading">{{ contentSection.title | default: "" }}</h2>
+    {% if contentSection.text != "" and contentSection.text != null %} 
+    <h3 class="section-subheading text-muted">{{ contentSection.text | default: "" }}</h3>
+    {% endif %}
+
+    <div class="row">
+      <div class="col-lg" id="intro">
+          <p>{{ contentSection.body }}</p>
+
+          {% if contentSection.linkedin-url != "" and contentSection.linkedin-url != null %}  
+            <a class="content-link linkedin-link" href="{{ contentSection.linkedin-url }}" target="new">{{ contentSection.linkedin-link-text }}</a>
+          {% endif %}
+      </div>  
+
+      <div class="col-lg-4">
+          <div style="background: gray; height: 500px; width: 400px;">PLACEHOLDER</div>
+      </div>
+    </div>  
+  </div>
+</section>
+<!-- End About -->

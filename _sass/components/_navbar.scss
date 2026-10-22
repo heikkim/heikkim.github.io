@@ -1,0 +1,286 @@
+// Styling for the navbar
+@use "sass:color";
+#mainNav {
+  background-color: $gray-900-rgb-opa-0_7;
+  backdrop-filter: blur(5px);
+  //padding-left: 10%;  
+
+  .navbar-toggler {
+    position: relative;
+    //display: inline-block;
+    height: 33px;
+    width: 33px;
+    font-size: 1.3em;
+    right: 0;
+    padding: 13px;
+    text-transform: uppercase;
+    color: $body;
+    border: 0;
+    //border:1px solid salmon;
+    @include heading-font;
+
+    .h-icon {
+      transition: all 0.1s;
+      position: absolute;
+      top: 14px;
+      left: 0;
+      rotate: 45deg;
+      height: 0px;
+      width: 30px;
+      background-color: $body;
+      content: "";
+
+      &::before {
+        transition: all 0.25s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        rotate: 90deg;
+        content: "";
+        height: 1px;
+        width: 30px;
+        background-color: $body;
+      }
+
+      &::after {
+        transition: all 0.25s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        rotate: 0deg;
+        content: "";
+        height: 1px;
+        width: 30px;
+        background-color: $body;
+      }
+    }
+  }
+
+  .navbar-toggler.collapsed {
+    .h-icon {
+      position: absolute;
+      rotate: 0deg;
+      top: 14px;
+      left: 0;
+      height: 1px;
+      width: 30px;
+      background-color: $body;
+
+      &::before {
+        position: absolute;
+        rotate: 0deg;
+        top: -11px;
+        left: 0;
+        content: "";
+        height: 1px;
+        width: 30px;
+        background-color: $body;
+      }
+
+      &::after {
+        position: absolute;
+        rotate: 0deg;
+        top: 11px;
+        left: 0;
+        content: "";
+        height: 1px;
+        width: 30px;
+        background-color: $body;
+      }
+    }
+  }
+
+  &:hover {
+    .navbar-toggler.collapsed .h-icon:before {  
+        transition: all 0.2s;
+        top: -13px;
+      }
+
+      .navbar-toggler.collapsed .h-icon:after {
+        transition: all 0.2s;
+        top: 13px;
+      }
+  }
+
+  .navbar-brand {
+    color: $body;
+    @include script-font;
+    text-decoration: none;
+    //text-decoration:  underline $secondary 2px;
+    //text-underline-position: under;
+
+    // Logo v1
+    /*
+    div.spc_logo {
+      height: 56px;
+      width: 66px;
+      position: relative;
+      background-color: $white;
+      color: $primary;
+      font-size: 28px;
+      border-radius: 10px;
+      border: 2px solid $secondary;
+      
+      span.logo-text-S {
+        position: absolute;
+        top: 0px; // 9
+        left: 14px; // 13
+        font-weight: bold;
+      }
+
+      span.logo-text-P {
+        font-size: 0.55em;
+        display: inline-block;
+        color: $secondary;
+        text-decoration: inherit;
+        position: absolute;
+        top: 8px; 
+        left: 32px;
+      }
+
+      span.logo-text-C {
+        position: absolute;
+        font-size: 0.4em;
+        top: 30px;
+        left: 3px;
+        font-weight: lighter;
+      }
+    }
+    */
+
+    // Logo v2
+    div.spc_logo {
+      @include logo-font;
+      font-weight: 400;
+      position: relative;
+      text-align: center;
+      //background-color: $secondary;
+      color: $body;
+      font-size: 2.5rem;
+      border-radius: 10px;
+      //text-decoration: underline 2px solid $secondary;
+      //text-underline-position:below;
+      //text-underline-offset: 3px;
+      text-decoration: none;
+      
+      &:hover {
+        //color: color.adjust($secondary, $lightness: -5%, $space: hsl);
+        //text-decoration: underline 2px solid $body;
+        text-decoration: none;
+      }
+
+      span.logo-text-S {
+        display: inline-block;
+        text-decoration: inherit;
+      }
+
+      span.logo-text-P {
+        display: inline-block;
+        text-decoration: inherit;
+      }
+
+      span.logo-text-C {
+        font-size: 0.65em;
+        text-decoration: inherit;
+      }
+    }
+
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      //color: color.adjust($body, $lightness: -10%, $space: hsl);
+      }
+  }
+
+  .navbar-nav, #lang-chooser {
+    list-style-type: none;
+
+    .nav-item {
+      .nav-link {
+        //border: 1px solid salmon;
+        padding: 0.75em 0;
+        letter-spacing: 1px;
+        color: $body;
+        @include heading-font;
+        &.active,
+        &:hover {
+          //color: color.adjust($body, $lightness: -10%, $space: hsl);
+        }
+      }
+    }
+  }
+
+  #lang-chooser {
+    /*background-image: url('/assets/img/Globe_icon.svg');
+    background-size: 1.0em;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: center;*/
+    
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0;
+    //border: 1px solid red;
+    a {
+      //border: 1px solid red;
+      padding: 0;
+      margin: 0;
+      
+      img {
+        margin-bottom: 0.2em;
+        margin-right: 0.4em;
+        height: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #mainNav {
+    //padding-top: 25px;
+    padding-bottom: 25px;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+    .navbar-brand {
+      font-size: 1.5em;
+      transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      //text-decoration:  underline $secondary 3px;
+    }
+
+    .navbar-nav, #lang-chooser {
+      margin-left: 60px;
+      list-style-type: none;
+
+      .nav-item {
+        .nav-link {
+          padding: 0.5em 1em !important;
+        }
+      }
+    }
+
+    #lang-chooser {
+      margin-left: auto;
+    }
+
+    &.navbar-shrink {
+      padding-top: 0;
+      position: fixed;
+      padding-bottom: 0;
+      //background-color: $gray-900;
+      //background-color: rgba(200,200,200, 0.5);
+      background-color: $gray-900-rgb-opa-0_7;
+      //opacity: 0.85;
+      backdrop-filter: blur(5px);
+      .navbar-brand {
+        font-size: 1.25em;
+        padding: 12px 0;
+      }
+    }
+  }
+}

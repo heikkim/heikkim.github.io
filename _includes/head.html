@@ -1,0 +1,60 @@
+{% assign curlang = site.languages | where: "code", page.lang | first %}
+<head>
+  {% if site.analytics.google %}
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}"></script>
+  <script type="application/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "{{ site.analytics.google }}");
+  </script> 
+  <!-- End Google Analytics -->
+  {% endif %}
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="{{ page.meta.description }}">
+  <meta name="author" content="{{ site.author }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+
+  <title>{% if page.meta.title %}{{ page.meta.title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+  {% comment %}
+  <!-- FA -->
+  <link href="/assets/css/fa-all.min.css" rel="stylesheet" type="text/css" />
+  {% endcomment %}
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Black+Ops+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap core CSS -->
+  <link href="/assets/css/bootstrap.css" rel="stylesheet" />
+
+  <!-- Custom styles for this theme -->
+  <!--<link href="/assets/css/agency.min.css" rel="stylesheet">-->
+  <link href="/assets/css/agency.css" rel="stylesheet" />
+
+  <!-- Page container change top padding when nav shrinks -->
+  {% if page.layout == "page" %}
+  <style>
+    #pagecontainer {
+      padding-top: 150px;
+    }
+    @media only screen and (max-width: 991px) {
+      #pagecontainer {
+        padding-top: 100px;
+      }
+    }
+  </style>
+  {% endif %}
+</head>
+
+{% if site.DEBUG and (page.title == null or page.title == "") %} 
+<span class="bg-danger text-white">Page title missing! Page:{{ page }}</span>
+{% endif %}

@@ -12,26 +12,27 @@
 # in the templates via {{ site.myvariable }}.
 
 #theme: jekyll-agency
-remote_theme: raviriley/agency-jekyll-theme
+#remote_theme: raviriley/agency-jekyll-theme
 
-url    : "" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "/agency-jekyll-theme-starter" # the subpath of your site, e.g. /blog
+DEBUG  : false
 
-title      : Agency Jekyll Theme Demo
-email      : your-email@example.com #this is also the email contact forms will go to
-description: "Agency Bootstrap theme converted to a Jekyll theme, plus new features: Google Analytics, Markdown support, custom pages, and more!"
-author     : Your Name
+url    : "https://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog. Do not set to "/" to avoid wrong canonical meta link path 
+
+title      : "StrongPoint Consulting" # Also check _data/_sitetext.yml for what's visible on the page.
+description: Fractional AI Lead, AI coaching and AI consulting agency # This is used only if there is no specific description available for the page
+email      : change@no-op.org #this is also the email contact forms will go to
+author     : Heikki Malkamäki
 # logo:     #optional, defaults to site title
   # path: assets\img\clients\creative-market.jpg
   # height: 60 #height in px, defaults to 52px
-
-locale: "en-US" # See available languages in _data/sitetext.yml
+  # See: nav.html where logo image is built with HTML/CSS
 
 analytics:
   google: #Google Analytics tracking code here
 
-collections:
-  portfolio:
+#collections:
+#  portfolio:
 
 markdown: kramdown
 
@@ -39,5 +40,21 @@ markdown: kramdown
 # Details: https://help.formspree.io/hc/en-us/articles/360017735154-How-to-prevent-spam
 # formspree_form_path: "f/a_form_id"
 
-plugins:
-  - jekyll-remote-theme
+#plugins:
+#  - jekyll-remote-theme
+
+languages:
+  - code: en
+    label: English
+    text: In english
+    url: /
+    htmllang: en_US
+    hreflang: en-US
+    locale: en-US
+  - code: fi
+    label: Suomi
+    text: Suomeksi
+    url: /fi/
+    htmllang: fi_FI
+    hreflang: fi-FI
+    locale: fi-FI

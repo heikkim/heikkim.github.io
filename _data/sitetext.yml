@@ -5,133 +5,153 @@
 # locale: "en-US"  [YOUR PREFERRED LOCALE]
 #
 # How to use:
-# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
+# {{ site.data.ui-text[curlang.locale].<var_name> | default: 'text' }}
 
 # English (default)
 # -----------------
 en: &DEFAULT_EN
   header:
-    title: Welcome to our Studio!
-    text: It's Nice To Meet You
-    button: Tell Me More
-    buttonlink: "#services"
+    intro: "A hands-on AI consultancy<br />for your company to get <span class=\"animated-keyword\">ahead</span>."
+    text: "Competitive edge, uplifted productivity & accelerated operations for senior business leaders, boards, teams and companies."
+#    button: Services
+#    buttonlink: "#services"
 
   services:
     title: "Services"
-    text: "Lorem ipsum"
+    text: ""
     section: services
     list:
-      - title: "E-Commerce"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Responsive Design"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Your description here, full **Markdown** support"
-        icon: fab fa-markdown
-
-  portfolio:
-    title: "Portfolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    section: portfolio
-    closebutton: "Close Project"
-
-  timeline:
-    title: "Timeline"
-    text: "Lorem ipsum timeline"
-    section: timeline
-    # left is the default
-    #start_align: "left"
-    events:
-      - title: "Our Humble Beginnings"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/1.jpg
-        alt:
-      - title: "An Agency is Born"
-        year: "March 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/2.jpg
-        alt:
-      - title: "Jekyll Theme is created"
-        year: "2019"
-        desc: "Ravi Riley converted Agency, a Bootstrap-based theme, into a Jekyll theme. The Jekyll theme can be installed as a Ruby gem, or remotely. For more information, visit the documentation."
-        image: assets/img/timeline/3.jpg
-        alt: image alt text
-      - title: "Title"
-        year: "2009-2011"
-        desc: "Your description here, **Markdown** is fully supported."
-        image: assets/img/timeline/4.jpg
-        alt:
-        # you can enforce the alignment
-        align: right
-    end: "Be Part <br> of Our <br> Story!"
+      - sid: fractional-ai-lead
+        title: "<i>#1</i> Fractional AI Lead"
+        brief: ""
+        desc: >
+          As a fractional AI Lead/Director/Officer, I provide companies and their boards with senior strategy, governance, and hands-on execution. 
+          <br /><br />
+          By integrating directly with your 
+          management team I help you define, plan, coordinate, initiate and maintain momentum of your company's AI initiative, at scale.
+        url: /services/fractional-ai-lead.html
+        link-text: Read more about Fractional AI Lead service for Companies
+      - sid: ai-coaching
+        title: "<i>#2</i> AI Coaching"
+        brief: ""
+        desc: >
+          For getting quickly up-to-date about AI, effective prompting and building everyday automations hands-on.
+          Immediate focus will be on discovering what creates value for your work day.
+          <br /><br />
+          In case you're already using AI daily, for becoming a ChatGPT power user, using AI for strategising and agents for more complex tasks utilising Agent Skills.
+        url: /services/ai-coaching.html
+        link-text: Read more about AI Coaching for Senior Leaders and Board Members
+#      - sid: ai-tooling
+#        title: "AI Tooling"
+#        brief: ""
+#        desc:           
+#        url: /services/ai-tooling.html
+#        link-text: Read more about AI Tooling for Teams and Organisations
+      - sid: ai-consulting
+        title: "<i>#3</i> AI Consulting"
+        brief: ""
+        desc: >
+          For understanding AI opportunities in the company, creating an execution plan for the AI change, 
+          or in solving a specific challenge related to effective use of AI / data in the company.
+          <br /><br />
+          Any matter related to company AI use that benefits having an external view.
+        url: /services/ai-consulting.html
+        link-text: Read more about AI Consulting for Management Teams and Boards
+#      - sid: agentic-ai
+#        title: "Agentic AI"
+#        brief: ""
+#        desc: >
+#          Autonomous business agents built on mainstream AI models are the new normal. Lack of time and knowhow is a limiting factor
+#          for most companies. Choosing the right tasks to do, or getting around LLM quirks is a serious time consumer most companies want to skip. I can help you build 
+#          automations that take your business processes into account, are well defined and actually deliver. This service is when you want to take advantage of agentic automation potential, 
+#          while focusing on your business.
+#        url: /services/agentic-ai.html
+#        link-text: Read more about Agentic AI services for Teams & Organisations
 
   about:
-    title: "About Us"
-    text: "our story"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
+    title: "Real experience for getting real results"
+    text: 
+    body: >
+      I serve SME companies as an AI Lead on a fractional basis. I also provide executive AI coaching and targeted AI consulting tailored to specific company needs.
+      <br /><br />
+      I have 20 years of experience in IT consulting, software development, and the SaaS business. I have served as a CEO of a SaaS company, established 
+      new business operations centered on data and artificial intelligence expertise and led product & technology development. In addition to leadership skills, my core 
+      specialization lies in customer initiatives requiring data and AI capabilities, as well as working in highly regulated, information-intensive environments.
+      <br /><br />
+      I move fast, take ownership, and drive initiatives with clarity and transparency. In everything I do, I respect and adapt to your company's culture and 
+      operational style. The fractional model gives my clients a cost-effective, risk-free way to bring an experienced executive into their leadership team.
+      <br /><br />
+      I hold an MBA from Aalto Executive Education (2022), graduating with honors. 
+      <br /> 
+      Hitting the ground running guaranteed.
+      <br /><br />
+      <strong>Heikki Malkamäki</strong>
+    linkedin-url: https://www.linkedin.com/in/heikkim/
+    linkedin-link-text: Profile
     section: about
 
-  clients:
-    section: clients
-    max-height: 100px
-    horizontal-scrolling: "" #"yes/no"
-    list:
-      - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
+  wayforward:
+    title: A sharper way forward
+    contentlist:
+      - header: 1. Discovery
+        body: A brief conversation to cover targeted outcomes, potential roadblocks, and previous attempts.
+      - header: 2. Definition
+        body: Alignment on the root problem and clear metrics defining what a successful outcome looks like.
+      - header: 3. Solution
+        body: A clear proposal tailored directly to your pain points and structured to solve the core issue.
+      - header: 4. Execution
+        body: Rapid project kickoff with measured, step-by-step progress, adapting the plan as needed.
 
-  team:
-    title: "OUR AMAZING TEAM"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
-    section: team
-    people:
-      - name: "Kay Garland"
-        role: "Lead Designer"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Larry Parker"
-        role: "Lead Marketer"
-        image: assets/img/team/2.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Diana Perterson"
-        role: "Lead Developer"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
+#  portfolio:
+#    title: "Portfolio"
+#    text: ""
+#    section: portfolio
+#    closebutton: "Close"
+#
+#  timeline:
+#    title: "Timeline"
+#    text: ""
+#    section: timeline
+#    # left is the default
+#    #start_align: "left"
+#    events:
+#      - title: ""
+#        year: ""
+#        desc: ""
+#        image: ""
+#        alt:
+#        align: right
+#    end: ""
+#
+#  clients:
+#    section: clients
+#    max-height: 100px
+#    horizontal-scrolling: "" #"yes/no"
+#    list:
+#      - title: ""
+#        url: ""
+#        logo: ""
+#
+#  team:
+#    title: ""
+#    text: ""
+#    subtext: ""
+#    section: team
+#    people:
+#      - name: ""
+#        role: ""
+#        image: ""
+#        social:
+#          - url: https://x.com
+#            icon: "fab fa-square-x-twitter"
+#          - url: https://facebook.com
+#            icon: fab fa-facebook-f
+#          - url: https://linkedin.com
+#            icon: fab fa-linkedin-in
 
   contact:
-    title: "Contact Us"
-    text: "Lorem ipsum or call 123456789"
+    title: "Let's talk AI."
+    text: "Your unique situation and business need, without commitments."
     section: contact
     name: "Name*"
     name-validation: "Please enter your name."
@@ -139,24 +159,26 @@ en: &DEFAULT_EN
     email-validation: "Please enter your email address."
     phone: "Phone Number"
     phone-validation: "Please enter your phone number."
-    message: "Message*"
+    message: "Description of your unique need or intent*"
     message-validation: "Please enter a message."
     subject: "Contact Form Submission"
     submit: "Send Message"
+    contact-now: Let's talk AI.
 
   footer:
     legal: "Privacy Policy"
+    legal-url: "/spc-privacy-policy.html"
     social:
-      - url: https://twitter.com
-        icon: "fab fa-twitter"
-      - url: https://facebook.com
-        icon: "fab fa-facebook-f"
-      - url: https://linkedin.com
-        icon: "fab fa-linkedin-in"
-      - url: https://github.com/raviriley/agency-jekyll-theme
-        icon: "fab fa-github"
-      - url: https://instagram.com
-        icon: "fab fa-instagram"
+#      - url: https://x.com
+#        icon: "fab fa-twitter"
+#      - url: https://facebook.com
+#        icon: "fab fa-facebook-f"
+#      - url: https://linkedin.com
+#        icon: "fab fa-linkedin-in"
+#      - url: https://github.com/raviriley/agency-jekyll-theme
+#        icon: "fab fa-github"
+#      - url: https://instagram.com
+#        icon: "fab fa-instagram"
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -166,157 +188,173 @@ en-GB:
 en-AU:
   <<: *DEFAULT_EN
 
-# Spanish
+#
+#
+#
+# Finnish
 # -------
-es: &DEFAULT_ES
+#
+#
+fi: &DEFAULT_FI
+  pages:
+    index:
+      title: AI-valmennus, AI-konsultointi, Interim/Fractional AI Director
+
   header:
-    title: ¡Bienvenido a nuestro Estudio!
-    text: Es un placer conocerle
-    button: Ver más
-    buttonlink: "#servicios"
+    intro: "Käytännönläheistä tekoälykonsultointia, <span class=\"line\">viemään yrityksesi <span class=\"animated-keyword\">kärkipaikalle</span>.</span>"
+    text: Kilpailuetua, parempaa tuottavuutta ja nopeampaa toimintaa johdolle, hallituksille, tiimeille ja yrityksille.
+#    button: Palvelut
+#    buttonlink: "#services"
 
   services:
-    title: "Servicios"
-    text: "Lorem ipsum"
-    section: servicios
+    title: "Palvelut"
+    text: ""
+    section: services
     list:
-      - title: "Comercio Electrónico"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-shopping-cart #find more at https://fontawesome.com/icons
-      - title: "Diseño Responsivo"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit."
-        icon: fas fa-laptop
-      - title: "[Markdown](https://en.wikipedia.org/wiki/Markdown)"
-        desc: "Su descripción aquí, soporte completo de **Markdown**"
-        icon: fab fa-markdown
-
-  portfolio:
-    title: "Portafolio"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    section: portafolio
-    closebutton: "Cerrar Proyecto"
-
-  timeline:
-    title: "Cronología"
-    text: "Lorem ipsum timeline"
-    section: cronologia
-    # left is the default
-    #start_align: "left"
-    events:
-      - title: "Nuestro Humilde Comienzo"
-        year: "2009-2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/1.jpg
-        alt:
-      - title: "Una Agencia nace"
-        year: "March 2011"
-        desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!"
-        image: assets/img/timeline/2.jpg
-        alt:
-      - title: "La plantilla Jekyll es creada"
-        year: "2019"
-        desc: "Ravi Riley convirtió Agency, una plantilla basada en Bootstrap, en una plantilla de Jekyll. La plantilla Jekyll puede ser instalada commo una gema de Ruby (Ruby gem) o remotamente. Para más información, visite la documentación."
-        image: assets/img/timeline/3.jpg
-        alt: image alt text
-      - title: "Título"
-        year: "2009-2011"
-        desc: "Su descripción aquí, **Markdown** es soportado completamente."
-        image: assets/img/timeline/4.jpg
-        alt:
-        # you can enforce the alignment
-        align: right
-    end: "¡Se parte <br> de Nuestra <br> Historia!"
-
+      - sid: fractional-ai-lead
+        title: "<i>#1</i> Fractional AI Lead"
+        brief: ""
+        desc: >
+          Toimiessani fractional AI Leadina, Directorina tai Officerina tarjoan yrityksille ja niiden hallituksille kokenutta strategianäkemystä, 
+          hallintamalleja sekä muutoksen johtamista.
+          <br /><br />
+          Integroidun suoraan osaksi johtoryhmäänne. Autan määrittelemään, suunnittelemaan, koordinoimaan, käynnistämään ja ylläpitämään 
+          yrityksenne tekoälyhankkeiden vauhtia. Otan tarkasti huomioon yrityksenne ainutlaatuisen kulttuurin ja toimintatavat.
+        url: /fi/services/fractional-ai-lead.html
+        link-text: Lue lisää Fractional AI Lead palvelusta yrityksille
+      - sid: ai-coaching
+        title: "<i>#2</i> AI-valmennus"
+        brief: ""
+        desc: >
+          Tekoälyn nopeaan haltuunottoon, tehokkaaseen kehotemuotoiluun (promptaukseen) ja jokapäiväisten automaatioiden rakentamiseen käytännönläheisesti.
+          Valmennuksen painopisteenä on löytää, mikä tuo konkreettista arvoa työpäivääsi.
+          <br /><br />
+          Jos käytät jo tekoälyä päivittäin: ChatGPT-tehokäyttäjäksi kehittymiseen, tekoälyn hyödyntämiseen strategiatyössä sekä agenttien käyttöön 
+          monimutkaisemmissa tehtävissä agenttitaitoja (Agent Skills) hyödyntämällä.
+        url: /fi/services/ai-coaching.html
+        link-text: Lue lisää yrityksen johdon ja hallituksen jäsenten tekoälyvalmennuksesta
+      - sid: ai-consulting
+        title: "<i>#3</i> AI-konsultointi"
+        brief: ""
+        desc: >
+          Yrityksen tekoälymahdollisuuksien ymmärtämiseen, tekoälymuutoksen toteutussuunnitelman luomiseen tai tietyn tekoälyn ja datan tehokkaaseen käyttöön liittyvän 
+          haasteen ratkaisemiseen.
+          <br /><br />
+          Hyödyllisen ulkopuolisen asiantuntijanäkemyksen saamiseen yrityksen tekoälyn käyttöön liittyvään asiaan.
+        url: /fi/services/ai-consulting.html
+        link-text: Lue lisää tekoälykonsultoinnista johtoryhmille ja hallituksille
+  
   about:
-    title: "Sobre nosotros"
-    text: "nuestra historia"
-    body: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported."
-    section: nosotros
+    title: Käytännön kokemusta tuloksekkaaseen johtamiseen
+    text: 
+    body: >
+      Palvelen PK-yrityksiä AI Leadina fractional-mallilla. Teen myös johdon AI-valmennuksia ja AI-konsultointeja yritysten täsmätarpeisiin.
+      <br /><br />
+      Minulla on 20 vuoden kokemus IT-konsultointi- ja ohjelmistokehitysliiketoiminnasta sekä SaaS-liiketoiminnasta.
+      Olen urallani toiminut toimitusjohtajana, käynnistänyt data- ja tekoälyosaamiseen perustuvia liiketoimintoja sekä johtanut tuote- ja teknologiakehitystä.
+      Erityisosaamistani johtamisen ohella ovat data- ja tekoälyosaamista vaativat hankkeet, sekä toiminta vahvasti reguloiduissa tietointensiivisissä ympäristöissä.
+      <br /><br />
+      Toimin nopeasti, otan omistajuuden hankkeen edistämisestä ryhdikkäästi ja läpinäkyvästi eteenpäin. Yrityksenne tarpeista ja tavoitteista lähtemällä muodostamme 
+      toiminta- ja investointisuunnitelman mittaristoineen. Fractional-malli mahdollistaa asiakkailleni kustannustehokkaan ja riskittömän tavan saada johtoryhmään mukaan 
+      kokenut ulkopuolinen johtaja.
+      <br /><br />
+      Viimeisin kolutukseni on Aalto Executive Educationin MBA (2022), josta valmistuin erinomaisin arvosanoin.
+      <br />
+      Nopea ajantasalle pääsy ja rivakka startti taattu.
+      <br /><br />
+      <strong>Heikki Malkamäki</strong>
+    linkedin-url: https://www.linkedin.com/in/heikkim/
+    linkedin-link-text: Profiili
+    section: about
 
-  clients:
-    section: clientes
-    max-height: 100px
-    horizontal-scrolling: "" #"yes/no"
-    list:
-      - title: "envato"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/envato.jpg
-      - title: "designmodo"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/designmodo.jpg
-      - title: "themeforest"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/themeforest.jpg
-      - title: "Creative Market"
-        url: https://github.com/raviriley/agency-jekyll-theme
-        logo: assets/img/clients/creative-market.jpg
+  wayforward:
+    title: Selkeydellä hankkeissa eteenpäin
+    contentlist:
+      - header: 1. Kartoitus
+        body: Käymme lyhyen keskustelun, jossa käsitellään tavoiteltavat tulokset, mahdolliset esteet ja aiemmat kokeilut.
+      - header: 2. Määritelmä
+        body: Yhteisymmärrys ongelman ytimestä sekä sovimme selkeät mittarit sille, miltä onnistunut lopputulos näyttää.
+      - header: 3. Ratkaisu
+        body: Laadin selkeän ehdotuksen, joka vastaa suoraan kipupisteisiin ja johtaa ongelman ratkaisuun.
+      - header: 4. Toteutus
+        body: Käynnistämme yhteistyön nopeasti ja etenemme hallituin askelmerkein. Muutamme suunnitelmaa tarvittaessa.
+      
 
-  team:
-    title: "NUESTRO INCREÍBLE EQUIPO"
-    text: "Lorem ipsum dolor sit amet consectetur."
-    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
-    section: equipo
-    people:
-      - name: "Kay Garland"
-        role: "Lead Designer"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Larry Parker"
-        role: "Lead Marketer"
-        image: assets/img/team/2.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-      - name: "Diana Perterson"
-        role: "Lead Developer"
-        image: assets/img/team/500x500.jpg
-        social:
-          - url: https://twitter.com
-            icon: fab fa-twitter
-          - url: https://facebook.com
-            icon: fab fa-facebook-f
-          - url: https://linkedin.com
-            icon: fab fa-linkedin-in
-
+#  clients:
+#    section: clients
+#    max-height: 100px
+#    horizontal-scrolling: "" #"yes/no"
+#    list:
+#      - title: ""
+#        url: ""
+#        logo: ""
+#
+#  portfolio:
+#    title: "Portfolio"
+#    text: ""
+#    section: portfolio
+#    closebutton: "Sulje"
+#
+#  timeline:
+#    title: "Timeline"
+#    text: ""
+#    section: timeline
+#    # left is the default
+#    #start_align: "left"
+#    events:
+#      - title: ""
+#        year: ""
+#        desc: ""
+#        image: ""
+#        alt: ""
+#        align: left
+#    end: ""
+#
+#  team:
+#    title: "Team"
+#    text: ""
+#    subtext: ""
+#    section: team
+#    people:
+#      - name: ""
+#        role: ""
+#        image: ""
+#        social:
+#          - url: https://twitter.com
+#            icon: fab fa-twitter
+#          - url: https://facebook.com
+#            icon: fab fa-facebook-f
+#          - url: https://linkedin.com
+#            icon: fab fa-linkedin-in
   contact:
-    title: "Contáctenos"
-    text: "Lorem ipsum or call 123456789"
-    section: contacto
-    name: "Nombre*"
-    name-validation: "Por favor ingrese su nombre."
-    email: "Correo Electrónico*"
-    email-validation: "Por favor ingrese su correo electrónico."
-    phone: "Número Telefónico*"
-    phone-validation: "Por favor ingrese su número telefónico."
-    message: "Mensaje*"
-    message-validation: "Por favor escriba un mensaje."
-    subject: "Envío del formulario de contacto"
-    submit: "Enviar Mensaje"
+    title: "Aloitetaan keskustelu."
+    text: "Kartoitetaan tilanteenne ja tarpeenne ilman sitoumuksia."
+    section: contact
+    name: "Nimi*"
+    name-validation: "Annathan nimesi."
+    email: "Sähköposti*"
+    email-validation: "Annathan sähköpostin."
+    phone: "Puhelin"
+    phone-validation: "Annathan puhelinnumeron."
+    message: "Kuvaus tarpeesta tai aikeesta*"
+    message-validation: "Jätä viesti."
+    subject: "Yhteydenotto"
+    submit: "Lähetä"
+    contact-now: Aloitetaan keskustelu.
 
   footer:
-    legal: "Política de Privacidad"
+    legal: "Tietosuojaseloste"
+    legal-url: "/spc-tietosuojaseloste.html"
     social:
-      - url: https://twitter.com
-        icon: "fab fa-twitter"
-      - url: https://facebook.com
-        icon: "fab fa-facebook-f"
-      - url: https://linkedin.com
-        icon: "fab fa-linkedin-in"
-      - url: https://github.com/raviriley/agency-jekyll-theme
-        icon: "fab fa-github"
-      - url: https://instagram.com
-        icon: "fab fa-instagram"
-es-ES:
-  <<: *DEFAULT_ES
-es-CO:
-  <<: *DEFAULT_ES
+#      - url: https://x.com
+#        icon: "fab fa-x-twitter"
+#      - url: https://facebook.com
+#        icon: "fab fa-facebook-f"
+#      - url: https://linkedin.com
+#        icon: "fab fa-linkedin-in"
+#      - url: https://github.com/raviriley/agency-jekyll-theme
+#        icon: "fab fa-github"
+#      - url: https://instagram.com
+#        icon: "fab fa-instagram"
+fi-FI:
+  <<: *DEFAULT_FI

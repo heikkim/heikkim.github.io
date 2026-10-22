@@ -1,0 +1,22 @@
+{% assign curlang = site.languages | where: "code", page.lang | first %}
+
+<ul id="lang-chooser">
+{% if site.languages != nil %} 
+{% for language in site.languages %} 
+    {% if curlang.locale != language.locale %}  
+    <li class="nav-item">        
+        
+        {% if curlang.code == "en" %}
+            {% assign href = page.url | prepend: "/fi"  %}
+        {% elsif curlang.code == "fi" %}
+            {% assign href = page.url | replace_first: "/fi", ""  %}
+        {% else %}
+            {% assign href = language.url %}
+        {% endif %}
+
+        <a class="nav-link js-scroll-trigger" href="{{ href }}"><img src="/assets/img/Globe_icon.svg" />{{ language.code }}</a>
+    </li>
+    {% endif %}
+{% endfor %}
+{% endif %}
+</ul>

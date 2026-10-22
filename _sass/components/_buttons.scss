@@ -1,0 +1,27 @@
+// Button Styles
+@use "sass:color";
+.btn {
+  @include heading-font;
+  font-weight: 700;
+}
+
+.btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.btn-primary {
+  //background-color: $highlight;
+  //border-color: $highlight;
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: color.adjust($highlight, $lightness: -10%, $space: hsl) !important;
+    border-color: color.adjust($highlight, $lightness: -10%, $space: hsl) !important;
+    color: white;
+  }
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(254, 209, 55, 0.5) !important;
+  }
+}

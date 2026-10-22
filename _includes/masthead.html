@@ -1,0 +1,23 @@
+{% assign curlang = site.languages | where: "code", page.lang | first %}
+{% assign headerSection = site.data.sitetext.header %}
+{% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
+  {% assign headerSection = site.data.sitetext[curlang.locale].header %}
+{% endif %}
+
+<!-- Header -->
+<header class="masthead">
+  <div class="container">
+    <div class="intro-text">
+  {%- if headerSection.intro -%}
+      <div class="intro-lead-in">{{ headerSection.intro | markdownify }}</div>
+  {%- endif -%}
+  {%- if headerSection.text -%}
+      <div class="intro-heading">{{ headerSection.text | markdownify }}</div>
+  {%- endif -%}
+  {%- if headerSection.button -%}
+      <a class="btn btn-secondary btn-xl text-uppercase js-scroll-trigger" href="{{ headerSection.buttonlink }}">{{ headerSection.button }}</a>
+  {%- endif -%}
+    </div>
+  </div> 
+</header>
+<!-- End Header -->

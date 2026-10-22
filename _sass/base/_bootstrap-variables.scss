@@ -1,0 +1,43 @@
+/*
+    Custom bootstrap theme color configuration.
+*/
+$custom-colors: (
+    //"primary": #f00,
+    "primary": #070708,
+    "secondary": #1da754,
+    "success": #25c0df,
+    "info": #224ebf,
+    "warning": #de9037,
+    "danger": #590103,
+    "light": #d0d0d0,
+    "dark": #181818,
+    "body": #f5f5f9,
+    "white": #F9F9F9,
+    "black": #010101
+); 
+
+$primary: map-get($map: $custom-colors, $key: "primary") !default;
+$secondary: map-get($map: $custom-colors, $key: "secondary") !default;
+$success: map-get($map: $custom-colors, $key: "success") !default;
+$info: map-get($map: $custom-colors, $key: "info") !default;
+$warning: map-get($map: $custom-colors, $key: "warning") !default;
+$danger: map-get($map: $custom-colors, $key: "danger") !default;
+$light: map-get($map: $custom-colors, $key: "light") !default;
+$dark: map-get($map: $custom-colors, $key: "dark") !default;
+$body: map-get($map: $custom-colors, $key: "body") !default;
+$white: map-get($map: $custom-colors, $key: "white") !default;
+$black: map-get($map: $custom-colors, $key: "black;") !default;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1280px,
+);
+
+$merge-map: ();
+@if variable-exists($name: theme-colors) {
+    $merge-map: $theme-colors;
+}
+
+$theme-colors: map-merge($merge-map, $custom-colors);

@@ -1,0 +1,33 @@
+{% assign curlang = site.languages | where: "code", page.lang | first %}
+{% assign contentSection = site.data.sitetext.services %}
+{% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
+  {% assign contentSection = site.data.sitetext[curlang.locale].services %}
+{% endif %}
+<!-- Services -->
+<section id="services">
+  
+  <div class="container">
+
+      <h2 class="section-heading">{{ contentSection.title | default: "Services" }}</h2>
+      {% if contentSection.text != "" %}
+      <h3 class="section-subheading text-muted">{{ contentSection.text }}</h3>
+      {% endif %}
+    
+    <div class="row justify-content-between">
+      
+      {% assign service = contentSection.list[0] %}
+      {% include service_column.html service=service %}
+      
+    </div>
+    <div class="row justify-content-between">       
+      
+      {% assign service = contentSection.list[1] %}
+      {% include service_column.html service=service %}
+
+      {% assign service = contentSection.list[2] %}
+      {% include service_column.html service=service %}
+
+    </div>
+  </div>
+</section>
+<!-- End Services -->

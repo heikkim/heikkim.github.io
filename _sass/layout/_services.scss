@@ -1,0 +1,45 @@
+@use "sass:color";
+// Styling for the services section
+section#services {
+  margin: 15px 0;
+  text-transform: none;
+
+  div.row {
+    .service-col /* column */ {
+      min-height: 100px;
+      margin: 6px;
+      padding: 7px 15px;
+      border-radius: 10px;
+      border: 1px solid $gray-900; 
+      position: relative;
+
+      p {
+        padding-bottom: 2em;
+      }
+
+      a.service-link { 
+        position: absolute;
+        bottom: 8px;
+      }
+
+      &:hover {
+      //border: 1px solid color.adjust($secondary, $lightness: -60%, $space: hsl);
+      cursor: pointer;
+      background: linear-gradient($lessdark, $dark);
+    }
+    }
+  }
+
+  h4.service-heading {
+    color: $secondary;
+    margin-bottom: 0.5em;
+
+    /*&::before {
+      content: "\2039\00a0";
+    }
+    
+    &::after {
+      content: "\00a0\203A";
+    }*/
+  }
+}

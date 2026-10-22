@@ -1,0 +1,108 @@
+// Styling for the masthead
+header.masthead {
+  text-align: center;
+  color: inherit;
+  background-color: transparent;
+  position: relative;
+  
+  .container {
+    position: relative;
+    margin-bottom: 100px;
+    
+    .intro-text {
+      padding-top: 8rem;
+      padding-bottom: 0;
+    }
+
+    .intro-lead-in {
+        font-size: 2.5rem;    
+        line-height: 2.5rem;
+        margin-bottom: 25px;
+        @include heading-font;
+
+        .animated-keyword {
+          //color: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet, red); 
+          animation: color-change 10s linear 10;
+        }
+
+        @keyframes color-change {
+          0% { color: $body; }
+          19%  {color: $body; }
+          21%  {color: $primary; }
+          23%  {color: $secondary; }
+          42% {color: $secondary; }
+          44% { color: $primary; }
+          46% { color: $info; }
+          65% { color: $info; }
+          67% { color: $primary; }
+          69% { color: $success; }
+          88% { color: $success; }
+          92% { color: $primary; }
+          95% { color: $body; }
+          100% { color: $body; }
+        }
+    }
+   
+    .intro-heading {
+        font-size: 1em;
+        font-weight: 200;
+        margin-bottom: 25px;
+        @include heading-font;
+    }
+/*
+    .canvas-container canvas {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      width: 500px;
+      height: 250px;
+    }*/
+  }
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    .intro-text {
+      padding-top: 0rem;
+      padding-bottom: 200px;
+      
+      .intro-lead-in {
+        font-size: 3.5rem;      
+        font-weight: 200;
+        line-height: 3.5rem;
+        @include heading-font;
+      }
+      .intro-heading {
+        font-size: 1.2em;
+        font-weight: 150;
+
+        margin-top: 1.5em;
+        margin-bottom: 50px;
+        @include heading-font;
+      }
+    }
+  }
+}
+
+/*.header-image {
+  //background-color: $body;
+
+  /*z-index: -999;
+  background-image: url("#{$header-image}");
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  background-position: center -200px;
+  background-size: cover;
+      
+  &:before {
+    content: '';
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right,#131e29,#394d91);
+        opacity: .6; 
+        z-index: -998;
+  }
+} */

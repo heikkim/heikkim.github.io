@@ -1,0 +1,24 @@
+// Styling for the about section
+section#about {
+  //margin: 15px 0;
+  text-transform: none;
+
+  div.container {
+    div.row {
+      margin-top: 20px;
+
+      div#intro {
+        padding-bottom: 15px;
+      }
+
+      div /* column */ {
+        border-radius: 10px;
+        //border: 1px solid #d11;
+
+        p {
+          //padding-top: 10px;
+        }
+      }
+    }
+  }
+}

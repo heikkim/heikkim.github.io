@@ -1,0 +1,11 @@
+{% if logostyle == "" or logostyle == null %}
+    {% assign logostyle = "brand" %}
+{% endif %}
+
+{% if logostyle == "brand" %}
+    <div class="spc_logo">
+        <span class="logo-text-S">S</span><span class="logo-text-P">P</span><span class="logo-text-C">C</span>
+    </div>
+{% elsif logostyle == "inline" %}
+    <span class="spc_logo_inline"><span class="logo-text-S">S</span><span class="logo-text-P">P</span><span class="logo-text-C">C</span></span>
+{% endif %}

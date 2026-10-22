@@ -1,0 +1,7 @@
+<div class="col-lg service-col text-left bg-dark" id="service-{{ service.sid }}" data-link="{{ service.url }}">
+    <h4 class="service-heading">{{ service.title }}</h4>
+    <p>{{ service["desc"] }}</p>
+    {% if service.link-text != "" and service.link-text != null %}
+        <a class="content-link service-link" href="{{ service.url }}" id="readmore-{{ service.sid }}">{{ service.link-text }}</a>
+    {% endif %}
+</div>
