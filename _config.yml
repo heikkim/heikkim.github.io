@@ -16,7 +16,7 @@
 
 DEBUG  : false
 
-url    : "https://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
+url    : "" #"https://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog. Do not set to "/" to avoid wrong canonical meta link path 
 
 title      : "StrongPoint Consulting" # Also check _data/_sitetext.yml for what's visible on the page.
