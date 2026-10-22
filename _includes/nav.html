@@ -15,45 +15,47 @@ Assign navtype to "scroll" or "absolute". Defaults to "scroll"
 {% endif %}
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-  <div class="container">
-    <a class="navbar-brand js-scroll-trigger" href="{{ curlang.url }}">
-      {% assign logostyle="brand"%}
-      {% include /logo.html logostyle="brand" %}
-      {% comment %} 
-        {%- if site.logo -%}
-          <img height="{{ site.logo.height | default: 52 }}" src="{{ site.logo.path }}"/>
-        {% elsif site.logoText %}
-          {{ site.logoText }}
-        {%- else -%}
-          {{ site.title }}
-        {%- endif -%}
-         {% endcomment %}
-    </a>
-    <div class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="h-icon"></div>
-    </div>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav">
-
-      {% for link in navigation.nav %}
-        {% assign href = "#" %}
-        <li class="nav-item">
-          {%- if link.url and navtype == "absolute" -%}
-            {% assign href = link.url %}
-          {%- elsif link.section and navtype == "scroll" -%}
-            {% comment %} nav-link-contactf has a binding in spc.js {% endcomment %}
-            {% assign href = "#" | append: link.section %}
+<div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="{{ curlang.url }}">
+        {% assign logostyle="brand"%}
+        {% include /logo.html logostyle="brand" %}
+        {% comment %} 
+          {%- if site.logo -%}
+            <img height="{{ site.logo.height | default: 52 }}" src="{{ site.logo.path }}"/>
+          {% elsif site.logoText %}
+            {{ site.logoText }}
+          {%- else -%}
+            {{ site.title }}
           {%- endif -%}
+          {% endcomment %}
+      </a>
+      <div class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="h-icon"></div>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav">
 
-          <a class="nav-link js-scroll-trigger" href="{{ href }}" id="nav-link-{{ link.section }}" data-lang="{{ link.lang }}">{{ link.title }}</a>
-        </li>
-      {% endfor %}
-      </ul>
-      
-      {% include lang-chooser.html %}
-      
+        {% for link in navigation.nav %}
+          {% assign href = "#" %}
+          <li class="nav-item">
+            {%- if link.url and navtype == "absolute" -%}
+              {% assign href = link.url %}
+            {%- elsif link.section and navtype == "scroll" -%}
+              {% comment %} nav-link-contactf has a binding in spc.js {% endcomment %}
+              {% assign href = "#" | append: link.section %}
+            {%- endif -%}
+
+            <a class="nav-link js-scroll-trigger" href="{{ href }}" id="nav-link-{{ link.section }}" data-lang="{{ link.lang }}">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+        </ul>
+        
+        {% include lang-chooser.html %}
+        
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>
 <!-- End Navigation -->

@@ -152,34 +152,22 @@
       font-weight: 400;
       position: relative;
       text-align: center;
-      //background-color: $secondary;
       color: $body;
       font-size: 2.5rem;
       border-radius: 10px;
-      //text-decoration: underline 2px solid $secondary;
-      //text-underline-position:below;
-      //text-underline-offset: 3px;
-      text-decoration: none;
-      
-      &:hover {
-        //color: color.adjust($secondary, $lightness: -5%, $space: hsl);
-        //text-decoration: underline 2px solid $body;
-        text-decoration: none;
-      }
+      vertical-align: baseline;
 
       span.logo-text-S {
         display: inline-block;
-        text-decoration: inherit;
       }
 
       span.logo-text-P {
         display: inline-block;
-        text-decoration: inherit;
       }
 
       span.logo-text-C {
+        display: inline-block;
         font-size: 0.65em;
-        text-decoration: inherit;
       }
     }
 

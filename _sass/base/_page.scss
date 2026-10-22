@@ -1,11 +1,19 @@
 // Global styling for this template
 @use "sass:color";
+* {
+  //max-width: 500px;
+  //border: 1px solid salmon;
+}
 body {
   background-color: $primary;
   color: $body;
   font-weight: 250;
-  overflow-x: hidden;
+  overflow-x: scroll;
   @include body-font;
+}
+
+.container {
+  //padding: 0;
 }
 
 p {
