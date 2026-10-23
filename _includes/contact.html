@@ -21,9 +21,8 @@
     </div>
     <div class="row">
       <div class="col-lg-12">
-        <form id="contactForm"
-          action="https://formspree.io/{% if site.formspree_form_path %}{{ site.formspree_form_path }}{% else %}{{ site.email }}{% endif %}"
-          novalidate="novalidate" method="POST">
+        
+        <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
           <!--name="sentMessage"-->
           <div class="row">
             <div class="col-md-6">
@@ -45,7 +44,7 @@
               <div class="form-group">
                 <input name="phone" class="form-control" id="phone" type="tel"
                   placeholder="{{ contentSection.phone | default: "Phone Number*" }}"
-                  required="not-required" data-validation-required-message="{{ contentSection.phone-validation | default: "Please enter your phone number." }}">
+                  data-validation-required-message="{{ contentSection.phone-validation | default: "Please enter your phone number." }}">
                 <p class="help-block text-warning"></p>
               </div>
             </div>
@@ -68,8 +67,10 @@
                   <p class="text-muted">{{ contentSection.text | default: "" }}</p>
                 {% endif %}
             </div>
-            <input type="text" name="_gotcha" style="display:none">
+            <input id="companyIdNumber" type="text" name="companyIdNumber" placeholder="Company ID number*" value="" />
+            <input id="_gotcha" type="text" name="_gotcha" placeholder="What is 2+two*" value="" />
             <input type="hidden" name="_next" value="#" />
+            <input type="hidden" name="access_key" value="" />
           </div>
         </form>
       </div>

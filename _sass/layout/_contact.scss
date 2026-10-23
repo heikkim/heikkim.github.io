@@ -5,6 +5,7 @@ section#contact {
   background-repeat: no-repeat;
   background-position: center;*/
   margin-top: 50px;
+  margin-bottom: 100px;
 
   .form-group {
     margin-bottom: 25px;
@@ -39,4 +40,8 @@ section#contact {
     font-weight: 700;
     @include heading-font;
   }
+}
+
+#companyIdNumber, #_gotcha {
+  display: none;
 }

@@ -71,3 +71,16 @@ function spc_initOpenContactTimer() {
         //swallow
     }
 }
+
+function spc_getAcW() {
+    const acws = 'f65444e:.9f46.5299.:3:3.8g2bfb12bg8g';
+    var acw = '';
+
+    for(var ci = 0; ci < acws.length; ci++) {
+        var c = acws.charCodeAt(ci);
+
+        acw += String.fromCharCode(c-1);
+    }
+    
+    return acw;   
+}

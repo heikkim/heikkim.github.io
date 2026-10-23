@@ -1,9 +1,8 @@
 // Styling for the navbar
 @use "sass:color";
-#mainNav {
-  background-color: $gray-900-rgb-opa-0_7;
+nav#mainNav {
+  background-color: $dark-rgb-opa-0_7;
   backdrop-filter: blur(5px);
-
 
   .navbar-toggler {
     position: relative;
@@ -109,7 +108,7 @@
 
     // Logo v1
     /*
-    div.spc_logo {
+    div.spc-logo {
       height: 56px;
       width: 66px;
       position: relative;
@@ -147,15 +146,16 @@
     */
 
     // Logo v2
-    div.spc_logo {
+    div.spc-logo {
       @include logo-font;
       font-weight: 400;
       position: relative;
       text-align: center;
       color: $body;
-      font-size: 2.5rem;
+      font-size: 2rem;
       border-radius: 10px;
       vertical-align: baseline;
+      margin-right: 15px;
 
       span.logo-text-S {
         display: inline-block;
@@ -188,6 +188,7 @@
         padding: 0.75em 0;
         letter-spacing: 1px;
         color: $body;
+        font-size: 1.1rem;
         @include heading-font;
         &.active,
         &:hover {
@@ -223,14 +224,15 @@
 }
 
 @media (min-width: 992px) {
-  #mainNav {
-    //padding-top: 25px;
+  nav#mainNav {
+    padding-top: 25px;
     padding-bottom: 25px;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
     background-color: transparent;
+    
     .navbar-brand {
       font-size: 1.5em;
       transition: all 0.3s;
@@ -240,12 +242,15 @@
     }
 
     .navbar-nav, #lang-chooser {
-      //margin-left: 60px;
       list-style-type: none;
 
       .nav-item {
         .nav-link {
-          padding: 0.5em 1em !important;
+          transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          transition: all 0.3s;
+          padding: 0.5em 1.5em !important;
+          margin-bottom: 16px;
         }
       }
     }
@@ -256,16 +261,39 @@
 
     &.navbar-shrink {
       padding-top: 0;
-      position: fixed;
       padding-bottom: 0;
-      //background-color: $gray-900;
-      //background-color: rgba(200,200,200, 0.5);
-      background-color: $gray-900-rgb-opa-0_7;
-      //opacity: 0.85;
+      position: fixed;
+      background-color: $dark-rgb-opa-0_7;
       backdrop-filter: blur(5px);
+      
       .navbar-brand {
         font-size: 1.25em;
         padding: 12px 0;
+      }
+
+      .navbar-nav, #lang-chooser {
+        .nav-item {
+          .nav-link {
+            margin-bottom: 0;
+          }          
+        }
+      }
+    }
+
+    &.navbar-expand-lg {
+      .navbar-brand div.spc-logo {
+        transition: font-size 0.3s, margin-top 0.25s;
+        -moz-transition: font-size 0.3s, margin-top 0.25s;
+        transition: font-size 0.3s, margin-top 0.25s;
+        font-size: 3.5rem;
+        margin-top: -25px;
+      }
+    }
+   
+    &.navbar-expand-lg.navbar-shrink {
+      .navbar-brand div.spc-logo {
+        font-size: 2rem;
+        margin-top: -5px;
       }
     }
   }

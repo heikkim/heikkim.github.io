@@ -12,7 +12,7 @@
 en: &DEFAULT_EN
   header:
     intro: "A hands-on AI consultancy<br />for your company to get <span class=\"animated-keyword\">ahead</span>."
-    text: "Competitive edge, uplifted productivity & accelerated operations for senior business leaders, boards, teams and companies."
+    text: "Competitive edge, uplifted productivity & accelerated operations for senior business leaders, boards and companies."
 #    button: Services
 #    buttonlink: "#services"
 
@@ -22,7 +22,7 @@ en: &DEFAULT_EN
     section: services
     list:
       - sid: fractional-ai-lead
-        title: "<i>#1</i> Fractional AI Lead"
+        title: "<b>#1</b> Fractional AI Lead"
         brief: ""
         desc: >
           As a fractional AI Lead/Director/Officer, I provide companies and their boards with senior strategy, governance, and hands-on execution. 
@@ -32,15 +32,15 @@ en: &DEFAULT_EN
         url: /services/fractional-ai-lead.html
         link-text: Read more about Fractional AI Lead service for Companies
       - sid: ai-coaching
-        title: "<i>#2</i> AI Coaching"
+        title: "<b>#2</b> AI Coaching"
         brief: ""
         desc: >
-          For getting quickly up-to-date about AI, effective prompting and building everyday automations hands-on.
-          Immediate focus will be on discovering what creates value for your work day.
+          1-to-1 coaching for getting quickly up-to-date on AI, effective prompting and building everyday automations hands-on.
+          Immediate focus will be on discovering what creates value for your work day right now.
           <br /><br />
-          In case you're already using AI daily, for becoming a ChatGPT power user, using AI for strategising and agents for more complex tasks utilising Agent Skills.
+          In case you're already using AI daily: Learn how to be a power user who uses AI for strategising and agents for more complex tasks utilising Agent Skills.
         url: /services/ai-coaching.html
-        link-text: Read more about AI Coaching for Senior Leaders and Board Members
+        link-text: Read more about AI Coaching for Leaders and Board Members
 #      - sid: ai-tooling
 #        title: "AI Tooling"
 #        brief: ""
@@ -48,15 +48,15 @@ en: &DEFAULT_EN
 #        url: /services/ai-tooling.html
 #        link-text: Read more about AI Tooling for Teams and Organisations
       - sid: ai-consulting
-        title: "<i>#3</i> AI Consulting"
+        title: "<b>#3</b> AI Consulting"
         brief: ""
         desc: >
-          For understanding AI opportunities in the company, creating an execution plan for the AI change, 
+          For understanding AI opportunities in the company, creating an execution plan for AI change, 
           or in solving a specific challenge related to effective use of AI / data in the company.
           <br /><br />
           Any matter related to company AI use that benefits having an external view.
         url: /services/ai-consulting.html
-        link-text: Read more about AI Consulting for Management Teams and Boards
+        link-text: Read more about AI Consulting for Companies and Organisations
 #      - sid: agentic-ai
 #        title: "Agentic AI"
 #        brief: ""
@@ -74,14 +74,14 @@ en: &DEFAULT_EN
     body: >
       I serve SME companies as an AI Lead on a fractional basis. I also provide executive AI coaching and targeted AI consulting tailored to specific company needs.
       <br /><br />
-      I have 20 years of experience in IT consulting, software development, and the SaaS business. I have served as a CEO of a SaaS company, established 
+      I have 20 years of experience in IT consulting, software development, and SaaS business. I have served as a CEO of a SaaS company, established 
       new business operations centered on data and artificial intelligence expertise and led product & technology development. In addition to leadership skills, my core 
       specialization lies in customer initiatives requiring data and AI capabilities, as well as working in highly regulated, information-intensive environments.
       <br /><br />
       I move fast, take ownership, and drive initiatives with clarity and transparency. In everything I do, I respect and adapt to your company's culture and 
       operational style. The fractional model gives my clients a cost-effective, risk-free way to bring an experienced executive into their leadership team.
       <br /><br />
-      I hold an MBA from Aalto Executive Education (2022), graduating with honors. 
+      I hold an MBA from Aalto Executive Education (2022), graduated with honors. 
       <br /> 
       Hitting the ground running guaranteed.
       <br /><br />
@@ -91,7 +91,7 @@ en: &DEFAULT_EN
     section: about
 
   wayforward:
-    title: A sharper way forward
+    title: A clear path forward
     contentlist:
       - header: 1. Discovery
         body: A brief conversation to cover targeted outcomes, potential roadblocks, and previous attempts.
@@ -202,7 +202,7 @@ fi: &DEFAULT_FI
 
   header:
     intro: "Käytännönläheistä tekoälykonsultointia, <span class=\"line\">viemään yrityksesi <span class=\"animated-keyword\">kärkipaikalle</span>.</span>"
-    text: Kilpailuetua, parempaa tuottavuutta ja nopeampaa toimintaa johdolle, hallituksille, tiimeille ja yrityksille.
+    text: Kilpailuetua, parempaa tuottavuutta ja nopeampaa toimintaa johdolle, hallituksille ja yrityksille.
 #    button: Palvelut
 #    buttonlink: "#services"
 
@@ -212,37 +212,37 @@ fi: &DEFAULT_FI
     section: services
     list:
       - sid: fractional-ai-lead
-        title: "<i>#1</i> Fractional AI Lead"
+        title: "<b>#1</b> Fractional AI Lead"
         brief: ""
         desc: >
           Toimiessani fractional AI Leadina, Directorina tai Officerina tarjoan yrityksille ja niiden hallituksille kokenutta strategianäkemystä, 
           hallintamalleja sekä muutoksen johtamista.
           <br /><br />
           Integroidun suoraan osaksi johtoryhmäänne. Autan määrittelemään, suunnittelemaan, koordinoimaan, käynnistämään ja ylläpitämään 
-          yrityksenne tekoälyhankkeiden vauhtia. Otan tarkasti huomioon yrityksenne ainutlaatuisen kulttuurin ja toimintatavat.
+          yrityksen tekoälyhankkeiden vauhtia. Otan tarkasti huomioon yrityksenne kulttuurin ja toimintatavat.
         url: /fi/services/fractional-ai-lead.html
         link-text: Lue lisää Fractional AI Lead palvelusta yrityksille
       - sid: ai-coaching
-        title: "<i>#2</i> AI-valmennus"
+        title: "<b>#2</b> AI-valmennus"
         brief: ""
         desc: >
           Tekoälyn nopeaan haltuunottoon, tehokkaaseen kehotemuotoiluun (promptaukseen) ja jokapäiväisten automaatioiden rakentamiseen käytännönläheisesti.
-          Valmennuksen painopisteenä on löytää, mikä tuo konkreettista arvoa työpäivääsi.
+          Valmennuksen painopisteenä on löytää, mikä tuo konkreettista arvoa työpäivääsi juuri nyt.
           <br /><br />
-          Jos käytät jo tekoälyä päivittäin: ChatGPT-tehokäyttäjäksi kehittymiseen, tekoälyn hyödyntämiseen strategiatyössä sekä agenttien käyttöön 
-          monimutkaisemmissa tehtävissä agenttitaitoja (Agent Skills) hyödyntämällä.
+          Jos käytät jo tekoälyä päivittäin: Opi ChatGPT-tehokäyttäjäksi, joka hyödyntää tekoälyä strategiatyössä sekä agenteja
+          monimutkaisemmissa tehtävissä agenttitaitojen (Agent Skills) avulla.
         url: /fi/services/ai-coaching.html
-        link-text: Lue lisää yrityksen johdon ja hallituksen jäsenten tekoälyvalmennuksesta
+        link-text: Lue lisää johdon ja hallituksen AI-valmennuksesta
       - sid: ai-consulting
-        title: "<i>#3</i> AI-konsultointi"
+        title: "<b>#3</b> AI-konsultointi"
         brief: ""
         desc: >
           Yrityksen tekoälymahdollisuuksien ymmärtämiseen, tekoälymuutoksen toteutussuunnitelman luomiseen tai tietyn tekoälyn ja datan tehokkaaseen käyttöön liittyvän 
           haasteen ratkaisemiseen.
           <br /><br />
-          Hyödyllisen ulkopuolisen asiantuntijanäkemyksen saamiseen yrityksen tekoälyn käyttöön liittyvään asiaan.
+          Ulkopuolisen asiantuntijanäkemyksen saamiseen yrityksen tekoälyn käyttöön liittyvään asiaan.
         url: /fi/services/ai-consulting.html
-        link-text: Lue lisää tekoälykonsultoinnista johtoryhmille ja hallituksille
+        link-text: Lue lisää tekoälykonsultoinnista yrityksille ja organisaatioille
   
   about:
     title: Käytännön kokemusta tuloksekkaaseen johtamiseen

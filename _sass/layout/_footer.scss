@@ -3,8 +3,8 @@
 footer {
   padding: 25px 0;
   text-align: center;
-  background-color: $secondary;
-  color: $primary;
+  background-color: $dark-rgb-opa-0_7;
+  color: $body;
   font-size: 90%;
 
   span.copyright {
@@ -13,7 +13,7 @@ footer {
    
   }
 
-  span.spc_logo_inline {
+  span.spc-logo-inline {
     @include logo-font;
     cursor: pointer;
     font-weight: 400;

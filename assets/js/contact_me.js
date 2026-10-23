@@ -9,8 +9,13 @@ $(function() {
     },
     submitSuccess: function($form, event) {
       event.preventDefault(); // prevent default submit behaviour
+
+      if($("#companyIdNumber").val() !== "" || $("input#_gotcha").val() !== "") {
+        return;
+      }
+
       // get values from FORM
-	  var url = "https://formspree.io/" + "{% if site.formspree_form_path %}{{ site.formspree_form_path }}{% else %}{{ site.email }}{% endif %}";
+	    var url = $form.attr('action');
       var name = $("input#name").val();
       var username = $("input#username").val();
       var email = $("input#email").val();
@@ -27,12 +32,13 @@ $(function() {
       $.ajax({
         url: url,
         type: "POST",
-	dataType: "json",
+	      dataType: "json",
         data: {
           name: name,
           phone: phone,
           email: email,
-          message: message
+          message: message,
+          access_key: spc_getAcW()
         },
         cache: false,
 

@@ -9,14 +9,37 @@ section#about {
 
       div#intro {
         padding-bottom: 15px;
+
+        img {
+          border-radius: 5px;
+          height: 300px;
+          
+          float: right; 
+          margin-left: 20px;
+          margin-bottom: 5px;
+        }
       }
 
       div /* column */ {
-        border-radius: 10px;
+        border-radius: 5px;
         //border: 1px solid #d11;
 
         p {
           //padding-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 922px) {
+  section#about {
+    div.container {
+      div.row {
+        div#intro {
+          img {
+            height: 434px;
+          }
         }
       }
     }

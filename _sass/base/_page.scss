@@ -8,7 +8,7 @@ body {
   background-color: $primary;
   color: $body;
   font-weight: 250;
-  overflow-x: scroll;
+  overflow-x: hidden;
   @include body-font;
 }
 
