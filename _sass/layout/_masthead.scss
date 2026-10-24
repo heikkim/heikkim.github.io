@@ -15,7 +15,10 @@ header.masthead {
     }
 
     .intro-lead-in {
-        font-size: 2.5rem;    
+        h1 {
+          font-size: 2.5rem;    
+        }
+
         line-height: 2.5rem;
         margin-bottom: 25px;
         @include heading-font;
@@ -67,7 +70,9 @@ header.masthead {
       padding-bottom: 200px;
       
       .intro-lead-in {
-        font-size: 3.5rem;      
+        h1 {
+          font-size: 3.5rem;
+        }
         font-weight: 200;
         line-height: 3.5rem;
         @include heading-font;

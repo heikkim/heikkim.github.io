@@ -68,6 +68,10 @@ h6 {
   @include heading-font;
 }
 
+h1 {
+  font-size: 3.5rem;
+}
+
 h4 {
   font-weight: 300;
   @include heading-font;
@@ -104,6 +108,10 @@ section {
 @media (min-width: 768px) {
   section {
     padding-top: 2em;
+
+    h2.section-heading {
+      font-size: 3em;
+    }
   }
 }
 

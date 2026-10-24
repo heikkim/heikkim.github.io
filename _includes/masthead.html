@@ -8,15 +8,22 @@
 <header class="masthead">
   <div class="container">
     <div class="intro-text">
-  {%- if headerSection.intro -%}
-      <div class="intro-lead-in">{{ headerSection.intro | markdownify }}</div>
-  {%- endif -%}
-  {%- if headerSection.text -%}
-      <div class="intro-heading">{{ headerSection.text | markdownify }}</div>
-  {%- endif -%}
-  {%- if headerSection.button -%}
+  
+    {%- if headerSection.intro -%}
+      <div class="intro-lead-in">
+        <h1>{{ headerSection.intro }}</h1>
+      </div>
+    {%- endif -%}
+    {%- if headerSection.text -%}
+      <div class="intro-heading">
+        <p>{{ headerSection.text }}</p>
+      </div>
+    {%- endif -%}
+  
+    {%- if headerSection.button -%}
       <a class="btn btn-secondary btn-xl text-uppercase js-scroll-trigger" href="{{ headerSection.buttonlink }}">{{ headerSection.button }}</a>
-  {%- endif -%}
+    {%- endif -%}
+  
     </div>
   </div> 
 </header>

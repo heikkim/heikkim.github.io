@@ -30,7 +30,7 @@ en: &DEFAULT_EN
           By integrating directly with your 
           management team I help you define, plan, coordinate, initiate and maintain momentum of your company's AI initiative, at scale.
         url: /services/fractional-ai-lead.html
-        link-text: Read more about Fractional AI Lead service for Companies
+        link-text: Read more about Fractional AI Lead for Companies
       - sid: ai-coaching
         title: "<b>#2</b> AI Coaching"
         brief: ""
@@ -40,7 +40,7 @@ en: &DEFAULT_EN
           <br /><br />
           In case you're already using AI daily: Learn how to be a power user who uses AI for strategising and agents for more complex tasks utilising Agent Skills.
         url: /services/ai-coaching.html
-        link-text: Read more about AI Coaching for Leaders and Board Members
+        link-text: Read more about AI Coaching for Leaders
 #      - sid: ai-tooling
 #        title: "AI Tooling"
 #        brief: ""
@@ -56,7 +56,7 @@ en: &DEFAULT_EN
           <br /><br />
           Any matter related to company AI use that benefits having an external view.
         url: /services/ai-consulting.html
-        link-text: Read more about AI Consulting for Companies and Organisations
+        link-text: Read more about AI Consulting for Companies
 #      - sid: agentic-ai
 #        title: "Agentic AI"
 #        brief: ""
@@ -74,11 +74,11 @@ en: &DEFAULT_EN
     body: >
       I serve SME companies as an AI Lead on a fractional basis. I also provide executive AI coaching and targeted AI consulting tailored to specific company needs.
       <br /><br />
-      I have 20 years of experience in IT consulting, software development, and SaaS business. I have served as a CEO of a SaaS company, established 
+      I have 20 years of experience in IT consulting, software development, and SaaS business. I have served as a CEO, established 
       new business operations centered on data and artificial intelligence expertise and led product & technology development. In addition to leadership skills, my core 
       specialization lies in customer initiatives requiring data and AI capabilities, as well as working in highly regulated, information-intensive environments.
       <br /><br />
-      I move fast, take ownership, and drive initiatives with clarity and transparency. In everything I do, I respect and adapt to your company's culture and 
+      I move fast, take ownership, and drive initiatives with clarity and commitment. In everything I do, I respect and adapt to your company's culture and 
       operational style. The fractional model gives my clients a cost-effective, risk-free way to bring an experienced executive into their leadership team.
       <br /><br />
       I hold an MBA from Aalto Executive Education (2022), graduated with honors. 
@@ -246,15 +246,13 @@ fi: &DEFAULT_FI
   
   about:
     title: Käytännön kokemusta tuloksekkaaseen johtamiseen
-    text: 
+    text: Palvelen PK-yrityksiä AI Leadina fractional-mallilla. Teen myös johdon AI-valmennuksia ja AI-konsultointeja yritysten täsmätarpeisiin.
     body: >
-      Palvelen PK-yrityksiä AI Leadina fractional-mallilla. Teen myös johdon AI-valmennuksia ja AI-konsultointeja yritysten täsmätarpeisiin.
-      <br /><br />
-      Minulla on 20 vuoden kokemus IT-konsultointi- ja ohjelmistokehitysliiketoiminnasta sekä SaaS-liiketoiminnasta.
-      Olen urallani toiminut toimitusjohtajana, käynnistänyt data- ja tekoälyosaamiseen perustuvia liiketoimintoja sekä johtanut tuote- ja teknologiakehitystä.
+      Minulla on 20 vuoden kokemus IT-konsultointi- ja ohjelmistokehitys-liiketoiminnasta sekä SaaS-liiketoiminnasta.
+      Urallani olen toiminut toimitusjohtajana, käynnistänyt data- ja tekoälyosaamiseen perustuvia liiketoimintoja sekä johtanut tuote- ja teknologiakehitystä.
       Erityisosaamistani johtamisen ohella ovat data- ja tekoälyosaamista vaativat hankkeet, sekä toiminta vahvasti reguloiduissa tietointensiivisissä ympäristöissä.
       <br /><br />
-      Toimin nopeasti, otan omistajuuden hankkeen edistämisestä ryhdikkäästi ja läpinäkyvästi eteenpäin. Yrityksenne tarpeista ja tavoitteista lähtemällä muodostamme 
+      Toimin nopeasti, otan omistajuuden hankkeen edistämisestä ryhdikkäästi ja määrätietoisesti. Yrityksenne tarpeista ja tavoitteista lähtemällä muodostamme 
       toiminta- ja investointisuunnitelman mittaristoineen. Fractional-malli mahdollistaa asiakkailleni kustannustehokkaan ja riskittömän tavan saada johtoryhmään mukaan 
       kokenut ulkopuolinen johtaja.
       <br /><br />

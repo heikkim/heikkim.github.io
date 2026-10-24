@@ -8,20 +8,25 @@
   <div class="container">
 
     <h2 class="section-heading">{{ contentSection.title | default: "" }}</h2>
-    {% if contentSection.text != "" and contentSection.text != null %} 
-    <h3 class="section-subheading text-muted">{{ contentSection.text | default: "" }}</h3>
-    {% endif %}
 
     <div class="row">
       <div class="col-lg" id="intro">
         <div class="clearfix">   
-          <img src="/assets/img/headshot.jpg" alt="Heikki Malkamäki" />
-          <p>{{ contentSection.body }}</p>  
+          <div class="container headshot">
+            <img src="/assets/img/headshot.jpg" alt="Heikki Malkamäki" />
+            <br />
+            {% if contentSection.text != "" and contentSection.text != null %} 
+            <i class="text-muted">{{ contentSection.text | default: "" }}</i>
+            {% endif %}
+          </div>
+          
+          <p>{{ contentSection.body }}</p> 
 
           {% if contentSection.linkedin-url != "" and contentSection.linkedin-url != null %}  
           <a class="content-link linkedin-link" href="{{ contentSection.linkedin-url }}" target="new">{{ contentSection.linkedin-link-text }}</a>
           {% endif %}
-        </div>
+          
+          </div>
       </div>  
     </div>  
   </div>

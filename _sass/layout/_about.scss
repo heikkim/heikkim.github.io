@@ -4,19 +4,33 @@ section#about {
   text-transform: none;
 
   div.container {
+    
     div.row {
       margin-top: 20px;
 
       div#intro {
+        text-justify: inter-word;
         padding-bottom: 15px;
 
-        img {
-          border-radius: 5px;
-          height: 300px;
-          
-          float: right; 
-          margin-left: 20px;
-          margin-bottom: 5px;
+        div.headshot {
+          float: left; 
+          margin-right: 20px;
+          padding-left: 0;
+          width: min-content;
+          max-width: 434px;
+
+          img {
+            height: 250px;
+            border-radius: 5px;
+          }
+
+          i {
+            font-size: 80%;
+          }
+        }
+
+        p {
+          padding-top: 0;
         }
       }
 
@@ -37,8 +51,11 @@ section#about {
     div.container {
       div.row {
         div#intro {
-          img {
-            height: 434px;
+
+          div.headshot {
+            img {
+              height: 434px;
+            }
           }
         }
       }

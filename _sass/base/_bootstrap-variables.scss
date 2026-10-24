@@ -28,7 +28,7 @@ $body: map-get($map: $custom-colors, $key: "body") !default;
 $white: map-get($map: $custom-colors, $key: "white") !default;
 $black: map-get($map: $custom-colors, $key: "black;") !default;
 
-//$navbar-padding-x: 0;
+$text-muted: #adb5bd; // gray-500
 
 $container-max-widths: (
   sm: 540px,

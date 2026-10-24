@@ -21,7 +21,7 @@ baseurl: "" # the subpath of your site, e.g. /blog. Do not set to "/" to avoid w
 
 title      : "StrongPoint Consulting" # Also check _data/_sitetext.yml for what's visible on the page.
 description: Fractional AI Lead, AI coaching and AI consulting agency # This is used only if there is no specific description available for the page
-email      : heikki.malkamaki@gmail.com #this is also the email contact forms will go to
+email      : noreply@nop.nop #this is also the email contact forms will go to
 author     : Heikki Malkamäki
 # logo:     #optional, defaults to site title
   # path: assets\img\clients\creative-market.jpg
@@ -29,7 +29,7 @@ author     : Heikki Malkamäki
   # See: nav.html where logo image is built with HTML/CSS
 
 analytics:
-  google: #Google Analytics tracking code here
+  google: G-5HZGV8ZNEF
 
 #collections:
 #  portfolio:
