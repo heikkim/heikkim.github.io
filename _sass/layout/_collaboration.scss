@@ -67,23 +67,12 @@
     li {
       position: relative;
       margin-bottom: .6em;
-      padding-left: 1.2em;
+      padding-left: 1.25em;
       line-height: 1.6;
-      font-size: .93rem;
+      font-size: .95rem;
 
       &:last-child {
         margin-bottom: 0;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: .68em;
-        width: .45em;
-        height: .45em;
-        border-radius: 50%;
-        background-color: $secondary;
       }
     }
 

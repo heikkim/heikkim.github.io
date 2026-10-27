@@ -46,6 +46,7 @@ Heikki, the human you are interacting with.
 - CSS `width`, `max-width`, `height` and `max-height` properties' units should always be expressed in `px`, i.e. not for example in `em` or `rem`.
 - CSS `margin` property's unit should most commonly be expressed in `px`.
 - When needing a header for content, use one of `h1`, `h2`, `h3`, `h4`, `h5` without additional styling.
+- Unordered lists `<ul>` should be styled by default with `.common-list` class.
 
 **Framework source file rules:**
 - DO NOT edit Bootstrap SCSS source files under `_sass/bootstrap/`

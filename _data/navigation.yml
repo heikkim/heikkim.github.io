@@ -62,7 +62,7 @@ fi: &DEFAULT_FI
           url: /services/fractional-ai-lead.html
         - title: "#2 AI-valmennus"
           url: /services/ai-coaching.html
-        - title: "#3 Tekoälykonsultointi"
+        - title: "#3 AI-konsultointi"
           url: /services/ai-consulting.html
 #    - title: "Portafolio"
 #      section: portafolio

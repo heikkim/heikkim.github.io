@@ -3,7 +3,7 @@
 {% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
   {% assign contentSection = site.data.sitetext[curlang.locale].contact %}
 {% endif %}
-{% comment %} Optional override of the call-to-action button label, e.g. {% include contact.html cta-btn-text="Start a Conversation" %} {% endcomment %}
+{% comment %} Optional override of the call-to-action button label, e.g. {% include contact.html cta-btn-text="Start a conversation" %} {% endcomment %}
 {% assign contactButtonLabel = include.cta-btn-text | default: contentSection.contact-now %}
 {% assign formHeader = include.form-header | default: contentSection.title %}
 {% if include.headless == true %}

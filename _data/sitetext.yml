@@ -68,6 +68,12 @@ en: &DEFAULT_EN
 #        url: /en/services/agentic-ai.html
 #        link-text: Read more about Agentic AI services for Teams & Organisations
 
+  # The closing call to action of the service pages
+  service-cta:
+    title: "Take the next step."
+    text: "Every engagement starts with a brief, no-commitment discovery call to map your current situation: what you have tried, what is stuck, and what success would look like."
+    cta: "Start a conversation"
+
   about:
     title: "Real experience for getting real results"
     text: I serve SME companies as an AI Lead on a fractional basis. I also provide executive AI coaching and targeted AI consulting tailored to specific company needs.
@@ -252,7 +258,13 @@ fi: &DEFAULT_FI
           Ulkopuolisen asiantuntijanäkemyksen saamiseen yrityksen tekoälyn käyttöön liittyvään asiaan.
         url: /services/ai-consulting.html
         link-text: Lue lisää tekoälykonsultoinnista yrityksille ja organisaatioille
-  
+
+  # The closing call to action of the service pages
+  service-cta:
+    title: "Seuraava askel."
+    text: "Jokainen toimeksianto alkaa lyhyellä kartoituskeskustelulla, joka ei sido teitä mihinkään. Kartoituksessa käymme läpi nykytilanteen: mitä on yritetty, missä on jumissa ja miltä onnistuminen näyttäisi."
+    cta: "Ota yhteyttä"
+
   about:
     title: Käytännön kokemusta tuloksekkaaseen johtamiseen
     text: Palvelen PK-yrityksiä AI Leadina fractional-mallilla. Teen myös johdon AI-valmennuksia ja AI-konsultointeja yritysten täsmätarpeisiin.

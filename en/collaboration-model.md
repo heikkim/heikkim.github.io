@@ -36,7 +36,7 @@ meta:
               <h3 class="text-secondary">#1 Fractional AI Lead</h3>
               <p class="sp-collaboration-basis">Ongoing engagement / monthly retainer</p>
               <p class="sp-collaboration-detail">Agreed on required capacity, starting from 1+ days per week.</p>
-              <ul>
+              <ul class="common-list">
                 <li>Embedded in your leadership team</li>
                 <li>Strategy, governance and hands-on delivery</li>
                 <li>Roadmap, policy and board reporting included</li>
@@ -50,7 +50,7 @@ meta:
               <h3 class="text-secondary">#2 AI Coaching</h3>
               <p class="sp-collaboration-basis">1 to 4 week program</p>
               <p class="sp-collaboration-detail">One program for the whole period, confirmed after the discovery call.</p>
-              <ul>
+              <ul class="common-list">
                 <li>One-to-one, live, on your own work</li>
                 <li>Prompt library, automations and agentic</li>
                 <li>Your own AI operating manual</li>
@@ -64,7 +64,7 @@ meta:
               <h3 class="text-secondary">#3 AI Consulting</h3>
               <p class="sp-collaboration-basis">Project-based or n days</p>
               <p class="sp-collaboration-detail">Fixed scope for smaller projects. <br />Time&materials based for longer assignments.</p>
-              <ul>
+              <ul class="common-list">
                 <li>A specific problem, defined and solved</li>
                 <li>Assessment, business case or execution plan</li>
                 <li>Scope agreed in writing up front</li>
