@@ -16,7 +16,7 @@ Tämä tietosuojaseloste kertoo, miten henkilötietojasi kerätään, käytetä�
 
 Analytiikka (Google Analytics):
 
-Käytämme Google Analyticsia selvittääksemme, miten Sivustoa käytetään. Google Analytics ladataan vasta, kun olet hyväksynyt analytiikkaevästeet, joten mitään ei mitata ennen kuin olet antanut suostumuksesi. Hyväksynnän jälkeen saatme automaattisesti selaimeltasi tietoja laitteestasi, kuten IP-osoitteesi. Samalla kun selaat Sivustoa, keräämme myös tietoja siitä, miten käytät Sivustoa. Kutsumme näitä automaattisesti kerättyjä tietoja ”Laitetiedoiksi”.
+Käytämme Google Analyticsia selvittääksemme, miten Sivustoa käytetään. Google Analytics ladataan vasta, kun olet hyväksynyt analytiikkaevästeet, joten mitään ei mitata ennen kuin olet antanut suostumuksesi. Hyväksynnän jälkeen saamme automaattisesti selaimeltasi tietoja laitteestasi, kuten IP-osoitteesi. Samalla kun selaat Sivustoa, keräämme myös tietoja siitä, miten käytät Sivustoa. Kutsumme näitä automaattisesti kerättyjä tietoja ”Laitetiedoiksi”.
 
 Keräämme laitetiedot evästeiden avulla. ”Evästeet” ovat tiedostoja, jotka tallennetaan laitteellesi.
 
@@ -32,7 +32,7 @@ Emme kerää mitään henkilötietoja emmekä käytä evästeitä.
 
 **OMAT VALINTASI**
 
-Evästevalintasi tallennetaan laitteesi asetus-evästeeseen yhdessä kielivalintasi kanssa. Näin kysymme sinulta vain kerran ja muistamme, miten haluat Sivustoa käyttää. Voit muuttaa valintaa milloin tahansa Sivuston alaosassa olevasta ”Evästesasetukset”-linkistä. Jos peruutat suostumuksesi, analytiikkaevästeet poistuvat laitteeltasi.
+Evästevalintasi tallennetaan laitteesi asetusevästeeseen. Näin kysymme sinulta vain kerran ja muistamme, miten haluat Sivustoa käyttää. Voit muuttaa valintaa milloin tahansa Sivuston alaosassa olevasta ”Evästesasetukset”-linkistä. Jos peruutat suostumuksesi, analytiikkaevästeet poistuvat laitteeltasi.
 
 **MUUTOKSET**
 
