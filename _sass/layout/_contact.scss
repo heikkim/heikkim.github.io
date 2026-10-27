@@ -40,6 +40,10 @@ section#contact {
     font-weight: 700;
     @include heading-font;
   }
+
+  a + p, button + p {
+    margin-top: 10px;
+  }
 }
 
 #companyIdNumber, #_gotcha {

@@ -22,7 +22,7 @@ en: &DEFAULT_EN
     section: services
     list:
       - sid: fractional-ai-lead
-        title: "<b>#1</b> Fractional AI Lead"
+        title: "#1 Fractional AI Lead"
         brief: ""
         desc: >
           As a fractional AI Lead/Director/Officer, I provide companies and their boards with senior strategy, governance, and hands-on execution. 
@@ -32,7 +32,7 @@ en: &DEFAULT_EN
         url: /services/fractional-ai-lead.html
         link-text: Read more about Fractional AI Lead for Companies
       - sid: ai-coaching
-        title: "<b>#2</b> AI Coaching"
+        title: "#2 AI Coaching"
         brief: ""
         desc: >
           1-to-1 coaching for getting quickly up-to-date on AI, effective prompting and building everyday automations hands-on.
@@ -48,7 +48,7 @@ en: &DEFAULT_EN
 #        url: /services/ai-tooling.html
 #        link-text: Read more about AI Tooling for Teams and Organisations
       - sid: ai-consulting
-        title: "<b>#3</b> AI Consulting"
+        title: "#3 AI Consulting"
         brief: ""
         desc: >
           For understanding AI opportunities in the company, creating an execution plan for AI change, 
@@ -70,10 +70,8 @@ en: &DEFAULT_EN
 
   about:
     title: "Real experience for getting real results"
-    text: 
+    text: I serve SME companies as an AI Lead on a fractional basis. I also provide executive AI coaching and targeted AI consulting tailored to specific company needs.
     body: >
-      I serve SME companies as an AI Lead on a fractional basis. I also provide executive AI coaching and targeted AI consulting tailored to specific company needs.
-      <br /><br />
       I have 20 years of experience in IT consulting, software development, and SaaS business. I have served as a CEO, established 
       new business operations centered on data and artificial intelligence expertise and led product & technology development. In addition to leadership skills, my core 
       specialization lies in customer initiatives requiring data and AI capabilities, as well as working in highly regulated, information-intensive environments.
@@ -93,13 +91,13 @@ en: &DEFAULT_EN
   wayforward:
     title: A clear path forward
     contentlist:
-      - header: 1. Discovery
+      - header: Discovery
         body: A brief conversation to cover targeted outcomes, potential roadblocks, and previous attempts.
-      - header: 2. Definition
+      - header: Definition
         body: Alignment on the root problem and clear metrics defining what a successful outcome looks like.
-      - header: 3. Solution
+      - header: Solution
         body: A clear proposal tailored directly to your pain points and structured to solve the core issue.
-      - header: 4. Execution
+      - header: Execution
         body: Rapid project kickoff with measured, step-by-step progress, adapting the plan as needed.
 
 #  portfolio:
@@ -196,10 +194,6 @@ en-AU:
 #
 #
 fi: &DEFAULT_FI
-  pages:
-    index:
-      title: AI-valmennus, AI-konsultointi, Interim/Fractional AI Director
-
   header:
     intro: "Käytännönläheistä tekoälykonsultointia, <span class=\"line\">viemään yrityksesi <span class=\"animated-keyword\">kärkipaikalle</span>.</span>"
     text: Kilpailuetua, parempaa tuottavuutta ja nopeampaa toimintaa johdolle, hallituksille ja yrityksille.
@@ -212,7 +206,7 @@ fi: &DEFAULT_FI
     section: services
     list:
       - sid: fractional-ai-lead
-        title: "<b>#1</b> Fractional AI Lead"
+        title: "#1 Fractional AI Lead"
         brief: ""
         desc: >
           Toimiessani fractional AI Leadina, Directorina tai Officerina tarjoan yrityksille ja niiden hallituksille kokenutta strategianäkemystä, 
@@ -223,7 +217,7 @@ fi: &DEFAULT_FI
         url: /fi/services/fractional-ai-lead.html
         link-text: Lue lisää Fractional AI Lead palvelusta yrityksille
       - sid: ai-coaching
-        title: "<b>#2</b> AI-valmennus"
+        title: "#2 AI-valmennus"
         brief: ""
         desc: >
           Tekoälyn nopeaan haltuunottoon, tehokkaaseen kehotemuotoiluun (promptaukseen) ja jokapäiväisten automaatioiden rakentamiseen käytännönläheisesti.
@@ -234,7 +228,7 @@ fi: &DEFAULT_FI
         url: /fi/services/ai-coaching.html
         link-text: Lue lisää johdon ja hallituksen AI-valmennuksesta
       - sid: ai-consulting
-        title: "<b>#3</b> AI-konsultointi"
+        title: "#3 AI-konsultointi"
         brief: ""
         desc: >
           Yrityksen tekoälymahdollisuuksien ymmärtämiseen, tekoälymuutoksen toteutussuunnitelman luomiseen tai tietyn tekoälyn ja datan tehokkaaseen käyttöön liittyvän 
@@ -248,7 +242,7 @@ fi: &DEFAULT_FI
     title: Käytännön kokemusta tuloksekkaaseen johtamiseen
     text: Palvelen PK-yrityksiä AI Leadina fractional-mallilla. Teen myös johdon AI-valmennuksia ja AI-konsultointeja yritysten täsmätarpeisiin.
     body: >
-      Minulla on 20 vuoden kokemus IT-konsultointi- ja ohjelmistokehitys-liiketoiminnasta sekä SaaS-liiketoiminnasta.
+      Minulla on 20 vuoden kokemus IT-konsultointi- ja ohjelmistokehitysliiketoiminnasta sekä SaaS-liiketoiminnasta.
       Urallani olen toiminut toimitusjohtajana, käynnistänyt data- ja tekoälyosaamiseen perustuvia liiketoimintoja sekä johtanut tuote- ja teknologiakehitystä.
       Erityisosaamistani johtamisen ohella ovat data- ja tekoälyosaamista vaativat hankkeet, sekä toiminta vahvasti reguloiduissa tietointensiivisissä ympäristöissä.
       <br /><br />
@@ -268,14 +262,14 @@ fi: &DEFAULT_FI
   wayforward:
     title: Selkeydellä hankkeissa eteenpäin
     contentlist:
-      - header: 1. Kartoitus
+      - header: Kartoitus
         body: Käymme lyhyen keskustelun, jossa käsitellään tavoiteltavat tulokset, mahdolliset esteet ja aiemmat kokeilut.
-      - header: 2. Määritelmä
+      - header: Määritelmä
         body: Yhteisymmärrys ongelman ytimestä sekä sovimme selkeät mittarit sille, miltä onnistunut lopputulos näyttää.
-      - header: 3. Ratkaisu
+      - header: Ratkaisu
         body: Laadin selkeän ehdotuksen, joka vastaa suoraan kipupisteisiin ja johtaa ongelman ratkaisuun.
-      - header: 4. Toteutus
-        body: Käynnistämme yhteistyön nopeasti ja etenemme hallituin askelmerkein. Muutamme suunnitelmaa tarvittaessa.
+      - header: Toteutus
+        body: Käynnistämme yhteistyön reippaasti ja etenemme hallituin askelmerkein. Muutamme suunnitelmaa tarvittaessa.
       
 
 #  clients:

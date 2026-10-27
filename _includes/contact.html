@@ -3,11 +3,16 @@
 {% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
   {% assign contentSection = site.data.sitetext[curlang.locale].contact %}
 {% endif %}
-
+{% comment %} Optional override of the call-to-action button label, e.g. {% include contact.html cta-btn-text="Start a Conversation" %} {% endcomment %}
+{% assign contactButtonLabel = include.cta-btn-text | default: contentSection.contact-now %}
+{% assign formHeader = include.form-header | default: contentSection.title %}
+{% if include.headless == true %}
+  {% assign headlessHide=" d-none" %}
+{% endif %}
 <!-- Contact -->
 <section id="contact">
   <div class="container text-center">
-    <a class="btn btn-xl btn-secondary js-scroll-trigger" id="contact-form-show-btn" href="#contact">{{ contentSection.contact-now }}</a>
+    <a class="btn btn-xl btn-secondary js-scroll-trigger" id="contact-form-show-btn" href="#contact">{{ contactButtonLabel }}</a>
     {% if contentSection.text != "" and contentSection.text != null %}
       <p class="text-muted">{{ contentSection.text | default: "" }}</p>
     {% endif %}
@@ -15,8 +20,8 @@
   <div class="container d-none" id="contact-form-container">
     <div class="row">
       <div class="col-lg-12">
-        <h2 class="section-heading">
-          {{ contentSection.title | default: Contact Us }}</h2>
+        <h2 class="section-heading{{ headlessHide }}">
+          {{ formHeader | default: Contact Us }}</h2>
       </div>
     </div>
     <div class="row">
@@ -69,6 +74,7 @@
             </div>
             <input id="companyIdNumber" type="text" name="companyIdNumber" placeholder="Company ID number*" value="" />
             <input id="_gotcha" type="text" name="_gotcha" placeholder="What is 2+two*" value="" />
+            <input id="pageFrom" type="hidden" name="pageFrom" value="{{ page.url }}" />
             <input type="hidden" name="_next" value="#" />
             <input type="hidden" name="access_key" value="" />
           </div>

@@ -1,6 +1,7 @@
 // Styling for the navbar
 @use "sass:color";
 nav#mainNav {
+  //background-color: green;
   background-color: $dark-rgb-opa-0_7;
   backdrop-filter: blur(5px);
 
@@ -190,9 +191,36 @@ nav#mainNav {
         color: $body;
         font-size: 1.1rem;
         @include heading-font;
+        
         &.active,
         &:hover {
           //color: color.adjust($body, $lightness: -10%, $space: hsl);
+        }
+      }
+
+      &.has-sub-nav {
+        
+        & a::after {
+          font-size: 80%;
+          content: " \23f7"; // Black Medium Down-Pointing Triangle
+        }
+
+        &.subnav-open a::after {
+          content: " \23f6"; // Black Medium Up-Pointing Triangle
+        }
+
+        ul.subnav { 
+          padding-left: 2em;
+
+          li {            
+            & a::after {
+              content: "";
+            }
+
+            a {
+              
+            }
+          }
         }
       }
     }
@@ -223,6 +251,11 @@ nav#mainNav {
   }
 }
 
+#subNavShade {
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+}
+
 @media (min-width: 992px) {
   nav#mainNav {
     padding-top: 25px;
@@ -245,12 +278,49 @@ nav#mainNav {
       list-style-type: none;
 
       .nav-item {
+        position: relative;
+
         .nav-link {
           transition: all 0.3s;
           -moz-transition: all 0.3s;
           transition: all 0.3s;
           padding: 0.5em 1.5em !important;
           margin-bottom: 16px;
+        }
+
+        &.has-sub-nav {
+          & a::after {
+            font-size: 80%;
+            content: " \23f7"; // Black Medium Down-Pointing Triangle
+          }
+
+          &.subnav-open a::after {
+            content: " \23f6"; // Black Medium Up-Pointing Triangle
+          }
+
+          ul.subnav { 
+            position: absolute;
+            padding-left: 1em;
+            width: 300px;
+            line-height: 0.3em;
+            height: 100%;
+            transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;
+
+            &.d-none {
+              transition: all 0.3s;
+              -moz-transition: all 0.3s;
+              transition: all 0.3s;
+              height: 0;
+            }
+
+            li {            
+              & a::after {
+                content: "";
+              }
+            }
+          }
         }
       }
     }
@@ -264,6 +334,7 @@ nav#mainNav {
       padding-bottom: 0;
       position: fixed;
       background-color: $dark-rgb-opa-0_7;
+      //background-color: green;
       backdrop-filter: blur(5px);
       
       .navbar-brand {
@@ -272,10 +343,20 @@ nav#mainNav {
       }
 
       .navbar-nav, #lang-chooser {
+        
         .nav-item {
+          
           .nav-link {
             margin-bottom: 0;
-          }          
+          }
+
+          &.has-sub-nav {
+                       
+            ul.subnav { 
+              
+              line-height: 1em;
+            }          
+          }
         }
       }
     }
@@ -295,6 +376,38 @@ nav#mainNav {
         font-size: 2rem;
         margin-top: -5px;
       }
+    }
+  }
+
+  div#subNavShade {
+    z-index: 1;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top:119px;
+    left: 0;
+    right: 0;
+    height: 120px;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom:0;
+    display: none;
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+
+    &.navbar-shrink {
+      transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      background-color: $dark-rgb-opa-0_7;
+      top: 67px;
+    }
+
+    &.d-none {
+      transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
     }
   }
 }

@@ -12,12 +12,13 @@ body {
   @include body-font;
 }
 
-.container {
-  //padding: 0;
-}
-
 p {
   padding-top: 10px;
+}
+
+
+strong {
+ font-weight: 500;
 }
 
 span.line {
@@ -77,6 +78,28 @@ h4 {
   @include heading-font;
 }
 
+ul {
+  list-style-type: none;
+}
+
+ul.common-list li {
+  &::before {
+    position: absolute;
+    left: 0.2em;
+    content: "\2713";
+    color: $light;
+  }
+}
+
+ul.common-no-list li {
+  &::before {
+    position: absolute;
+    left: 0.2em;
+    content: "\10102";
+    color: $light;
+  }
+}
+
 section {
   padding-top: 2em;
   padding-bottom: 2em;
@@ -132,4 +155,8 @@ img::selection {
 
 img::-moz-selection {
   background: transparent;
+}
+
+div.container.unpad-100 {
+  margin-top: -100px;
 }

@@ -1,0 +1,95 @@
+// ==============================================================
+//  Collaboration model page — /collaboration-model.html
+//  The three ways of working together.
+//
+//  The grid is Bootstrap's .row / .col-lg-4 — this file only
+//  styles the cards themselves.
+// ==============================================================
+
+.collaboration-page {
+  .sp-collaboration {
+    margin-top: 2.2rem;
+    text-align: left;
+
+    div.row>div {
+      margin: 10px 0;
+    }
+
+    // A single collaboration model card
+    &-card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin-bottom: 8px;
+      padding: 1.6rem 1.5rem 1.7rem;
+      background-color: $dark;
+      border: 1px solid $gray-900;
+      border-top: 3px solid $secondary;
+      border-radius: 5px;
+
+      h3 {
+        margin: .4rem 0 .3rem;
+        font-size: 1.3rem;
+        font-weight: 300;
+      }
+    }
+
+    // "#1" prefix of a card
+    &-num {
+      font-size: .78rem;
+      letter-spacing: .18em;
+      color: $secondary;
+      @include heading-font;
+    }
+
+    // The model, e.g. "Ongoing engagement"
+    &-basis {
+      margin: 0 0 .3rem;
+      padding-top: 0;
+      //color: $secondary;
+      font-size: .95rem;
+    }
+
+    // How the model is defined
+    &-detail {
+      margin: 0 0 1em;
+      padding-top: 0;
+      font-size: .92rem;
+      color: $text-muted;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0 0 1.2em;
+      padding: 0;
+    }
+
+    li {
+      position: relative;
+      margin-bottom: .6em;
+      padding-left: 1.2em;
+      line-height: 1.6;
+      font-size: .93rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: .68em;
+        width: .45em;
+        height: .45em;
+        border-radius: 50%;
+        background-color: $secondary;
+      }
+    }
+
+    // The link to the service page, pushed to the bottom
+    a {
+      margin-top: auto;
+    }
+  }
+}

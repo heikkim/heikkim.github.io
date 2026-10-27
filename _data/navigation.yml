@@ -11,9 +11,17 @@
 # -----------------
 en: &DEFAULT_EN
   nav:
-    - title: "Services"
-      section: services
-      url: /#services
+    - title: Services
+      section: services_
+      url: 
+      collapseNavbarOnClick: false
+      subnav:
+        - title: "#1 Fractional AI Lead"
+          url: /services/fractional-ai-lead.html
+        - title: "#2 AI Coaching"
+          url: /services/ai-coaching.html
+        - title: "#3 AI Consulting"
+          url: /services/ai-consulting.html
 #    - title: "Portfolio"
 #      section: portfolio
 #    - title: "Timeline"
@@ -23,6 +31,10 @@ en: &DEFAULT_EN
     - title: "Experience"
       section: about
       url: /#about
+    - title: "Collaboration Model"
+      section: collaboration
+      url: /collaboration-model.html
+      page: true
     - title: "Contact"
       section: contact # Check spc.js where this has a binding.
       url: /#contact
@@ -42,8 +54,16 @@ en-AU:
 fi: &DEFAULT_FI
   nav:
     - title: "Palvelut"
-      section: services
+      section: services_
       url: /fi/#services
+      collapseNavbarOnClick: false
+      subnav:
+        - title: "#1 Fractional AI Lead"
+          url: /fi/services/fractional-ai-lead.html
+        - title: "#2 AI-valmennus"
+          url: /fi/services/ai-coaching.html
+        - title: "#3 Tekoälykonsultointi"
+          url: /fi/services/ai-consulting.html
 #    - title: "Portafolio"
 #      section: portafolio
 #    - title: "Sobre Nosotros"
@@ -53,6 +73,10 @@ fi: &DEFAULT_FI
     - title: "Kokemus"
       section: about
       url: /fi/#about
+    - title: "Yhteistyömalli"
+      section: collaboration
+      url: /fi/collaboration-model.html
+      page: true
     - title: "Yhteys"
       section: contact # Check spc.js where this has a binding.
       url: /fi/#contact

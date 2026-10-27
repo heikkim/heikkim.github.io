@@ -4,10 +4,15 @@ const __SPC_DEBUG = false;
 function spc_init() {
     spc_initContactButtonShowForm();
     spc_initNavItemContacFormShow();
+    spc_initSecondaryContactCTAs();
     
     spc_initServiceOnclicks();
 
     spc_initOpenContactTimer();
+
+    spc_fixScrollWhenComingToFrontPageFromSinglePage();
+
+    spc_bindSubNavFunctionality();
 
     if(__SPC_PERIODIC_REFRESH === true) {
         setTimeout(function() {window.location.reload();}, 700);
@@ -24,6 +29,14 @@ function spc_getContactFormShowButton() {
 
 function spc_getContactNavItem() {
     return $("#nav-link-contact");
+}
+
+function spc_getMainNav() {
+    return $("#mainNav");
+}
+
+function spc_getSubNavShade() {
+    return $("#subNavShade")
 }
 
 function spc_showContactForm() { 
@@ -68,19 +81,109 @@ function spc_initOpenContactTimer() {
             }, 400);
         }
     } catch (ex) {
-        //swallow
+        if(__SPC_DEBUG) {
+            console.log(ex);
+        }
     }
 }
 
 function spc_getAcW() {
-    const acws = 'f65444e:.9f46.5299.:3:3.8g2bfb12bg8g';
+    const acws = ('fgg81', 'f65444e:.9f46.' +
+     "5299.:3:3.8g2bfb12bg8g");
     var acw = '';
 
     for(var ci = 0; ci < acws.length; ci++) {
         var c = acws.charCodeAt(ci);
-
         acw += String.fromCharCode(c-1);
     }
     
     return acw;   
+}
+
+function spc_fixScrollWhenComingToFrontPageFromSinglePage() {
+    var url = new URL(window.location.href);
+    
+    if(url.href.indexOf("#") > -1) {
+        try {
+            var naviLinks = $("#navbarResponsive").find("ul").first().find("li a"); 
+            var _continue = true;
+            
+            naviLinks.each(function() {
+                if(_continue) {
+                    var link = $(this);
+                    var linkHref = link.attr("href");
+
+                    if(!linkHref) {
+                        return;
+                    }
+
+                    if(linkHref.indexOf(".html") > -1) {
+                        // Links to a separate page navigate away — no scroll fix needed.
+                        return;
+                    }
+
+                    if(url.href.indexOf(linkHref) > -1) {
+                        link.click();
+                        _continue = false;
+                    }
+                }
+            });
+        } catch(ex) {
+            if(__SPC_DEBUG) {
+                console.log(ex);
+            }
+        }
+
+    }
+}
+
+function spc_initSecondaryContactCTAs() {
+    $(".contact-secondary-cta").on("click", function(e) {
+        e.preventDefault();
+        spc_getContactFormShowButton().click();       
+    });
+}
+
+function spc_bindSubNavFunctionality() {
+    var navsWithSubNav = $("#navbarResponsive").find("ul li.has-sub-nav");
+
+    navsWithSubNav.each(function() {
+        var navListItem = $(this);
+        var links = navListItem.find("a");
+
+        links.each(function() {
+            var link = $(this);
+
+            if(link.parentsUntil("ul").parent().hasClass("subnav")) {            
+                return;
+            }
+
+            link.on("click", function(e) {
+                e.preventDefault();
+                
+                var uls = link.siblings("ul");
+                uls.toggleClass("d-none");
+                navListItem.toggleClass("subnav-open");
+
+                uls.each(function() {
+                    try {
+                        const mainNav = spc_getMainNav();
+                        const subNavShade = spc_getSubNavShade();
+
+                        if(!$(this).hasClass("d-none")) {
+                            //subNavShade.css("top", num + unit);
+                            subNavShade.show();
+                        } else {
+                            //subNavShade.css("top", num + unit);
+                            subNavShade.hide();
+                        }
+                    } catch(ex) {
+                        if(__SPC_DEBUG) {
+                            console.log(ex);
+                        }
+                    }
+                });
+            });
+        });
+    });
 }

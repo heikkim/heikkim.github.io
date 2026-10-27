@@ -37,6 +37,9 @@ $contact-image: "{{ site.data.style.contact-image }}";
 // Layout
 @import "layout/masthead.scss";
 @import "layout/services.scss";
+@import "layout/box-list.scss";
+@import "layout/service-page.scss";
+@import "layout/collaboration.scss";
 @import "layout/about.scss";
 @import "layout/wayforward.scss";
 //@import "layout/portfolio.scss";

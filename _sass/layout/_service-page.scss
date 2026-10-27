@@ -1,0 +1,273 @@
+@use "sass:color";
+
+// ==============================================================
+//  Service pages — /services/*
+//  Shared structure for main services.
+//
+//  The structure follows the site theme:
+//    $primary (page background), $lessdark / $dark (panels),
+//    $secondary (green accent), $info / $success (support colours)
+// ==============================================================
+
+.service-page {
+  padding-bottom: 2.5em;
+
+  // ----------------------------------------------------------
+  //  1. Hero — headline, sub-header and executive summary
+  // ----------------------------------------------------------
+  .service-hero {
+    padding: 1em 0 3em;
+    text-align: center;
+
+    h1.service-title {
+      font-size: 3.5rem;
+      line-height: 1.1;
+      margin: 0 0 .35em;
+      color: $secondary;
+      @include heading-font;
+
+      @media (min-width: 576px) {
+        font-size: 3rem;
+      }
+
+      @media (min-width: 992px) {
+        font-size: 3.4rem;
+      }
+    }
+
+    .service-subtitle {
+      font-size: 1.3rem;
+      font-style: italic;
+      color: &body;
+      margin-bottom: 1.8em;
+      @include serif-font;
+    }
+  }
+
+  // Executive summary paragraph (hero + call to action)
+  .service-lead {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding-top: 0;
+    font-size: 1.12rem;
+    line-height: 1.8;
+  }
+
+  // ----------------------------------------------------------
+  //  2/3/5/6/8. Sections — challenge, approach, scope, fit, CTA
+  // ----------------------------------------------------------
+  section {
+    padding: 3.25em 0;
+    border-top: 1px solid $gray-900;
+
+    h2.section-heading {
+      font-size: 2.3em;
+      margin-bottom: 1.2em;
+    }
+
+    h3.section-subheading {
+      font-size: 1rem;
+      margin-bottom: 2.4em;
+    }
+  }
+
+  // Readable, left aligned body copy inside a centred section
+  .service-prose {
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+
+    p {
+      padding-top: 0;
+      font-size: 1.02rem;
+      line-height: 1.8;
+    }
+
+    p + p {
+      margin-top: 1.1em;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // ----------------------------------------------------------
+  //  5/6. Bullet lists — deliverables and ideal fit
+  // ----------------------------------------------------------
+  .service-list {
+    list-style: none;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+
+    li {
+      position: relative;
+      margin-bottom: .85em;
+      padding-left: 1.9em;
+      line-height: 1.7;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  // ----------------------------------------------------------
+  //  4. VISUAL SLOT 1
+  // ----------------------------------------------------------
+
+  // ----------------------------------------------------------
+  //  Cross links to the other services — a direction giver
+  // ----------------------------------------------------------
+  .service-crosslinks {
+    max-width: 768px;
+    margin: 4em auto 0;
+    padding: 1em 1.5em;
+    border-left: 3px solid $success;
+    border-radius: 0 5px 5px 0;
+    //background-color: rgba($success, .12);
+    text-align: left;
+    font-size: 1rem;
+
+    h5 {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      position: relative;
+      margin-bottom: .7em;
+      line-height: 1.65;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  // Link to the collaboration model page, placed under the engagement model
+  .service-collaboration-link {
+    max-width: 52rem;
+    margin: 1.6em auto 0;
+    text-align: center;
+  }
+
+  // ----------------------------------------------------------
+  //  7. VISUAL SLOT 2 — engagement model / pricing box
+  // ----------------------------------------------------------
+  .sp-engagement {
+    max-width: 52rem;
+    margin: 0 auto;
+    border: 1px solid $gray-900;
+    border-radius: 8px;
+    background-color: $dark;
+    overflow: hidden;
+    text-align: left;
+
+    &-head {
+      padding: 1.4em 1.8em;
+      background-color: $lessdark;
+      border-bottom: 1px solid $gray-900;
+
+      h3 {
+        margin: 0 0 .25em;
+        font-size: 1.3rem;
+      }
+
+      p {
+        margin: 0;
+        padding-top: 0;
+        font-size: .95rem;
+        color: $text-muted;
+      }
+    }
+
+    &-list {
+      margin: 0;
+      padding: 0;
+    }
+
+    &-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4em 1.6em;
+      padding: .95em 1.8em;
+      border-bottom: 1px solid $gray-900;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      dt {
+        flex: 0 0 12rem;
+        font-size: .88rem;
+        letter-spacing: .06em;
+        text-transform: uppercase;
+        color: $secondary;
+        @include heading-font;
+      }
+
+      dd {
+        flex: 1 1 18rem;
+        margin: 0;
+        line-height: 1.6;
+      }
+    }
+
+    &-note {
+      margin: 0;
+      padding: 1.1em 1.8em;
+      border-top: 1px solid $gray-900;
+      font-size: .92rem;
+      color: $text-muted;
+    }
+  }
+
+  // ----------------------------------------------------------
+  //  8. Next steps — call to action
+  // ----------------------------------------------------------
+  .service-cta {
+    text-align: center;
+
+    .service-lead {
+      margin-bottom: .8em;
+    }
+  }
+
+  .service-middesc-cta {
+    margin-top: 30px;
+    padding-left: 20px;
+    float: left;
+  }
+
+  // ----------------------------------------------------------
+  //  Sections pulled in from _includes (contact, wayforward)
+  //  bring their own .container — let it fill the page width
+  //  without adding a second level of gutters.
+  // ----------------------------------------------------------
+  section#contact > .container,
+  section#wayforward > .container {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  // The framework (wayforward) is a full-width visual slot
+  section#wayforward {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    h2.section-heading {
+      font-size: 2.3em;
+      margin-bottom: .45em;
+      text-align: center;
+    }
+  }
+}

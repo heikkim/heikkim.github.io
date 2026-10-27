@@ -11,6 +11,7 @@ section#about {
       div#intro {
         text-justify: inter-word;
         padding-bottom: 15px;
+        hyphens: auto;
 
         div.headshot {
           float: left; 

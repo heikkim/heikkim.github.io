@@ -3,16 +3,202 @@ layout: page
 title: "AI Consulting for Companies, Boards and Organisations"
 navtype: absolute
 lang: en
+meta:
+  title: "AI Consulting"
+  description: "Specific solutions to specific AI and data problems for SMEs - from opportunity sizing and business cases to vendor selection and execution."
 ---
-<section>
-  <div class="container">
+{% assign service=site.data.sitetext[page.lang].services.list | where: "sid", "ai-consulting" | first %}
+<div class="service-page">
+
+  <!-- 1. Hero — headline and executive summary -->
+  <section class="service-hero">
     <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Specific solutions to specific problems, no matter the scale</h2>
-        <p>
-          To keep up pace is to know what to do next.
+      <div class="col-lg-10 offset-lg-1 text-center">
+        <h1 class="service-title">{{ service.title }}</h1>
+        <p class="service-subtitle">Specific solution to specific problem.</p>
+        <p class="service-lead">
+          For the AI question that does not fit a standard playbook. A specific data or AI roadblock, an opportunity
+          you cannot size, a business case you need to understand<br /><strong>or an AI strategy that requiring overhaul.</strong><br />Bring in the outside view, define the real problem and
+          turn it into an executable plan.
         </p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- 2. The core challenge -->
+  <section id="the-challenge">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 text-center">
+        <h2 class="section-heading">The Challenge</h2>
+        <div class="service-prose">
+          <p>
+            Most AI work stalls at the question stage. The reality is the data is scattered, the
+            process is manual, the business case is unclear and nobody can point to the first step. The board
+            asks for a plan, management asks for a number, and a vendor you speak to answers whatever you want to hear.
+          </p>
+          <p>
+            The trouble is that an AI problem is rarely one problem. It is a data-readiness problem, a process
+            problem, an ownership problem and a change problem. Solve the wrong one and the ROI potential is gone: 
+            you buy a platform nobody adopts, or you automate a process you should have redesigned.
+          </p>
+          <p>
+            And there is one gap nobody can fill. Might be you're too close to the problem to see it clearly, 
+            and every vendor you speak to has a product to sell you before they have understood it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. The approach and solution -->
+  <section id="the-solution">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 text-center">
+        <h2 class="section-heading">The Solution</h2>
+        <div class="service-prose">
+          <p>
+            Start from the problem, not from a tool or a method.
+          </p>
+          <p>
+            Understand the situation, the constraints, the data reality and organisational tacit knowledge.
+            Create mutual understanding of the problem and what influences the outcome.
+            Design an experiment, or MVP that solves the problem. There is always more than one way to solve a problem, with different trade-offs.
+            Execute with clear accountabliity. Without actions and measurement there's no controlled progress.
+          </p>
+          <p>
+            Rarely it is possible, let alone productive, to figure out things alone.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Visual slot 1 — the framework -->
+  <section id="the-framework">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 text-center">
+        <h2 class="section-heading">Kickstart focus on the problem</h2>
+        <div class="sp-boxlist">
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <div class="sp-boxlist-item">
+                <h5><span class="sp-boxlist-num">#1</span> Discovery</h5>
+                <p>A brief conversation to cover targeted outcomes, potential roadblocks, and previous attempts.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="sp-boxlist-item">
+                <h5><span class="sp-boxlist-num">#2</span> Definition</h5>
+                <p>Alignment on the root problem and clear metrics defining what a successful outcome looks like.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="sp-boxlist-item">
+                <h5><span class="sp-boxlist-num">#3</span> Solution</h5>
+                <p>A clear proposal tailored directly to your pain points and structured to solve the core issue.</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="sp-boxlist-item">
+                <h5><span class="sp-boxlist-num">#4</span> Execution</h5>
+                <p>Rapid project kickoff with measured, step-by-step progress, adapting the plan as needed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="service-middesc-cta">
+            <a class="contact-secondary-cta content-link" href="#">Start a conversation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Scope and deliverables -->
+  <section id="scope">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 text-center">
+        <h2 class="section-heading">The "lense" and prescription, possible outcomes for the company</h2>
+        <ul class="service-list common-list">
+          <li><strong>Opportunity assessment:</strong> a prioritized mapping of AI use cases across the company.</li>
+          <li><strong>AI readiness and data audit:</strong> what data you hold, where it lives, and what it can legally and technically be used for.</li>
+          <li><strong>Business case and investment plan:</strong> costs, benefits and ROI written out.</li>
+          <li><strong>Target operating model:</strong> ownership, decision rights and the governance that keeps AI use compliant.</li>
+          <li><strong>Vendor selection:</strong> evaluation criteria, an objective shortlist and an independent recommendation.</li>
+          <li><strong>Execution plan:</strong> a sequenced roadmap with owners, dependencies and milestones.</li>
+          <li><strong>First solutions:</strong> actual productivitiy increasing solutions.</li>
+          <li><strong>Handover:</strong> documentation, training and internal capability, so the work keeps running.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Ideal fit -->
+  <section id="fit">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 text-center">
+        <h2 class="section-heading">This is for</h2>
+        <ul class="service-list common-list">
+          <li>SMEs with a specific, AI or data problem, a regulatory constraint or a project that has stalled.</li>
+          <li>Boards and executive teams who need an independent view on specific AI investment or use case.</li>
+          <li>Business units needing an outside expert, e.g. use cases, opportunity sizing, AI operating model.</li>
+          <li>Companies standing between "we should do something" and "we know exactly what, and how".</li>
+        </ul>
+        <div class="service-crosslinks">
+          <h5>Looking for something else?</h5>
+          <ul>
+            <li><strong>Fractional AI Lead</strong> when you need continuous AI leadership and company transformation.<a class="content-link" href="/services/fractional-ai-lead.html"><span class="line">Read more about Fractional AI Lead for Companies</span></a></li>
+            <li><strong>AI Coaching</strong> when you want to boost your own productivity through 1-to-1 AI skills development. <a class="content-link" href="/services/ai-coaching.html"><span class="line">Read more about AI Coaching for senior leaders</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% comment %}
+  <section id="engagement">
+    <div class="row">
+      <div class="col-lg-10 offset-lg-1 text-center">
+        <h2 class="section-heading">Engagement Model</h2>
+        <div class="sp-engagement">
+          <div class="sp-engagement-head">
+            <h3>AI Consulting project-based or hourly blocks</h3>
+            <p>Scoped tightly, defined up front, and always independent of any vendor.</p>
+          </div>
+          <dl class="sp-engagement-list">
+            <div class="sp-engagement-row">
+              <dt>Format</dt>
+              <dd>A defined project, or a standing block of days per month for ongoing questions.</dd>
+            </div>
+            <div class="sp-engagement-row">
+              <dt>Typical shape</dt>
+              <dd>A four to eight week project, or a recurring monthly block of days.</dd>
+            </div>
+            <div class="sp-engagement-row">
+              <dt>Model</dt>
+              <dd>Defined project, or a block of days per month. Agreed in writing before any work starts.</dd>
+            </div>
+            <div class="sp-engagement-row">
+              <dt>Deliverables</dt>
+              <dd>A concrete artefact at every step assessment, business case, plan, or an implemented first solution.</dd>
+            </div>
+            <div class="sp-engagement-row">
+              <dt>Independence</dt>
+              <dd>No vendor commissions, no product agenda, and nothing to resell at the end of the project.</dd>
+            </div>
+            <div class="sp-engagement-row">
+              <dt>Handover</dt>
+              <dd>All findings documented and handed over. No dependency on me to keep the work alive.</dd>
+            </div>
+          </dl>
+          <p class="sp-engagement-note">Scope is confirmed after the discovery call, in writing, before any work begins. If the project turns out not to make sense, I will tell you then too.</p>
+        </div>
+        <p class="service-collaboration-link">
+          <a class="content-link" href="/collaboration-model.html">See how the three collaboration models compare</a>
+        </p>
+      </div>
+    </div>
+  </section>
+{% endcomment %}
+
+  {% include service-cta-contact.html %}
+</div>

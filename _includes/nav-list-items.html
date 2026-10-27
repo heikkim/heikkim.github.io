@@ -1,0 +1,49 @@
+{% comment %}
+    Parameters:
+    - nav:      The actual navigation as in navigation.yml.
+    - navtype:  Either absolute or scroll.
+{% endcomment %}
+{% assign nav=include.nav %}
+{% assign navtype=include.navtype %}
+
+{% for link in nav %}
+
+    {% if link.subnav != null %}
+        {% assign hasSubNav = true %}
+        {% assign subNavClass = " has-sub-nav" %}
+    {% else %}
+        {% assign hasSubNav = false %}
+        {% assign subNavClass = "" %}
+    {% endif %}
+    
+    {% if link.collapseNavbarOnClick != null %}
+        {% assign collapseNavbarOnClick = link.collapseNavbarOnClick %}
+    {% else %}
+        {% assign collapseNavbarOnClick = true %}
+    {% endif %}
+
+    {% assign href = "#" %}
+
+    <li class="nav-item{{ subNavClass }}">
+    {%- if link.url and navtype == "absolute" -%}
+        {% assign href = link.url %}
+    {%- elsif link.url and link.page -%}
+        {% comment %} Links to a separate page always keep their url {% endcomment %}
+        {% assign href = link.url %}
+    {%- elsif link.section and navtype == "scroll" -%}
+        {% comment %} nav-link-contactf has a binding in spc.js {% endcomment %}
+        {% assign href = "#" | append: link.section %}
+    {%- endif -%}
+
+    <a class="nav-link js-scroll-trigger" href="{{ href }}" id="nav-link-{{ link.section }}" data-lang="{{ link.lang }}" data-collapsenavbaronclick="{{ collapseNavbarOnClick }}">
+        {{ link.title }}
+    </a>
+
+    {% if hasSubNav %}
+        <ul class="subnav d-none">
+        {% include nav-list-items.html nav=link.subnav navtype="absolute" %}
+        </ul>
+    {% endif %}
+
+    </li>
+{% endfor %}

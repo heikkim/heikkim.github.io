@@ -16,7 +16,11 @@
   }); 
   
   jQ(".js-scroll-trigger").click(function() {
-    jQ(".navbar-collapse").collapse("hide")
+    var elem = $(this);
+
+    if(elem.attr("data-collapsenavbaronclick") == "true") {
+      jQ(".navbar-collapse").collapse("hide");
+    }
   }); 
   
   jQ("body").scrollspy({
@@ -25,7 +29,17 @@
   });
 
   function windowSizeWatcher() {
-    100 < jQ("#mainNav").offset().top ? jQ("#mainNav").addClass("navbar-shrink") : jQ("#mainNav").removeClass("navbar-shrink")
+    var mainNav = jQ("#mainNav");
+    var subNavShade = jQ("#subNavShade");
+
+    if(mainNav.offset().top > 100) {
+      mainNav.addClass("navbar-shrink");
+      subNavShade.addClass("navbar-shrink");
+    } else {
+      mainNav.removeClass("navbar-shrink");
+      subNavShade.removeClass("navbar-shrink");
+    }
+    
   }
   
   windowSizeWatcher(), jQ(window).scroll(windowSizeWatcher)
