@@ -1,0 +1,85 @@
+// Styling for the cookie consent banner
+
+// The banner is a fixed bar at the bottom of the window. The colour set
+// follows the footer and the navigation bar.
+#cookie-consent {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1040;
+  padding: 25px 0;
+  background-color: $dark;
+  border-top: 2px solid $secondary;
+
+  &:focus {
+    outline: none;
+  }
+
+  p {
+    padding-top: 0;
+  }
+
+  .cookie-consent-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+
+  .cookie-consent-text {
+    font-size: 0.95rem;
+    margin-bottom: 0;
+  }
+
+  // The category list, shown when the visitor opens the settings
+  .cookie-consent-options {
+    margin-bottom: 15px;
+    padding-top: 15px;
+    border-top: 1px solid $gray-700;
+
+    .cookie-consent-option {
+      margin-bottom: 5px;
+
+      .custom-control-label {
+        color: $body;
+      }
+    }
+
+    // The necessary category is always on and cannot be switched off
+    .custom-control-input:disabled ~ .custom-control-label {
+      color: $text-muted;
+    }
+
+    // The indicator of the checked category follows the site colour
+    .custom-control-input:checked ~ .custom-control-label::before {
+      background-color: $secondary;
+      border-color: $secondary;
+    }
+
+    .cookie-consent-option-text {
+      font-size: .92rem;
+      color: $text-muted;
+      margin-bottom: 15px;
+    }
+  }
+
+  .cookie-consent-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .btn {
+      margin-right: 10px;
+    }
+
+    // The settings link is a quiet action next to the two main choices
+    .cookie-consent-toggle {
+      color: $body;
+      text-decoration: underline;
+
+      &:hover,
+      &:focus {
+        color: $light;
+      }
+    }
+  }
+}

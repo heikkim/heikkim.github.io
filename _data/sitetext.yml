@@ -163,9 +163,24 @@ en: &DEFAULT_EN
     submit: "Send Message"
     contact-now: Let's talk AI.
 
+  cookie-consent:
+    title: "We value your privacy"
+    text: "We use cookies to run this site and, with your permission, to see how it is used. You can accept all cookies, reject the optional ones or choose per category."
+    accept: "Accept all"
+    reject: "Reject non-essential"
+    settings: "Manage settings"
+    save: "Save choices"
+    necessary-name: "Necessary cookies"
+    necessary-text: "Required for the site to work. They store your cookie choice."
+    analytics-name: "Analytics cookies"
+    analytics-text: "Google Analytics tells us how visitors use the site. Used only if you allow it."
+    policy-text: "Read our privacy policy"
+    policy-url: "/legal.html"
+    settings-link: "Cookie settings"
+
   footer:
     legal: "Privacy Policy"
-    legal-url: "/spc-privacy-policy.html"
+    legal-url: "/legal.html"
     social:
 #      - url: https://x.com
 #        icon: "fab fa-twitter"
@@ -334,9 +349,24 @@ fi: &DEFAULT_FI
     submit: "Lähetä"
     contact-now: Aloitetaan keskustelu.
 
+  cookie-consent:
+    title: "Arvostamme yksityisyyttäsi"
+    text: "Käytämme evästeitä sivuston toimintaan ja luvallasi seuraamme sen käyttöä. Voit hyväksyä kaikki evästeet, hylätä valinnaiset tai valita luokittain."
+    accept: "Hyväksy kaikki"
+    reject: "Hylkää valinnaiset"
+    settings: "Hallitse asetuksia"
+    save: "Tallenna valinnat"
+    necessary-name: "Välttämättömät evästeet"
+    necessary-text: "Tarvitaan sivuston toimintaan. Ne tallentavat evästevalintasi."
+    analytics-name: "Analytiikkaevästeet"
+    analytics-text: "Google Analytics kertoo, miten kävijät käyttävät sivustoa. Käytetään vain, jos sallit."
+    policy-text: "Lue tietosuojaseloste"
+    policy-url: "/fi/legal.html"
+    settings-link: "Evästesasetukset"
+
   footer:
     legal: "Tietosuojaseloste"
-    legal-url: "/spc-tietosuojaseloste.html"
+    legal-url: "/fi/legal.html"
     social:
 #      - url: https://x.com
 #        icon: "fab fa-x-twitter"

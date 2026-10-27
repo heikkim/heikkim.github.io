@@ -1,7 +1,9 @@
 {% assign curlang = site.languages | where: "code", page.lang | first %}
-{% assign footerSection = site.data.sitetext.footer %}
+{% assign footerSection = site.data.sitetext["en"]["footer"] %}
+{% assign consentSection = site.data.sitetext["en"]["cookie-consent"] %}
 {% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
   {% assign footerSection = site.data.sitetext[curlang.locale].footer %}
+  {% assign consentSection = site.data.sitetext[curlang.locale]["cookie-consent"] %}
 {% endif %}
 
 <!-- Footer -->
@@ -30,16 +32,19 @@
       <div class="col-md-4">
         <ul class="list-inline quicklinks">
           <li class="list-inline-item">
-          {% comment %}
-          <a href="footerSection.legal-url">{{ footerSection.legal | default: "Privacy Policy" }}</a>
-          {% endcomment %}  
+            <a href="{{ footerSection.legal-url }}">{{ footerSection.legal }}</a>
           </li>
+          {% if consentSection %}
+          <li class="list-inline-item">
+            <a href="#" class="js-cookie-settings">{{ consentSection["settings-link"] }}</a>
+          </li>
+          {% endif %}
         </ul>
       </div>
     </div>
   </div>
 </footer>
-{% if page.layout == "page" %}
+{% if page.layout == "page" or page.layout == "legal" %}
 <script>
   fixPageShort();
   function fixPageShort() {

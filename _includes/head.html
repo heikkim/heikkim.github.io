@@ -1,19 +1,15 @@
 {% assign curlang = site.languages | where: "code", page.lang | first %}
 <head>
   {% if site.analytics.google %}
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google }}"></script>
-  <script type="application/javascript">
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "{{ site.analytics.google }}");
+  <!-- Google Analytics is loaded only after the visitor has accepted analytics cookies -->
+  <script>
+    window.spcAnalyticsId = "{{ site.analytics.google }}";
   </script>
-  <!-- End Google Analytics -->
   {% endif %}
+
+  <!-- The visitor preference cookie (consent, language, ...) -->
+  <script src="/assets/js/spc-cookie.js"></script>
+  <script src="/assets/js/spc-analytics.js"></script>
 
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -35,26 +31,4 @@
 
   <!-- Custom styles for this theme --> 
   <link href="/assets/css/agency.css" rel="stylesheet" />
-
-<style type="text/css">
- * {
-      //min-width: 500px;
-      //border: 1px solid salmon;
-    }
-</style>
-
-  <!-- Page container change top padding when nav shrinks -->
-  {% if page.layout == "page" %}
-  <style>
-   
-    #pagecontainer {
-      padding-top: 150px;
-    }
-    @media only screen and (max-width: 991px) {
-      #pagecontainer {
-        padding-top: 100px;
-      }
-    }
-  </style>
-  {% endif %}
 </head>

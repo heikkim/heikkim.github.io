@@ -14,6 +14,10 @@ function spc_init() {
 
     spc_bindSubNavFunctionality();
 
+    spc_initCookieConsent(); // in spc-cookie-consent.js
+
+    spc_bindCookieChangeToLangMenu();
+
     if(__SPC_PERIODIC_REFRESH === true) {
         setTimeout(function() {window.location.reload();}, 700);
     }
