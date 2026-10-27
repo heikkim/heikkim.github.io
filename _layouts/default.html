@@ -1,6 +1,8 @@
+{% comment %} The language of the page, resolved before the html tag is written {% endcomment %}
+{% assign curlang = site.languages | where: "code", page.lang | first %}
 <!DOCTYPE html>
-<html lang="{{ curlang.locale | slice: 0,2 | default: "en" }}">
-
+<html lang="{{ curlang.locale | slice: 0,2 | default: "fi" }}">
+  <!-- © 2026 StrongPoint Consulting. All rights reserved. -->
   {% include head.html %}
 
   <body id="page-top">

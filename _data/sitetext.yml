@@ -29,7 +29,7 @@ en: &DEFAULT_EN
           <br /><br />
           By integrating directly with your 
           management team I help you define, plan, coordinate, initiate and maintain momentum of your company's AI initiative, at scale.
-        url: /services/fractional-ai-lead.html
+        url: /en/services/fractional-ai-lead.html
         link-text: Read more about Fractional AI Lead for Companies
       - sid: ai-coaching
         title: "#2 AI Coaching"
@@ -39,13 +39,13 @@ en: &DEFAULT_EN
           Immediate focus will be on discovering what creates value for your work day right now.
           <br /><br />
           In case you're already using AI daily: Learn how to be a power user who uses AI for strategising and agents for more complex tasks utilising Agent Skills.
-        url: /services/ai-coaching.html
+        url: /en/services/ai-coaching.html
         link-text: Read more about AI Coaching for Leaders
 #      - sid: ai-tooling
 #        title: "AI Tooling"
 #        brief: ""
 #        desc:           
-#        url: /services/ai-tooling.html
+#        url: /en/services/ai-tooling.html
 #        link-text: Read more about AI Tooling for Teams and Organisations
       - sid: ai-consulting
         title: "#3 AI Consulting"
@@ -55,7 +55,7 @@ en: &DEFAULT_EN
           or in solving a specific challenge related to effective use of AI / data in the company.
           <br /><br />
           Any matter related to company AI use that benefits having an external view.
-        url: /services/ai-consulting.html
+        url: /en/services/ai-consulting.html
         link-text: Read more about AI Consulting for Companies
 #      - sid: agentic-ai
 #        title: "Agentic AI"
@@ -65,7 +65,7 @@ en: &DEFAULT_EN
 #          for most companies. Choosing the right tasks to do, or getting around LLM quirks is a serious time consumer most companies want to skip. I can help you build 
 #          automations that take your business processes into account, are well defined and actually deliver. This service is when you want to take advantage of agentic automation potential, 
 #          while focusing on your business.
-#        url: /services/agentic-ai.html
+#        url: /en/services/agentic-ai.html
 #        link-text: Read more about Agentic AI services for Teams & Organisations
 
   about:
@@ -175,12 +175,12 @@ en: &DEFAULT_EN
     analytics-name: "Analytics cookies"
     analytics-text: "Google Analytics tells us how visitors use the site. Used only if you allow it."
     policy-text: "Read our privacy policy"
-    policy-url: "/legal.html"
+    policy-url: "/en/legal.html"
     settings-link: "Cookie settings"
 
   footer:
     legal: "Privacy Policy"
-    legal-url: "/legal.html"
+    legal-url: "/en/legal.html"
     social:
 #      - url: https://x.com
 #        icon: "fab fa-twitter"
@@ -229,7 +229,7 @@ fi: &DEFAULT_FI
           <br /><br />
           Integroidun suoraan osaksi johtoryhmäänne. Autan määrittelemään, suunnittelemaan, koordinoimaan, käynnistämään ja ylläpitämään 
           yrityksen tekoälyhankkeiden vauhtia. Otan tarkasti huomioon yrityksenne kulttuurin ja toimintatavat.
-        url: /fi/services/fractional-ai-lead.html
+        url: /services/fractional-ai-lead.html
         link-text: Lue lisää Fractional AI Lead palvelusta yrityksille
       - sid: ai-coaching
         title: "#2 AI-valmennus"
@@ -240,7 +240,7 @@ fi: &DEFAULT_FI
           <br /><br />
           Jos käytät jo tekoälyä päivittäin: Opi ChatGPT-tehokäyttäjäksi, joka hyödyntää tekoälyä strategiatyössä sekä agenteja
           monimutkaisemmissa tehtävissä agenttitaitojen (Agent Skills) avulla.
-        url: /fi/services/ai-coaching.html
+        url: /services/ai-coaching.html
         link-text: Lue lisää johdon ja hallituksen AI-valmennuksesta
       - sid: ai-consulting
         title: "#3 AI-konsultointi"
@@ -250,19 +250,19 @@ fi: &DEFAULT_FI
           haasteen ratkaisemiseen.
           <br /><br />
           Ulkopuolisen asiantuntijanäkemyksen saamiseen yrityksen tekoälyn käyttöön liittyvään asiaan.
-        url: /fi/services/ai-consulting.html
+        url: /services/ai-consulting.html
         link-text: Lue lisää tekoälykonsultoinnista yrityksille ja organisaatioille
   
   about:
     title: Käytännön kokemusta tuloksekkaaseen johtamiseen
     text: Palvelen PK-yrityksiä AI Leadina fractional-mallilla. Teen myös johdon AI-valmennuksia ja AI-konsultointeja yritysten täsmätarpeisiin.
     body: >
-      Minulla on 20 vuoden kokemus IT-konsultointi- ja ohjelmistokehitysliiketoiminnasta sekä SaaS-liiketoiminnasta.
-      Urallani olen toiminut toimitusjohtajana, käynnistänyt data- ja tekoälyosaamiseen perustuvia liiketoimintoja sekä johtanut tuote- ja teknologiakehitystä.
+      Minulla on 20 vuoden kokemus IT-konsultointi- ja softakehitys-liiketoiminnasta sekä SaaS-liiketoiminnasta.
+      Urallani olen toiminut toimitusjohtajana, käynnistänyt data- ja AI-osaamiseen perustuvia liiketoimintoja sekä johtanut tuote- ja teknologiakehitystä.
       Erityisosaamistani johtamisen ohella ovat data- ja tekoälyosaamista vaativat hankkeet, sekä toiminta vahvasti reguloiduissa tietointensiivisissä ympäristöissä.
       <br /><br />
       Toimin nopeasti, otan omistajuuden hankkeen edistämisestä ryhdikkäästi ja määrätietoisesti. Yrityksenne tarpeista ja tavoitteista lähtemällä muodostamme 
-      toiminta- ja investointisuunnitelman mittaristoineen. Fractional-malli mahdollistaa asiakkailleni kustannustehokkaan ja riskittömän tavan saada johtoryhmään mukaan 
+      toiminta- ja investointi-suunnitelman mittaristoineen. Fractional-malli mahdollistaa asiakkailleni kustannustehokkaan ja riskittömän tavan saada johtoryhmään mukaan 
       kokenut ulkopuolinen johtaja.
       <br /><br />
       Viimeisin kolutukseni on Aalto Executive Educationin MBA (2022), josta valmistuin erinomaisin arvosanoin.
@@ -361,12 +361,12 @@ fi: &DEFAULT_FI
     analytics-name: "Analytiikkaevästeet"
     analytics-text: "Google Analytics kertoo, miten kävijät käyttävät sivustoa. Käytetään vain, jos sallit."
     policy-text: "Lue tietosuojaseloste"
-    policy-url: "/fi/legal.html"
+    policy-url: "/legal.html"
     settings-link: "Evästesasetukset"
 
   footer:
     legal: "Tietosuojaseloste"
-    legal-url: "/fi/legal.html"
+    legal-url: "/legal.html"
     social:
 #      - url: https://x.com
 #        icon: "fab fa-x-twitter"

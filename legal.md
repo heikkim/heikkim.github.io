@@ -1,45 +1,47 @@
 ---
 layout: legal
-lang: en
+title: Tietosuojaseloste
+lang: fi
 meta:
-  title: Privacy Policy
-  description: StrongPoint Consulting policy for utilising personal information on the website.
+  title: Tietosuojaseloste
+  description: Näin StrongPoint Consulting kerää, käyttää ja jakaa henkilötietoja sivustollaan.
 ---
-## PRIVACY POLICY
-This Privacy Policy describes how your personal information is collected, used, and shared when you visit {{ site.title }} (the “Site”).
+## TIETOSUOJASELOSTE
 
-**PERSONAL INFORMATION WE COLLECT**
+Tämä tietosuojaseloste kertoo, miten henkilötietojasi kerätään, käytetään ja jaetaan, kun vierailet sivustolla {{ site.title }} (”Sivusto”).
+
+**KERÄÄMME HENKILÖTIETOJA**
 
 {% if site.analytics.google %}
 
-Analytics (Google Analytics):
+Analytiikka (Google Analytics):
 
-We use Google Analytics to understand how the Site is used. Google Analytics is loaded only after you have accepted analytics cookies, so nothing is measured before you have given your consent. When you do, we automatically receive information about your device from your browser, such as your IP address. As you browse the Site, we also collect information about how you interact with the Site. We refer to this automatically-collected information as “Device Information”.
+Käytämme Google Analyticsia selvittääksemme, miten Sivustoa käytetään. Google Analytics ladataan vasta, kun olet hyväksynyt analytiikkaevästeet, joten mitään ei mitata ennen kuin olet antanut suostumuksesi. Hyväksynnän jälkeen saatme automaattisesti selaimeltasi tietoja laitteestasi, kuten IP-osoitteesi. Samalla kun selaat Sivustoa, keräämme myös tietoja siitä, miten käytät Sivustoa. Kutsumme näitä automaattisesti kerättyjä tietoja ”Laitetiedoiksi”.
 
-We collect Device Information using cookies. “Cookies” are data files that are placed on your device. For more information about cookies and how to disable them, visit http://www.allaboutcookies.org.
+Keräämme laitetiedot evästeiden avulla. ”Evästeet” ovat tiedostoja, jotka tallennetaan laitteellesi.
 
-We do this using Google Analytics: <https://www.google.com/intl/en/policies/privacy/>.
+Käytämme tähän Google Analyticsia: <https://www.google.com/intl/fi/policies/privacy/>.
 
-You can opt-out of Google Analytics here: <https://tools.google.com/dlpage/gaoptout>.
+Voit kieltää Google Analyticsin täältä: <https://tools.google.com/dlpage/gaoptout>.
 
 {% else %}
 
-We do not collect any data about you or use any cookies.
+Emme kerää mitään henkilötietoja emmekä käytä evästeitä.
 
 {% endif %}
 
-**YOUR CHOICES**
+**OMAT VALINTASI**
 
-Your cookie choice is stored in a preference cookie on your device, together with your language selection. This way we only ask you once and we remember how you want to browse the Site. You can change your choice at any time with the “Cookie settings” link in the footer of the Site. If you withdraw your consent, the analytics cookies are removed from your device.
+Evästevalintasi tallennetaan laitteesi asetus-evästeeseen yhdessä kielivalintasi kanssa. Näin kysymme sinulta vain kerran ja muistamme, miten haluat Sivustoa käyttää. Voit muuttaa valintaa milloin tahansa Sivuston alaosassa olevasta ”Evästesasetukset”-linkistä. Jos peruutat suostumuksesi, analytiikkaevästeet poistuvat laitteeltasi.
 
-**CHANGES**
+**MUUTOKSET**
 
-We may update this privacy policy from time to time for personal, operational, legal, or regulatory reasons.
+Voimme päivittää tätä tietosuojaselostetta ajoittain henkilökohtaisista, toiminnallisista, laillisista tai sääntelyyn liittyvistä syistä.
 
-**CONTACT US**
+**OTA YHTEYTTÄ**
 
-For more information about our privacy practices or if you have questions, please contact us through our website at <https://www.strongpointconsulting.fi/>.
+Lisätietoja tietosuojakäytännöistämme tai jos sinulla on kysymyksiä, ota yhteyttä verkkosivumme kautta: <https://www.strongpointconsulting.fi/>.
 
-**Privacy policy reviewed**
+**Tietosuojaseloste tarkastettu**
 
 27.10.2026

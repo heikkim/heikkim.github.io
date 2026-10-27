@@ -14,12 +14,12 @@ section#services {
       position: relative;
 
       p {
-        padding-bottom: 2em;
+        padding-bottom: 2.5em;
       }
 
       a.service-link { 
         position: absolute;
-        bottom: 8px;
+        bottom: 10px;
       }
 
       &:hover {
@@ -32,7 +32,7 @@ section#services {
 
   h4.service-heading {
     color: $secondary;
-    margin-bottom: 0.5em;
+    margin: 0.25em 0;
 
     /*&::before {
       content: "\2039\00a0";

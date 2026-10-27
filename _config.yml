@@ -44,17 +44,17 @@ markdown: kramdown
 #  - jekyll-remote-theme
 
 languages:
-  - code: en
-    label: English
-    text: In english
-    url: /
-    htmllang: en_US
-    hreflang: en-US
-    locale: en-US
   - code: fi
     label: Suomi
     text: Suomeksi
-    url: /fi/
+    url: /
     htmllang: fi_FI
     hreflang: fi-FI
     locale: fi-FI
+  - code: en
+    label: English
+    text: In english
+    url: /en/
+    htmllang: en_US
+    hreflang: en-US
+    locale: en-US

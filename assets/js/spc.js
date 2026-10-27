@@ -144,7 +144,21 @@ function spc_fixScrollWhenComingToFrontPageFromSinglePage() {
 function spc_initSecondaryContactCTAs() {
     $(".contact-secondary-cta").on("click", function(e) {
         e.preventDefault();
-        spc_getContactFormShowButton().click();       
+        spc_getContactFormShowButton().click();
+    });
+}
+
+/*
+ * Remember the language the visitor picks from the language menu, so that the
+ * choice is known on the next visit.
+ */
+function spc_bindCookieChangeToLangMenu() {
+    $("#lang-chooser").find("a").on("click", function() {
+        var lang = $(this).attr("data-lang");
+
+        if(lang) {
+            spc_cookieSet("lang", lang);
+        }
     });
 }
 

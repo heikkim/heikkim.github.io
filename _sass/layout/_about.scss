@@ -9,9 +9,8 @@ section#about {
       margin-top: 20px;
 
       div#intro {
-        text-justify: inter-word;
+        //text-justify: inter-word;
         padding-bottom: 15px;
-        hyphens: auto;
 
         div.headshot {
           float: left; 
@@ -32,6 +31,7 @@ section#about {
 
         p {
           padding-top: 0;
+          hyphens: auto;
         }
       }
 

@@ -50,21 +50,14 @@ footer {
     }
   }
 
-  a {
-    color: $primary;
-  }
-
   ul.quicklinks {
     line-height: 40px;
     margin-bottom: 0;
     text-transform: none;
-   
-
+  
     li a {
-      color: $body;
-
-      &:hover {
-        //color: color.adjust($primary, $lightness: -10%, $space: hsl);
+        &:hover {
+        text-decoration: underline;
       }
     }
   }
@@ -92,5 +85,11 @@ footer {
         }
       }
     }
+  }
+}
+
+div.legal {
+  a {
+    text-decoration: underline;
   }
 }

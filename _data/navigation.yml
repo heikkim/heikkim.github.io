@@ -17,11 +17,11 @@ en: &DEFAULT_EN
       collapseNavbarOnClick: false
       subnav:
         - title: "#1 Fractional AI Lead"
-          url: /services/fractional-ai-lead.html
+          url: /en/services/fractional-ai-lead.html
         - title: "#2 AI Coaching"
-          url: /services/ai-coaching.html
+          url: /en/services/ai-coaching.html
         - title: "#3 AI Consulting"
-          url: /services/ai-consulting.html
+          url: /en/services/ai-consulting.html
 #    - title: "Portfolio"
 #      section: portfolio
 #    - title: "Timeline"
@@ -30,14 +30,14 @@ en: &DEFAULT_EN
 #      section: team
     - title: "Experience"
       section: about
-      url: /#about
+      url: /en/#about
     - title: "Collaboration Model"
       section: collaboration
-      url: /collaboration-model.html
+      url: /en/collaboration-model.html
       page: true
     - title: "Contact"
       section: contact # Check spc.js where this has a binding.
-      url: /#contact
+      url: /en/#contact
 #    - title: "Theme Source"
 #      url: https://github.com/raviriley/agency-jekyll-theme/
 en-US:
@@ -55,15 +55,15 @@ fi: &DEFAULT_FI
   nav:
     - title: "Palvelut"
       section: services_
-      url: /fi/#services
+      url: /#services
       collapseNavbarOnClick: false
       subnav:
         - title: "#1 Fractional AI Lead"
-          url: /fi/services/fractional-ai-lead.html
+          url: /services/fractional-ai-lead.html
         - title: "#2 AI-valmennus"
-          url: /fi/services/ai-coaching.html
+          url: /services/ai-coaching.html
         - title: "#3 Tekoälykonsultointi"
-          url: /fi/services/ai-consulting.html
+          url: /services/ai-consulting.html
 #    - title: "Portafolio"
 #      section: portafolio
 #    - title: "Sobre Nosotros"
@@ -72,14 +72,14 @@ fi: &DEFAULT_FI
 #      section: cronologia
     - title: "Kokemus"
       section: about
-      url: /fi/#about
+      url: /#about
     - title: "Yhteistyömalli"
       section: collaboration
-      url: /fi/collaboration-model.html
+      url: /collaboration-model.html
       page: true
     - title: "Yhteys"
       section: contact # Check spc.js where this has a binding.
-      url: /fi/#contact
+      url: /#contact
 #    - title: "Fuente de la plantilla"
 #      url: https://github.com/raviriley/agency-jekyll-theme/
 fi-FI:

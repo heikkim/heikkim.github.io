@@ -1,7 +1,7 @@
 ---
 layout: home
-lang: en
+lang: fi
 meta:
-    title: Fractional AI Lead, AI coaching, AI consulting agency
-    description: Leading AI initiatives with a fractional basis, management AI coaching and specific solutions to unique AI problems in companies. Let's talk AI!
+    title: Fractional AI Lead, Tekoälyvalmennus, Tekoälykonsultointi
+    description: Yrityksen tekoälyhankkeiden johto fractional-mallilla, johdon tekoälyosaamisen kehittäminen sekä täsmäratkaisut tekoälyn käyttöön. Aloita keskustelu nyt!
 ---
