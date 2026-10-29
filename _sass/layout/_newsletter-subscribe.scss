@@ -1,0 +1,78 @@
+// ==============================================================
+//  Newsletter subscription — the form and the exit intent modal.
+//
+//  The form reuses the standard Bootstrap form controls and the
+//  button styles of the site. Only the parts that Bootstrap does
+//  not cover are styled here:
+//    $secondary   green accent
+//    $text-muted  secondary text
+// ==============================================================
+
+.newsletter-form {
+  .form-control {
+    border-radius: 4px;
+  }
+}
+
+// The confirmation shown right after a submission
+.newsletter-success {
+  margin: 10px 0 0;
+  padding-top: 0;
+  font-size: 0.95rem;
+  color: $secondary;
+}
+
+// The newsletter block of the footer
+.newsletter-footer {
+  max-width: 560px;
+  margin: 0 auto 30px;
+
+  .newsletter-title {
+    margin-bottom: 5px;
+  }
+
+  .newsletter-text {
+    margin-bottom: 20px;
+    padding-top: 0;
+  }
+
+  // The link to the info page of the newsletter
+  .newsletter-info {
+    margin: 15px 0 0;
+    padding-top: 0;
+  }
+}
+
+// The exit intent modal
+.js-exit-intent-modal {
+  .modal-content {
+    background-color: $lessdark;
+    border: 1px solid $gray-900;
+  }
+
+  .newsletter-modal-title {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+  }
+
+  .newsletter-modal-text {
+    margin-bottom: 20px;
+    padding-top: 0;
+  }
+
+  // The close button in the corner of the panel
+  .newsletter-modal-close {
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    z-index: 2;
+    color: $light;
+    text-shadow: none;
+    opacity: .6;
+
+    &:hover,
+    &:focus {
+      color: $white;
+    }
+  }
+}

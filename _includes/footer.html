@@ -1,13 +1,29 @@
 {% assign curlang = site.languages | where: "code", page.lang | first %}
 {% assign footerSection = site.data.sitetext["en"]["footer"] %}
 {% assign consentSection = site.data.sitetext["en"]["cookie-consent"] %}
+{% assign newsletterSection = site.data.sitetext["en"]["newsletter"] %}
 {% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
   {% assign footerSection = site.data.sitetext[curlang.locale].footer %}
   {% assign consentSection = site.data.sitetext[curlang.locale]["cookie-consent"] %}
+  {% assign newsletterSection = site.data.sitetext[curlang.locale]["newsletter"] %}
 {% endif %}
 
 <!-- Footer -->
 <footer id="footer">
+  {% if newsletterSection %}
+  <div class="container">
+    <div class="newsletter-footer">
+      <h3 class="newsletter-title">{{ newsletterSection.title }}</h3>
+      {% if page.isNewsLetterPage == null and page.isNewsLetterPage != true %}
+      <p class="newsletter-text text-muted">{{ newsletterSection.text }}</p>
+        {% include newsletter-subscribe.html lang=page.lang id="newsletter-footer" %}
+      {% endif %}
+      <p class="newsletter-info">
+        <a class="content-link" href="{{ newsletterSection.info-url }}">{{ newsletterSection.info-link }}</a>
+      </p>
+    </div>
+  </div>
+  {% endif %}
   <div class="container">
     <div class="row align-items-center">
       <div class="col-md-4">

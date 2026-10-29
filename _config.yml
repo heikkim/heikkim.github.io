@@ -1,6 +1,6 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
+# This config file is meant for settings that affect your whole site, values
 # which you are expected to set up once and rarely edit after that.
 # This file is *NOT* reloaded automatically when you use 'bundle exec jekyll serve'.
 # If you change this file, please restart the server process.
@@ -17,7 +17,7 @@
 DEBUG  : false
 
 url    : "" #"https://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
-baseurl: "" # the subpath of your site, e.g. /blog. Do not set to "/" to avoid wrong canonical meta link path 
+baseurl: "" # the subpath of your site, e.g. /posts. Do not set to "/" to avoid wrong canonical meta link path 
 
 title      : "StrongPoint Consulting" # Also check _data/_sitetext.yml for what's visible on the page.
 description: Fractional AI Lead, AI coaching and AI consulting agency # This is used only if there is no specific description available for the page
@@ -42,6 +42,89 @@ markdown: kramdown
 
 #plugins:
 #  - jekyll-remote-theme
+
+# ==============================================================
+#  Posts
+#
+#  Posts live in a two level folder structure:
+#
+#    _posts/<lang>/<category>/YYYY-MM-DD-<slug>.md
+#
+#  - the first folder picks the language (fi = default, en)
+#  - the second folder is the category, and its name is also the
+#    category slug of the post
+#
+#  The defaults below read the language, the layout, the permalink
+#  and the category of a post from its folder path. A post can
+#  still override any of them in its own front matter.
+#
+#  The category slug, the date and the file name are language
+#  neutral, so a Finnish post and its English counterpart share
+#  the same URL apart from the /en prefix. The language chooser
+#  relies on that.
+# ==============================================================
+
+permalink: /posts/:categories/:year/:month/:day/:title:output_ext
+
+defaults:
+  # ---- The default language of a post --------------------------
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      lang: fi
+      layout: posts
+
+  # ---- Finnish posts ------------------------------------------
+  - scope:
+      path: "_posts/fi"
+      type: "posts"
+    values:
+      lang: fi
+      layout: posts
+      permalink: /posts/:categories/:year/:month/:day/:title/
+
+  # ---- English posts ------------------------------------------
+  - scope:
+      path: "_posts/en"
+      type: "posts"
+    values:
+      lang: en
+      layout: posts
+      permalink: /en/posts/:categories/:year/:month/:day/:title/
+
+  # ---- Categories ----------------------------------------------
+  # One entry per category folder. The folder name is the slug of
+  # the category, the visible name is set in _data/sitetext.yml.
+  #
+  # A new category needs three things:
+  #   1. the folder _posts/<lang>/<category>
+  #   2. an entry here, for both languages
+  #   3. the visible name in _data/sitetext.yml
+  #
+  # A post can add categories of its own in the front matter. They
+  # are merged with the category of the folder, the same way Jekyll
+  # always merges categories.
+  - scope:
+      path: "_posts/fi/ai-strategy"
+      type: "posts"
+    values:
+      categories: [ai-strategy]
+  - scope:
+      path: "_posts/en/ai-strategy"
+      type: "posts"
+    values:
+      categories: [ai-strategy]
+  - scope:
+      path: "_posts/fi/leadership"
+      type: "posts"
+    values:
+      categories: [leadership]
+  - scope:
+      path: "_posts/en/leadership"
+      type: "posts"
+    values:
+      categories: [leadership]
 
 languages:
   - code: fi

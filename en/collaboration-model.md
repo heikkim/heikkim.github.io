@@ -3,18 +3,17 @@ layout: page
 title: "Collaboration Model"
 navtype: absolute
 lang: en
-meta:
-  title: "Collaboration Model"
-  description: "Simple, transparent collaboration models for SMEs: an ongoing fractional AI Lead engagement, a one-to-four week AI coaching program, and project-based AI consulting."
+meta_title: "Collaboration Model"
+meta_description: "Simple collaboration models for SMEs: an ongoing fractional AI Lead engagement, a one-to-four week AI coaching program, and project-based AI consulting."
 ---
 <div class="service-page collaboration-page">
 
   <!-- 1. Hero -->
-  <section class="service-hero">
+  <section class="page-hero">
     <div class="row">
       <div class="col-lg-10 offset-lg-1 text-center">
-        <h1 class="service-title">Collaboration Model</h1>
-        <p class="service-subtitle">Clarity, transparency, no surprises.</p>
+        <h1>Collaboration Model</h1>
+        <p class="page-subtitle">Clarity, transparency, no surprises.</p>
         <p class="service-lead">
           Every collaboration starts with a brief, no-commitment discovery call. After it you know exactly which model
           fits, what it takes and what you get before you commit to anything. The scope is always confirmed in
@@ -28,7 +27,7 @@ meta:
   <section id="models">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Engagement through services</h2>
+        <h2>Engagement through services</h2>
         <div class="sp-collaboration">
           <div class="row">
             <div class="col-lg-4">
@@ -52,9 +51,9 @@ meta:
               <p class="sp-collaboration-detail">One program for the whole period, confirmed after the discovery call.</p>
               <ul class="common-list">
                 <li>One-to-one, live, on your own work</li>
+                <li>Diagnostic of your workflow</li>
                 <li>Prompt library, automations and agentic</li>
                 <li>Your own AI operating manual</li>
-                <li>14 days of office hours afterwards</li>
               </ul>
               <a class="content-link" href="/en/services/ai-coaching.html">Read more about AI Coaching</a>
               </div>
@@ -84,7 +83,7 @@ meta:
   <section id="included">
     <div class="row">
       <div class="col-lg-10 offset-lg-1 text-center">
-        <h2 class="section-heading">Always Included</h2>
+        <h2>Always Included</h2>
         <ul class="service-list common-list">
           <li><strong>A no-commitment discovery call</strong> maps your situation before anything else.</li>
           <li><strong>A written scope</strong> is agreed before the work starts, with no surprises in between.</li>
@@ -99,7 +98,7 @@ meta:
   <section class="service-cta" id="next-steps">
     <div class="row">
       <div class="col-lg-8 offset-lg-2">
-        <h2 class="section-heading">Let's Talk AI.</h2>
+        <h2>Let's Talk AI.</h2>
         <p class="service-lead">
           Not sure which model fits? That is exactly what the discovery call is for. Tell me where you are, and I
           will tell you which of the services makes sense for you, <br />including if the answer is none of them.

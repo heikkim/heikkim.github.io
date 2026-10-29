@@ -7,11 +7,15 @@ section#services {
   div.row {
     .service-col /* column */ {
       min-height: 100px;
-      margin: 6px;
+      margin: 8px;
       padding: 7px 15px;
       border-radius: 5px;
-      border: 1px solid $gray-900; 
+      //border: 1px solid $gray-900; 
       position: relative;
+
+    transition: background 0.3s;
+      -moz-transition: background 0.3s;
+      transition: background 0.3s;
 
       p {
         padding-bottom: 2.5em;
@@ -24,6 +28,9 @@ section#services {
 
       &:hover {
       //border: 1px solid color.adjust($secondary, $lightness: -60%, $space: hsl);
+      transition: background 0.3s;
+      -moz-transition: background 0.3s;
+      transition: background 0.3s;
       cursor: pointer;
       background: linear-gradient($lessdark, $dark);
     }
@@ -41,5 +48,19 @@ section#services {
     &::after {
       content: "\00a0\203A";
     }*/
+  }
+}
+
+@media(max-width: 768px) {
+  section#services {
+    div.row {
+      .service-col /* column */ {
+        margin: 6px 6px 76px;
+
+        &.last-service-desc {
+          margin: 6px;
+        }
+      }
+    }
   }
 }

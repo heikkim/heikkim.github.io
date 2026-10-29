@@ -8,7 +8,7 @@ lang: en
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Agentic business automation starts with an intent</h2>
+        <h2>Agentic business automation starts with an intent</h2>
         <p>
           WIP
           <!--Autonomous business agents built on mainstream AI models are the new normal. Lack of time and knowhow is a limiting factor

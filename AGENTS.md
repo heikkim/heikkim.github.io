@@ -28,8 +28,16 @@ Heikki, the human you are interacting with.
 
 **CSS, HTML and styling rules:**
 - Re-use common CSS files and page specific CSS files when editing. Every HTML page should have their own corresponding CSS except small include snippets.
-- Use Bootstrap layouts and avoid "DIV soup" at all cost.
-- Write out whole CSS rules instead of extensive use of "&-postfix" references.
+- Write out whole CSS specifier (e.g. class name `.css-class`) instead of extensive use of `&-postfix-css-class` references.
+- When needing a header for content, use one of `h1`, `h2`, `h3`, `h4`, `h5`, `h6` without additional styling or changing font-size.
+- Grid layouts: Use Bootstrap's `.row` and `.col` classes with their respective derivatives such as `.col-lg` and `.col-lg-NUMBER`.
+- Use Bootstrap layouts and avoid "DIV soup" at all cost. Oftentimes a simple `<section>` or a `<div class="container">` suffices and no grid is needed.
+- When needing to contain an element: Use Bootstrap's `.container` class with an HTML `<div>` element.
+- Text-alignment: Use Bootstrap's `text-POSITION`, e.g. `text-center`
+- Never use more than one decimal place in a CSS property, e.g. NOT `font-size: 1.54rem;`, USE `font-size: 1.5rem` instead.
+- CSS `width`, `max-width`, `height` and `max-height` properties' units should always be expressed in `px`, i.e. not for example in `em` or `rem`.
+- CSS `margin` property's unit should most commonly be expressed in `px`.
+- Unordered lists `<ul>` should be styled by default with `.common-list` class.
 - Aim for simplicity and re-use in rules.
 - DO NOT create a horde of different sized fonts. Re-use what's defined in the project in similar elements.
 - DO NOT define every element's styles explicitly if a close equivalent already cascades from `body` or similar parent.
@@ -37,16 +45,6 @@ Heikki, the human you are interacting with.
 - DO NOT invent new colors, but re-use what has been defined already. Check `_sass/base/variables.scss` and `_sass/base/bootstrap_variables.scss` and existing stylesheets.
 - DO NOT take new fonts into use but use what's given in `_sass/base/mixins.css`. Oftentimes you do not need to use `@import` for a font since the right one already cascades from `body`.
 - DO NOT invent new list style types such as "chevron" or "dot", but use what's already defined.
-
-**CSS and styling examples:**
-- Grid layouts: Use Bootstrap's `.row` and `.col` classes with their respective derivatives such as `.col-lg` and `.col-lg-NUMBER`.
-- When needing to contain an element: Use Bootstrap's `.container` class with an HTML `<div>` element.
-- Text-alignment: Use Bootstrap's `text-POSITION`, e.g. `text-center`
-- Instead of using CSS property `font-size: 1.54rem;`, use `font-size: 1.5rem`.
-- CSS `width`, `max-width`, `height` and `max-height` properties' units should always be expressed in `px`, i.e. not for example in `em` or `rem`.
-- CSS `margin` property's unit should most commonly be expressed in `px`.
-- When needing a header for content, use one of `h1`, `h2`, `h3`, `h4`, `h5` without additional styling.
-- Unordered lists `<ul>` should be styled by default with `.common-list` class.
 
 **Framework source file rules:**
 - DO NOT edit Bootstrap SCSS source files under `_sass/bootstrap/`
@@ -67,7 +65,7 @@ Check container breakpoints in `_sass/base/bootstrap_variables.scss` variable `$
 - DO NOT create another gray box with new colors when you need one, but re-use what's built already.
 - Favor simplicity and clarity over complexity and visual clutter.
 - CTAs should be subtly placed, but always there.
-- Cross-links to services from blog content and other services are important.
+- Cross-links to services from post content and other services are important.
 - Single pages, which are usually long-text such as `fractional-ai-lead.html`, have content directly on the page. Separate language version with the same name resides in another folder, e.g. `fi/fractional-ai-lead.html`.
 - Mashup page (`index.html`) content is in `_data/sitetext.yml`. Separate language versions are handled with Jekyll page parametrisation.
 

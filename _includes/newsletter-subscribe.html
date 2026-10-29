@@ -1,0 +1,50 @@
+{% comment %}
+  The newsletter subscription form.
+
+  A single email field and a submit button. The include holds no heading of
+  its own, so it can be dropped into a footer, a sidebar or an article as it
+  is. The caller adds the wording around it.
+
+  Parameters:
+  - lang:  the language of the labels, "fi" by default
+  - id:    a unique id for the form. Give every instance its own, e.g.
+           "newsletter-footer", so the label of the field stays unique.
+  - always: true keeps the form on the page even for a subscriber. A form
+           marked as always is there to be used, not to tell the visitor
+           whether they have subscribed already.
+{% endcomment %}
+{% assign lang = include.lang | default: "fi" %}
+{% assign curlang = site.languages | where: "code", lang | first %}
+{% assign newsletterText = site.data.sitetext.newsletter %}
+{% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
+  {% assign newsletterText = site.data.sitetext[curlang.locale].newsletter %}
+{% endif %}
+{% assign formId = include.id | default: "newsletter" %}
+{% assign alwaysClass = "" %}
+{% if include.always == true %}
+  {% assign alwaysClass = " js-newsletter-always" %}
+{% endif %}
+
+<div class="js-newsletter" id="newsletter-{{ formId }}">
+  <form class="newsletter-form js-newsletter-form{{ alwaysClass }}" id="newsletter-form-{{ formId }}"
+    action="{{ newsletterText.action | default: "#" }}" method="post">
+
+    <div class="form-row align-items-center">
+      <div class="col-sm-8">
+        <label class="sr-only" for="newsletter-email-{{ formId }}">{{ newsletterText.placeholder }}</label>
+        <input type="email" class="form-control js-newsletter-email" id="newsletter-email-{{ formId }}"
+          name="email" placeholder="{{ newsletterText.placeholder }}" required="required">
+      </div>
+      <div class="col-sm-4 mt-2 mt-sm-0">
+        <button type="submit" class="btn btn-secondary btn-block js-newsletter-submit">{{ newsletterText.submit }}</button>
+      </div>
+    </div>
+
+    {% comment %} Keeps the form out of the spam folders, same as the contact form. {% endcomment %}
+    <input class="d-none" type="text" name="companyIdNumber" placeholder="Company ID number*" value="" />
+    <input class="d-none" type="text" name="_gotcha" placeholder="What is 2+two*" value="" />
+    <input type="hidden" name="pageFrom" value="{{ page.url }}" />
+  </form>
+  {% comment %} Shown only right after a submission, never to a subscriber. {% endcomment %}
+  <p class="newsletter-success js-newsletter-success d-none" role="status">{{ newsletterText.success }}</p>
+</div>

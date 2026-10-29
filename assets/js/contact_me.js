@@ -16,20 +16,26 @@ $(function() {
 
       // get values from FORM
 	    var url = $form.attr('action');
-      var name = $("input#name").val();
-      var username = $("input#username").val();
-      var email = $("input#email").val();
-      var phone = $("input#phone").val();
-      var message = $("textarea#message").val();
-      var pageFrom = $("input#pageFrom").val();
+      var name = $form.find("input[name=name]").val();
+      var username = $form.find("input[name=username]").val();
+      var email = $form.find("input[name=email]").val();
+      var phone = $form.find("input[name=phone]").val();
+      var message = $form.find("textarea[name=message]").val();
+      var pageFrom = $form.find("input[name=pageFrom]").val();
       var firstName = name; // For Success/Failure Message
+      
       // Check for white space in name for Success/Fail message
       if (firstName.indexOf(' ') >= 0) {
         firstName = name.split(' ').slice(0, -1).join(' ');
       }
-      $this = $("#sendMessageButton");
+          
+      if(username !== ''){ // Disable's form submit if hidden input(username) has been filled
+        return;
+      }
+
+      $this = $("#sendContactFormBtn");
       $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
-      if(username === ''){ // Disable's form submit if hidden input(username) has been filled
+
       $.ajax({
         url: url,
         type: "POST",
@@ -40,7 +46,7 @@ $(function() {
           email: email,
           message: message,
           pageFrom: pageFrom,
-          access_key: spc_getAcW()
+          access_key: spc_getContactFormAcW()
         },
         cache: false,
 
@@ -74,7 +80,6 @@ $(function() {
           }, 1000);
         }
       });
-    }
     },
     filter: function() {
       return $(this).is(":visible");

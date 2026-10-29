@@ -279,6 +279,7 @@ nav#mainNav {
 
       .nav-item {
         position: relative;
+        width: max-content;
 
         .nav-link {
           transition: all 0.3s;
@@ -290,7 +291,6 @@ nav#mainNav {
 
         &.has-sub-nav {
           & a::after {
-            font-size: 80%;
             content: " \23f7"; // Black Medium Down-Pointing Triangle
           }
 
@@ -315,9 +315,13 @@ nav#mainNav {
               height: 0;
             }
 
-            li {            
+            li {
               & a::after {
                 content: "";
+              }
+
+              a {
+                font-size: 90%;
               }
             }
           }

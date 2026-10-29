@@ -13,7 +13,13 @@
  *   spc_cookieRemove()             - forget all preferences
  */
 const SPC_COOKIE_NAME = "spc_prefs";
-const SPC_COOKIE_MAX_AGE_DAYS = 365;
+
+/*
+ * Every preference shares the same long lifetime, so a stored choice never
+ * expires halfway through the interest of a visitor. The consent decision,
+ * the language and the newsletter subscription all live here.
+ */
+const SPC_COOKIE_MAX_AGE_DAYS = 730;
 
 /*
  * Default value of every known preference. Add a new key here when a new
@@ -26,7 +32,16 @@ const SPC_COOKIE_DEFAULTS = {
         decidedAt: null
     },
     // Language selection, e.g. "en" or "fi". Reserved for the language chooser.
-    lang: null
+    lang: null,
+    /*
+     * The newsletter subscription. Only the fact that the visitor subscribed
+     * is kept, never the address itself. An unsubscribed visitor is not
+     * tracked at all.
+     */
+    newsletter: {
+        subscribed: false,
+        subscribedAt: null
+    }
 };
 
 function spc_cookieDefaults() {
@@ -144,4 +159,26 @@ function spc_cookieSet(key, value) {
 
 function spc_cookieRemove() {
     document.cookie = SPC_COOKIE_NAME + "=; path=/; max-age=0; SameSite=Lax";
+}
+
+/*
+ * Newsletter subscription.
+ *
+ * These two functions are the place where the newsletter feature stores what
+ * it needs to remember. The address of the visitor is never written to a
+ * cookie, only the fact that a subscription was made.
+ */
+function spc_cookieNewsletterSubscribed() {
+    const newsletter = spc_cookieGet("newsletter", null);
+
+    return !!(newsletter && newsletter.subscribed);
+}
+
+function spc_cookieSetNewsletterSubscribed() {
+    const newsletter = spc_cookieGet("newsletter", null) || {};
+
+    newsletter.subscribed = true;
+    newsletter.subscribedAt = new Date().toISOString();
+
+    spc_cookieSet("newsletter", newsletter);
 }

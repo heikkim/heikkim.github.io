@@ -1,9 +1,8 @@
 ---
 layout: legal
 lang: en
-meta:
-  title: Privacy Policy
-  description: StrongPoint Consulting policy for utilising personal information on the website.
+meta_title: Privacy Policy
+meta_description: StrongPoint Consulting policy for utilising personal information on the website.
 ---
 ## PRIVACY POLICY
 This Privacy Policy describes how your personal information is collected, used, and shared when you visit {{ site.title }} (the “Site”).

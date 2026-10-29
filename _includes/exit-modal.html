@@ -1,0 +1,29 @@
+{% comment %}
+  The exit intent modal with the newsletter subscription form.
+
+  The modal is opened by the script in assets/js/spc-newsletter.js when the
+  cursor leaves through the top of the window. It is shown only to visitors
+  who have not subscribed yet.
+{% endcomment %}
+{% assign lang = include.lang | default: "fi" %}
+{% assign curlang = site.languages | where: "code", lang | first %}
+{% assign newsletterText = site.data.sitetext.newsletter %}
+{% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
+  {% assign newsletterText = site.data.sitetext[curlang.locale].newsletter %}
+{% endif %}
+
+<div class="modal fade js-exit-intent-modal" id="exit-intent-modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="close newsletter-modal-close" data-dismiss="modal" aria-label="{{ newsletterText.close }}">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <div class="modal-body">
+        <h2 class="newsletter-modal-title">{{ newsletterText.modal-title }}</h2>
+        <p class="newsletter-modal-text text-muted">{{ newsletterText.modal-text }}</p>
+
+        {% include newsletter-subscribe.html lang=lang id="newsletter-modal" %}
+      </div>
+    </div>
+  </div>
+</div>

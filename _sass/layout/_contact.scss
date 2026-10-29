@@ -46,6 +46,6 @@ section#contact {
   }
 }
 
-#companyIdNumber, #_gotcha {
+input[name=companyIdNumber], input[name=_gotcha] {
   display: none;
 }

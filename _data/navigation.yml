@@ -28,13 +28,17 @@ en: &DEFAULT_EN
 #      section: timeline
 #    - title: "Team"
 #      section: team
-    - title: "Experience"
-      section: about
-      url: /en/#about
+    - title: "A Step Ahead"
+      section: posts
+      url: /en/posts/
+      page: true    
     - title: "Collaboration Model"
       section: collaboration
       url: /en/collaboration-model.html
       page: true
+    - title: "Experience"
+      section: about
+      url: /en/#about
     - title: "Contact"
       section: contact # Check spc.js where this has a binding.
       url: /en/#contact
@@ -70,13 +74,17 @@ fi: &DEFAULT_FI
 #      section: nosotros
 #    - title: "Cronología"
 #      section: cronologia
-    - title: "Kokemus"
-      section: about
-      url: /#about
+    - title: "Askel Edellä"
+      section: posts
+      url: /posts/
+      page: true
     - title: "Yhteistyömalli"
       section: collaboration
       url: /collaboration-model.html
       page: true
+    - title: "Kokemus"
+      section: about
+      url: /#about
     - title: "Yhteys"
       section: contact # Check spc.js where this has a binding.
       url: /#contact

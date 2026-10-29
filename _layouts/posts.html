@@ -1,0 +1,105 @@
+---
+layout: default
+---
+{% comment %}
+  The layout of a single post.
+
+  Everything the post needs comes from its own front matter:
+    title            the headline
+    excerpt          the lead paragraph, also used by the carousel
+    hero_image       the main visual
+    content_image    one smaller image inside the article
+    quote            the pull quote
+    highlighted      true puts the post on the homepage carousel
+    meta_title       overrides the <title> of the page
+    meta_description overrides the meta description of the page
+{% endcomment %}
+{% include nav.html lang=page.lang navtype=page.navtype %}
+
+{% assign curlang = site.languages | where: "code", page.lang | first %}
+{% assign postsText = site.data.sitetext.posts %}
+{% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
+  {% assign postsText = site.data.sitetext[curlang.locale].posts %}
+{% endif %}
+
+{% assign cat = page.categories | first %}
+{% assign catName = postsText.categories[cat] | default: cat %}
+
+<div class="container" id="single-page-container">
+  <article class="posts-article">
+
+    <!-- 1. Hero — category, headline, date and the excerpt -->
+    <header class="posts-hero">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1 text-center">
+          <h1>{{ postsText.title }}</h1>
+          {% if cat %}
+          <p>in</p> <p class="posts-category">{{ catName }}</p>
+          {% endif %}
+          <p class="posts-date">
+            <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: postsText.date-format }}</time>
+          </p>
+          <p class="posts-excerpt">{{ page.excerpt | strip_html | strip }}</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. The main visual -->
+    {% if page.hero_image %}
+    <figure class="posts-hero-image">
+      <img src="{{ page.hero_image | relative_url }}" alt="{{ page.title }}" />
+    </figure>
+    {% endif %}
+
+    <!-- 3. The article. The content image sits where the author marked it. -->
+    <section class="posts-body">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2 posts-prose">
+          {% comment %} Every list in the body gets the site list style {% endcomment %}
+          {% assign chunks = content | replace: "<ul>", '<ul class="common-list">' | split: "<!--content-image-->" %}
+          {{ chunks[0] }}
+          {% if page.content_image %}
+          <figure class="posts-content-image">
+            <img src="{{ page.content_image | relative_url }}" alt="{{ page.title }}" />
+          </figure>
+          {% endif %}
+          {% if chunks.size > 1 %}
+          {{ chunks[1] }}
+          {% endif %}
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. The pull quote -->
+    {% if page.quote %}
+    <section class="posts-quote-section">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <blockquote class="posts-quote">{{ page.quote }}</blockquote>
+        </div>
+      </div>
+    </section>
+    {% endif %}
+
+    <!-- 5. Relevant posts of the same category and language -->
+    {% assign related = site.posts | where: "lang", page.lang | where_exp: "p", "p.url != page.url and p.categories contains cat" %}
+    {% if related.size > 0 %}
+    <section class="posts-relevant">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1 text-center">
+          <h2>{{ postsText.relevant-title }}</h2>
+          <ul class="common-list posts-relevant-list">
+            {% for post in related %}
+            <li>
+              <a class="content-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              <span class="posts-date">{{ post.date | date: postsText.date-format }}</span>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </section>
+    {% endif %}
+
+  </article>
+</div>

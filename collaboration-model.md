@@ -3,20 +3,19 @@ layout: page
 title: "Yhteistyömalli"
 navtype: absolute
 lang: fi
-meta:
-  title: "Yhteistyömalli"
-  description: "Selkeät yhteistyömallit PK-yrityksille: jatkuva fractional AI Lead -yhteistyö, 1-4 viikon AI-valmennus ja projektiperusteinen AI-konsultointi."
+meta_title: "Yhteistyömalli"
+meta_description: "Selkeät yhteistyömallit PK-yrityksille: jatkuva fractional AI Lead -yhteistyö, 1-4 viikon AI-valmennus ja projektiperusteinen AI-konsultointi."
 ---
 <div class="service-page collaboration-page">
 
   <!-- 1. Hero -->
-  <section class="service-hero">
+  <section class="page-hero">
     <div class="row">
       <div class="col-lg-10 offset-lg-1 text-center">
-        <h1 class="service-title">Yhteistyömalli</h1>
-        <p class="service-subtitle">Kolme yhteistyömallia, ilman yllätyksiä.</p>
+        <h1>Yhteistyömalli</h1>
+        <p class="page-subtitle">Selkeästi, ilman yllätyksiä.</p>
         <p class="service-lead">
-          Jokainen yhteistyö alkaa lyhyellä kartoituskeskustelulla. Kartoituksen jälkeen tiedämme, mikä teille sopii parhaiten, ja toisaalta jos mikään ei sovi. Laajuus vahvistetaan aina kirjallisesti etukäteen ennen töiden aloitusta. Keskustelu ei sido teitä mihinkään.
+          Jokainen yhteistyö alkaa lyhyellä kartoituskeskustelulla, jonka avulla nähdään, mikä palvelu tarpeeseenne parhaiten istuu. Opimme myös, jos mikään palveluista ei istukaan tarpeeseenne ja etsittekin muuta palvelua.
         </p>
       </div>
     </div>
@@ -26,7 +25,7 @@ meta:
   <section id="models">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Yhteistyö palveluiden kautta</h2>
+        <h2>Yhteistyö palveluiden kautta</h2>
         <div class="sp-collaboration">
           <div class="row">
             <div class="col-lg-4">
@@ -35,9 +34,9 @@ meta:
               <p class="sp-collaboration-basis">Jatkuva yhteistyö / kuukausiallokaatio</p>
               <p class="sp-collaboration-detail">Sovitaan tarvittava kapasiteetti, alkaen 1+ päivästä viikossa.</p>
               <ul class="common-list">
-                <li>Osana johtoryhmääsi</li>
-                <li>Strategia, hallinta ja käytännön toteutus</li>
-                <li>Roadmap, AI-käytänteet ja hallitusraportointi mukana</li>
+                <li>Osana yrityksen johtoryhmää</li>
+                <li>Strategia, käytännöt ja toteutus</li>
+                <li>Roadmap, AI-käytänteet ja hallitusraportointi</li>
                 <li>Arvioidaan joka kvartaali, ensimmäisen kuukauden jälkeen 30 päivän irtisanomisaika</li>
               </ul>
               <a class="content-link" href="/services/fractional-ai-lead.html">Lue lisää Fractional AI Lead -palvelusta</a>
@@ -49,10 +48,10 @@ meta:
                 <p class="sp-collaboration-basis">1-4 viikon ohjelma</p>
                 <p class="sp-collaboration-detail">Yksi ohjelma koko jaksolle, vahvistetaan kartoituskeskustelun jälkeen.</p>
                 <ul class="common-list">
-                  <li>Henkkoht valmennus, oma työsi kohteena</li>
+                  <li>Henkkoht valmennus, kohteena oma työsi</li>
+                  <li>Työnkulun tarkastelu ja ratkaisujen määritys</li>
                   <li>Kehotekirjasto, automaatiot ja agentit</li>
                   <li>Henkilökohtainen "AI operating manual"</li>
-                  <li>14 päivää toimistotunteja jälkeenpäin</li>
                 </ul>
                 <a class="content-link" href="/services/ai-coaching.html">Lue lisää AI-valmennuksesta</a>
               </div>
@@ -82,11 +81,11 @@ meta:
   <section id="included">
     <div class="row">
       <div class="col-lg-10 offset-lg-1 text-center">
-        <h2 class="section-heading">Palveluun sisältyy aina</h2>
+        <h2>Palveluun sisältyy aina</h2>
         <ul class="service-list common-list">
           <li><strong>Kartoituskeskustelu ilman sitoumuksia:</strong> yhteinen pohja edetä.</li>
-          <li><strong>Kirjallinen laajuus:</strong> sovitaan ennen työn aloitusta.</li>
-          <li><strong>Dokumentaatio ja työn luovutus:</strong> ä kaikki tieto jää yritykseen (ei ulkoista riippuvuutta).</li>
+          <li><strong>Laajuus sovitaan kirjallisesti:</strong> aina ennen työn aloitusta.</li>
+          <li><strong>Dokumentaatio ja työn luovutus:</strong> kaikki tieto jää yritykseen (ei ulkoista riippuvuutta).</li>
           <li><strong>Riippumaton neuvo:</strong> ei toimittajasidonnaisuuksia tai tuotteiden piilomyyntiä.</li>
         </ul>
       </div>
@@ -97,10 +96,9 @@ meta:
   <section class="service-cta" id="next-steps">
     <div class="row">
       <div class="col-lg-8 offset-lg-2">
-        <h2 class="section-heading">Aloitetaan keskustelu.</h2>
+        <h2>Aloitetaan keskustelu.</h2>
         <p class="service-lead">
-          Vieläkö mietityttää? Kartoituskeskustelu ei sido mihinkään ja antaa hyvän ymmärryksen palveluiden sopivuudesta.
-          Myös siitä jos ne eivät sovi tarpeeseenne.
+          Vieläkö mietityttää?
         </p>
       </div>
     </div>

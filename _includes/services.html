@@ -8,7 +8,7 @@
   
   <div class="container">
 
-      <h2 class="section-heading">{{ contentSection.title | default: "Services" }}</h2>
+      <h2>{{ contentSection.title | default: "Services" }}</h2>
       {% if contentSection.text != "" %}
       <h3 class="section-subheading text-muted">{{ contentSection.text }}</h3>
       {% endif %}
@@ -26,7 +26,7 @@
       {% include service_column.html service=service %}
 
       {% assign service = contentSection.list[2] %}
-      {% include service_column.html service=service %}
+      {% include service_column.html service=service last-service-desc=true %}
 
     </div>
   </div>

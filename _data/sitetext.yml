@@ -25,10 +25,10 @@ en: &DEFAULT_EN
         title: "#1 Fractional AI Lead"
         brief: ""
         desc: >
-          As a fractional AI Lead/Director/Officer, I provide companies and their boards with senior strategy, governance, and hands-on execution. 
+          Senior leadership engagement providing companies and their boards with senior strategy, governance, and hands-on execution.
+          The role is typically one of AI Lead, AI Director, Chief AI Officer depending on the company's lineup of roles and situation.
           <br /><br />
-          By integrating directly with your 
-          management team I help you define, plan, coordinate, initiate and maintain momentum of your company's AI initiative, at scale.
+          Integrating directly with your management team to help you define, plan, coordinate, initiate and maintain momentum of your company's AI initiative, at scale.
         url: /en/services/fractional-ai-lead.html
         link-text: Read more about Fractional AI Lead for Companies
       - sid: ai-coaching
@@ -153,6 +153,35 @@ en: &DEFAULT_EN
 #          - url: https://linkedin.com
 #            icon: fab fa-linkedin-in
 
+  # The posts section
+  posts:
+    title: A Step Ahead
+    highlights-title: "Latest thinking"
+    text: "Practical notes on AI, governance and leading the change."
+    index-lead: "Notes from the field on AI strategy, governance and leading the change in an SME."
+    read-more: "Read the article"
+    relevant-title: "Related articles"
+    date-format: "%d %B %Y"
+    categories:
+      ai-strategy: "AI strategy"
+      leadership: "Leadership"
+
+  # The newsletter subscription
+  newsletter:
+    title: "The AI newsletter"
+    text: "Newsletter on AI strategy, governance and leading the change, once or twice a month."
+    placeholder: "Your email address"
+    submit: "Subscribe"
+    success: "Thank you. The next issue is on its way."
+    modal-title: "Before you go.."
+    modal-text: "Would you like an occasional newsletter on AI strategy, governance and leading change? No noise."
+    close: "Close"
+    # The info page of the newsletter, linked from the footer
+    info-link: "Read more about the AI Newsletter"
+    info-url: "/en/newsletter.html"
+    # The endpoint of the newsletter service. Empty until it is wired.
+    action: "https://api.web3forms.com/submit"
+
   contact:
     title: "Let's talk AI."
     text: "Your unique situation and business need, without commitments."
@@ -168,6 +197,7 @@ en: &DEFAULT_EN
     subject: "Contact Form Submission"
     submit: "Send Message"
     contact-now: Let's talk AI.
+    action: "https://api.web3forms.com/submit"
 
   cookie-consent:
     title: "We value your privacy"
@@ -230,11 +260,11 @@ fi: &DEFAULT_FI
         title: "#1 Fractional AI Lead"
         brief: ""
         desc: >
-          Toimiessani fractional AI Leadina, Directorina tai Officerina tarjoan yrityksille ja niiden hallituksille kokenutta strategianäkemystä, 
-          hallintamalleja sekä muutoksen johtamista.
+          Kokenut johtaja suoraan mukaan johtoryhmään. Yrityksille ja niiden hallituksille kokenutta strategianäkemystä, hallintamalleja sekä muutoksen johtamista.
+          Rooli on tyypillisesti AI Lead, AI Director tai Chief AI Officer yrityksen roolituksesta ja tilanteesta riippuen.
           <br /><br />
-          Integroidun suoraan osaksi johtoryhmäänne. Autan määrittelemään, suunnittelemaan, koordinoimaan, käynnistämään ja ylläpitämään 
-          yrityksen tekoälyhankkeiden vauhtia. Otan tarkasti huomioon yrityksenne kulttuurin ja toimintatavat.
+          Osana johtoryhmää, johtaja auttaa määrittelemään, suunnittelemaan, koordinoimaan, käynnistämään ja ylläpitämään 
+          yrityksen tekoälyhankkeiden vauhtia, samalla huomioimalla tarkasti yrityksen kulttuurin ja yksilölliset toimintatavat.
         url: /services/fractional-ai-lead.html
         link-text: Lue lisää Fractional AI Lead palvelusta yrityksille
       - sid: ai-coaching
@@ -255,14 +285,14 @@ fi: &DEFAULT_FI
           Yrityksen tekoälymahdollisuuksien ymmärtämiseen, tekoälymuutoksen toteutussuunnitelman luomiseen tai tietyn tekoälyn ja datan tehokkaaseen käyttöön liittyvän 
           haasteen ratkaisemiseen.
           <br /><br />
-          Ulkopuolisen asiantuntijanäkemyksen saamiseen yrityksen tekoälyn käyttöön liittyvään asiaan.
+          Ulkopuolisen asiantuntijanäkemyksen saamiseen yrityksen tekoälyn käyttöön liittyvään asiaan. Fasilitoidut workshopit ja tekoälykoulutukset.
         url: /services/ai-consulting.html
         link-text: Lue lisää tekoälykonsultoinnista yrityksille ja organisaatioille
 
   # The closing call to action of the service pages
   service-cta:
     title: "Seuraava askel."
-    text: "Jokainen toimeksianto alkaa lyhyellä kartoituskeskustelulla, joka ei sido teitä mihinkään. Kartoituksessa käymme läpi nykytilanteen: mitä on yritetty, missä on jumissa ja miltä onnistuminen näyttäisi."
+    text: "Jokainen toimeksianto alkaa lyhyellä kartoituskeskustelulla, joka ei sido sinua mihinkään. Kartoituksessa käymme läpi nykytilanteen: mitä on yritetty, missä ollaan jumissa ja miltä onnistuminen näyttäisi."
     cta: "Ota yhteyttä"
 
   about:
@@ -345,6 +375,35 @@ fi: &DEFAULT_FI
 #            icon: fab fa-facebook-f
 #          - url: https://linkedin.com
 #            icon: fab fa-linkedin-in
+  # The posts section
+  posts:
+    title: Askel Edellä
+    highlights-title: "Viimeisimmät ajatukset"
+    text: "Käytännön näkemyksiä tekoälystä, AI-käytännöistä ja muutoksen johtamisesta."
+    index-lead: "Muistiinpanoja tekoälystrategiasta, hallinnasta ja muutoksen johtamisesta PK-yrityksessä."
+    read-more: "Lue artikkeli"
+    relevant-title: "Aiheeseen liittyvät artikkelit"
+    date-format: "%d.%m.%Y"
+    categories:
+      ai-strategy: "Tekoälystrategia"
+      leadership: "Johtaminen"
+
+  # The newsletter subscription
+  newsletter:
+    title: "Tekoälyuutiskirje"
+    text: "Saat sähköpostiisi näkemyksiä tekoälystrategiasta ja muutoksen johtamisesta 1-2 kertaa kuussa."
+    placeholder: "Sähköpostiosoitteesi"
+    submit: "Tilaa"
+    success: "Kiitos. Seuraava Askel Edellä on tulossa."
+    modal-title: "Ennen kuin menet.."
+    modal-text: "Haluatko sähköpostiisi näkemyksiä tekoälystrategiasta ja muutoksen johtamisesta 1-2 kertaa kuussa? Voit aina hypätä pois kyydistä myöhemmin."
+    close: "Sulje"
+    # The info page of the newsletter, linked from the footer
+    info-link: "Lue lisää tekoälyuutiskirjeestä"
+    info-url: "/newsletter.html"
+    # The endpoint of the newsletter service. Empty until it is wired.
+    action: "https://api.web3forms.com/submit"
+
   contact:
     title: "Aloitetaan keskustelu."
     text: "Kartoitetaan tilanteenne ja tarpeenne ilman sitoumuksia."
@@ -360,6 +419,7 @@ fi: &DEFAULT_FI
     subject: "Yhteydenotto"
     submit: "Lähetä"
     contact-now: Aloitetaan keskustelu.
+    action: "https://api.web3forms.com/submit"
 
   cookie-consent:
     title: "Arvostamme yksityisyyttäsi"

@@ -1,0 +1,286 @@
+// ==============================================================
+//  Posts — the article layout, the post listing and the
+//  homepage carousel.
+//
+//  The posts section reuses the palette and the typography of the site:
+//    $primary       page background
+//    $secondary     green accent
+//    $lessdark      panel
+//    $gray-900      hairline borders
+//    $text-muted    secondary text
+//
+//  The file only styles the posts section. Everything else comes from
+//  base/_page.scss and the Bootstrap utility classes.
+// ==============================================================
+
+// --------------------------------------------------------------
+//  Article
+// --------------------------------------------------------------
+.posts-article {
+  padding-bottom: 2.5em;
+}
+
+// --------------------------------------------------------------
+//  1. Hero — category, headline, date and the excerpt
+// --------------------------------------------------------------
+.posts-hero {
+  padding: 1em 0 2em;
+  text-align: center;
+
+  .posts-category {
+    margin: 0 0 .8em;
+    padding-top: 0;
+    font-size: .85rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: $secondary;
+  }
+  
+  .posts-date {
+    margin: 0 0 1.4em;
+    padding-top: 0;
+    font-size: .9rem;
+    color: $text-muted;
+  }
+
+  .posts-excerpt {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding-top: 0;
+    font-size: 1.12rem;
+    line-height: 1.8;
+  }
+}
+
+// --------------------------------------------------------------
+//  2. The main visual
+// --------------------------------------------------------------
+.posts-hero-image {
+  margin: 0 0 3em;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+}
+
+// --------------------------------------------------------------
+//  3. The article body
+// --------------------------------------------------------------
+.posts-prose {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 1.02rem;
+  line-height: 1.8;
+
+  p {
+    padding-top: 0;
+  }
+
+  p + p {
+    margin-top: 1.1em;
+  }
+
+  h2 {
+    margin: 2em 0 .6em;
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    margin: 1.6em 0 .5em;
+    font-size: 1.35rem;
+  }
+
+  ul {
+    margin-bottom: 1.2em;
+    padding-left: 0;
+  }
+
+  // The checkmark of the site list style needs a positioned list item
+  li {
+    position: relative;
+    padding-left: 1.9em;
+  }
+
+  ol {
+    margin-bottom: 1.2em;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  // A link inside the body text
+  a {
+    color: $secondary;
+  }
+}
+
+// The one smaller image of the article
+.posts-content-image {
+  margin: 2.5em 0;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+  }
+}
+
+// --------------------------------------------------------------
+//  4. The pull quote
+// --------------------------------------------------------------
+.posts-quote-section {
+  padding: 1em 0;
+
+  .posts-quote {
+    margin: 0;
+    padding: .2em 0 .2em 1.4em;
+    border-left: 3px solid $secondary;
+    font-size: 1.35rem;
+    line-height: 1.6;
+    font-style: italic;
+    color: $secondary;
+    @include serif-font;
+  }
+}
+
+// --------------------------------------------------------------
+//  5. Relevant posts
+// --------------------------------------------------------------
+.posts-relevant {
+  margin-top: 3em;
+  padding-top: 2.5em;
+  border-top: 1px solid $gray-900;
+
+  .posts-relevant-list {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: left;
+
+    li {
+      position: relative;
+      margin-bottom: .7em;
+      padding-left: 1.9em;
+      line-height: 1.7;
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+    }
+
+    .posts-date {
+      margin-left: .6em;
+      font-size: .85rem;
+      color: $text-muted;
+    }
+  }
+}
+
+// --------------------------------------------------------------
+//  The posts index page
+// --------------------------------------------------------------
+.posts-category-block {
+  margin-bottom: 3em;
+}
+
+.posts-list-item {
+  margin-bottom: 2em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid $gray-900;
+
+  h3 {
+    margin: 0 0 .3em;
+    font-size: 1.4rem;
+  }
+
+  .posts-date {
+    margin: 0 0 .6em;
+    padding-top: 0;
+    font-size: .85rem;
+    color: $text-muted;
+  }
+
+  p {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.posts-list-item:last-child {
+  border-bottom: 0;
+}
+
+// --------------------------------------------------------------
+//  The homepage carousel
+// --------------------------------------------------------------
+.posts-carousel {
+  .posts-carousel-slide {
+    position: relative;
+    min-height: 420px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  // The scrim that keeps the caption readable on any image
+  .posts-carousel-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($primary, .6);
+  }
+
+  .carousel-caption {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    bottom: 40px;
+    left: 0;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    text-shadow: none;
+  }
+
+  .posts-carousel-title {
+    margin-bottom: .4em;
+    font-size: 1.9rem;
+  }
+
+  .posts-carousel-excerpt {
+    margin-bottom: 1.4em;
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  // The indicators sit on top of the scrim
+  .carousel-indicators {
+    z-index: 3;
+  }
+}
+
+@media (max-width: 767px) {
+  .posts-carousel {
+    .posts-carousel-slide {
+      min-height: 360px;
+    }
+
+    .carousel-caption {
+      bottom: 24px;
+    }
+
+    .posts-carousel-title {
+      font-size: 1.4rem;
+    }
+  }
+}

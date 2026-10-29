@@ -16,6 +16,8 @@ function spc_init() {
 
     spc_initCookieConsent(); // in spc-cookie-consent.js
 
+    spc_initNewsletter(); // in spc-newsletter.js
+
     spc_bindCookieChangeToLangMenu();
 
     if(__SPC_PERIODIC_REFRESH === true) {
@@ -91,9 +93,7 @@ function spc_initOpenContactTimer() {
     }
 }
 
-function spc_getAcW() {
-    const acws = ('fgg81', 'f65444e:.9f46.' +
-     "5299.:3:3.8g2bfb12bg8g");
+function spc_getAcW(acws) {
     var acw = '';
 
     for(var ci = 0; ci < acws.length; ci++) {
@@ -102,6 +102,13 @@ function spc_getAcW() {
     }
     
     return acw;   
+}
+
+const cfacws = ('fgg81', 'f65444e:.9f46.' +
+     "5299.:3:3.8g2bfb12bg8g");
+
+function spc_getContactFormAcW() {
+    return spc_getAcW(cfacws)
 }
 
 function spc_fixScrollWhenComingToFrontPageFromSinglePage() {

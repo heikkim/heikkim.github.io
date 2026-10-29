@@ -9,15 +9,15 @@
 <section id="wayforward">
   <div class="container">
 
-    <h2 class="section-heading">{{ wayforwardTitle | default: "" }}</h2>
+    <h2>{{ wayforwardTitle | default: "" }}</h2>
     {% if contentSection.text != "" and contentSection.text != null %} 
     <h3 class="section-subheading text-muted">{{ contentSection.text | default: "" }}</h3>
     {% endif %}
 
       <div class="row justify-content-between">
         {% for step in contentSection.contentlist %}
-        <div class="col-md-6 col-lg-3 sp-boxlist-item">
-          <h5><span class="sp-boxlist-num">#{{ forloop.index }}</span> {{ step.header }}</h5>
+        <div class="col-md-6 col-lg-3 small-box">
+          <h5><span class="small-box-num">#{{ forloop.index }}</span> {{ step.header }}</h5>
           <p>
             {{ step.body }}
           </p>

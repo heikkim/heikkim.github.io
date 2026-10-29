@@ -2,9 +2,8 @@
 layout: legal
 title: Tietosuojaseloste
 lang: fi
-meta:
-  title: Tietosuojaseloste
-  description: Näin StrongPoint Consulting kerää, käyttää ja jakaa henkilötietoja sivustollaan.
+meta_title: Tietosuojaseloste
+meta_description: Näin StrongPoint Consulting kerää, käyttää ja jakaa henkilötietoja sivustollaan.
 ---
 ## TIETOSUOJASELOSTE
 

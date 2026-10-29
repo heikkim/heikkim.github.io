@@ -1,0 +1,43 @@
+{% comment %}
+  The post listing of the posts index page, grouped by category.
+
+  Parameters:
+  - lang:   the language of the posts, "fi" by default
+{% endcomment %}
+{% assign lang = include.lang | default: "fi" %}
+{% assign curlang = site.languages | where: "code", lang | first %}
+{% assign postsText = site.data.sitetext.posts %}
+{% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
+  {% assign postsText = site.data.sitetext[curlang.locale].posts %}
+{% endif %}
+
+{% assign posts = site.posts | where: "lang", lang %}
+
+<section id="posts-list">
+  <div class="container">
+
+    {% for entry in postsText.categories %}
+    {% assign slug = entry[0] %}
+    {% assign name = entry[1] %}
+    {% assign catPosts = posts | where_exp: "p", "p.categories contains slug" %}
+    {% if catPosts.size > 0 %}
+
+    <div class="posts-category-block">
+      <h2>{{ name }}</h2>
+
+      {% for post in catPosts %}
+      <article class="posts-list-item">
+        <h3><a class="content-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p class="posts-date">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: postsText.date-format }}</time>
+        </p>
+        <p>{{ post.excerpt | strip_html | strip }}</p>
+      </article>
+      {% endfor %}
+    </div>
+
+    {% endif %}
+    {% endfor %}
+
+  </div>
+</section>

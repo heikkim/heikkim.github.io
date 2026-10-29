@@ -8,7 +8,7 @@ lang: fi
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Oikeat työkalut oikeisiin tehtäviin</h2>
+        <h2>Oikeat työkalut oikeisiin tehtäviin</h2>
         <p>
         
         </p>
