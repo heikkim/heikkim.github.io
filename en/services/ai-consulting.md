@@ -86,7 +86,7 @@ meta_description: "Specific solutions to specific AI and data problems for SMEs 
     <h2>The "lense" and prescription, possible outcomes for the company</h2>
     <ul class="common-list">
       <li><strong>Opportunity assessment:</strong> a prioritized mapping of AI use cases across the company.</li>
-      <li><strong>AI readiness and data audit:</strong> what data you hold, where it lives, and what it can legally and technically be used for.</li>
+      <li><strong>AI readiness and data audit:</strong> what data you hold, where it lives, and what it can be used for.</li>
       <li><strong>Business case and investment plan:</strong> costs, benefits and ROI written out.</li>
       <li><strong>Target operating model:</strong> ownership, decision rights and the governance that keeps AI use compliant.</li>
       <li><strong>Vendor selection:</strong> evaluation criteria, an objective shortlist and an independent recommendation.</li>

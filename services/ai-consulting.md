@@ -88,7 +88,7 @@ meta_description: "Ratkaisut PK-yritysten tekoäly- ja dataongelmiin. Myös fasi
     <h2>Ymmärryksen kasvattamisen työkalupakki</h2>
     <ul class="common-list">
       <li><strong>Mahdollisuuksien arviointi:</strong> priorisoitu tiekartta yrityksen tekoälykäyttötapauksista.</li>
-      <li><strong>AI- ja datavalmiusarviointi:</strong> mitä tietoa, missä ja mihin sitä voi laillisesti ja teknisesti käyttää.</li>
+      <li><strong>AI- ja datavalmiusarviointi:</strong> mitä tietoa, missä ja mihin sitä voi käyttää.</li>
       <li><strong>Business case ja investointisuunnitelma:</strong> kustannukset, hyödyt ja ROI avattuna.</li>
       <li><strong>Tavoiteltava toimintamalli:</strong> vastuut, päätösvalta ja käytännöt, jotka pitävät tekoälyn käytön lainmukaisena.</li>
       <li><strong>Toimittaja-arviointi:</strong> arviointikriteerit, shortlistaus ja toimittajariippumaton suosittelu.</li>

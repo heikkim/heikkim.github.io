@@ -29,7 +29,7 @@ Heikki, the human you are interacting with.
 **CSS, HTML and styling rules:**
 - Re-use common CSS files and page specific CSS files when editing. Every HTML page should have their own corresponding CSS except small include snippets.
 - Write out whole CSS specifier (e.g. class name `.css-class`) instead of extensive use of `&-postfix-css-class` references.
-- When needing a header for content, use one of `h1`, `h2`, `h3`, `h4`, `h5`, `h6` without additional styling or changing font-size.
+- When needing a header for content, use one of `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` without additional styling or changing font-size.
 - Grid layouts: Use Bootstrap's `.row` and `.col` classes with their respective derivatives such as `.col-lg` and `.col-lg-NUMBER`.
 - Use Bootstrap layouts and avoid "DIV soup" at all cost. Oftentimes a simple `<section>` or a `<div class="container">` suffices and no grid is needed.
 - When needing to contain an element: Use Bootstrap's `.container` class with an HTML `<div>` element.
@@ -38,12 +38,14 @@ Heikki, the human you are interacting with.
 - CSS `width`, `max-width`, `height` and `max-height` properties' units should always be expressed in `px`, i.e. not for example in `em` or `rem`.
 - CSS `margin` property's unit should most commonly be expressed in `px`.
 - Unordered lists `<ul>` should be styled by default with `.common-list` class.
-- Aim for simplicity and re-use in rules.
+- When there's only a header `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` or a paragraph `<p>` under a `<section>`, it does not require a `<div class="row">` nor a `<div class="col-XXX">` enclosure.
+- Check out what has already been implented, e.g. `fractional-ai-lead.html` or `collaboration-model.html`.
+- Aim for simplicity when desginnig rules and that what you do is reusable.
 - DO NOT create a horde of different sized fonts. Re-use what's defined in the project in similar elements.
 - DO NOT define every element's styles explicitly if a close equivalent already cascades from `body` or similar parent.
 - DO NOT use an element's style attribute unless explicitly necessary.
 - DO NOT invent new colors, but re-use what has been defined already. Check `_sass/base/variables.scss` and `_sass/base/bootstrap_variables.scss` and existing stylesheets.
-- DO NOT take new fonts into use but use what's given in `_sass/base/mixins.css`. Oftentimes you do not need to use `@import` for a font since the right one already cascades from `body`.
+- DO NOT take new fonts into use but use what's given in `_sass/base/mixins.css`. Oftentimes you do not need to use `@import` for a font since the right one already cascades from one of the rules in `_page.scss`.
 - DO NOT invent new list style types such as "chevron" or "dot", but use what's already defined.
 
 **Framework source file rules:**

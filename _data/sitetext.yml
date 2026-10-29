@@ -72,7 +72,7 @@ en: &DEFAULT_EN
   service-cta:
     title: "Take the next step."
     text: "Every engagement starts with a brief, no-commitment discovery call to map your current situation: what you have tried, what is stuck, and what success would look like."
-    cta: "Start a conversation"
+    cta: "Start a Conversation"
 
   about:
     title: "Real experience for getting real results"
@@ -83,7 +83,7 @@ en: &DEFAULT_EN
       specialization lies in customer initiatives requiring data and AI capabilities, as well as working in highly regulated, information-intensive environments.
       <br /><br />
       I move fast, take ownership, and drive initiatives with clarity and commitment. In everything I do, I respect and adapt to your company's culture and 
-      operational style. The fractional model gives my clients a cost-effective, risk-free way to bring an experienced executive into their leadership team.
+      operational style. The fractional model enables clients a cost-effective, risk-free way to bring an experienced executive into their leadership team.
       <br /><br />
       I hold an MBA from Aalto Executive Education (2022), graduated with honors. 
       <br /> 
@@ -291,9 +291,9 @@ fi: &DEFAULT_FI
 
   # The closing call to action of the service pages
   service-cta:
-    title: "Seuraava askel."
+    title: "Ota seuraava askel."
     text: "Jokainen toimeksianto alkaa lyhyellä kartoituskeskustelulla, joka ei sido sinua mihinkään. Kartoituksessa käymme läpi nykytilanteen: mitä on yritetty, missä ollaan jumissa ja miltä onnistuminen näyttäisi."
-    cta: "Ota yhteyttä"
+    cta: "Aloita Keskustelu"
 
   about:
     title: Käytännön kokemusta tuloksekkaaseen johtamiseen
