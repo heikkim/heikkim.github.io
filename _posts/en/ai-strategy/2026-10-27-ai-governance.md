@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: "AI governance is not a documentation exercise"
 meta_title: "AI governance is not a documentation exercise"
 meta_description: "Why AI governance policies usually stay on the shelf, and how to make them work in practice."

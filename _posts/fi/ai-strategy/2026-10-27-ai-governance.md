@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: "Tekoälyn hallinta ei ole dokumenttityö"
 meta_title: "Tekoälyn hallinta ei ole dokumenttityö"
 meta_description: "Miksi tekoälyn hallintapolitiikka jää usein kaupistamatta, ja miten se saadaan toimimaan käytännössä."

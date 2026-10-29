@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: "Tekoälystrategia alkaa ongelmasta, ei välineestä"
 meta_title: "Tekoälystrategia alkaa ongelmasta"
 meta_description: "Miksi tekoälystrategia on turha, jos se lähtee tuotteesta. Ja mistä se oikeasti alkaa."

@@ -27,7 +27,6 @@ layout: default
 
 <div class="container" id="single-page-container">
   <article class="posts-article">
-
     <!-- 1. Hero — category, headline, date and the excerpt -->
     <header class="posts-hero">
       <div class="row">
@@ -82,7 +81,7 @@ layout: default
     {% endif %}
 
     <!-- 5. Relevant posts of the same category and language -->
-    {% assign related = site.posts | where: "lang", page.lang | where_exp: "p", "p.url != page.url and p.categories contains cat" %}
+    {% assign related = site.posts | where: "lang", page.lang | where_exp: "p", "p.categories contains cat" %}
     {% if related.size > 0 %}
     <section class="posts-relevant">
       <div class="row">
@@ -90,10 +89,12 @@ layout: default
           <h2>{{ postsText.relevant-title }}</h2>
           <ul class="common-list posts-relevant-list">
             {% for post in related %}
-            <li>
-              <a class="content-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
-              <span class="posts-date">{{ post.date | date: postsText.date-format }}</span>
-            </li>
+              {% if post.url != page.url %} 
+              <li>
+                <a class="content-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                <span class="posts-date">{{ post.date | date: postsText.date-format }}</span>
+              </li>
+              {% endif %}
             {% endfor %}
           </ul>
         </div>

@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: "The CEO's time is the real bottleneck"
 meta_title: "The CEO's time is the real bottleneck"
 meta_description: "Why AI programmes stall halfway, and how the CEO's time comes back as a return on the programme."

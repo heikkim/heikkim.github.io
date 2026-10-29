@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: "Johtajan aika on suurin pullonkaula"
 meta_title: "Johtajan aika on suurin pullonkaula"
 meta_description: "Miksi tekoälyhankkeet jäävät puolitiehen, ja miten johtajan aika palautuu hankkeen hyväksi."

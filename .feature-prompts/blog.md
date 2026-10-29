@@ -33,6 +33,6 @@ Build a bilingual posts/article section with categories, a highly structured pos
 1. The directory tree for categories and languages.
 2. The required `_config.yml` configurations.
 3. The full Bootstrap HTML/Liquid code for the carousel include.
-4. The HTML/Liquid code for the new `posts.html` layout.
+4. The HTML/Liquid code for the new `post.html` layout.
 5. Example front matter for a post utilizing all the requested variables (`meta_title`, `meta_description`, `hero_image`, `content_image`, `excerpt`, `quote`, `highlighted`, etc.).
 6. The foundational SCSS for `_posts.scss`.

@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: "AI strategy starts from the problem, not the tool"
 meta_title: "AI strategy starts from the problem"
 meta_description: "Why an AI strategy is worth little if it starts from a product. And where it should actually start."

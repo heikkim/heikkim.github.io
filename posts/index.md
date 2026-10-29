@@ -6,9 +6,9 @@ meta_title: "Askel Edellä - kirjoitukset"
 meta_description: "Kirjoituksia tekoälystrategiasta, tekoälykäytännöistä ja muutoksen johtamisesta."
 ---
 {% assign curlang = site.languages | where: "code", page.lang | first %}
-{% assign postText = site.data.sitetext.posts %}
+{% assign postsText = site.data.sitetext.posts %}
 {% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
-  {% assign postText = site.data.sitetext[curlang.locale].posts %}
+  {% assign postsText = site.data.sitetext[curlang.locale].posts %}
 {% endif %}
 
 <div class="posts-page">
@@ -17,7 +17,7 @@ meta_description: "Kirjoituksia tekoälystrategiasta, tekoälykäytännöistä j
     <div class="row">
       <div class="col-lg-10 offset-lg-1 text-center">
         <h1>{{ postsText.title }}</h1>
-        <p class="posts-excerpt">{{ postText.index-lead }}</p>
+        <p class="posts-excerpt">{{ postsText.index-lead }}</p>
       </div>
     </div>
   </header>
