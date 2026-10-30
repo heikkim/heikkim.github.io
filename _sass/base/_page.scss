@@ -89,8 +89,6 @@ ul {
 
   li {
     position: relative;
-    margin-bottom: 0.8em;
-    padding-left: 1.3em;
   }
 }
 
@@ -99,6 +97,9 @@ ul.common-list {
   margin: 2.5em auto 0;
 
   li {
+    margin-bottom: 0.8em;
+    padding-left: 1.3em;
+    
     &::before {
       position: absolute;
       left: 0;
