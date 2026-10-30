@@ -12,7 +12,8 @@
  * seconds. Leaving the top of the window happens while the cursor is on its
  * way to the address bar, and a modal that pops up right away is a nuisance.
  */
-const SPC_EXIT_INTENT_DELAY_MS = 8000;
+const SPC_EXIT_INTENT_DELAY_MS = 20000;
+const SPC_SHOW_MODAL_GRACE_MS = 230;
 
 function spc_newsletterForms() {
     return $(".js-newsletter-form");
@@ -81,6 +82,8 @@ function spc_initNewsletterForms() {
     }
 }
 
+var modalShowTimeoutId = null;
+
 function spc_initExitIntentModal() {
     const modal = $(".js-exit-intent-modal");
 
@@ -120,7 +123,17 @@ function spc_initExitIntentModal() {
             return;
         }
 
-        show();
+        modalShowTimeoutId = setTimeout(function() {show();}, SPC_SHOW_MODAL_GRACE_MS);
+    });
+
+    /*
+     * Mouse comes back.
+    */
+    $(document).on("mouseenter", function() {
+        if(modalShowTimeoutId != null) {
+            clearTimeout(modalShowTimeoutId);
+            modalShowTimeoutId = null;
+        }
     });
 }
 
