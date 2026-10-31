@@ -12,6 +12,31 @@ body {
   @include body-font;
 }
 
+div.spc-logo {
+  @include logo-font;
+  font-weight: 400;
+  position: relative;
+  text-align: center;
+  color: $body;
+  font-size: 2rem;
+  border-radius: 10px;
+  vertical-align: baseline;
+  margin-right: 15px;
+
+  span.logo-text-S {
+    display: inline-block;
+  }
+
+  span.logo-text-P {
+    display: inline-block;
+  }
+
+  span.logo-text-C {
+    display: inline-block;
+    font-size: 0.65em;
+  }
+}
+
 p {
   font-size: 1.05rem;
   padding-top: 10px;
