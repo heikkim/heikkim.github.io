@@ -1,9 +1,11 @@
 <head>
   {% if site.analytics.google %}
+  {% if jekyll.environment == "production" %}
   <!-- Google Analytics is loaded only after the visitor has accepted analytics cookies -->
   <script>
     window.spcAnalyticsId = "{{ site.analytics.google }}";
   </script>
+  {% endif %}
   {% endif %}
 
   <!-- The visitor preference cookie (consent, language, ...) -->
