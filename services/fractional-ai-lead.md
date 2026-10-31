@@ -12,7 +12,7 @@ meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityk
     <h1>{{ service.title }}</h1>
     <h5>Strategista tekoälyjohtajuutta ja muutoksen aikaansaantia.</h5>
     <p>
-      Seuraava hankkimasi tekoälytyökalu on tarpeeton, ellei sinulla ole suunnitelmaa edetä. Suunnitelman lisäksi tarvitset johtajan, 
+      Ilman etenemissuunnitelmaa on seuraava hankkimasi tekoälytyökalu käytännössä tarpeeton. Suunnitelman lisäksi tarvitset johtajan, 
       jonka vastuulla on muuttaa tekoälyn käytölle asetetut odotukset ja tavoitteet mitattaviksi tuloksiksi, hallitusti ja skaalautuvasti.
     </p>
 </section>
@@ -23,17 +23,17 @@ meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityk
     <p>
       Olet varmasti jo noteerannut tekoälyn kehitysvauhdin. Joku yrityksessä on ehkä jo ajanut pilottihankkeita, hankkinut lisenssejä
       tai aloittanut erilaisia kokeiluja. Tekoälyn käyttö kuitenkaan ei leviä yrityksessä, vaan kokeilut painuvat hiljalleen unholaan. 
-      Vanhat tavat tehdä ovat täällä taas!
+      Vanhat tavat toimia palaavat taas takaisin!
     </p>
     <p>
-      Tekoälytyökalut ovat harvoin pullonkaulana, sillä niitähän riittää. <strong>Pullonkaula on aika.</strong>
+      Tekoälytyökalut ovat harvoin pullonkaulana, sillä niitähän riittää. <strong>Pullonkaula on usein aika.</strong>
       Jokainen merkittävä tekoälyyn liittyvä päätös, kuten datavalmius, toimittajavalinnat, tietoturva,
-      toiminnan lainmukaisuus tai muutosjohtaminen, vaatii kokeneen johtajan. Johtaja, jonka kalenteri huutaa punaista,
-      on liian kiireinen. Samaan aikaan muu organisaatio hukkuu erinäisiin työkaluihin ja kokeiluihin.
+      toiminnan lainmukaisuus tai muutosjohtaminen, vaativat kokeneen johtajan. Toisaalta johtaja, jonka kalenteri jo huutaa punaista,
+      saattaa jopa hidastaa etenemistä. Samaan aikaan muu organisaatio hukkuu erinäisiin työkaluihin ja kokeiluihin.
     </p>
     <p>
-      <strong>Jäljelle jäävät vaihtoehdot ovat kehnoja:</strong> Joko palkkaat kokoaikaisen johtajan ajamaan tekoälyagendaa yrityksessä <strong>ennen kuin
-      business case on pitävä</strong>, tai nivot kokeilutilkkutäkkiä yhteen ja toivot, että tekoäly skaalautuu
+      <strong>Jäljelle jäävät vaihtoehdot ovat kehnoja:</strong> Palkkaat kokoaikaisen johtajan ajamaan tekoälyagendaa yrityksessä <strong>ennen kuin
+      business case on vedenpitävä</strong>, tai nivot kokeilutilkkutäkkiä yhteen ja toivot, että tekoäly skaalautuu
       kaikkien innokkuuden ajamana, kuin itsestään. Poltat tässä aikaa ja uskottavuutta.
     </p>
 </section>
@@ -41,18 +41,18 @@ meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityk
 <section id="the-solution">
     <h2>Ratkaisu</h2>
     <p>
-      Kokenut johtaja, jolla on oikea osaaminen, kyky tehdä päätöksiä ja toimeenpanna niitä sekä ohjata toimia koko yrityksen
-      laajuisesti, on oikea ratkaisu. Johtajan on istuttava johtoryhmässä, sillä muuten muutos voi hyytyä ja jäädä muun 
+      Oikealla osaamisella varustettu kokenut johtaja, jolla on kyky tehdä päätöksiä ja toimeenpanna niitä sekä ohjata toimia koko yrityksen
+      laajuisesti, on oikea ratkaisu. Kyseisen johtajan on istuttava johtoryhmässä, sillä muuten muutos voi hyytyä ja jäädä muun 
       kiireellisen jalkoihin.
     </p>
     <p>
-      Työn on keskityttävä käytännöllisyyteen (mistä on hyötyä), ei pelkkään neuvontaa tai korkean tason strategiaan. 
+      Työn on keskityttävä yrityksen arjen käytännöllisyyteen (mistä on hyötyä), ei pelkkään neuvontaa tai korkean tason strategiaan. 
       Tekoälyn aikaisten omaksujien tunnistaminen ja auttaminen, toimittajien arviointi, käytäntöjen luominen, työpajojen fasilitointi,
       pilottien johtaminen, <strong>sekä ensimmäisten liiketoiminta-automaatioiden käyttöönotto siten, että ne
       jäävät käyttöön</strong> vaativat huolenpitoa. Kyse on investoinnista yrityksen kilpailukykyyn!
     </p>
     <p>
-      Johtaja tarvitsee mandaatin toimia, mutta sinun itsesi on tärkeää pysyä ajan tasalla.<br />
+      Johtaja tarvitsee toiminnalle tukesi, mutta samaan aikaan sinun on tärkeää pysyä ajan tasalla.<br />
       Fractional AI Lead -malli on matalan kynnyksen riskitön tapa selättää tekoälyhaaste.
     </p>
 </section>
@@ -61,12 +61,12 @@ meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityk
     <h2>Yksi omistaja, yksi vastuu</h2>
     <div class="small-box-header">
       <h4>Fractional AI Lead</h4>
-      <p>Toimii osana johtoryhmääsi, vastuussa lopputuloksesta</p>
+      <p>Toimii osana johtoryhmääsi ja on vastuullinen lopputuloksesta</p>
     </div>
   <div class="row">
     <div class="col-md-6 col-lg-3 small-box">
       <h5><span class="small-box-num">#1</span> Johto &amp; hallitus</h5>
-      <p>Strategia-, priorisointi- ja investointipäätökset sekä avoin raportointi, mitä panostukset tuottivat.</p>
+      <p>Strategia-, priorisointi- ja investointipäätökset sekä avoimuus siitä, mitä hyötyjä panostuksilla saatiin.</p>
     </div>
     <div class="col-md-6 col-lg-3 small-box">
       <h5><span class="small-box-num">#2</span> Operaatiot</h5>
@@ -74,11 +74,11 @@ meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityk
     </div>
     <div class="col-md-6 col-lg-3 small-box">
       <h5><span class="small-box-num">#3</span> IT &amp; data</h5>
-      <p>Alusta, integraatiot, tietoturva ja datavalmius, joka ratkaisee mikä ylipäätään on saavutettavissa.</p>
+      <p>Alusta, integraatiot, tietoturva ja datavalmius, joka ratkaisee mitä voidaan saavuttaa ja milloin.</p>
     </div>
     <div class="col-md-6 col-lg-3 small-box">
       <h5><span class="small-box-num">#4</span> Riskit &amp; lainmukaisuus</h5>
-      <p>Sisäiset käytännöt, datan käsittely ja hallinta, joka takaa johdolle hyvät yöunet jatkossakin.</p>
+      <p>Sisäiset käytännöt tekoälyn käytössä, datan käsittely ja hallinta. Näiden avulla nukut hyvin jatkossakin.</p>
     </div>
   </div>
 
@@ -93,14 +93,14 @@ meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityk
     Fractional AI Lead ottaa täyden vastuun yrityksen tekoälyagendasta ja huolehtii etenemisestä.
   </p>
   <p>
-    <strong>Asetetaan tavoite. Saavutetaan se määrätietoisuudella.</strong>
+    Aktiviteetteja ja tuotoksia, joilla yrityksen tekoälykypsyyttä kehitetään:
   </p>
   <ul class="common-list">
     <li><strong>AI-tiekartta:</strong> priorisoitu ja kulutietoinen tiekartta, jossa omistajat, riippuvuudet ja virstanpylväät.</li>
     <li><strong>Käyttötapausten kartoitus ja business case:</strong> tehdään yhdessä tiimien kanssa, jotka käyttävät tekoälyä.</li>
     <li><strong>Toimittajien arviointi:</strong> riippumattomat kriteerit, shortlist johon voit luottaa, pilottisuunnitelma ja TCO.</li>
-    <li><strong>AI-hallinta ja -käytännöt:</strong> hyväksytyt työkalut, käyttösäännöt, datan käsittely ja riskien tunnistaminen.</li>
-    <li><strong>Tietoturva, tietosuoja ja lainmukaisuus:</strong> yrityksen sääntelyympäristö huomioiden, ml. AI Act.</li>
+    <li><strong>AI-hallinta ja -käytännöt:</strong> hyväksytyt työkalut, säännöt, datan käsittely ja riskien tunnistaminen.</li>
+    <li><strong>Tietoturva, tietosuoja ja lainmukaisuus:</strong> yrityksen sääntely-ympäristö huomioiden, ml. AI Act.</li>
     <li><strong>Johdon raportointi:</strong> bi-weeklynä AIn tilasta yrityksessä, mikä eteni, mitä seuraavaksi & päätösasiat.</li>
     <li><strong>Muutoksen mahdollistaminen:</strong> AIn aikaiset omaksujat yrityksessä ja oleelliset mittarit.</li>
     <li><strong>Käytännön toteutus:</strong> ensimmäiset automaatiot ja käyttötapaukset, käyttöönotettuina.</li>

@@ -39,13 +39,11 @@ a {
 
 a.content-link {
   color: $secondary;
+  text-align: left;
+  
   &:hover {
     //color: color.adjust($secondary, $lightness: -5%, $space: hsl);
     text-decoration: none;
-
-    &::after {
-      content: " »";
-    }
   }
 
   &::after {
@@ -94,7 +92,7 @@ ul {
 
 ul.common-list {
   max-width: 780px;
-  margin: 2.5em auto 0;
+  margin: 2.5em 0 0;
 
   li {
     margin-bottom: 0.8em;
@@ -115,6 +113,17 @@ ul.common-no-list li {
     left: 0.2em;
     content: "\10102";
     color: $light;
+  }
+}
+
+.bg-ligr-ld-d_h {
+  &:hover {
+    //border: 1px solid color.adjust($secondary, $lightness: -60%, $space: hsl);
+    transition: background 0.3s;
+    -moz-transition: background 0.3s;
+    transition: background 0.3s;
+    cursor: pointer;
+    background: linear-gradient($lessdark, $dark);
   }
 }
 

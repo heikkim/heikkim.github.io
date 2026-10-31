@@ -14,8 +14,8 @@ meta_description: "Ratkaisut PK-yritysten tekoäly- ja dataongelmiin. Myös fasi
     <p>
       
       Tekoälyhaasteeseen, jossa nykyiset ratkaisumallit eivät tuota toivottua lopputulosta. 
-      Ongelma tai iiketoimintamahdollisuus, business case, 
-      joka kaipaa tarkempaa määrittelyä tai <strong>tekoälystrategia, joka tarvitsee toisen mielipiteen.</strong>
+      Ongelman tai liiketoimintamahdollisuuden hahmottamiseen, työstämään business casea, 
+      joka kaipaa tarkempaa määrittelyä tai <strong>tekoälystrategian muotoilun avuksi, kun hyödytte toisesta kokeneesta silmäparista.</strong>
       Muotoillaan ongelma kysymykseksi ja muunnetaan se toteutettavaksi suunnitelmaksi.
     </p>
 </section>
@@ -25,14 +25,13 @@ meta_description: "Ratkaisut PK-yritysten tekoäly- ja dataongelmiin. Myös fasi
     <h2>Haaste</h2>
     <p>
       Iso osa tekoälyhankkeista jää lähtötelineisiin tai kokeiluasteelle. Data on hajallaan,
-      liiketoimintaprosesseissa on paljon käsityötä, business case on vailla pohjaa, eikä kukaan osaa sanoa, mitä
-      pitäisi tehdä ensimmäiseksi. Hallitus odottaa suunnitelmaa, johto lukujen kehittymistä ja toimittajat vastaavat
-      sen, mitä uskovat sinun haluavan kuulla.
+      liiketoimintaprosesseissa on paljon käsityötä, business case on vailla pohjaa, eikä kukaan oikein osaa sanoa, mitä
+      ihan ensimmäiseksi pitäisi tehdä. Ristipaine on kova: hallitus odottaa suunnitelmaa, johto lukujen kehittymistä ja henkilöstö suuntaa.
     </p>
     <p>
-      Tekoälyyn liittyvä haaste on harvoin yksioioinen. Siihen liittyy yrityksen datavalmis, liiketoimintaprosessit,
-      hankeomistajuus ja muutoshaaste. Keskityt väärään asiaan, ja "ROI ottaa hittiä", esimerkiksi: hankit tuotteen,
-      jota kukaan ei ota käyttöön tai automatisoidat prosessin, joka olisi pitänyt suunnitella uusiksi.
+      Tekoälyyn liittyvä haaste on harvoin yksioioinen. Siihen liittyy yrityksen datavalmius, liiketoimintaprosessit,
+      hankeomistajuus ja muutoshaaste. Jos keskityt väärään asiaan, niin päädyt hukkaamaan aikaa ja rahaa, esimerkiksi: hankit tuotteen,
+      jota kukaan ei ota käyttöön tai automatisoidat prosessin, joka pitäisi oikeasti suunnitella uusiksi.
     </p>
     <p>
       Usein yrityksessä ollaan itse liian lähellä ongelmaa, eikä sitä tämän vuoksi nähdä tarkasti.
@@ -43,15 +42,16 @@ meta_description: "Ratkaisut PK-yritysten tekoäly- ja dataongelmiin. Myös fasi
 <section id="the-solution">
     <h2>Ratkaisu</h2>
     <p>
-      Lähde liikkeelle ongelmasta, älä työkaluista tai menetelmistä.
+      Lähde liikkeelle ongelman ymmärtämisestä, älä työkaluista tai menetelmistä.
     </p>
     <p>
       Ymmärrä kokonaiskuva, ja ympäristöön liittyvät rajoitteet, datavalmius ja organisaation hiljainen tietopääoma.
       Pyri saamaan aikaan yhteinen käsitys ratkaistavasta ongelmasta ja mitkä asiat vaikuttavat lopputulokseen. Suunnittele
-      tämän perusteella kokeilu, jolla nostat onnistumisen todennäköisyyttä. Ongelmiin on usein useampi ratkaisu, ja ratkaisuilla
-      edelleen erilaiset hyödyt & haitat. Toteuta hallitusti ja mittaa säännöllisesti, jotta tiedät eteneväsi oikeeaan suuntaan.
+      tämän perusteella kokeilu, jolla nostat onnistumisen todennäköisyyttä. Ongelmiin on usein olemassa useampi ratkaisuvaihtoehto, ja eri 
+      vaihtoehdoilla edelleen erilaiset hyödyt & haitat.
     </p>
     <p>
+      Toteuta hallitusti ja mittaa säännöllisesti, jotta tiedät eteneväsi oikeeaan suuntaan.
       Harvoin tekoäly- ja datahaasteet ratkeavat yksin pohtimalla, puhumattakaan tuottavuudesta.
     </p>
 </section>
@@ -59,6 +59,10 @@ meta_description: "Ratkaisut PK-yritysten tekoäly- ja dataongelmiin. Myös fasi
 <!-- 4. Visual slot 1 — the framework -->
 <section id="the-framework">
     <h2>Keskittyminen käsillä olevaan haasteeseen</h2>
+    <div class="small-box-header">
+      <h4>Kehittymisen elinkaari</h4>
+      <p>Ongelman ytimen ymmärtämisen kautta toimenpiteisiin ja mitattaviin liiketoimintahyötyihin.</p>
+    </div>
     <div class="row">
       <div class="col-md-6 col-lg-3 small-box">
         <h5><span class="small-box-num">#1</span> Kartoitus</h5>

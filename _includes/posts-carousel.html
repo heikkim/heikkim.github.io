@@ -18,20 +18,20 @@
 
 {% if highlighted.size > 0 %}
 
-<section id="posts-highlights">
+<section id="highlights">
   <div class="container">
 
     <h2>{{ postsText.highlights-title }}</h2>
 
-    <div id="postsCarousel" class="carousel slide posts-carousel" data-ride="carousel">
+    <div id="postsCarousel" class="carousel slide carousel" data-ride="carousel">
       <div class="carousel-inner">
         {% for post in highlighted %}
         {% comment %} The first slide carries the active class, the rest are shown by Bootstrap {% endcomment %}
         <div class="carousel-item{% if forloop.first %} active{% endif %}">
-          <div class="posts-carousel-slide" style="background-image: url('{{ post.hero_image | relative_url }}');" role="img" aria-label="{{ post.title }}">
+          <div class="carousel-slide" style="background-image: url('{{ post.hero_image | relative_url }}');" role="img" aria-label="{{ post.title }}">
             <div class="carousel-caption">
-              <h3 class="posts-carousel-title">{{ post.title }}</h3>
-              <p class="posts-carousel-excerpt">{{ post.excerpt | strip_html | strip }}</p>
+              <h3 class="carousel-title">{{ post.title }}</h3>
+              <p class="carousel-excerpt">{{ post.excerpt | strip_html | strip }}</p>
               <a class="btn btn-primary" href="{{ post.url | relative_url }}">{{ postsText.read-more }}</a>
             </div>
           </div>

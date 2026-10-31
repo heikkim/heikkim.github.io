@@ -64,7 +64,7 @@ markdown: kramdown
 #  relies on that.
 # ==============================================================
 
-permalink: /posts/:categories/:year/:month/:day/:title:output_ext
+permalink: /posts/:year/:month/:day/:title:output_ext
 
 defaults:
   # ---- The default language of a post --------------------------
@@ -72,26 +72,29 @@ defaults:
       path: ""
       type: "posts"
     values:
+      author: HM
       lang: fi
-      layout: posts
+      layout: post
 
   # ---- Finnish posts ------------------------------------------
   - scope:
       path: "_posts/fi"
       type: "posts"
     values:
+      author: HM
       lang: fi
-      layout: posts
-      permalink: /posts/:categories/:year/:month/:day/:title/
+      layout: post
+      permalink: /posts/:year/:month/:day/:title/
 
   # ---- English posts ------------------------------------------
   - scope:
       path: "_posts/en"
       type: "posts"
     values:
+      author: HM
       lang: en
-      layout: posts
-      permalink: /en/posts/:categories/:year/:month/:day/:title/
+      layout: post
+      permalink: /en/posts/:year/:month/:day/:title/
 
   # ---- Categories ----------------------------------------------
   # One entry per category folder. The folder name is the slug of

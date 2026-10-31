@@ -12,20 +12,20 @@ meta_description: "Occasional notes on AI strategy, governance and leading the c
   {% assign newsletterText = site.data.sitetext[curlang.locale].newsletter %}
 {% endif %}
 
-<div class="posts-page">
+<div class="page">
 
-  <header class="posts-hero">
+  <header class="hero">
     <div class="row">
       <div class="col-lg-10 offset-lg-1 text-center">
         <h1>{{ newsletterText.title }}</h1>
-        <p class="posts-excerpt">{{ newsletterText.text }}</p>
+        <p class="excerpt">{{ newsletterText.text }}</p>
       </div>
     </div>
   </header>
 
-  <section class="posts-body">
+  <section class="body">
     <div class="row">
-      <div class="col-lg-8 offset-lg-2 posts-prose">
+      <div class="col-lg-8 offset-lg-2 prose">
         <p>
           The newsletter is a record of learnings about AI in client work. What worked, what did not, and where
           companies usually get stuck.
@@ -40,7 +40,7 @@ meta_description: "Occasional notes on AI strategy, governance and leading the c
 
         <h2>Frequence</h2>
         <p>
-          Once or twice a month. The first one will be out late autumn 2026.
+          Once or twice a month. The first one will be out late 2026.
         </p>
 
         <h2>Focus is on what matters</h2>

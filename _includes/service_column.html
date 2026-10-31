@@ -3,7 +3,7 @@
 {% else %}
     {% assign lastServiceDescClass = "" %} 
 {% endif %}
-<div class="col-lg service-col text-left {{ lastServiceDescClass }}" id="service-{{ service.sid }}" data-link="{{ service.url }}">
+<div class="col-lg service-col text-left{{ lastServiceDescClass }} bg-ligr-ld-d_h" id="service-{{ service.sid }}" data-link="{{ service.url }}">
     <h4 class="service-heading">{{ service.title }}</h4>
     <p>{{ service["desc"] }}</p>
     {% if service.link-text != "" and service.link-text != null %}

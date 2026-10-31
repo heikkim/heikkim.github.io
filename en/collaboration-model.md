@@ -20,7 +20,7 @@ meta_description: "Simple collaboration models for SMEs: an ongoing fractional A
   <h2>Engagement through services</h2>
   <div class="row">
     <div class="col-lg-4">
-      <div class="collaboration-card">
+      <div class="collaboration-card bg-ligr-ld-d_h">
         <h5 class="text-secondary">#1 Fractional AI Lead</h5>
         <p class="basis">Ongoing engagement / monthly retainer</p>
         <p class="detail">Agreed on required capacity, starting from 1+ days per week.</p>
@@ -34,7 +34,7 @@ meta_description: "Simple collaboration models for SMEs: an ongoing fractional A
       </div>
     </div>
     <div class="col-lg-4">
-      <div class="collaboration-card">
+      <div class="collaboration-card bg-ligr-ld-d_h">
         <h5 class="text-secondary">#2 AI Coaching</h5>
         <p class="basis">1 to 4 week program</p>
         <p class="detail">One program for the whole period, confirmed after the discovery call.</p>
@@ -48,7 +48,7 @@ meta_description: "Simple collaboration models for SMEs: an ongoing fractional A
       </div>
     </div>
     <div class="col-lg-4">
-      <div class="collaboration-card last-card">
+      <div class="collaboration-card last-card bg-ligr-ld-d_h">
         <h5 class="text-secondary">#3 AI Consulting</h5>
         <p class="basis">Project-based or n days</p>
         <p class="detail">Fixed scope for smaller projects. <br />Time&materials based for longer assignments.</p>

@@ -22,7 +22,7 @@ meta_description: "Selkeät yhteistyömallit PK-yrityksille: jatkuva fractional 
     <h2>Yhteistyö palveluiden kautta</h2>
     <div class="row">
       <div class="col-lg-4">
-        <div class="collaboration-card">
+        <div class="collaboration-card bg-ligr-ld-d_h">
         <h5 class="text-secondary">#1 Fractional AI Lead</h5>
         <p class="basis">Jatkuva yhteistyö / kuukausiallokaatio</p>
         <p class="detail">Sovitaan tarvittava kapasiteetti, alkaen 1+ päivästä viikossa.</p>
@@ -36,7 +36,7 @@ meta_description: "Selkeät yhteistyömallit PK-yrityksille: jatkuva fractional 
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="collaboration-card">
+        <div class="collaboration-card bg-ligr-ld-d_h">
           <h5 class="text-secondary">#2 AI-valmennus</h5>
           <p class="basis">1-4 viikon ohjelma</p>
           <p class="detail">Yksi ohjelma koko jaksolle, vahvistetaan kartoituskeskustelun jälkeen.</p>
@@ -50,7 +50,7 @@ meta_description: "Selkeät yhteistyömallit PK-yrityksille: jatkuva fractional 
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="collaboration-card">
+        <div class="collaboration-card bg-ligr-ld-d_h">
           <h5 class="text-secondary">#3 AI-konsultointi</h5>
           <p class="basis">Projektiperustainen tai n päivää</p>
           <p class="detail">Kiinteä laajuus pienempiin projekteihin. <br />Päivälaskutus pidempiin toimeksiantoihin.</p>

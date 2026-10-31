@@ -11,33 +11,68 @@
   {% assign postsText = site.data.sitetext[curlang.locale].posts %}
 {% endif %}
 
-{% assign posts = site.posts | where: "lang", lang %}
+{% assign posts = site.posts | where: "lang", lang | sort: "date" | reverse %}
 
 <section id="posts-list">
-  <div class="container">
+  <div class="container grid">
+    {% for post in posts %}
+      {% assign author = site.data.authors.list | where: "initials", post.author | first %}
 
-    {% for entry in postsText.categories %}
+      {% assign postCatTexts=post.categories | join: ", " %}
+      {% for postCat in post.categories %}
+        {% assign postCatText=postsText.categories[postCat] %}
+        {% if postCatText %} 
+          {% assign postCatTexts=postCatTexts |  replace: postCat, postCatText   %}
+        {% endif %}
+      {% endfor %}
+
+      <article class="list-item card">
+        <a href="{{ post.url | relative_url }}">
+          {% assign imgSrc = post.list_image  %}
+          {% if imgSrc == "" or imgSrc == nil %}
+            {% assign imgSrc = "/assets/img/default.svg"  %}
+          {% endif %}
+          <img class="card-img-top" src="{{ imgSrc }}" alt="{{ post.list_image_alt }}" width="100%"/>
+          <div class="card-body">
+            
+          <h5 class="card-title">{{ post.title }}</h5>
+            
+            <p class="post-meta">
+              <time class="date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: postsText.date-format }}</time>            
+              <span class="categories">{{ postCatTexts }}</span>
+            </p>
+            
+            <p class="card-text">{{ post.excerpt | strip_html | strip }}</p>
+            
+            <div class="post-meta card-bottom">
+              <img class="author" src="/assets/img/headshot_sq-small.jpg" />
+              <span class="author">{{ author.name }}</span>
+            </div>
+          
+          </div>
+        </a>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<div class="clearfix"></div>
+
+{% comment %} 
+The following is for showing posts per category.
+
+  {% for entry in postsText.categories %}
     {% assign slug = entry[0] %}
     {% assign name = entry[1] %}
     {% assign catPosts = posts | where_exp: "p", "p.categories contains slug" %}
+    
+    <h2>{{ name }}</h2>
+
     {% if catPosts.size > 0 %}
-
-    <div class="posts-category-block">
-      <h2>{{ name }}</h2>
-
       {% for post in catPosts %}
-      <article class="posts-list-item">
-        <h3><a class="content-link" href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-        <p class="posts-date">
-          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: postsText.date-format }}</time>
-        </p>
-        <p>{{ post.excerpt | strip_html | strip }}</p>
-      </article>
+        .. Logic for showing posts
       {% endfor %}
-    </div>
 
     {% endif %}
-    {% endfor %}
-
-  </div>
-</section>
+  {% endfor %}
+{% endcomment %}

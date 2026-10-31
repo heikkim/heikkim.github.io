@@ -7,6 +7,10 @@ section#contact {
   margin-top: 50px;
   margin-bottom: 100px;
 
+  p {
+    max-width: unset;
+  }
+
   .form-group {
     margin-bottom: 25px;
     input,
@@ -20,10 +24,12 @@ section#contact {
       height: 268px;
     }
   }
+
   .form-control:focus {
     border-color: $warning;
     box-shadow: none;
   }
+
   ::-webkit-input-placeholder {
     font-weight: 700;
     @include heading-font;

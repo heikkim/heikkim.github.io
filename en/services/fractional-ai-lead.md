@@ -87,8 +87,7 @@ meta_description: "Senior AI strategy, governance and hands-on execution for SME
       Fractional AI Lead takes the full responsibility of the AI agenda in the company and good care in moving it forward.
     </p>
     <p>
-      <strong>Come with a goal. We'll work our way there.</strong>
-      <br /><br />
+      Activities for developing company AI maturity:
     </p>
     <ul class="common-list">
       <li><strong>AI roadmap:</strong> a prioritised, cost-aware roadmap with clear owners, dependencies and milestones.</li>

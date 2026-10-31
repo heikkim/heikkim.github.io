@@ -12,8 +12,8 @@
  * seconds. Leaving the top of the window happens while the cursor is on its
  * way to the address bar, and a modal that pops up right away is a nuisance.
  */
-const SPC_EXIT_INTENT_DELAY_MS = 20000;
-const SPC_SHOW_MODAL_GRACE_MS = 230;
+const SPC_EXIT_INTENT_DELAY_MS = 12500;
+const SPC_SHOW_MODAL_GRACE_MS = 200;
 
 function spc_newsletterForms() {
     return $(".js-newsletter-form");

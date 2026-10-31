@@ -28,10 +28,10 @@ en: &DEFAULT_EN
 #      section: timeline
 #    - title: "Team"
 #      section: team
-    - title: "A Step Ahead"
-      section: posts
-      url: /en/posts/
-      page: true    
+#    - title: "A Step Ahead"
+#      section: posts
+#      url: /en/posts/
+#      page: true    
     - title: "Collaboration Model"
       section: collaboration
       url: /en/collaboration-model.html
@@ -74,10 +74,10 @@ fi: &DEFAULT_FI
 #      section: nosotros
 #    - title: "Cronología"
 #      section: cronologia
-    - title: "Askel Edellä"
-      section: posts
-      url: /posts/
-      page: true
+#    - title: "Askel Edellä"
+#      section: posts
+#      url: /posts/
+#      page: true
     - title: "Yhteistyömalli"
       section: collaboration
       url: /collaboration-model.html

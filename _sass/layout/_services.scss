@@ -25,15 +25,6 @@ section#services {
         position: absolute;
         bottom: 10px;
       }
-
-      &:hover {
-      //border: 1px solid color.adjust($secondary, $lightness: -60%, $space: hsl);
-      transition: background 0.3s;
-      -moz-transition: background 0.3s;
-      transition: background 0.3s;
-      cursor: pointer;
-      background: linear-gradient($lessdark, $dark);
-    }
     }
   }
 

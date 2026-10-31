@@ -11,17 +11,9 @@ meta_description: "Writing on AI strategy, AI governance and leading the change.
   {% assign postsText = site.data.sitetext[curlang.locale].posts %}
 {% endif %}
 
-<div class="posts-page">
+<section id="posts-main" class="page-hero">
+  <h1>{{ postsText.title }}</h1>
+  <h5>{{ postsText.text }}</h5>
+</section>
 
-  <header class="posts-hero">
-    <div class="row">
-      <div class="col-lg-10 offset-lg-1 text-center">
-        <h1>{{ postsText.title }}</h1>
-        <p class="posts-excerpt">{{ postsText.index-lead }}</p>
-      </div>
-    </div>
-  </header>
-
-  {% include posts-list.html lang=page.lang %}
-
-</div>
+{% include posts-list.html lang=page.lang %}

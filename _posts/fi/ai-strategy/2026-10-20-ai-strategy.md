@@ -1,40 +1,31 @@
 ---
 layout: post
-title: "Tekoälystrategia alkaa ongelmasta, ei välineestä"
-meta_title: "Tekoälystrategia alkaa ongelmasta"
-meta_description: "Miksi tekoälystrategia on turha, jos se lähtee tuotteesta. Ja mistä se oikeasti alkaa."
-excerpt: "Strategia, joka lähtee tuotteesta, on tuotestrategiaa huonolla tuotteella. Oikea aloituskohta on aina ongelma."
-hero_image: "/assets/img/posts/hero-ai-strategy.svg"
+author: HM
+title: "Tekoälystrategia alkaa ongelman ymmärtämisestä, ei työkaluista"
+meta_title: "Tekoälystrategia alkaa ongelman ymmärtämisestä"
+meta_description: "Miksi tekoälystrategia epäonnistuu, ja mistä oikeasti kannattaa aloittaa."
+excerpt: "Miksi tekoälystrategiaa ei voi tehdä \"työkalut ensin\" -näkökulmasta."
+hero_image: &hero "/assets/img/posts/hero-ai-strategy.svg"
+hero_image_alt: &hero_alt AI hallinta kuva
+list_image: *hero
+list_image_alt: *hero_alt
 content_image: "/assets/img/posts/content-ai-strategy.svg"
-quote: "Strategia, joka lähtee välineestä, tuottaa välineen. Strategia, joka lähtee ongelmasta, tuottaa tuloksen."
+content_image_alt: 
+quote: "Työstä ensin tekoälystrategia. Valitse työkalut strategian tavoitteiden mukaisesti."
 highlighted: true
 ---
 
-Olen nähnyt tämän kuvan liian monta kertaa. Hallitus pyytää tekoälystrategiaa, konsultti ehdottaa kolmivuotista roadmapia, ja lopputulokseksi jää 40 diaa, jotka eivät koske yrityksen liiketoimintaa lainkaan.
+Viisaita sanoja ja sitten vielä lisää viisaita sanoja.
 
-Oikea aloituskohta on muualla kuin työkalussa.
+## Aloita ongelman ymmärtämisellä
 
-## Aloita ongelmasta, älä välineestä
+Lorem ipsum.
 
-Strategia, joka lähtee tuotteesta, on tuotestrategiaa huonolla tuotteella. Se on helppo myydä, vaikea toteuttaa ja loppuu yleensä ennen ensimmäistä budjetointikierrosta.
-
-Käytännön toimintatapa on paljon yksinkertaisempi:
-
-- Mikä ongelma ratkaistaan ensimmäisenä?
-- Mitä tietoa ratkaisu tarvitsee, ja onko se olemassa?
-- Kuka omistaa tuloksen, ja miten sitä seurataan?
-- Miten näemme, onko ratkaisu toiminut?
-
-Jos näihin ei ole vastausta, sinulla ei ole strategiaa. Sinulla on hankintalista.
+- Dolor sit amet
+- Lorem ipsum
 
 <!--content-image-->
 
-## Ulkopuolinen näkökulma on lahja, ei tuote
+## Ulkopuolelta tuleva pystyy näkemään asioita, joita itse et näe
 
-Yritys näkee oman ongelmansa aina liian läheltä. Se ei ole huonoa huomiota, se on vain inhimillistä. Ulkopuolinen katsaus ei tuo uutta teknologiaa, vaan uuden tavan nimetä ongelma.
-
-Se on yleensä kaikkein halvin osa koko hankkeesta.
-
-Kun ongelma on nimetty oikein, valinnat tarkentuvat itsestään: ei tarvitse ostaa kaikkea, ei tarvitse rakentaa kaikkea, ja jokainen ratkaisu voidaan mitata.
-
-Hyvä tekoälykonsultointi on yleensä lyhyt. Sitten tehdään se, mikä on tärkeintä, ja loput jätetään tekemättä.
+Lorem ipsum. Dolor sit amet.

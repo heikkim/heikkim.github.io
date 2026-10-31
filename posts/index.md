@@ -11,17 +11,10 @@ meta_description: "Kirjoituksia tekoälystrategiasta, tekoälykäytännöistä j
   {% assign postsText = site.data.sitetext[curlang.locale].posts %}
 {% endif %}
 
-<div class="posts-page">
-
-  <header class="posts-hero">
-    <div class="row">
-      <div class="col-lg-10 offset-lg-1 text-center">
-        <h1>{{ postsText.title }}</h1>
-        <p class="posts-excerpt">{{ postsText.index-lead }}</p>
-      </div>
-    </div>
-  </header>
+<section id="posts-main" class="page-hero">
+  <h1>{{ postsText.title }}</h1>
+  <h5>{{ postsText.text }}</h5>
+ </section>
 
   {% include posts-list.html lang=page.lang %}
 
-</div>

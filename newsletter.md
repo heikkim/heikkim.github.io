@@ -12,20 +12,20 @@ meta_description: "Näkemyksiä tekoälystrategiasta, AI-käytännöistä ja muu
   {% assign newsletterText = site.data.sitetext[curlang.locale].newsletter %}
 {% endif %}
 
-<div class="posts-page">
+<div class="page">
 
-  <header class="posts-hero">
+  <header class="hero">
     <div class="row">
       <div class="col-lg-10 offset-lg-1 text-center">
         <h1>{{ newsletterText.title }}</h1>
-        <p class="posts-excerpt">{{ newsletterText.text }}</p>
+        <p class="excerpt">{{ newsletterText.text }}</p>
       </div>
     </div>
   </header>
 
-  <section class="posts-body">
+  <section class="body">
     <div class="row">
-      <div class="col-lg-8 offset-lg-2 posts-prose">
+      <div class="col-lg-8 offset-lg-2 prose">
         <p>
           Uutiskirje sisältää oppeja tekoälystä asiakastyössä, siitä, mikä on toiminut, mikä ei ole
           ja missä yritykset yleensä kompuroivat.
@@ -40,7 +40,7 @@ meta_description: "Näkemyksiä tekoälystrategiasta, AI-käytännöistä ja muu
 
         <h2>Frekvenssi</h2>
         <p>
-          Kerran - pari kuussa. Ensimmäinen syksyn 2026 aikana.
+          Kerran - pari kuussa. Ensimmäinen loppuvuoden 2026 aikana.
         </p>
 
         <h2>Asiapainotteista sisältöä</h2>

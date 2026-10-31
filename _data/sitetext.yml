@@ -30,7 +30,7 @@ en: &DEFAULT_EN
           <br /><br />
           Integrating directly with your management team to help you define, plan, coordinate, initiate and maintain momentum of your company's AI initiative, at scale.
         url: /en/services/fractional-ai-lead.html
-        link-text: Read more about Fractional AI Lead for Companies
+        link-text: Read more about Fractional AI Lead
       - sid: ai-coaching
         title: "#2 AI Coaching"
         brief: ""
@@ -40,7 +40,7 @@ en: &DEFAULT_EN
           <br /><br />
           In case you're already using AI daily: Learn how to be a power user who uses AI for strategising and agents for more complex tasks utilising Agent Skills.
         url: /en/services/ai-coaching.html
-        link-text: Read more about AI Coaching for Leaders
+        link-text: Read more about AI Coaching
 #      - sid: ai-tooling
 #        title: "AI Tooling"
 #        brief: ""
@@ -54,9 +54,9 @@ en: &DEFAULT_EN
           For understanding AI opportunities in the company, creating an execution plan for AI change, 
           or in solving a specific challenge related to effective use of AI / data in the company.
           <br /><br />
-          Any matter related to company AI use that benefits having an external view.
+          Any matter related to company AI use which benefits having an external view.
         url: /en/services/ai-consulting.html
-        link-text: Read more about AI Consulting for Companies
+        link-text: Read more about AI Consulting
 #      - sid: agentic-ai
 #        title: "Agentic AI"
 #        brief: ""
@@ -158,23 +158,23 @@ en: &DEFAULT_EN
     title: A Step Ahead
     highlights-title: "Latest thinking"
     text: "Practical notes on AI, governance and leading the change."
-    index-lead: "Notes from the field on AI strategy, governance and leading the change in an SME."
     read-more: "Read the article"
     relevant-title: "Related articles"
     date-format: "%d %B %Y"
     categories:
-      ai-strategy: "AI strategy"
+      ai-strategy: "AI Strategy"
       leadership: "Leadership"
+    in-category: in
 
   # The newsletter subscription
   newsletter:
     title: "The AI newsletter"
-    text: "Newsletter on AI strategy, governance and leading the change, once or twice a month."
+    text: "Coming up late 2026!<br />Newsletter on AI strategy, governance and leading the change, 1-2 times a month."
     placeholder: "Your email address"
     submit: "Subscribe"
     success: "Thank you. The next issue is on its way."
     modal-title: "Before you go.."
-    modal-text: "Would you like an occasional newsletter on AI strategy, governance and leading change? No noise."
+    modal-text: "Would you like an occasional newsletter on AI strategy, governance and leading change? Coming up late 2026!"
     close: "Close"
     # The info page of the newsletter, linked from the footer
     info-link: "Read more about the AI Newsletter"
@@ -260,13 +260,13 @@ fi: &DEFAULT_FI
         title: "#1 Fractional AI Lead"
         brief: ""
         desc: >
-          Kokenut johtaja suoraan mukaan johtoryhmään. Yrityksille ja niiden hallituksille kokenutta strategianäkemystä, hallintamalleja sekä muutoksen johtamista.
-          Rooli on tyypillisesti AI Lead, AI Director tai Chief AI Officer yrityksen roolituksesta ja tilanteesta riippuen.
+          Kokenut johtaja suoraviivaisesti mukaan johtoryhmään. Kokenutta strategianäkemystä, AI-käytäntöjä sekä muutoksen johtamista yrityksille ja 
+          yritysten hallituksille. Rooli on tyypillisesti AI Lead, AI Director tai Chief AI Officer yrityksen roolituksesta ja tilanteesta riippuen.
           <br /><br />
-          Osana johtoryhmää, johtaja auttaa määrittelemään, suunnittelemaan, koordinoimaan, käynnistämään ja ylläpitämään 
+          Toimien tiiviinä osana johtoryhmää, AI Lead auttaa määrittelemään, suunnittelemaan, koordinoimaan, käynnistämään ja ylläpitämään 
           yrityksen tekoälyhankkeiden vauhtia, samalla huomioimalla tarkasti yrityksen kulttuurin ja yksilölliset toimintatavat.
         url: /services/fractional-ai-lead.html
-        link-text: Lue lisää Fractional AI Lead palvelusta yrityksille
+        link-text: Lue lisää Fractional AI Lead palvelusta
       - sid: ai-coaching
         title: "#2 AI-valmennus"
         brief: ""
@@ -277,7 +277,7 @@ fi: &DEFAULT_FI
           Jos käytät jo tekoälyä päivittäin: Opi ChatGPT-tehokäyttäjäksi, joka hyödyntää tekoälyä strategiatyössä sekä agenteja
           monimutkaisemmissa tehtävissä agenttitaitojen (Agent Skills) avulla.
         url: /services/ai-coaching.html
-        link-text: Lue lisää johdon ja hallituksen AI-valmennuksesta
+        link-text: Lue lisää johdon AI-valmennuksesta
       - sid: ai-consulting
         title: "#3 AI-konsultointi"
         brief: ""
@@ -287,12 +287,12 @@ fi: &DEFAULT_FI
           <br /><br />
           Ulkopuolisen asiantuntijanäkemyksen saamiseen yrityksen tekoälyn käyttöön liittyvään asiaan. Fasilitoidut workshopit ja tekoälykoulutukset.
         url: /services/ai-consulting.html
-        link-text: Lue lisää tekoälykonsultoinnista yrityksille ja organisaatioille
+        link-text: Lue lisää tekoälykonsultoinnista
 
   # The closing call to action of the service pages
   service-cta:
     title: "Ota seuraava askel."
-    text: "Jokainen toimeksianto alkaa lyhyellä kartoituskeskustelulla, joka ei sido sinua mihinkään. Kartoituksessa käymme läpi nykytilanteen: mitä on yritetty, missä ollaan jumissa ja miltä onnistuminen näyttäisi."
+    text: "Jokainen toimeksianto alkaa lyhyellä kartoituskeskustelulla, joka ei sido teitä. Kartoituksessa käymme läpi nykytilanteen: mitä on yritetty, missä ollaan jumissa ja miltä onnistuminen näyttäisi."
     cta: "Aloita Keskustelu"
 
   about:
@@ -387,16 +387,17 @@ fi: &DEFAULT_FI
     categories:
       ai-strategy: "Tekoälystrategia"
       leadership: "Johtaminen"
+    in-category: "@"
 
   # The newsletter subscription
   newsletter:
     title: "Tekoälyuutiskirje"
-    text: "Saat sähköpostiisi näkemyksiä tekoälystrategiasta ja muutoksen johtamisesta 1-2 kertaa kuussa."
+    text: "Tulossa loppuvuodesta 2026!<br />Saat sähköpostiisi näkemyksiä tekoälystrategiasta ja muutoksen johtamisesta 1-2 kertaa kuussa."
     placeholder: "Sähköpostiosoitteesi"
     submit: "Tilaa"
     success: "Kiitos. Seuraava Askel Edellä on tulossa."
     modal-title: "Ennen kuin menet.."
-    modal-text: "Haluatko sähköpostiisi näkemyksiä tekoälystrategiasta ja muutoksen johtamisesta 1-2 kertaa kuussa? Voit aina hypätä pois kyydistä myöhemmin."
+    modal-text: "Haluatko sähköpostiisi näkemyksiä tekoälystrategiasta ja muutoksen johtamisesta 1-2 kertaa kuussa? Voit aina hypätä pois kyydistä myöhemmin. Alkaa loppuvuodesta 2026!"
     close: "Sulje"
     # The info page of the newsletter, linked from the footer
     info-link: "Lue lisää tekoälyuutiskirjeestä"

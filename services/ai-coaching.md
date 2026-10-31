@@ -12,7 +12,7 @@ meta_description: "Henkilökohtaista, käytännönläheistä AI-valmennusta joht
     <h1>{{ service.title }}</h1>
     <h5>Käytännön tekoälyvalmennusta johtajille, jotka valitsevat johtaa.</h5>
     <p>
-      Tekoälyn tehokas käyttäminen omassa työssä on tuottavuuden uusi perustaso, myös johtajille. Paras aika oppia käyttämään
+      Tekoälyn tehokas käyttäminen omassa työssä on tuottavuuden uusi perustaso myös johtajille. Paras aika oppia käyttämään
       tekoälyä tuomaan lisää aikaa kiireiseen yritysarkeen <strong>on juuri nyt</strong>.
     </p>
 </section>
@@ -24,8 +24,7 @@ meta_description: "Henkilökohtaista, käytännönläheistä AI-valmennusta joht
       Tekoäly etenee vauhdilla, joka tekee sen johtamisesta haastavaa. Joku tiimistäsi on jo todennäköisesti edennyt tekoälyn
       käyttöönotossa. Samalla saatat itse yrittää pysyä perässä kehoteikkunan ja viidenkymmenen avoimen selain-välilehden kanssa.
       <strong>Tämä on valitettavan kallista:</strong> vastuutettavissa olevaa työtä ei päädy tekoälylle juuri ollenkaan, vaan
-      työt, kuten hallitusesitys ja sähkopostit syntyvat vielä käsityönä, tai leikkaa-liimaa -mallilla. Hankkimistasi työkaluista on
-      sinulle vain rajallisest hyötyä.
+      työt, kuten esitys hallitukselle ja sähkopostit syntyvat vielä käsityönä (ja osa ilta-aikaan), tai leikkaa-liimaa -mallilla kehoteikkunassa. Hankkimistasi työkaluista on sinulle vain rajallisesti hyötyä.
     </p>
     <p>
       "Vielä yksi webinaari" -ajattelu tuo vain laihaa lohtua. Kaksituntinenkin sellainen kehotteiden rakentamisesta antaa vain ylätason vinkkejä.
@@ -47,7 +46,7 @@ meta_description: "Henkilökohtaista, käytännönläheistä AI-valmennusta joht
       tekoälytuote-esittely tai webinaari kannattaa jättää väliin, ellei sinulla ihan oikeasti ole siihen aikaa.
     </p>
     <p>
-      Tekoälyvälmennuksen toimitustapa on henkilökohtaisesti, ja siinä keskitytään työpäivääsi. Ensimmäisessä sessiossa
+      Tekoälyvalmennuksen toimitustapa on henkilökohtaisesti (etänä tai paikan päällä), ja siinä keskitytään työpäivääsi. Ensimmäisessä sessiossa
       kartoitetaan päivittäin toistuva ja arvokas työ, esimerkiksi sähköpostien hoitaminen, asiakaspalautteisiin reagointi ja
       tiimi- tai yksikköraporttien tuottaminen tai tulkinta. Keskitymme nostamaan eniten arvoa tuottavan työsi automaatioastetta.
     </p>
@@ -68,7 +67,7 @@ meta_description: "Henkilökohtaista, käytännönläheistä AI-valmennusta joht
     <div class="row">
       <div class="col-md-6 col-lg-3 small-box">
         <h5><span class="small-box-num">#1</span> Nykytila</h5>
-        <p>Tekoälyn satunnaiskäyttö. Uusi kehote joka kerta, tulokset vaihtelevat laadultaan ja mukaudut tekemään itse.</p>
+        <p>Tekoälyn satunnaiskäyttö. Uusi kehote joka kerta, tulokset vaihtelevat laadultaan ja korjailet paljon jälkikäteen.</p>
       </div>
       <div class="col-md-6 col-lg-3 small-box">
         <h5><span class="small-box-num">#2</span> Työn kehittäminen</h5>
@@ -76,11 +75,11 @@ meta_description: "Henkilökohtaista, käytännönläheistä AI-valmennusta joht
       </div>
       <div class="col-md-6 col-lg-3 small-box">
         <h5><span class="small-box-num">#3</span> Tehokäyttäjä</h5>
-        <p>Delegoit arvoa tuottavaa työtä, kuten tutkimusta, koeversioita, analyysiä ja rakennat agentteja, jotka tekevät toistuvaa työtä.</p>
+        <p>Vastuutat arvoa tuottavaa työtä AI:lle, kuten tutkimusta, koeversioita, analyysiä ja rakennat agentteja, jotka tekevät toistuvaa työtä.</p>
       </div>
       <div class="col-md-6 col-lg-3 small-box">
         <h5><span class="small-box-num">#4</span> Kasvutekijä</h5>
-        <p>Henkilöstä omaksuu oppimasi. Tekoälyn käyttö muuntuu yrityksen toimintatavaksi ja vipuvaikutus kasvaa.</p>
+        <p>Henkilöstä omaksuu oppimaasi. Tekoälyn käyttö muuntuu yrityksen toimintatavaksi ja osaamisesi vipuvaikutus kasvaa.</p>
       </div>
     </div>
 
@@ -91,20 +90,19 @@ meta_description: "Henkilökohtaista, käytännönläheistä AI-valmennusta joht
 
 <!-- 5. Scope and deliverables -->
 <section id="scope">
-    <h2>Mitä tästä saa</h2>
+    <h2>Mitä tästä saa?</h2>
     <p>
       Jos käytät jo tekoälyä päivittäin, jätämme perusteet väliin ja siirrymme suoraan <strong>vaativampaan käyttöön</strong>:
-      tekoälyn käyttö päätöksenteossa ja strategiassa, työn vastuuttamiseen agenteille, sekä
+      tekoäly päätöksenteossa ja strategisoinnissa, työn vastuuttamiseen agenteille, sekä
       agenttitaitojen luomiseen, joiden avulla hiljainen tieto muuttuu toistettavaksi toimenpiteeksi.
     </p>
     <p>
-      <strong>Valitse tehtävistäsi se pahin aikasyöppö. Tehdään siitä ajan vapauttaja tärkeämpään työhön.</strong>
-      <br /><br />
+      <strong>Valitse tehtävistäsi pahimmat ajanviejät. Tehdään niistä ajan vapauttaja tärkeämpään työhön.</strong>
     </p>
     <ul class="common-list">
       <li><strong>Nykyisen työnkulkusi tarkastelu:</strong> mihin aika palaa, mitkä tehtävät voi automatisoida ja mitä ei kannata.</li>
       <li><strong>Oma kehotekirjasto:</strong> uudelleenkäyttettävät kehotteet työlle, jota toistat jatkuvasti.</li>
-      <li><strong>1:1 tapaamiset (online):</strong> rakennetaan aikataulusi huomioiden.</li>
+      <li><strong>1:1 tapaamiset (etä tai kasvotusten):</strong> rakennetaan aikataulusi huomioiden.</li>
       <li><strong>Automaatio:</strong> toistuvat työtehtävät, kuten postilaatikko, kokousvalmistelut, raportointi, tapaamiset.</li>
       <li><strong>Tekoälygentti:</strong> agenttitaitojen hyödyntäminen tehtävissä, joissa niistä on aitoa hyötyä.</li>
       <li><strong>Tekoälykäsikirja:</strong> kehotteet, säännöt ja käytännöt dokumentoituna.</li>

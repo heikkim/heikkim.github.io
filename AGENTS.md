@@ -35,10 +35,9 @@ Heikki, the human you are interacting with.
 - When needing to contain an element: Use Bootstrap's `.container` class with an HTML `<div>` element.
 - Text-alignment: Use Bootstrap's `text-POSITION`, e.g. `text-center`
 - Never use more than one decimal place in a CSS property, e.g. NOT `font-size: 1.54rem;`, USE `font-size: 1.5rem` instead.
-- CSS `width`, `max-width`, `height` and `max-height` properties' units should always be expressed in `px`, i.e. not for example in `em` or `rem`.
-- CSS `margin` property's unit should most commonly be expressed in `px`.
 - Unordered lists `<ul>` should be styled by default with `.common-list` class.
 - When there's only a header `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` or a paragraph `<p>` under a `<section>`, it does not require a `<div class="row">` nor a `<div class="col-XXX">` enclosure.
+- When in need of a card layout, use Bootstrap's `.card` with associated classes such as `.card-img-top` `.card-body`, `.card-title` and `.card-text`.
 - Check out what has already been implented, e.g. `fractional-ai-lead.html` or `collaboration-model.html`.
 - Aim for simplicity when desginnig rules and that what you do is reusable.
 - DO NOT create a horde of different sized fonts. Re-use what's defined in the project in similar elements.
