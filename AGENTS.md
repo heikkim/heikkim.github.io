@@ -38,7 +38,7 @@ Heikki, the human you are interacting with.
 - Unordered lists `<ul>` should be styled by default with `.common-list` class.
 - When there's only a header `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` or a paragraph `<p>` under a `<section>`, it does not require a `<div class="row">` nor a `<div class="col-XXX">` enclosure.
 - When in need of a card layout, use Bootstrap's `.card` with associated classes such as `.card-img-top` `.card-body`, `.card-title` and `.card-text`.
-- Check out what has already been implented, e.g. `fractional-ai-lead.html` or `collaboration-model.html`.
+- Check out what has already been implented, e.g. `fractional-ai-leadership.html` or `collaboration-model.html`.
 - Aim for simplicity when desginnig rules and that what you do is reusable.
 - DO NOT create a horde of different sized fonts. Re-use what's defined in the project in similar elements.
 - DO NOT define every element's styles explicitly if a close equivalent already cascades from `body` or similar parent.
@@ -67,7 +67,7 @@ Check container breakpoints in `_sass/base/bootstrap_variables.scss` variable `$
 - Favor simplicity and clarity over complexity and visual clutter.
 - CTAs should be subtly placed, but always there.
 - Cross-links to services from post content and other services are important.
-- Single pages, which are usually long-text such as `fractional-ai-lead.html`, have content directly on the page. Separate language version with the same name resides in another folder, e.g. `fi/fractional-ai-lead.html`.
+- Single pages, which are usually long-text such as `fractional-ai-leadership.html`, have content directly on the page. Separate language version with the same name resides in another folder, e.g. `fi/fractional-ai-leadership.html`.
 - Mashup page (`index.html`) content is in `_data/sitetext.yml`. Separate language versions are handled with Jekyll page parametrisation.
 
 ## Content standards

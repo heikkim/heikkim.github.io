@@ -21,16 +21,16 @@ en: &DEFAULT_EN
     text: ""
     section: services
     list:
-      - sid: fractional-ai-lead
-        title: "#1 Fractional AI Lead"
+      - sid: fractional-ai-leadership
+        title: "#1 Fractional AI Leadership"
         brief: ""
         desc: >
           Senior leadership engagement providing companies and their boards with senior strategy, governance, and hands-on execution.
-          The role is typically one of AI Lead, AI Director, Chief AI Officer depending on the company's lineup of roles and situation.
+          The role is typically one of AI Director, Head of AI, Chief AI Officer depending on the company's lineup of roles and situation.
           <br /><br />
           Integrating directly with your management team to help you define, plan, coordinate, initiate and maintain momentum of your company's AI initiative, at scale.
-        url: /en/services/fractional-ai-lead.html
-        link-text: Read more about Fractional AI Lead
+        url: /en/services/fractional-ai-leadership.html
+        link-text: Read more about Fractional AI Leadership
       - sid: ai-coaching
         title: "#2 AI Coaching"
         brief: ""
@@ -77,7 +77,7 @@ en: &DEFAULT_EN
 
   about:
     title: "Real experience for getting real results"
-    text: Serving SME companies as an AI Lead on a fractional basis. I also provide executive AI coaching and targeted AI consulting tailored to specific company needs.
+    text: Serving SME companies as an AI Leader on a fractional basis. I also provide executive AI coaching and targeted AI consulting tailored to specific company needs.
     body: >
       20 years of experience in IT consulting, software development, and SaaS business. I have served as a CEO, established 
       new business operations centered on data and artificial intelligence expertise and led product & technology development. In addition to leadership skills, my core 
@@ -257,17 +257,17 @@ fi: &DEFAULT_FI
     text: ""
     section: services
     list:
-      - sid: fractional-ai-lead
-        title: "#1 Fractional AI Lead"
+      - sid: fractional-ai-leadership
+        title: "#1 Fractional AI Leadership"
         brief: ""
         desc: >
           Kokenut johtaja suoraviivaisesti mukaan johtoryhmään. Kokenutta strategianäkemystä, AI-käytäntöjä sekä muutoksen johtamista yrityksille ja 
-          yritysten hallituksille. Rooli on tyypillisesti AI Lead, AI Director tai Chief AI Officer yrityksen roolituksesta ja tilanteesta riippuen.
+          yritysten hallituksille. Rooli on tyypillisesti AI Director, Head of AI tai Chief AI Officer yrityksen roolituksesta ja tilanteesta riippuen.
           <br /><br />
-          Toimien tiiviinä osana johtoryhmää, AI Lead auttaa määrittelemään, suunnittelemaan, koordinoimaan, käynnistämään ja ylläpitämään 
+          Toimien tiiviinä osana johtoryhmää, AI Leader auttaa määrittelemään, suunnittelemaan, koordinoimaan, käynnistämään ja ylläpitämään 
           yrityksen tekoälyhankkeiden vauhtia, samalla huomioiden yrityksen kulttuurin ja yksilölliset toimintatavat.
-        url: /services/fractional-ai-lead.html
-        link-text: Lue lisää Fractional AI Lead palvelusta
+        url: /services/fractional-ai-leadership.html
+        link-text: Lue lisää Fractional AI Leadership palvelusta
       - sid: ai-coaching
         title: "#2 AI-valmennus"
         brief: ""
@@ -298,7 +298,7 @@ fi: &DEFAULT_FI
 
   about:
     title: Käytännön kokemusta tuloksekkaaseen johtamiseen
-    text: Palvelen PK-yrityksiä AI Leadina fractional-mallilla. Teen myös johdon AI-valmennuksia ja AI-konsultointeja yritysten täsmätarpeisiin.
+    text: Palvelen PK-yrityksiä AI Leaderina fractional-mallilla. Teen myös johdon AI-valmennuksia ja AI-konsultointeja yritysten täsmätarpeisiin.
     body: >
       Minulla on 20 vuoden kokemus IT-konsultointi- ja softakehitys-liiketoiminnasta sekä SaaS-liiketoiminnasta.
       Urallani olen toiminut toimitusjohtajana, käynnistänyt data- ja AI-osaamiseen perustuvia liiketoimintoja sekä johtanut tuote- ja teknologiakehitystä.

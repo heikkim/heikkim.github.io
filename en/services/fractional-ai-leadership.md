@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "Interim AI Lead / Director / Officer for Companies and Organisations"
+title: "Interim AI Director / Head of AI / Chief AI Officer for Companies and Organisations"
 navtype: absolute
 lang: en
-meta_title: "Fractional AI Lead"
+meta_title: "Fractional AI Leadership"
 meta_description: "Senior AI strategy, governance and hands-on execution for SMEs and their boards without the overhead of a full-time executive."
 ---
-{% assign service=site.data.sitetext[page.lang].services.list | where: "sid", "fractional-ai-lead" | first %}
+{% assign service=site.data.sitetext[page.lang].services.list | where: "sid", "fractional-ai-leadership" | first %}
 <!-- 1. Hero — headline and executive summary -->
 <section class="page-hero">
     <h1>{{ service.title }}</h1>
@@ -46,7 +46,7 @@ meta_description: "Senior AI strategy, governance and hands-on execution for SME
       The engagement needs to be hands-on, not plain advisory or high level strategy. The hard chores of identifying AI champions & nurturing them, evaluating vendors, creating governance policy, facilitating workshops, running the pilots, <strong>and putting the first business automations into production so that it sticks</strong> need proper attention. After all, the question is about competitive capacity of the company!
     </p>
     <p>
-      The rest is about giving a mandate to act, while staying informed through appropriate control points. The Fractional AI Lead model is a low-threshold, risk-free approach for solving the challenge.
+      The rest is about giving a mandate to act, while staying informed through appropriate control points. The Fractional AI Leadership model is a low-threshold, risk-free approach for solving the challenge.
     </p>
 </section>
 
@@ -54,12 +54,12 @@ meta_description: "Senior AI strategy, governance and hands-on execution for SME
 <section id="the-model">
     <h2>One Owner, One Accountability</h2>
     <div class="small-box-header">
-      <h4>Fractional AI Lead</h4>
+      <h4>Fractional AI Leader</h4>
       <p>Embedded in your leadership team, accountable for the outcome</p>
     </div>
     <div class="row">
       <div class="col-md-6 col-lg-3 small-box">
-        <h5><span class="small-box-num">#1</span> Leadership &amp; Board</h5>
+        <h5><span class="small-box-num">#1</span> Management &amp; Board</h5>
         <p>Strategy, priority and investment decisions plus honest reporting on what we got in return.</p>
       </div>
       <div class="col-md-6 col-lg-3 small-box">
@@ -82,9 +82,9 @@ meta_description: "Senior AI strategy, governance and hands-on execution for SME
 </section>
 
 <section id="scope">
-    <h2>Fractional AI Lead Service for Companies</h2>
+    <h2>Fractional AI Leadership Service for Companies</h2>
     <p>
-      Fractional AI Lead takes the full responsibility of the AI agenda in the company and good care in moving it forward.
+      Fractional AI Leader takes the full responsibility of the AI agenda in the company and good care in moving it forward.
     </p>
     <p>
       Activities for developing company AI maturity:

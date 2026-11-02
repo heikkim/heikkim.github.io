@@ -4,7 +4,7 @@ title: "Collaboration Model"
 navtype: absolute
 lang: en
 meta_title: "Collaboration Model"
-meta_description: "Simple collaboration models for SMEs: an ongoing fractional AI Lead engagement, a one-to-four week AI coaching program, and project-based AI consulting."
+meta_description: "Simple collaboration models for SMEs: an ongoing fractional AI Leadership engagement, a one-to-four week AI coaching program, and project-based AI consulting."
 ---
 <section class="page-hero">
   <h1>Collaboration Model</h1>
@@ -21,7 +21,7 @@ meta_description: "Simple collaboration models for SMEs: an ongoing fractional A
   <div class="row">
     <div class="col-lg-4">
       <div class="collaboration-card bg-ligr-ld-d_h">
-        <h5 class="text-secondary">#1 Fractional AI Lead</h5>
+        <h5 class="text-secondary">#1 Fractional AI Leadership</h5>
         <p class="basis">Ongoing engagement / monthly retainer</p>
         <p class="detail">Agreed on required capacity, starting from 1+ days per week.</p>
         <ul class="common-list">
@@ -30,7 +30,7 @@ meta_description: "Simple collaboration models for SMEs: an ongoing fractional A
           <li>Roadmap, policy and board reporting included</li>
           <li>Reviewed every quarter, one month exit clause after the first month</li>
         </ul>
-        <a class="content-link" href="/en/services/fractional-ai-lead.html">Read more about Fractional AI Lead</a>
+        <a class="content-link" href="/en/services/fractional-ai-leadership.html">Read more about Fractional AI Leadership</a>
       </div>
     </div>
     <div class="col-lg-4">

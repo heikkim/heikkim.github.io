@@ -16,8 +16,8 @@ en: &DEFAULT_EN
       url: 
       collapseNavbarOnClick: false
       subnav:
-        - title: "#1 Fractional AI Lead"
-          url: /en/services/fractional-ai-lead.html
+        - title: "#1 Fractional AI Leadership"
+          url: /en/services/fractional-ai-leadership.html
         - title: "#2 AI Coaching"
           url: /en/services/ai-coaching.html
         - title: "#3 AI Consulting"
@@ -54,8 +54,8 @@ fi: &DEFAULT_FI
       url: /#services
       collapseNavbarOnClick: false
       subnav:
-        - title: "#1 Fractional AI Lead"
-          url: /services/fractional-ai-lead.html
+        - title: "#1 Fractional AI Leadership"
+          url: /services/fractional-ai-leadership.html
         - title: "#2 AI-valmennus"
           url: /services/ai-coaching.html
         - title: "#3 AI-konsultointi"

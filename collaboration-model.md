@@ -4,7 +4,7 @@ title: "Yhteistyömalli"
 navtype: absolute
 lang: fi
 meta_title: "Yhteistyömalli"
-meta_description: "Selkeät yhteistyömallit PK-yrityksille: jatkuva fractional AI Lead -yhteistyö, 1-4 viikon AI-valmennus ja projektiperusteinen AI-konsultointi."
+meta_description: "Selkeät yhteistyömallit PK-yrityksille: jatkuva fractional AI Director -yhteistyö, 1-4 viikon AI-valmennus ja projektiperusteinen AI-konsultointi."
 ---
 <div class="collaboration-page">
 
@@ -23,7 +23,7 @@ meta_description: "Selkeät yhteistyömallit PK-yrityksille: jatkuva fractional 
     <div class="row">
       <div class="col-lg-4">
         <div class="collaboration-card bg-ligr-ld-d_h">
-        <h5 class="text-secondary">#1 Fractional AI Lead</h5>
+        <h5 class="text-secondary">#1 Fractional AI Leadership</h5>
         <p class="basis">Jatkuva yhteistyö / kuukausiallokaatio</p>
         <p class="detail">Sovitaan tarvittava kapasiteetti, alkaen 1+ päivästä viikossa.</p>
         <ul class="common-list">
@@ -32,7 +32,7 @@ meta_description: "Selkeät yhteistyömallit PK-yrityksille: jatkuva fractional 
           <li>Roadmap, AI-käytänteet ja hallitusraportointi</li>
           <li>Arvioidaan joka kvartaali, ensimmäisen kuukauden jälkeen 30 päivän irtisanomisaika</li>
         </ul>
-        <a class="content-link" href="/services/fractional-ai-lead.html">Lue lisää Fractional AI Lead -palvelusta</a>
+        <a class="content-link" href="/services/fractional-ai-leadership.html">Lue lisää Fractional AI Leadership -palvelusta</a>
         </div>
       </div>
       <div class="col-lg-4">

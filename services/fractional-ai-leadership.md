@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "Fractional AI Lead / Director / Officer yrityksille ja organisaatioille"
+title: "Fractional AI Director / Head of AI / Chief AI Officer yrityksille ja organisaatioille"
 navtype: absolute
 lang: fi
-meta_title: "Fractional AI Lead"
+meta_title: "Fractional AI Leadership"
 meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityksille ja niiden hallituksille."
 ---
-{% assign service=site.data.sitetext[page.lang].services.list | where: "sid", "fractional-ai-lead" | first %}
+{% assign service=site.data.sitetext[page.lang].services.list | where: "sid", "fractional-ai-leadership" | first %}
 <!-- 1. Hero — headline and executive summary -->
 <section class="page-hero">
     <h1>{{ service.title }}</h1>
@@ -53,14 +53,14 @@ meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityk
     </p>
     <p>
       Johtaja tarvitsee toiminnalle tukesi, mutta samaan aikaan sinun on tärkeää pysyä ajan tasalla.<br />
-      Fractional AI Lead -malli on matalan kynnyksen riskitön tapa selättää tekoälyhaaste.
+      Fractional AI Leadership -malli on matalan kynnyksen riskitön tapa selättää tekoälyhaaste.
     </p>
 </section>
 
 <section id="the-model">
     <h2>Yksi omistaja, yksi vastuu</h2>
     <div class="small-box-header">
-      <h4>Fractional AI Lead</h4>
+      <h4>Fractional AI Leader</h4>
       <p>Toimii osana johtoryhmääsi ja on vastuullinen lopputuloksesta</p>
     </div>
   <div class="row">
@@ -88,9 +88,9 @@ meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityk
 </section>
 
 <section id="scope">
-  <h2>Fractional AI Lead -palvelu yrityksille</h2>
+  <h2>Fractional AI Leadership -palvelu yrityksille</h2>
   <p>
-    Fractional AI Lead ottaa täyden vastuun yrityksen tekoälyagendasta ja huolehtii etenemisestä.
+    Fractional AI Leader ottaa täyden vastuun yrityksen tekoälyagendasta ja huolehtii etenemisestä.
   </p>
   <p>
     Aktiviteetteja ja tuotoksia, joilla yrityksen tekoälykypsyyttä kehitetään:

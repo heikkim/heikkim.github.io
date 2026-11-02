@@ -114,8 +114,8 @@ meta_description: "Ratkaisut PK-yritysten tekoäly- ja dataongelmiin. Myös fasi
     <div class="oth-crosslinks">
       <h5>Etsitkö jotain muuta?</h5>
       <ul>
-        <li><strong>Fractional AI Lead</strong>, kun organisaatio kaipaa tekoälyn kontolleen ottavaa vastuullista johtajaa.
-        <br /><a class="content-link" href="/services/fractional-ai-lead.html">Lue lisää Fractional AI Lead palvelusta yrityksille</a></li>
+        <li><strong>Fractional AI Leadership</strong>, kun organisaatio kaipaa tekoälyn kontolleen ottavaa vastuullista johtajaa.
+        <br /><a class="content-link" href="/services/fractional-ai-leadership.html">Lue lisää Fractional AI Leadership palvelusta yrityksille</a></li>
         <li><strong>AI-valmennus</strong>, kun haluat kehittää omaa AI-osaamistasi, kehotteiden rakentamistaitoasi tai automatisoida töitäsi.<br /><a class="content-link" href="/services/ai-coaching.html">Lue lisää johdon ja hallituksen AI-valmennuksesta</a></li>
       </ul>
     </div>

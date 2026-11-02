@@ -20,7 +20,7 @@ url    : "" #"https://localhost:4000" # the base hostname & protocol for your si
 baseurl: "" # the subpath of your site, e.g. /posts. Do not set to "/" to avoid wrong canonical meta link path 
 
 title      : "StrongPoint Consulting" # Also check _data/_sitetext.yml for what's visible on the page.
-description: Fractional AI Lead, AI coaching and AI consulting agency # This is used only if there is no specific description available for the page
+description: Fractional AI Leadership, AI coaching and AI consulting agency # This is used only if there is no specific description available for the page
 email      : noreply@nop.nop #this is also the email contact forms will go to
 author     : Heikki Malkamäki
 # logo:     #optional, defaults to site title

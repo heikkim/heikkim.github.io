@@ -121,8 +121,8 @@ meta_description: "One-to-one, hands-on AI coaching for senior leaders and board
     <div class="oth-crosslinks">
       <h5>Looking for something else</h5>
       <ul>
-        <li><strong>Fractional AI Lead</strong> when the whole organisation needs to be transformed.
-        <br /><a class="content-link" href="/en/services/fractional-ai-lead.html">Read more about Fractional AI Lead for Companies</a></li>
+        <li><strong>Fractional AI Leadership</strong> when you need continuous AI leadership to lead company change and large scale AI initiatives
+        <br /><a class="content-link" href="/en/services/fractional-ai-leadership.html">Read more about Fractional AI Leadership for Companies</a></li>
         <li><strong>AI Consulting</strong> when you have a specific project or problem to solve, or make that one-off workshop happen.
         <br /><a class="content-link" href="/en/services/ai-consulting.html">Read more about AI Consulting for Companies</a></li>
       </ul>

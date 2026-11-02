@@ -108,7 +108,7 @@ meta_description: "Specific solutions to specific AI and data problems for SMEs 
     <div class="oth-crosslinks">
       <h5>Looking for something else?</h5>
       <ul>
-        <li><strong>Fractional AI Lead</strong> when you need continuous AI leadership and company transformation.<a class="content-link" href="/en/services/fractional-ai-lead.html"><span class="line">Read more about Fractional AI Lead for Companies</span></a></li>
+        <li><strong>Fractional AI Leadership</strong> when you need continuous AI leadership to lead company change and large scale AI initiatives.<a class="content-link" href="/en/services/fractional-ai-leadership.html"><span class="line">Read more about Fractional AI Leadership for Companies</span></a></li>
         <li><strong>AI Coaching</strong> when you want to boost your own productivity through 1-to-1 AI skills development. <a class="content-link" href="/en/services/ai-coaching.html"><span class="line">Read more about AI Coaching for senior leaders</span></a></li>
       </ul>
     </div>
