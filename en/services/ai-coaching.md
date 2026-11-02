@@ -52,7 +52,7 @@ meta_description: "One-to-one, hands-on AI coaching for senior leaders and board
       with the tasks that create the most value first.
     </p>
     <p>
-      <strong>Every session is hands-on:</strong> you drive, I coach. We build the prompts, the workflows and the automations
+      <strong>Every session is hands-on:</strong> you drive, in guidance. We build the prompts, the workflows and the automations
       live, on your screen. You keep everything we build, including the parts that work exactly for you, because you made them.
     </p>
 </section>
