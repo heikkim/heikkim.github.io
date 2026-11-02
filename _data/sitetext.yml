@@ -38,7 +38,8 @@ en: &DEFAULT_EN
           1-to-1 coaching for getting quickly up-to-date on AI, effective prompting and building everyday automations hands-on.
           Immediate focus will be on discovering what creates value for your work day right now.
           <br /><br />
-          In case you're already using AI daily: Learn how to be a power user who uses AI for strategising and agents for more complex tasks utilising Agent Skills.
+          In case you're already using AI daily: Learn how to be a power user who uses AI for strategising and agents for more complex tasks 
+          utilising Agent Skills.
         url: /en/services/ai-coaching.html
         link-text: Read more about AI Coaching
 #      - sid: ai-tooling
@@ -264,7 +265,7 @@ fi: &DEFAULT_FI
           yritysten hallituksille. Rooli on tyypillisesti AI Lead, AI Director tai Chief AI Officer yrityksen roolituksesta ja tilanteesta riippuen.
           <br /><br />
           Toimien tiiviinä osana johtoryhmää, AI Lead auttaa määrittelemään, suunnittelemaan, koordinoimaan, käynnistämään ja ylläpitämään 
-          yrityksen tekoälyhankkeiden vauhtia, samalla huomioimalla tarkasti yrityksen kulttuurin ja yksilölliset toimintatavat.
+          yrityksen tekoälyhankkeiden vauhtia, samalla huomioiden yrityksen kulttuurin ja yksilölliset toimintatavat.
         url: /services/fractional-ai-lead.html
         link-text: Lue lisää Fractional AI Lead palvelusta
       - sid: ai-coaching
@@ -301,13 +302,13 @@ fi: &DEFAULT_FI
     body: >
       Minulla on 20 vuoden kokemus IT-konsultointi- ja softakehitys-liiketoiminnasta sekä SaaS-liiketoiminnasta.
       Urallani olen toiminut toimitusjohtajana, käynnistänyt data- ja AI-osaamiseen perustuvia liiketoimintoja sekä johtanut tuote- ja teknologiakehitystä.
-      Erityisosaamistani johtamisen ohella ovat data- ja tekoälyosaamista vaativat hankkeet, sekä toiminta vahvasti reguloiduissa tietointensiivisissä ympäristöissä.
+      Erityisosaamistani johtamisen ohella ovat data- ja tekoälyosaamista vaativat hankkeet, sekä toiminta vahvasti reguloidussa tietointensiivisessä ympäristössä.
       <br /><br />
-      Toimin nopeasti, otan omistajuuden hankkeen edistämisestä ryhdikkäästi ja määrätietoisesti. Yrityksenne tarpeista ja tavoitteista lähtemällä muodostamme 
+      Toimin nopeasti, ottamalla omistajuuden hankkeen edistämisestä ryhdikkäästi ja määrätietoisesti. Yrityksenne tarpeista ja tavoitteista lähtemällä muodostamme 
       toiminta- ja investointi-suunnitelman mittaristoineen. Fractional-malli mahdollistaa asiakkailleni kustannustehokkaan ja riskittömän tavan saada johtoryhmään mukaan 
       kokenut ulkopuolinen johtaja.
       <br /><br />
-      Viimeisin kolutukseni on Aalto Executive Educationin MBA (2022), josta valmistuin erinomaisin arvosanoin.
+      Viimeisin koulutukseni on Aalto Executive Educationin MBA (2022), josta valmistuin erinomaisin arvosanoin.
       <br />
       Nopea ajantasalle pääsy ja rivakka startti taattu.
       <br /><br />
@@ -324,7 +325,7 @@ fi: &DEFAULT_FI
       - header: Määritelmä
         body: Yhteisymmärrys ongelman ytimestä sekä sovimme selkeät mittarit sille, miltä onnistunut lopputulos näyttää.
       - header: Ratkaisu
-        body: Laadin selkeän ehdotuksen, joka vastaa suoraan kipupisteisiin ja johtaa ongelman ratkaisuun.
+        body: Selkeä ehdotus, joka vastaa suoraan kipupisteisiin ja johtaa ongelman ratkaisuun.
       - header: Toteutus
         body: Käynnistämme yhteistyön reippaasti ja etenemme hallituin askelmerkein. Muutamme suunnitelmaa tarvittaessa.
       

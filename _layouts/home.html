@@ -9,9 +9,10 @@ layout: default
 
 {% include /wayforward.html lang=page.lang %}
 
-{% comment %}
-{% include /posts-carousel.html lang=page.lang %}
-{% endcomment %}
+{% if jekyll.environment == "development"  %}
+    NOT SHOWN IN PRODUCTION CURRENTLY!
+    {% include /posts-carousel.html lang=page.lang %}
+{% endif %}
 
 {% include /about.html lang=page.lang %}
 

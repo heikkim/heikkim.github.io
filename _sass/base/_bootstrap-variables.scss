@@ -3,17 +3,17 @@
 */
 $custom-colors: (
     //"primary": #f00,
-    "primary": #070708,
+    "primary": #06070a,
     "secondary": #1da754,
     "success": #25c0df,
     "info": #224ebf,
     "warning": #de9037,
     "danger": #590103,
-    "light": #d0d0d0,
-    "dark": #181818,
-    "body": #f5f5f9,
-    "white": #F9F9F9,
-    "black": #010101
+    "light": #e6e7ea,
+    "dark": #16171a,
+    "body": #f6f7fa,
+    "white": #FaFbFf,
+    "black": #010206
 ); 
 
 $primary: map-get($map: $custom-colors, $key: "primary") !default;
@@ -26,7 +26,7 @@ $light: map-get($map: $custom-colors, $key: "light") !default;
 $dark: map-get($map: $custom-colors, $key: "dark") !default;
 $body: map-get($map: $custom-colors, $key: "body") !default;
 $white: map-get($map: $custom-colors, $key: "white") !default;
-$black: map-get($map: $custom-colors, $key: "black;") !default;
+$black: map-get($map: $custom-colors, $key: "black") !default;
 
 $text-muted: #adb5bd; // gray-500
 

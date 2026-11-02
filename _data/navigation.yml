@@ -42,15 +42,7 @@ en: &DEFAULT_EN
     - title: "Contact"
       section: contact # Check spc.js where this has a binding.
       url: /en/#contact
-#    - title: "Theme Source"
-#      url: https://github.com/raviriley/agency-jekyll-theme/
 en-US:
-  <<: *DEFAULT_EN
-en-CA:
-  <<: *DEFAULT_EN
-en-GB:
-  <<: *DEFAULT_EN
-en-AU:
   <<: *DEFAULT_EN
 
 # Finnish
@@ -68,12 +60,12 @@ fi: &DEFAULT_FI
           url: /services/ai-coaching.html
         - title: "#3 AI-konsultointi"
           url: /services/ai-consulting.html
-#    - title: "Portafolio"
-#      section: portafolio
-#    - title: "Sobre Nosotros"
-#      section: nosotros
-#    - title: "Cronología"
-#      section: cronologia
+#    - title: "Portfolio"
+#      section: portfolio
+#    - title: "Tiimis"
+#      section: team
+#    - title: "Aikajana"
+#      section: timeline
 #    - title: "Askel Edellä"
 #      section: posts
 #      url: /posts/
@@ -88,7 +80,5 @@ fi: &DEFAULT_FI
     - title: "Yhteys"
       section: contact # Check spc.js where this has a binding.
       url: /#contact
-#    - title: "Fuente de la plantilla"
-#      url: https://github.com/raviriley/agency-jekyll-theme/
 fi-FI:
   <<: *DEFAULT_FI
