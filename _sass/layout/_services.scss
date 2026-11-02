@@ -10,9 +10,9 @@ section#services {
       margin: 8px;
       padding: 7px 15px;
       border-radius: 5px;
-      //border: 1px solid $gray-900; 
+      border: 1px solid $gray-900; 
+      background-color: $dark;
       position: relative;
-
       transition: background 0.3s;
       -moz-transition: background 0.3s;
       transition: background 0.3s;
@@ -31,14 +31,6 @@ section#services {
   h4.service-heading {
     color: $secondary;
     margin: 0.25em 0;
-
-    /*&::before {
-      content: "\2039\00a0";
-    }
-    
-    &::after {
-      content: "\00a0\203A";
-    }*/
   }
 }
 
