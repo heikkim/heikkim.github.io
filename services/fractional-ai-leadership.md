@@ -4,7 +4,7 @@ title: "Fractional AI Director / Head of AI / Chief AI Officer yrityksille ja or
 navtype: absolute
 lang: fi
 meta_title: "Fractional AI Leadership"
-meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityksille ja niiden hallituksille."
+meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityksille ja organisaatioille."
 ---
 {% assign service=site.data.sitetext[page.lang].services.list | where: "sid", "fractional-ai-leadership" | first %}
 <!-- 1. Hero — headline and executive summary -->

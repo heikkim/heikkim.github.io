@@ -26,6 +26,12 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" href="/favicon.ico">
 
+  <meta property="og:title" content="{% if page.meta_title %}{{ page.meta_title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:description" content={{ page.meta_description | default: site.description }}" />
+  <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}/assets/img/logo_300x300_bgblack.png{% endif %}" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:site_name" content="{{ site.title }}" />
+  
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

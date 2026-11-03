@@ -4,6 +4,11 @@ nav#mainNav {
   //background-color: green;
   background-color: $dark-rgb-opa-0_7;
   backdrop-filter: blur(5px);
+  padding: 0.5em;
+
+  img.logo {
+    width: 80px;
+  }
 
   .navbar-toggler {
     position: relative;
@@ -113,22 +118,14 @@ nav#mainNav {
       }
   }
 
-  .navbar-nav, #lang-chooser {
+  ul.navbar-nav, ul#lang-chooser {
     list-style-type: none;
+    padding-top: 30px;
 
-    .nav-item {
-      .nav-link {
-        //border: 1px solid salmon;
-        padding: 0.75em 0;
-        letter-spacing: 1px;
+    li.nav-item {
+      a.nav-link {
         color: $body;
-        font-size: 1.1rem;
-        @include heading-font;
-        
-        &.active,
-        &:hover {
-          //color: color.adjust($body, $lightness: -10%, $space: hsl);
-        }
+        font-size: 1.1rem;  
       }
 
       &.has-sub-nav {
@@ -191,8 +188,7 @@ nav#mainNav {
 
 @media (min-width: 992px) {
   nav#mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding: 0em;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -207,20 +203,16 @@ nav#mainNav {
       //text-decoration:  underline $secondary 3px;
     }
 
-    .navbar-nav, #lang-chooser {
+    ul.navbar-nav, ul#lang-chooser {
       list-style-type: none;
+      transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
 
-      .nav-item {
+      li.nav-item {
         position: relative;
         width: max-content;
-
-        .nav-link {
-          transition: all 0.3s;
-          -moz-transition: all 0.3s;
-          transition: all 0.3s;
-          padding: 0.5em 1.5em !important;
-          margin-bottom: 16px;
-        }
+        padding: 0 1.5em !important;
 
         &.has-sub-nav {
           & a::after {
@@ -235,7 +227,7 @@ nav#mainNav {
             position: absolute;
             padding-left: 1em;
             width: 300px;
-            line-height: 0.3em;
+            line-height: 1em;
             height: 100%;
             transition: all 0.3s;
             -moz-transition: all 0.3s;
@@ -276,17 +268,13 @@ nav#mainNav {
       
       .navbar-brand {
         font-size: 1.25em;
-        padding: 12px 0;
       }
 
-      .navbar-nav, #lang-chooser {
-        
-        .nav-item {
-          
-          .nav-link {
-            margin-bottom: 0;
-          }
+      ul.navbar-nav, ul#lang-chooser {
+        padding-top: 18px;
 
+        li.nav-item {
+          
           &.has-sub-nav {
                        
             ul.subnav { 
@@ -299,19 +287,17 @@ nav#mainNav {
     }
 
     &.navbar-expand-lg {
-      .navbar-brand div.spc-logo {
-        transition: font-size 0.3s, margin-top 0.25s;
-        -moz-transition: font-size 0.3s, margin-top 0.25s;
-        transition: font-size 0.3s, margin-top 0.25s;
-        font-size: 3.5rem;
-        margin-top: -25px;
+      .navbar-brand img.logo {
+        transition: width 0.3s, margin-top 0.25s;
+        -moz-transition: width 0.3s, margin-top 0.25s;
+        transition: width 0.3s, margin-top 0.25s;
+        width: 120px;
       }
     }
    
     &.navbar-expand-lg.navbar-shrink {
-      .navbar-brand div.spc-logo {
-        font-size: 2rem;
-        margin-top: -5px;
+      .navbar-brand img.logo {
+        width: 80px;
       }
     }
   }
@@ -321,10 +307,10 @@ nav#mainNav {
     background-color: transparent;
     backdrop-filter: blur(5px);
     position: fixed;
-    top:119px;
+    top:63.9px;
     left: 0;
     right: 0;
-    height: 95px;
+    height: 105px;
     width: 100%;
     padding-top: 0;
     padding-bottom:0;
@@ -338,7 +324,7 @@ nav#mainNav {
       -moz-transition: all 0.3s;
       transition: all 0.3s;
       background-color: $dark-rgb-opa-0_7;
-      top: 67px;
+      top: 63.9px;
     }
 
     &.d-none {

@@ -16,6 +16,8 @@ $custom-colors: (
     "black": #010206
 ); 
 
+$navbar-padding-y: 0;
+
 $primary: map-get($map: $custom-colors, $key: "primary") !default;
 $secondary: map-get($map: $custom-colors, $key: "secondary") !default;
 $success: map-get($map: $custom-colors, $key: "success") !default;

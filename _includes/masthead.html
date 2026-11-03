@@ -6,12 +6,11 @@
 
 <!-- Header -->
 <header class="masthead">
-  <div class="container">
-    <div class="intro-text">
-  
+  <div class="container intro-text">
     {%- if headerSection.intro -%}
       <div class="intro-lead-in">
-        <h1>{{ headerSection.intro }}</h1>
+        <h1 class="intro-title">{{ site.title }}</h1>
+        <h3>{{ headerSection.intro }}</h3>
       </div>
     {%- endif -%}
     {%- if headerSection.text -%}
@@ -25,6 +24,5 @@
     {%- endif -%}
   
     </div>
-  </div> 
 </header>
 <!-- End Header -->
