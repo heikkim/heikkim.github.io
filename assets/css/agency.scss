@@ -35,13 +35,16 @@ $contact-image: "{{ site.data.style.contact-image }}";
 @import "components/client-scroll.scss";
 
 // Layout
-@import "layout/masthead.scss";
-@import "layout/services.scss";
+@import "layout/home/masthead.scss";
+@import "layout/home/services.scss";
 @import "layout/single-page.scss";
 @import "layout/collaboration.scss";
-@import "layout/about.scss";
-@import "layout/wayforward.scss";
-@import "layout/posts.scss";
+@import "layout/home/about.scss";
+@import "layout/home/wayforward.scss";
+@import "layout/posts/single-post.scss";
+@import "layout/posts/post-list.scss";
+@import "layout/posts/posts-common.scss";
+@import "layout/home/posts-carousel.scss";
 @import "layout/newsletter-subscribe.scss";
 //@import "layout/portfolio.scss";
 //@import "layout/timeline.scss";

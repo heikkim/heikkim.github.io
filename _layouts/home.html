@@ -3,24 +3,24 @@ layout: default
 ---
     
 {% include /nav.html lang=page.lang navtype=page.navtype %}
-{% include /masthead.html lang=page.lang %}
+{% include /home/masthead.html lang=page.lang %}
 
-{% include /services.html lang=page.lang %}
-
-{% include /wayforward.html lang=page.lang %}
+{% include /home/services.html lang=page.lang %}
 
 {% if jekyll.environment == "development"  %}
     NOT SHOWN IN PRODUCTION CURRENTLY!
-    {% include /posts-carousel.html lang=page.lang %}
+    {% include /home/posts-carousel.html lang=page.lang %}
 {% endif %}
 
-{% include /about.html lang=page.lang %}
+{% include /home/about.html lang=page.lang %}
+
+{% include /home/wayforward.html lang=page.lang %}
 
 {% comment %}
-{% include /portfolio_grid.html lang=page.lang %}
-{% include /timeline.html lang=page.lang %}
-{% include /team.html lang=page.lang %}
-{% include /clients.html lang=page.lang %}
+{% include /home/portfolio_grid.html lang=page.lang %}
+{% include /home/timeline.html lang=page.lang %}
+{% include /home/team.html lang=page.lang %}
+{% include /home/clients.html lang=page.lang %}
 {% endcomment %}
 
 {% include /contact.html lang=page.lang %}

@@ -16,17 +16,17 @@
     <div class="row justify-content-between">
       
       {% assign service = contentSection.list[0] %}
-      {% include service_column.html service=service %}
+      {% include /home/service_column.html service=service %}
       
     </div>
     
     <div class="row justify-content-between">       
       
       {% assign service = contentSection.list[1] %}
-      {% include service_column.html service=service %}
+      {% include /home/service_column.html service=service %}
 
       {% assign service = contentSection.list[2] %}
-      {% include service_column.html service=service last-service-desc=true %}
+      {% include /home/service_column.html service=service last-service-desc=true %}
 
     </div>
   </div>

@@ -1,0 +1,18 @@
+{%- assign postsText = site.data.sitetext.posts -%}
+{%- if curlang.locale and curlang.locale != "" and curlang.locale != nil -%}
+    {%- assign postsText = site.data.sitetext[curlang.locale].posts -%}
+{%- endif %}
+{%- assign firstArticleCategory = page.categories | first -%}
+{%- assign articleDate = page.date | date_to_xmlschema  -%}
+{%- assign articleAuthor = site.data.authors.list | where: "initials", page.author | first -%}
+
+<link href="/assets/css/posts-readability.css" rel="stylesheet" />
+
+<meta property="og:type" content="article" />
+
+<meta property="article:author" content="{{ articleAuthor.name | default: "Heikki Malkamäki" }}" />
+<meta property="article:publisher" content="{{ site.title }}" />
+{% if firstArticleCategory %}<meta property="article:section" content="{{ postsText.categories[firstArticleCategory] | default: firstArticleCategory }}{% endif %}">
+<meta property="article:published_time" content="{{ articleDate }}" />
+<meta property="article:modified_time" content="{% if page.modified %}{{ page.modified }}{% else %}{{ articleDate }}{% endif %}" />
+{% if page.expires %}<meta property="article:expiration_time" content="{{ page.expires }}" />{% endif %}

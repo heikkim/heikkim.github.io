@@ -1,0 +1,61 @@
+section#posts-main.page-hero {
+  padding-bottom: 3em;
+}
+
+/*
+ * Post listing styles.
+ */
+section#posts-list {
+  padding-top: 0;
+
+  div.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    //align-items: center;
+  }
+
+  article.card {
+    background-color: $dark;    
+    min-width: 17.5rem;
+    //height: 25rem;
+    overflow-y: hidden;
+    margin: 1em;
+    text-align: left;
+    border-radius: 5px;
+
+    &:hover {
+      background: linear-gradient($lessdark, $dark);
+    }
+
+    p.card-text {
+      padding-bottom: 2em;
+    }
+
+    &.card-bottom {
+      position: absolute;
+      bottom: 1em;
+      left: 1.5em;
+      
+      span.author {
+        display: inline-block;
+        margin-top: 0.6em;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  section#posts-list {
+    div.grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  section#posts-list {
+    div.grid {
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+}

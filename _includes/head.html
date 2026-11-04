@@ -12,6 +12,8 @@
   <script src="/assets/js/spc-cookie.js"></script>
   <script src="/assets/js/spc-analytics.js"></script>
 
+  {% assign curlang = site.languages | where: "code", page.lang | first %}
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="{{ page.meta_description | default: site.description }}" />
@@ -26,9 +28,11 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" href="/favicon.ico">
 
-  <meta property="og:title" content="{% if page.meta_title %}{{ page.meta_title | append: " | " | append: site.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:title" content="{% if page.meta_title %}{{ page.meta_title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:description" content="{{ page.meta_description | default: site.description }}" />
-  <meta property="og:image" content="{% if page.og_image %}{{ page.og_image }}{% else %}/assets/img/logo_300x300_bgblack.png{% endif %}" />
+  <meta property="og:image" content="{% if page.meta_og_image %}{{ page.meta_og_image }}{% else %}/assets/img/logo_300x300_bgblack.png{% endif %}" />
+  <meta property="og:image:alt" content="{% if page.meta_og_image_alt %}{{ page.meta_og_image_alt }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:locale" content="{{ curlang.htmllang }}" />
   <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
   <meta property="og:site_name" content="{{ site.title }}" />
   
@@ -45,6 +49,6 @@
 
 
   {% if page.layout == "post" or page.path contains "posts/index.md"%}
-    <link href="/assets/css/posts-readability.css" rel="stylesheet" />
+    {% include posts-head-section-additions.html %}
   {% endif %}
 </head>

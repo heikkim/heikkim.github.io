@@ -1,0 +1,79 @@
+/*
+ * Single post styles
+ */
+section#post {
+  max-width: 850px;
+  margin: 0 auto;
+
+  h2, h3 {
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+  }
+
+  article {
+    margin-bottom: 8em;
+
+    .article-head {
+   
+      .post-meta {
+        datetime {
+          margin-left: 10px;
+        }
+      }
+
+      .excerpt {
+        margin: 2em auto;
+      }
+
+      img.hero {
+        margin: 0 0 3em;
+        display: block;
+        width: 80%;
+      }
+    }
+
+    .article-body {
+      line-height: 1.8;
+
+      img { /* content image */
+        margin: 2.5em 0;
+        display: block;
+        width: 60%;
+        height: auto;  
+      }
+
+      blockquote {
+        margin: 50px 20px;
+        padding: 0.5em 0em .2em 1.4em;
+        border-left: 3px solid $secondary;
+        max-width: 500px;
+        font-style: italic;
+        color: $secondary;
+        @include serif-font;
+
+        p {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .related {
+    margin-top: 3em;
+    padding-top: 2.5em;
+    border-top: 1px solid $gray-900;
+
+    .related-list {
+      li {
+        position: relative;
+        margin-bottom: .7em;
+        padding-left: 1.9em;
+      }
+
+      li:last-child {
+        margin-bottom: 0;
+      }
+
+    }
+  }
+}

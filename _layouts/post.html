@@ -40,74 +40,48 @@ cssTricks: ["body-color-invert"]
   
   <section id="post">
     <article class="main">
-      <h2>{{ page.title }}</h2>
-      <p class="post-meta">
-        <span class="categories">{{ postCatTexts }}</span>
-      </p>
-      <div class="post-meta">
-        <img class="author" src="/assets/img/headshot_sq-small.jpg"/>
-        <span class="author"> {{ author.name }}</span><br/>
-        <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: postsText.date-format }}</time>
-      </div>
-      <p class="excerpt">{{ page.excerpt | strip_html | strip }}</p>
-
-      <!-- 2. The main visual -->
-      {% if page.hero_image %}
-      <div class="hero-image">
-        <img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_alt }}" />
-      </div>
-      {% endif %}
-
-      <!-- 3. The article. The content image sits where the author marked it. -->
-      <div class="body">
-        <div class="row">
-          <div class="col-lg-8 offset-lg-2 prose">
-            {% comment %} Every list in the body gets the site list style {% endcomment %}
-            {% assign chunks = content | replace: "<ul>", '<ul class="common-list">' | split: "<!--content-image-->" %}
-            {{ chunks[0] }}
-            {% if page.content_image %}
-            <div class="content-image">
-              <img src="{{ page.content_image | relative_url }}" alt="{{ page.content_alt }}" />
-            </figure>
-            {% endif %}
-            {% if chunks.size > 1 %}
-            {{ chunks[1] }}
-            {% endif %}
-          </div>
+      <div class="article-head">
+        <h2>{{ page.title }}</h2>
+        <p class="post-meta">
+          <span class="categories">{{ postCatTexts }}</span>
+        </p>
+        <div class="post-meta">
+          <img class="author" src="/assets/img/headshot_sq-small.jpg"/>
+          <span class="author"> {{ author.name }}</span><br/>
+          <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: postsText.date-format }}</time>
         </div>
+        <p class="excerpt">{{ page.excerpt | strip_html | strip }}</p>
+
+        {% if page.hero_image %}
+          <img src="{{ page.hero_image | relative_url }}" alt="{{ page.hero_alt }}" class="hero" />
+        {% endif %}
       </div>
 
-      <!-- 4. The pull quote -->
-      {% if page.quote %}
-      <section class="quote-section">
-        <div class="row">
-          <div class="col-lg-8 offset-lg-2">
-            <blockquote class="quote">{{ page.quote }}</blockquote>
-          </div>
-        </div>
-      </section>
-      {% endif %}
+      <div class="article-body">
+        {% comment %} Every list in the body gets the site list style {% endcomment %}
+        {% assign chunks = content | replace: "<ul>", '<ul class="common-list">' | split: "<!--content-image-->" %}
+        {{ chunks[0] }}
+               
+        {% if chunks.size > 1 %}
+        {{ chunks[1] }}
+        {% endif %}
+      </div>
 
-      <!-- 5. Relevant posts of the same category and language -->
       {% assign related = site.posts | where: "lang", page.lang | where_exp: "p", "p.categories contains cat" %}
       {% if related.size > 0 %}
-      <section class="relevant">
-        <div class="row">
-          <div class="col-lg-10 offset-lg-1 text-center">
-            <h2>{{ postsText.relevant-title }}</h2>
-            <ul class="common-list relevant-list">
-              {% for post in related %}
-                {% if post.url != page.url %} 
-                <li>
-                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-                  <span class="date">{{ post.date | date: postsText.date-format }}</span>
-                </li>
-                {% endif %}
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-      </section>
+      <div class="article-related">
+          <h2>{{ postsText.related-title }}</h2>
+          <ul class="common-list relevant-list">
+            {% for post in related %}
+              {% if post.url != page.url %} 
+              <li>
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                <span class="date">{{ post.date | date: postsText.date-format }}</span>
+              </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+      </div>
       {% endif %}
 
     </article>

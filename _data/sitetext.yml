@@ -160,7 +160,7 @@ en: &DEFAULT_EN
     highlights-title: "Latest thinking"
     text: "Practical notes on AI, governance and leading the change."
     read-more: "Read the article"
-    relevant-title: "Related articles"
+    related-title: "Related articles"
     date-format: "%d %B %Y"
     categories:
       ai-strategy: "AI Strategy"
@@ -383,7 +383,7 @@ fi: &DEFAULT_FI
     text: "Käytännön näkemyksiä tekoälystä, AI-käytännöistä ja muutoksen johtamisesta."
     index-lead: "Muistiinpanoja tekoälystrategiasta, hallinnasta ja muutoksen johtamisesta PK-yrityksessä."
     read-more: "Lue artikkeli"
-    relevant-title: "Aiheeseen liittyvät artikkelit"
+    related-title: "Aiheeseen liittyvät artikkelit"
     date-format: "%d.%m.%Y"
     categories:
       ai-strategy: "Tekoälystrategia"

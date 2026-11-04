@@ -1,0 +1,67 @@
+ // --------------------------------------------------------------
+  //  The homepage carousel
+  // --------------------------------------------------------------
+  .carousel {
+    .carousel-slide {
+      position: relative;
+      min-height: 420px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    // The scrim that keeps the caption readable on any image
+    .carousel-slide::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba($primary, .6);
+    }
+
+    .carousel-caption {
+      position: absolute;
+      z-index: 2;
+      right: 0;
+      bottom: 40px;
+      left: 0;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 20px;
+      
+      text-shadow: none;
+    }
+
+    .carousel-title {
+      margin-bottom: .4em;
+      font-size: 1.9rem;
+    }
+
+    .carousel-excerpt {
+      margin-bottom: 1.4em;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    // The indicators sit on top of the scrim
+    .carousel-indicators {
+      z-index: 3;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .carousel {
+      .carousel-slide {
+        min-height: 360px;
+      }
+
+      .carousel-caption {
+        bottom: 24px;
+      }
+
+      .carousel-title {
+        font-size: 1.4rem;
+      }
+    }
+  }

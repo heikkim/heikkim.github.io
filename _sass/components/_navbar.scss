@@ -132,11 +132,13 @@ nav#mainNav {
         
         & a::after {
           font-size: 80%;
-          content: " \23f7"; // Black Medium Down-Pointing Triangle
+          content: " \2304"; // Down arrowhead
+          vertical-align: top;
         }
 
         &.subnav-open a::after {
-          content: " \23f6"; // Black Medium Up-Pointing Triangle
+          content: " \2303"; // Up arrowhead
+          vertical-align: bottom;
         }
 
         ul.subnav { 
@@ -216,11 +218,13 @@ nav#mainNav {
 
         &.has-sub-nav {
           & a::after {
-            content: " \23f7"; // Black Medium Down-Pointing Triangle
+            content: " \2304"; // Down arrowhead
+            vertical-align: top;
           }
 
           &.subnav-open a::after {
-            content: " \23f6"; // Black Medium Up-Pointing Triangle
+            content: " \2303"; // Up arrowhead
+            vertical-align: bottom;
           }
 
           ul.subnav { 

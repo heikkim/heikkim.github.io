@@ -28,7 +28,7 @@ en: &DEFAULT_EN
 #      section: timeline
 #    - title: "Team"
 #      section: team
-#    - title: "A Step Ahead"
+#    - title: "Insights"
 #      section: posts
 #      url: /en/posts/
 #      page: true    
@@ -66,7 +66,7 @@ fi: &DEFAULT_FI
 #      section: team
 #    - title: "Aikajana"
 #      section: timeline
-#    - title: "Askel Edellä"
+#    - title: "Näkemykset"
 #      section: posts
 #      url: /posts/
 #      page: true
