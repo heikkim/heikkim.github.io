@@ -1,0 +1,27 @@
+# StrongPoint Consulting
+> Käytännönläheistä tekoälykonsultointia, johdon AI-valmennusta ja Fractional AI Leadership -palveluita PK-yrityksille.
+
+StrongPoint Consulting auttaa yrityksiä, johtoryhmiä ja hallituksia saavuttamaan kilpailuetua ja parempaa tuottavuutta tekoälyn avulla. Toimintamalli on suoraviivainen, tulosorientoitunut ja mitoitettu kasvaville PK-yrityksille. Sivusto osoitteessa https://strongpointconsulting.fi 
+
+## Finnish Content (Suomenkieliset sivut)
+- [Kotisivu](https://strongpointconsulting.fi/): Käytännönläheistä tekoälykonsultointia johdolle, hallituksille ja PK-yrityksille.
+- [Fractional AI Leadership](https://strongpointconsulting.fi/services/fractional-ai-leadership.html): Kokenut tekoälyjohtaja (AI Director / CAIO) osaksi johtoryhmää viemään tekoälystrategiaa, käytäntöjä ja muutosta eteenpäin.
+- [AI-valmennus](https://strongpointconsulting.fi/services/ai-coaching.html): Käytännönläheinen valmennus johdolle ja asiantuntijoille tekoälyn tehokäyttöön, promptaukseen ja agenttitaitoihin.
+- [AI-konsultointi](https://strongpointconsulting.fi/services/ai-consulting.html): Tekoälymahdollisuuksien kartoitus, toteutussuunnitelmat, workshopit ja täsmähaasteiden ratkaiseminen.
+- [Yhteistyömalli](https://strongpointconsulting.fi/collaboration-model.html): Nelivaiheinen malli tekoälyhankkeiden läpivientiin (Kartoitus, Määritelmä, Ratkaisu, Toteutus).
+- [Tekoälyuutiskirje](https://strongpointconsulting.fi/newsletter.html): "Askel Edellä" -uutiskirje tekoälystrategiasta ja muutoksen johtamisesta.
+- [Tietosuojaseloste](https://strongpointconsulting.fi/legal.html): Rekisteri- ja tietosuojaseloste.
+
+## English Content
+- [English Main Page](https://strongpointconsulting.fi/en/): Executive overview of services, philosophy, and consulting approach for English-speaking leadership teams.
+- [Fractional AI Leadership](https://strongpointconsulting.fi/en/services/fractional-ai-leadership.html): Embedded C-level AI leadership (Fractional CAIO / AI Director) driving strategy, execution, and change management.
+- [Executive AI Coaching](https://strongpointconsulting.fi/en/services/ai-coaching.html): Practical AI coaching for executives and board members focusing on workflow automation, prompting, and agent skills.
+- [AI Consulting](https://strongpointconsulting.fi/en/services/ai-consulting.html): Strategic AI opportunity assessments, execution roadmaps, workshops, and implementation support.
+- [Collaboration Model](https://strongpointconsulting.fi/en/collaboration-model.html): Structured four-stage execution methodology (Discovery, Definition, Solution, Implementation).
+- [AI Newsletter](https://strongpointconsulting.fi/en/newsletter.html): "Askel Edellä" -uutiskirje tekoälystrategiasta ja muutoksen johtamisesta.
+- [Privacy Policy](https://strongpointconsulting.fi/en/legal.html): Privacy Policy
+
+### Company Description in English
+> Practical AI Consulting, Executive AI Coaching, and Fractional AI Leadership for Mid-Tier Companies. Website English language content at https://strongpointconsulting.fi/en/
+
+StrongPoint Consulting helps executive teams and boards gain competitive advantage and operational efficiency through pragmatic AI strategy, executive coaching, and hands-on execution.

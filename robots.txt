@@ -1,0 +1,25 @@
+user-agent: *
+allow: /
+
+# explicitly allow AI bots for Generative Engine Optimization
+user-agent: OAI-SearchBot
+allow: /
+
+user-agent: GPTBot
+allow: /
+
+user-agent: ClaudeBot
+allow: /
+
+user-agent: PerplexityBot
+allow: /
+
+user-agent: Google-Extended
+allow: /
+
+# disallow standard Jekyll build/system folders if they exist
+user-agent: *
+disallow: /_site/
+disallow: /_data/
+
+sitemap: https://strongpointconsulting.fi/sitemap.xml
