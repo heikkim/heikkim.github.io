@@ -156,7 +156,8 @@ en: &DEFAULT_EN
 
   # The posts section
   posts:
-    title: A Step Ahead
+    title: Insights
+    back-to-posts: "Back to Insights"
     highlights-title: "Latest thinking"
     text: "Practical notes on AI, governance and leading the change."
     read-more: "Read the article"
@@ -166,6 +167,8 @@ en: &DEFAULT_EN
       ai-strategy: "AI Strategy"
       leadership: "Leadership"
     in-category: in
+    previous-article: "&#x2039; Previous article"
+    next-article: "Next article &#x203A;"
 
   # The newsletter subscription
   newsletter:
@@ -378,7 +381,8 @@ fi: &DEFAULT_FI
 #            icon: fab fa-linkedin-in
   # The posts section
   posts:
-    title: Askel Edellä
+    title: Näkemyksiä
+    back-to-posts: "Listaukseen"
     highlights-title: "Viimeisimmät ajatukset"
     text: "Käytännön näkemyksiä tekoälystä, AI-käytännöistä ja muutoksen johtamisesta."
     index-lead: "Muistiinpanoja tekoälystrategiasta, hallinnasta ja muutoksen johtamisesta PK-yrityksessä."
@@ -389,6 +393,8 @@ fi: &DEFAULT_FI
       ai-strategy: "Tekoälystrategia"
       leadership: "Johtaminen"
     in-category: "@"
+    previous-article: "&laquo; Edellinen artikkeli"
+    next-article: "Seuraava artikkeli &raquo;"
 
   # The newsletter subscription
   newsletter:

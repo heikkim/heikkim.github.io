@@ -19,7 +19,7 @@ const SPC_COOKIE_NAME = "spc_prefs";
  * expires halfway through the interest of a visitor. The consent decision,
  * the language and the newsletter subscription all live here.
  */
-const SPC_COOKIE_MAX_AGE_DAYS = 730;
+const SPC_COOKIE_MAX_AGE_DAYS = 1800;
 
 /*
  * Default value of every known preference. Add a new key here when a new

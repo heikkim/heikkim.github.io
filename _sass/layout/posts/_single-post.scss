@@ -1,79 +1,172 @@
 /*
  * Single post styles
  */
-section#post {
-  max-width: 850px;
-  margin: 0 auto;
+div.single-post {
+  section#post {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0;
 
-  h2, h3 {
-    margin-bottom: 0.5em;
-    margin-top: 1.5em;
-  }
+    h2, h3 {
+      margin-bottom: 0.5em;
+      margin-top: 1.5em;
+    }
 
-  article {
-    margin-bottom: 8em;
+    article {
+      margin-bottom: 8em;
 
-    .article-head {
-   
-      .post-meta {
-        datetime {
-          margin-left: 10px;
+      .article-head {
+    
+        .post-meta {
+          time {
+            margin-left: 10px;
+          }
+        }
+
+        .excerpt {
+          margin: 2em auto;
+        }
+
+        img.hero {
+          margin: 0 0 3em;
+          display: block;
+          width: 80%;
         }
       }
 
-      .excerpt {
-        margin: 2em auto;
-      }
+      .article-body {
+        line-height: 1.8;
 
-      img.hero {
-        margin: 0 0 3em;
-        display: block;
-        width: 80%;
-      }
-    }
+        img { /* content image */
+          margin: 2.5em 0;
+          display: block;
+          width: 60%;
+          height: auto;  
+        }
 
-    .article-body {
-      line-height: 1.8;
+        blockquote {
+          margin: 50px 20px;
+          padding: 0.5em 0em .2em 1.4em;
+          border-left: 3px solid $secondary;
+          max-width: 500px;
+          font-style: italic;
+          color: $secondary;
+          @include serif-font;
 
-      img { /* content image */
-        margin: 2.5em 0;
-        display: block;
-        width: 60%;
-        height: auto;  
-      }
-
-      blockquote {
-        margin: 50px 20px;
-        padding: 0.5em 0em .2em 1.4em;
-        border-left: 3px solid $secondary;
-        max-width: 500px;
-        font-style: italic;
-        color: $secondary;
-        @include serif-font;
-
-        p {
-          font-size: 1.4rem;
+          p {
+            font-size: 1.4rem;
+          }
         }
       }
     }
-  }
 
-  .related {
-    margin-top: 3em;
-    padding-top: 2.5em;
-    border-top: 1px solid $gray-900;
+    .related {
+      margin-top: 3em;
+      padding-top: 2.5em;
+      border-top: 1px solid $gray-900;
 
-    .related-list {
-      li {
-        position: relative;
-        margin-bottom: .7em;
-        padding-left: 1.9em;
+      .related-list {
+        li {
+          position: relative;
+          margin-bottom: .7em;
+          padding-left: 1.9em;
+        }
+
+        li:last-child {
+          margin-bottom: 0;
+        }
+
       }
-
-      li:last-child {
-        margin-bottom: 0;
-      }
-
     }
   }
+
+  .breadcrumbs a {
+    &::before {
+      content: "\2039  ";
+    }
+  }
+
+  .arcticle-bottomlinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: end;
+
+    a.link {
+      &::before {
+        content: "\2039  ";
+      }
+
+      &::after {
+        content: " \203A"
+      }
+    }
+
+    .item-left, .item-right, .item-center {
+      overflow-x: hidden;
+      overflow-y: hidden;
+      //min-height: 15em;
+      //border: 1px solid red;
+    }
+
+    .item-left, .item-right {
+      min-width: 30.5em;
+    }
+
+    .item {
+      &-left {
+        text-align: left;
+      }
+
+      &-center {
+        text-align: center;
+        padding: 1em;
+      }
+
+      &-right {
+        text-align: right;
+
+        p.card-text {
+          text-align: left;
+        }
+      }
+
+      //border: 1px solid salmon;
+    }
+  }
+
+  article.card {
+      background-color: $lessdark;    
+      width: 30.5rem;
+      min-height: fit-content;
+      margin: 1em;
+      //text-align: left;
+      height: 15em;
+      border-radius: 5px;
+      border: 1px solid $gray-700;
+
+      &:hover {
+        background: linear-gradient($lessdark, $dark);
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      p.post-meta{
+        padding-top: 0;
+        margin-top: 0;
+      }
+
+      &.card-bottom {
+        position: absolute;
+        bottom: 1em;
+        left: 1.5em;
+        
+        span.author {
+          display: inline-block;
+          margin-top: 0.6em;
+        }
+      }
+    }
 }

@@ -1,0 +1,35 @@
+{% assign _post = include.post %}
+{% assign _linkText = include.linkText %}
+
+{% if _post != null %}
+<article class="card">
+    <a href="{{ _post.url | relative_url }}">
+        {% comment  %}  
+        {% assign imgSrc = _post.list_image  %}
+        {% if imgSrc == "" or imgSrc == nil %}
+        {% assign imgSrc = "/assets/img/default.svg"  %}
+        {% endif %}
+        <img class="card-img-top" src="{{ imgSrc }}" alt="{{ _post.list_image_alt }}" height="100%"/>
+        {% endcomment %}
+        <div class="card-body">
+        <span class="post-meta text-secondary">{{ _linkText }}<br /><br /></span>
+
+        <h5 class="card-title">{{ _post.title }}</h5>
+        
+        <p class="post-meta">
+            <time class="date" datetime="{{ _post.date | date_to_xmlschema }}">{{ _post.date | date: postsText.date-format }}</time>            
+            <span class="categories">{{ postCatTexts }}</span>
+        </p>
+        
+        <p class="card-text">{{ _post.excerpt | strip_html | strip | truncate: 110}}</p>
+        
+        {% comment %}
+        <div class="post-meta card-bottom">
+            <img class="author" src="/assets/img/headshot_sq-small.jpg" />
+            <span class="author">{{ author.name }}</span>
+        </div>
+        {% endcomment %}
+        </div>
+    </a>
+</article>
+{% endif %}

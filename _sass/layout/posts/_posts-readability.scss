@@ -2,24 +2,8 @@ div#body {
   background-color: $dark;
   color: $light;
 
-  nav#mainNav {
-    color: $light;
-  }
-
   div#navBarShade {
     background-color: $primary-rgb-opa-0_7;
-  }
-
-  section#posts-list article.card {
-    background-color: $lessdark;
-
-    &:hover {
-      background: linear-gradient($dark, $lessdark);
-    }
-  }
-
-  a {
-    color: $light;
   }
 
   footer {

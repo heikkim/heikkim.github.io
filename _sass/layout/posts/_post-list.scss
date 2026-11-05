@@ -8,6 +8,10 @@ section#posts-main.page-hero {
 section#posts-list {
   padding-top: 0;
 
+  a {
+    text-decoration: none;
+  }
+
   div.grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -15,7 +19,7 @@ section#posts-list {
   }
 
   article.card {
-    background-color: $dark;    
+    background-color: $lessdark;
     min-width: 17.5rem;
     //height: 25rem;
     overflow-y: hidden;
@@ -24,7 +28,7 @@ section#posts-list {
     border-radius: 5px;
 
     &:hover {
-      background: linear-gradient($lessdark, $dark);
+      background: linear-gradient($dark, $lessdark);
     }
 
     p.card-text {

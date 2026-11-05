@@ -1,6 +1,6 @@
 @use "sass:color";
 #single-page-container {
-  padding-top: 150px;
+  padding-top: 120px;
   text-align: left;
 
   section {
@@ -54,4 +54,8 @@
 
 div.container.unpad-100 {
   margin-top: -100px;
+}
+
+div.bottom-margin-8em {
+  margin-bottom: 8em;
 }

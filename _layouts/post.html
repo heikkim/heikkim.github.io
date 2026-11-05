@@ -35,9 +35,19 @@ cssTricks: ["body-color-invert"]
   {% endif %}
 {% endfor %}
 
+{% assign hrefBackToPosts = "/posts" %}
+{% if page.lang == "en" %}
+  {% assign hrefBackToPosts = "/en/posts" %} 
+{% endif %}
+
 {% include nav.html lang=page.lang navtype=page.navtype %}
 <div class="container single-post" id="single-page-container">
-  
+    <div class="breadcrumbs">
+      <div class="breadcrumb-item">
+        <a href="{{ hrefBackToPosts }}" class="link">{{ postsText.back-to-posts }}</a>
+    </div>  
+  </div>
+
   <section id="post">
     <article class="main">
       <div class="article-head">
@@ -67,7 +77,12 @@ cssTricks: ["body-color-invert"]
         {% endif %}
       </div>
 
-      {% assign related = site.posts | where: "lang", page.lang | where_exp: "p", "p.categories contains cat" %}
+      {% assign where_exp_crit = "p.categories contains '_cat_'" %}
+      {% assign where_exp_crit = where_exp_crit | replace: "_cat_", page.categories[0] %}
+      
+      {% assign related = site.posts | where: "lang", page.lang | where_exp: "p", where_exp_crit | sort: "date" %}
+      
+      {% comment  %} 
       {% if related.size > 0 %}
       <div class="article-related">
           <h2>{{ postsText.related-title }}</h2>
@@ -83,7 +98,38 @@ cssTricks: ["body-color-invert"]
           </ul>
       </div>
       {% endif %}
-
+       {% endcomment %}
     </article>
   </section>
+
+  {% assign currentPostIndex = -1 %}
+  {% for _p in related %}  
+    {% if _p.date == page.date %}  
+      {% if _p.title == page.title %}  
+        {% assign currentPostIndex = forloop.index0 %}
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+
+  <div class="arcticle-bottomlinks">
+    <div class="item-left">
+      {% if currentPostIndex > 0 %} 
+        {% assign idx = currentPostIndex | minus: 1 %}
+        {% assign postToInclude = related[idx] %}
+        {% include /post/_post-prev-next.html post=postToInclude linkText=postsText.previous-article %}
+      {% endif %} 
+    </div>
+    <div class="item-center">
+      <a href="{{ hrefBackToPosts }}" class="link">{{ postsText.back-to-posts }}</a>
+    </div>
+    <div class="item-right">
+      {% if currentPostIndex < related.size %} 
+        {% assign idx = currentPostIndex | plus: 1 %}
+        {% assign postToInclude = related[idx] %}
+        {% include /post/_post-prev-next.html post=postToInclude linkText=postsText.next-article %}
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="bottom-margin-8em"></div>
 </div>

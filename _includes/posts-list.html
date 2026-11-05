@@ -32,7 +32,7 @@
           {% if imgSrc == "" or imgSrc == nil %}
             {% assign imgSrc = "/assets/img/default.svg"  %}
           {% endif %}
-          <img class="card-img-top" src="{{ imgSrc }}" alt="{{ post.list_image_alt }}" width="100%"/>
+          <img class="card-img-top" src="{{ imgSrc }}" alt="{{ post.list_image_alt }}" />
           <div class="card-body">
             
           <h5 class="card-title">{{ post.title }}</h5>
