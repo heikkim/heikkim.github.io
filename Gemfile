@@ -1,7 +1,8 @@
 #after any changes to the Gemfile, execute bundle update!
 source "https://rubygems.org"
 
-gem "jekyll-sitemap"
+# gem "github-pages", "~> 232", group: :jekyll_plugins
+gem "jekyll-sitemap", "~> 1.4.0", group: :jekyll_plugins
 
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"

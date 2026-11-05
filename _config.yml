@@ -23,27 +23,23 @@ title      : "StrongPoint Consulting" # Also check _data/_sitetext.yml for what'
 description: Fractional AI Leadership, AI coaching and AI consulting agency # This is used only if there is no specific description available for the page
 email      : noreply@nop.nop #this is also the email contact forms will go to
 author     : Heikki Malkamäki
-# logo:     #optional, defaults to site title
-  # path: assets\img\clients\creative-market.jpg
-  # height: 60 #height in px, defaults to 52px
-  # See: nav.html where logo image is built with HTML/CSS
 
 analytics:
   google: G-5HZGV8ZNEF
 
-#collections:
-#  portfolio:
-
 markdown: kramdown
+
+plugins:
+  - "jekyll-sitemap"
+
+exclude: [AGENTS.md]
+include: [robots.txt, llms.txt, sitemap.xml]
 
 sass:
   quiet_deps: true
   silence_deprecations:
     - import
     #- global-builtin
-
-plugins:
-  - jekyll-sitemap
 
 # ==============================================================
 #  Posts
