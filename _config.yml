@@ -42,9 +42,8 @@ sass:
     - import
     #- global-builtin
 
-
-#plugins:
-#  - jekyll-remote-theme
+plugins:
+  - jekyll-sitemap
 
 # ==============================================================
 #  Posts
