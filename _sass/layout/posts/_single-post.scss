@@ -3,11 +3,10 @@
  */
 div.single-post {
   section#post {
-    max-width: 850px;
     margin: 0 auto;
     padding: 0;
 
-    h2, h3 {
+    h1, h2, h3, h4 {
       margin-bottom: 0.5em;
       margin-top: 1.5em;
     }
@@ -92,6 +91,10 @@ div.single-post {
     justify-content: space-between;
     align-items: end;
 
+    border-top: 1px solid $gray-800;
+    padding-top: 2em;
+    padding-bottom: 5em;
+
     a.link {
       &::before {
         content: "\2039  ";
@@ -143,7 +146,7 @@ div.single-post {
       //text-align: left;
       height: 15em;
       border-radius: 5px;
-      border: 1px solid $gray-700;
+      border: 1px solid $gray-800;
 
       &:hover {
         background: linear-gradient($lessdark, $dark);

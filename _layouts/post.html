@@ -1,6 +1,5 @@
 ---
 layout: default
-cssTricks: ["body-color-invert"]
 ---
 {% comment %}
   The layout of a single post.
@@ -42,16 +41,18 @@ cssTricks: ["body-color-invert"]
 
 {% include nav.html lang=page.lang navtype=page.navtype %}
 <div class="container single-post" id="single-page-container">
+    {% comment  %} 
     <div class="breadcrumbs">
       <div class="breadcrumb-item">
         <a href="{{ hrefBackToPosts }}" class="link">{{ postsText.back-to-posts }}</a>
     </div>  
   </div>
+  {% endcomment %}
 
-  <section id="post">
+  <section id="post" class="content-narrow">
     <article class="main">
       <div class="article-head">
-        <h2>{{ page.title }}</h2>
+        <h1>{{ page.title }}</h1>
         <p class="post-meta">
           <span class="categories">{{ postCatTexts }}</span>
         </p>
@@ -130,6 +131,4 @@ cssTricks: ["body-color-invert"]
       {% endif %}
     </div>
   </div>
-
-  <div class="bottom-margin-8em"></div>
 </div>

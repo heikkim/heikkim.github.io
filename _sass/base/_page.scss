@@ -18,6 +18,21 @@ p {
   line-height: 1.8;
 }
 
+.prose {
+  h1,h2,h3,h4,h5,h6 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+  }
+
+  p {
+    //padding: 1em;
+  }
+
+  ul.common-list {
+    margin: 0;
+  }
+}
+
 strong {
  font-weight: 500;
 }
@@ -139,6 +154,10 @@ section {
 
 section.page-hero {
   padding-top: 4em;
+}
+
+.content-narrow {
+  width: 850px;
 }
 
 .bg-lessdark {
