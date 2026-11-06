@@ -21,28 +21,43 @@ list_image: *hero
 list_image_alt: *hero_alt
 content_image: 
 content_image_alt: 
-lang_vers: 2026-11-06-ai-change-starts-from-understanding-the-opportunity
+lang_vers: /en/posts/2026/11/06/ai-change-starts-from-understanding-the-opportunity
 highlighted: true
 published: true
 visible: false
 sitemap: false
 ---
-## Tekoälymuutos on tehokkuutta
+## Tekoälymuutos ajaa tehokkuutta
 
-- Tekoälymuutos
+Vielä tällä hetkellä yrityksissä moni asia tehdään manuaalisesti. 
+- Myyjä kasaa powerpointit ja lähettelee niitä edes-takaisin asiakkaiden kanssa
+- 
 
-> Ymmärrä ensin tekoälyn mahdollisuudet.<br/>Etene sitten määrätietoisesti eteenpäin.
+> Yleistasoinen "Tavoittelemme automaatioasteen nousua" on kuin haaleaa vettä juomalasissa. Tarkennetut tavoitteet auttavat kohdentamaan toimenpiteet oikein.
 
 ## Työkalujen ikeessä
 
 - Työkalujen määrä ja valinnan vaikeus
 - Kustannusten kehittyminen/skaalautuminen
 
-## Tavoitteet edelleen tärkeitä
-
-Lorem ipsum. Dolor sit amet.
-
 ## Aloita mahdollisuuksien ymmärtämisellä
 
-## Huolehdi omasta osaamisestasi
+Tekoäly etenee päätä huimaavalla vauhdilla, mikä hankaloittaa tilannetajun muodostamista. Kaikessa on mahdotonta pysyä mukana ja liiketoimintaa pitää samalla johtaa, kuten tähänkin asti. Päätään ei kuitenkaan voi pistää pensaaseen, sillä teknologiset läpimurrot toisensa jälkeen ovat todellisia.
+
+## Määritä tavoitteesi
+
+Liiketoiminnan tavoitteet eivät jääneet mihinkään. Ymmärrys tekoälyn mahdollisuuksista vaikuttaa tavoitteisiin.
+
+Yleistasoinen "Tavoittelemme automaatioasteen nousua" on kuin haaleaa vettä juomalasissa. Tarkennetut tavoitteet auttavat kohdentamaan toimenpiteet oikein.
+
+## Muista huolehtia omasta osaamisestasi
+
+Tekoäly auttaa tehostamaan johdon ja henkilöstön suorittamaa henkilökohtaista työtä. Johto ei siis ole tässä mitenkään poikkeus, vaan päinvastoin. Tekoälystä kartalla olevat johtoryhmät kun saavat enemmän tuloksia aikaan. Aikaansannokset näkyvät suoraan yrityksen pitkän aikavälin kilpailukyvyssä. 
+
+**Nopeuden suhteen on hyvä ymmärtää tämä:** Tekoäly muuttaa peliä merkittävästi, sillä erilaiset toimenpiteet ovat monin verroin perinteistä tapaa nopeampia. Jähmeämmin ajan tasalla olevissa yrityksissä nopeus jää selvästi pienemmäksi, kuin tekoälyn tehohyödyntäjissä. Ajan kuluessa tämä hitaampien nopeusjättämä kostautuu heikompana kilpailukykynä, joka johtaa kulukuuriin, edelleen kilpailukykyä nakertaen. Negatiivinen kierre on valmis, eikä siitä nouseminen ole helppoa.
+
+Onnistuneesti yritykseen skaalattuna tekoäly mahdollistaa monin verroin suuremmat mittakaavahyödyt. Esimerkiksi myyntiputken automatisointi onboardauksineen, asiakaspalvelun automaatio alusta loppuun, tai nopeat markkinakokeilut tulevat mahdollisiksi.
+
+
+
 

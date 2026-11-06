@@ -30,8 +30,13 @@
             {%- endif -%}
 
             {%- if hasExplicitLangVers == true -%}
+                {%- assign href = page.lang_vers -%}
+                {% comment %}
+                Taken out since it does not work in GitHub Pages' Jekyll version.
+
                 {%- assign href = href | prepend: "_posts" | append: page.categories[0] | append: "/" | append: page.lang_vers | append: ".md" -%}
                 {%- capture href -%}{%- link {{ href }} -%}{%- endcapture -%}
+                {% endcomment %}
             {%- else -%}
                 {%- assign href = href | append: "posts" |  replace_first: "/fi/", "/" -%}
             {%- endif -%}
