@@ -51,6 +51,12 @@ function spc_showContactForm() {
     
     contactFormContainer.toggleClass("d-none", false);        
     contactFormShowButton.parent().hide(); //toggleClass("d-none", true);
+
+    var nameInput = contactFormContainer.find("input[name=name]");
+
+    if(nameInput.length > 0) {
+        nameInput.focus();
+    }
 }
 
 function spc_initContactButtonShowForm() {

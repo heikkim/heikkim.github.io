@@ -82,7 +82,7 @@ meta_description: "Henkilökohtaista, käytännönläheistä AI-valmennusta joht
       </div>
 
       <div class="service-middesc-cta">
-          <a class="contact-secondary-cta content-link" href="#">Aloitetaan keskustelu</a>
+          <a class="contact-secondary-cta content-link" href="#">Aloita keskustelu</a>
       </div>
   </section>
 
@@ -107,14 +107,14 @@ meta_description: "Henkilökohtaista, käytännönläheistä AI-valmennusta joht
   </section>
 
   <section id="fit">
-      <h2>Kenelle palvelu sopii</h2>
+      <h2>Palvelu on suunnattu</h2>
       <ul class="common-list">
         <li>Johtajille ja hallitusjäsenille, joilla tekoälyn käyttö on jäänyt arjen kiireiden jalkoihin.</li>
         <li>Johtajille, jotka käyttävät jo tekoälyä päivittäin ja haluavat seuraavaksi kehittyä tehokäyttäjiksi.</li>
         <li>Kiireisille johtajille, jotka haluavat oppia nopeasti eikä aika riitä verkko-oppimiseen.</li>
       </ul>
       <div class="oth-crosslinks">
-        <h5>Etsitkö jotain muuta?</h5>
+        <h5>Palveluita eri tarpeisiin</h5>
         <ul>
           <li><strong>Fractional AI Leadership</strong>, kun organisaatio kaipaa tekoälyn kontolleen ottavaa vastuullista johtajaa.
           <br /><a class="content-link" href="/services/fractional-ai-leadership.html">Lue lisää Fractional AI Leadership palvelusta yrityksille</a></li>

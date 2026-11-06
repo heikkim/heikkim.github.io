@@ -6,8 +6,9 @@
 
 ! function(jQ) {
   "use strict";
-  jQ('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  jQ('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function(ev) {
     if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+      //ev.preventDefault();
       var a = jQ(this.hash);
       if ((a = a.length ? a : jQ("[name=" + this.hash.slice(1) + "]")).length) return jQ("html, body").animate({
         scrollTop: a.offset().top - 54

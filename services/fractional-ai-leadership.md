@@ -83,7 +83,7 @@ meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityk
     </div>
 
     <div class="service-middesc-cta">
-      <a class="contact-secondary-cta content-link" href="#">Aloitetaan keskustelu</a>
+      <a class="contact-secondary-cta content-link" href="#">Aloita keskustelu</a>
     </div>
   </section>
 
@@ -108,7 +108,7 @@ meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityk
   </section>
 
   <section id="fit">
-    <h2>Kenelle palvelu sopii</h2>
+    <h2>Palvelu on suunnattu</h2>
     <ul class="common-list">
       <li>PK-yrityksille ja hallituksille, joilla tekoäly on agendalla, mutta omistajuus on vaillinaista tai hanke ei etene.</li>
       <li>Johtoryhmille, jotka ovat jo ajaneet pilottihankkeita ja etsivät nyt keinoja skaalata tekoälyn käyttöä.</li>
@@ -116,7 +116,7 @@ meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityk
       <li>Yrityksille, jotka suhtautuvat tekoälyyn vakavasti, ja ovat valmiita tekemään panostuksia.</li>
     </ul>
         <div class="oth-crosslinks">
-          <h5>Etsitkö jotain muuta?</h5>
+          <h5>Palveluita eri tarpeisiin</h5>
           <ul>
             <li><strong>AI-konsultointi</strong>, kun kyseessä on yksittäinen projekti, ratkaistava ongelma tai workshop.<br /><a class="content-link" href="/services/ai-consulting.html">Lue lisää tekoälykonsultoinnista yrityksille ja organisaatioille</a></li>
             <li><strong>AI-valmennus</strong>, kun haluat kehittää omaa AI-osaamistasi, kehotteiden rakentamistaitoasi tai automatisoida töitäsi.<br /><a class="content-link" href="/services/ai-coaching.html">Lue lisää johdon ja hallituksen AI-valmennuksesta</a></li>

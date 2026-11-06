@@ -2,59 +2,72 @@
  * Single post styles
  */
 div.single-post {
+  section#contact {
+    padding: 0;
+  }
+
   section#post {
     margin: 0 auto;
     padding: 0;
 
-    h1, h2, h3, h4 {
+    h1 {
+      margin-bottom: 0;
+    }
+
+    h2, h3, h4 {
       margin-bottom: 0.5em;
       margin-top: 1.5em;
     }
 
-    article {
-      margin-bottom: 8em;
+    .article-head {
+      .excerpt {
+        margin: 2em auto 1em;
+        font-size: 1.4rem;
+      }
 
-      .article-head {
-    
-        .post-meta {
-          time {
-            margin-left: 10px;
-          }
-        }
-
-        .excerpt {
-          margin: 2em auto;
-        }
-
-        img.hero {
-          margin: 0 0 3em;
-          display: block;
-          width: 80%;
+      .post-meta {
+        .date {
+          margin-left: 10px;
         }
       }
 
-      .article-body {
-        line-height: 1.8;
+      span.categories {
+        display: inline-block;
+      }
 
-        img { /* content image */
-          margin: 2.5em 0;
-          display: block;
-          width: 60%;
-          height: auto;  
-        }
+      img.hero {
+        margin: 0 0 1em 0;
+        display: block;
+        width: 100%;
+      }
 
-        blockquote {
-          margin: 50px 20px;
-          padding: 0.5em 0em .2em 1.4em;
-          border-left: 3px solid $secondary;
-          max-width: 500px;
-          font-style: italic;
-          color: $secondary;
-          @include serif-font;
+      img + em {
+        color: $text-muted;
+      }
+    }
 
-          p {
-            font-size: 1.4rem;
-          }
+    .article-body {
+      line-height: 1.8;
+      font-size: 1.1rem;
+
+      img { /* content image */
+        margin: 2.5em 0;
+        display: block;
+        width: 60%;
+        height: auto;  
+      }
+
+      blockquote {
+        margin: 50px 20px;
+        padding: 0.5em 0em .2em 1.4em;
+        border-left: 3px solid $secondary;
+        //max-width: 600px;
+        font-style: italic;
+        color: $secondary;
+        @include serif-font;
+
+        p {
+          font-size: 1.5rem;
         }
       }
     }
@@ -93,7 +106,6 @@ div.single-post {
 
     border-top: 1px solid $gray-800;
     padding-top: 2em;
-    padding-bottom: 5em;
 
     a.link {
       &::before {
@@ -113,7 +125,7 @@ div.single-post {
     }
 
     .item-left, .item-right {
-      min-width: 30.5em;
+      max-width: 30.5em;
     }
 
     .item {
@@ -138,9 +150,10 @@ div.single-post {
     }
   }
 
+  // bottom link cards to previous and next articles
   article.card {
       background-color: $lessdark;    
-      width: 30.5rem;
+      max-width: 30.5rem;
       min-height: fit-content;
       margin: 1em;
       //text-align: left;
@@ -159,17 +172,6 @@ div.single-post {
       p.post-meta{
         padding-top: 0;
         margin-top: 0;
-      }
-
-      &.card-bottom {
-        position: absolute;
-        bottom: 1em;
-        left: 1.5em;
-        
-        span.author {
-          display: inline-block;
-          margin-top: 0.6em;
-        }
       }
     }
 }

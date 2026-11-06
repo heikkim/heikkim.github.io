@@ -1,0 +1,12 @@
+1. Tekoälyn mahdollisuuksien ymmärtäminen
+-- Catch: Miten ymmärtää?
+2. Tekoälyn arvopotentiaalin tunnistaminen
+-- Catch: Miten tunnistaa?
+3. Priorisointi
+-- Catch: Miten priorisoida?
+4. Tekoälyn turvallinen käyttö
+-- Catch: Miten linjata turvallinen käyttö?
+5. Kokeilut
+-- Catch: Miten kokeilut kannattaa strukturoida?
+6. Skaalaaminen
+-- Catch: Miten skaalata onnistuneesti?

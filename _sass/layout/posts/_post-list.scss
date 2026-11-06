@@ -1,12 +1,10 @@
-section#posts-main.page-hero {
-  padding-bottom: 3em;
-}
 
 /*
  * Post listing styles.
  */
 section#posts-list {
   padding-top: 0;
+  margin-top: 0;
 
   a {
     text-decoration: none;
@@ -21,6 +19,7 @@ section#posts-list {
   article.card {
     background-color: $lessdark;
     min-width: 17.5rem;
+    min-height: 34rem;
     //height: 25rem;
     overflow-y: hidden;
     margin: 1em;
@@ -35,21 +34,31 @@ section#posts-list {
       padding-bottom: 2em;
     }
 
-    &.card-bottom {
-      position: absolute;
-      bottom: 1em;
-      left: 1.5em;
-      
-      span.author {
-        display: inline-block;
-        margin-top: 0.6em;
+    p + p {
+      margin-top: unset;
+    }
+
+    .post-meta {
+
+      &.card-bottom {
+        position: absolute;
+        bottom: 1em;
+        left: 1.5em;
       }
+
+        span.author {
+          display: inline-block;
+          margin-top: 0.6em;
+        }
     }
   }
 }
 
 @media (max-width: 991px) {
   section#posts-list {
+    padding-top: 0;
+    margin-top: 0;
+    
     div.grid {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -58,6 +67,9 @@ section#posts-list {
 
 @media (max-width: 768px) {
   section#posts-list {
+    padding-top: 0;
+    margin-top: 0;
+
     div.grid {
       grid-template-columns: repeat(1, minmax(0, 1fr));
     }

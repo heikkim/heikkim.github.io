@@ -1,18 +1,18 @@
 {% comment %}
 Assign navtype to "scroll" or "absolute". Defaults to "scroll"
 {% endcomment %}
-{% assign curlang = site.languages | where: "code", page.lang | first %}
-{% assign navtype = page.navtype %} {% if navtype == nil %}{% assign navtype = "scroll" %} {% endif %}
-{% assign navigation = site.data.navigation %}
-{% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
-  {% assign navigation = site.data.navigation[curlang.locale] %}
-{% endif %}
+{%- assign curlang = site.languages | where: "code", page.lang | first -%}
+{%- assign navtype = page.navtype %} {%- if navtype == nil -%}{%- assign navtype = "scroll" -%} {%- endif -%}
+{%- assign navigation = site.data.navigation -%}
+{%- if curlang.locale and curlang.locale != "" and curlang.locale != nil -%}
+  {%- assign navigation = site.data.navigation[curlang.locale] -%}
+{%- endif -%}
 
-{%  if site.DEBUG %}  
+{%-  if site.DEBUG -%}  
 <!--
   curlang: "{{ curlang }}"
 -->
-{% endif %}
+{%- endif -%}
 
 <!-- Navigation -->
 <div class="container">

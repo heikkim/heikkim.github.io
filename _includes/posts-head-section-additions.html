@@ -3,7 +3,7 @@
     {%- assign postsText = site.data.sitetext[curlang.locale].posts -%}
 {%- endif %}
 {%- assign firstArticleCategory = page.categories | first -%}
-{%- assign articleDate = page.date | date_to_xmlschema  -%}
+{%- assign articlePublishedDate = page.date | date_to_xmlschema  -%}
 {%- assign articleAuthor = site.data.authors.list | where: "initials", page.author | first -%}
 
 <link href="/assets/css/posts-readability.css" rel="stylesheet" />
@@ -13,6 +13,6 @@
 <meta property="article:author" content="{{ articleAuthor.name | default: "Heikki Malkamäki" }}" />
 <meta property="article:publisher" content="{{ site.title }}" />
 {% if firstArticleCategory %}<meta property="article:section" content="{{ postsText.categories[firstArticleCategory] | default: firstArticleCategory }}">{% endif %}
-<meta property="article:published_time" content="{{ articleDate }}" />
-<meta property="article:modified_time" content="{% if page.modified %}{{ page.modified }}{% else %}{{ articleDate }}{% endif %}" />
+<meta property="article:published_time" content="{{ articlePublishedDate }}" />
+<meta property="article:modified_time" content="{% if page.last_modified_at %}{{ page.last_modified_at | date_to_xmlschema }}{% endif %}" />
 {% if page.expires %}<meta property="article:expiration_time" content="{{ page.expires }}" />{% endif %}

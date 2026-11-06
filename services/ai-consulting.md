@@ -81,7 +81,7 @@ meta_description: "Ratkaisut PK-yritysten tekoäly- ja dataongelmiin. Myös fasi
       </div>
 
       <div class="service-middesc-cta">
-          <a class="contact-secondary-cta content-link" href="#">Aloitetaan keskustelu</a>
+          <a class="contact-secondary-cta content-link" href="#">Aloita keskustelu</a>
       </div>
   </section>
 
@@ -100,7 +100,7 @@ meta_description: "Ratkaisut PK-yritysten tekoäly- ja dataongelmiin. Myös fasi
   </section>
 
   <section id="fit">
-      <h2>Palvelu on suunnattu ensisijassa</h2>
+      <h2>Palvelu on suunnattu</h2>
       <ul class="common-list">
         <li>PK-yrityksille, joilla on konkreettinen tekoäly- tai datahaaste, tai jumiutunut hanke.</li>
         <li>Hallituksille ja johtoryhmille, jotka tarvitsevat riippumattoman näkemyksen tietystä tekoälyinvestoinnista tai käyttötapauksesta.</li>
@@ -108,7 +108,7 @@ meta_description: "Ratkaisut PK-yritysten tekoäly- ja dataongelmiin. Myös fasi
         <li>Yrityksille, jotka eivät ole vielä ennättäneet liikkeelle tekoälyn kanssa.</li>
       </ul>
       <div class="oth-crosslinks">
-        <h5>Etsitkö jotain muuta?</h5>
+        <h5>Palveluita eri tarpeisiin</h5>
         <ul>
           <li><strong>Fractional AI Leadership</strong>, kun organisaatio kaipaa tekoälyn kontolleen ottavaa vastuullista johtajaa.
           <br /><a class="content-link" href="/services/fractional-ai-leadership.html">Lue lisää Fractional AI Leadership palvelusta yrityksille</a></li>

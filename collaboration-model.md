@@ -7,8 +7,6 @@ meta_title: "Yhteistyömalli"
 meta_description: "Selkeät yhteistyömallit PK-yrityksille: jatkuva fractional AI Director -yhteistyö, 1-4 viikon AI-valmennus ja projektiperusteinen AI-konsultointi."
 ---
 <div class="collaboration-page">
-
-  <!-- 1. Hero -->
   <section class="page-hero">
     <h1>Yhteistyömalli</h1>
     <p>Selkeästi, ilman yllätyksiä.</p>
@@ -17,7 +15,6 @@ meta_description: "Selkeät yhteistyömallit PK-yrityksille: jatkuva fractional 
     </p>
   </section>
 
-  <!-- 2. The models -->
   <section id="collaboration-models">
     <h2>Yhteistyö palveluiden kautta</h2>
     <div class="row">
@@ -66,7 +63,6 @@ meta_description: "Selkeät yhteistyömallit PK-yrityksille: jatkuva fractional 
     </div>
   </section>
 
-  <!-- 3. What is always included -->
   <section id="included">
     <h2>Palveluun sisältyy aina</h2>
     <ul class="service-list common-list">
@@ -77,15 +73,12 @@ meta_description: "Selkeät yhteistyömallit PK-yrityksille: jatkuva fractional 
     </ul>
   </section>
 
-  <!-- 4. Next steps -->
-  <section class="service-cta" id="next-steps">
-    <h2>Aloitetaan keskustelu.</h2>
+  <section id="contact">
+    <h2>Aloita keskustelu.</h2>
     <p>
       Vieläkö mietityttää, mikä palveluista on oikea? Buukataan lyhyt kartoituskeskustelu ja selvitetään! 
     </p>
+  
+    {% include contact.html lang=page.lang cta-btn-text="Ota yhteyttä" headless=true %}
   </section>
-
-  <div class="container unpad-100">
-  {% include contact.html lang=page.lang cta-btn-text="Ota yhteyttä" headless=true %}
-  </div>
 </div>

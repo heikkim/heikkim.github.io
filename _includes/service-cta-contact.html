@@ -4,13 +4,11 @@
   {% assign ctaSection = site.data.sitetext[curlang.locale]["service-cta"] %}
 {% endif %}
 
-<section class="service-cta" id="next-steps">
+<section id="contact">
   <h2>{{ ctaSection.title }}</h2>
-  <p>
+  <p class="cta-intro">
       {{ ctaSection.text }}
   </p>
-</section>
 
-<div class="container unpad-100">
   {% include contact.html lang=page.lang cta-btn-text=ctaSection.cta headless=true %}
-</div>
+</section>

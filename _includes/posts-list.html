@@ -42,7 +42,7 @@
               <span class="categories">{{ postCatTexts }}</span>
             </p>
             
-            <p class="card-text">{{ post.excerpt | strip_html | strip }}</p>
+            <p class="card-text">{{ post.excerpt | strip_html | strip | truncate: 110 }}</p>
             
             <div class="post-meta card-bottom">
               <img class="author" src="/assets/img/headshot_sq-small.jpg" />

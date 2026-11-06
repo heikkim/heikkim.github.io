@@ -1,86 +1,89 @@
-{% assign curlang = site.languages | where: "code", page.lang | first %}
-{% assign contentSection = site.data.sitetext.contact %}
-{% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
-  {% assign contentSection = site.data.sitetext[curlang.locale].contact %}
-{% endif %}
-{% comment %} Optional override of the call-to-action button label, e.g. {% include contact.html cta-btn-text="Start a conversation" %} {% endcomment %}
-{% assign contactButtonLabel = include.cta-btn-text | default: contentSection.contact-now %}
-{% assign formHeader = include.form-header | default: contentSection.title %}
-{% if include.headless == true %}
-  {% assign headlessHide=" d-none" %}
-{% endif %}
+{%- assign curlang = site.languages | where: "code", page.lang | first -%}
+{%- assign contentSection = site.data.sitetext.contact -%}
+{%- if curlang.locale and curlang.locale != "" and curlang.locale != nil -%}
+{%- assign contentSection = site.data.sitetext[curlang.locale].contact -%}
+{%- endif -%}
+{%- comment -%} Optional override of the call-to-action button label, e.g. {%- include contact.html cta-btn-text="Start a conversation" -%} {%- endcomment -%}
+{%- assign contactButtonLabel = include.cta-btn-text | default: contentSection.contact-now -%}
+{%- assign contactTeaserText = include.cta-teaser-text | default: contentSection.text -%}
+{%- assign formHeader = include.form-header | default: contentSection.title -%}
+{% comment  %} linkScrollToHtmlId may or may not be respected by the javascript in spc.js depending on the viewport current width. {% endcomment %}
+{%- assign linkScrollToHtmlId = include.scroll-to-id | default: "#contact" -%}
+{%- unless linkScrollToHtmlId contains "#" -%} 
+{%- assign linkScrollToHtmlId = include.scroll-to-id | prepend: "#" -%}
+{%- endunless -%}
+{%- if include.headless == true -%}
+{%- assign headlessHide=" d-none" -%}
+{%- endif -%}
 <!-- Contact -->
-<section id="contact">
-  <div class="container text-center">
-    <a class="btn btn-xl btn-secondary js-scroll-trigger" id="contact-form-show-btn" href="#contact">{{ contactButtonLabel }}</a>
-    {% if contentSection.text != "" and contentSection.text != null %}
-      <p class="text-muted">{{ contentSection.text | default: "" }}</p>
-    {% endif %}
-  </div>
-  <div class="container d-none" id="contact-form-container">
-    <div class="row">
-      <div class="col-lg-12">
-        <h2 class="{{ headlessHide }}">
-          {{ formHeader | default: Contact Us }}</h2>
-      </div>
+<div class="container text-center" id="contact-form-show-btn-container">
+  <a class="btn btn-xl btn-secondary js-scroll-trigger" id="contact-form-show-btn" href="{{ linkScrollToHtmlId }}">{{ contactButtonLabel }}</a>
+  {% if contactTeaserText != "" and contactTeaserText != null %}
+    <p class="text-muted">{{ contactTeaserText | default: "" }}</p>
+  {% endif %}
+</div>
+<div class="container d-none" id="contact-form-container">
+  <div class="row">
+    <div class="col-lg-12">
+      <h2 class="{{ headlessHide }}">{{ formHeader | default: Contact Us }}</h2>
     </div>
-    <div class="row">
-      <div class="col-lg-12">
-        
-        <form id="contactForm" action="{{ contentSection.action }}" method="POST">
-          <!--name="sentMessage"-->
-          <div class="row">
-            <div class="col-md-6">
-              <div class="form-group">
-                <input name="name" class="form-control" id="name" type="text"
-                  placeholder="{{ contentSection.name | default: "Name*" }}"
-                  required="required" data-validation-required-message="{{ contentSection.name-validation | default: "Please enter your name." }}">
-                <p class="help-block text-warning"></p>
-              </div>
-              <div class="form-group d-none">
-                <input name="username" class="form-control" id="username" type="text" tabindex="-1" autocomplete="off">
-              </div>
-              <div class="form-group">
-                <input name="email" class="form-control" id="email" type="email"
-                  placeholder="{{ contentSection.email | default: "Email*" }}"
-                  required="required" data-validation-required-message="{{ contentSection.email-validation | default: "Please enter your email address." }}">
-                <p class="help-block text-warning"></p>
-              </div>
-              <div class="form-group">
-                <input name="phone" class="form-control" id="phone" type="tel"
-                  placeholder="{{ contentSection.phone | default: "Phone Number*" }}"
-                  data-validation-required-message="{{ contentSection.phone-validation | default: "Please enter your phone number." }}">
-                <p class="help-block text-warning"></p>
-              </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      
+      <form id="contactForm" action="{{ contentSection.action }}" method="POST">
+        <!--name="sentMessage"-->
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <input name="name" class="form-control" id="name" type="text"
+                placeholder="{{ contentSection.name | default: "Name*" }}"
+                required="required" data-validation-required-message="{{ contentSection.name-validation | default: "Please enter your name." }}">
+              <p class="help-block text-warning"></p>
             </div>
-            <div class="col-md-6">
-              <div class="form-group">
-                <textarea name="message" class="form-control" id="message"
-                  placeholder="{{ contentSection.message | default: "Message*" }}"
-                  required="required" data-validation-required-message="{{ contentSection.message-validation | default: "Please enter a message." }}"></textarea>
-                <p class="help-block text-warning"></p>
-              </div>
+            <div class="form-group d-none">
+              <input name="username" class="form-control" id="username" type="text" tabindex="-1" autocomplete="off">
             </div>
-            <input type="hidden" name="_subject" id="email-subject"
-              value="{{ contentSection.subject | default: "Contact Form Submission" }}">
-            <div class="clearfix"></div>
-            <div class="col-lg-12 text-center">
-              <div id="success"></div>
-              <button id="sendContactFormBtn" class="btn btn-secondary btn-xl"
-                type="submit">{{ contentSection.submit | default: "Send Message" }}</button>
-                {% if contentSection.text != "" and contentSection.text != null %}
-                  <p class="text-muted">{{ contentSection.text | default: "" }}</p>
-                {% endif %}
+            <div class="form-group">
+              <input name="email" class="form-control" id="email" type="email"
+                placeholder="{{ contentSection.email | default: "Email*" }}"
+                required="required" data-validation-required-message="{{ contentSection.email-validation | default: "Please enter your email address." }}">
+              <p class="help-block text-warning"></p>
             </div>
-            <input id="companyIdNumber" type="text" name="companyIdNumber" placeholder="Company ID number*" value="" />
-            <input id="_gotcha" type="text" name="_gotcha" placeholder="What is 2+two*" value="" />
-            <input id="pageFrom" type="hidden" name="pageFrom" value="{{ page.url }}" />
-            <input type="hidden" name="_next" value="#" />
-            <input type="hidden" name="access_key" value="" />
+            <div class="form-group">
+              <input name="phone" class="form-control" id="phone" type="tel"
+                placeholder="{{ contentSection.phone | default: "Phone Number*" }}"
+                data-validation-required-message="{{ contentSection.phone-validation | default: "Please enter your phone number." }}">
+              <p class="help-block text-warning"></p>
+            </div>
           </div>
-        </form>
-      </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <textarea name="message" class="form-control" id="message"
+                placeholder="{{ contentSection.message | default: "Message*" }}"
+                required="required" data-validation-required-message="{{ contentSection.message-validation | default: "Please enter a message." }}"></textarea>
+              <p class="help-block text-warning"></p>
+            </div>
+          </div>
+          <input type="hidden" name="_subject" id="email-subject"
+            value="{{ contentSection.subject | default: "Contact Form Submission" }}">
+          <div class="clearfix"></div>
+          <div class="col-lg-12 text-center">
+            <div id="success"></div>
+            <button id="sendContactFormBtn" class="btn btn-secondary btn-xl"
+              type="submit">{{ contentSection.submit | default: "Send Message" }}</button>
+              {% if contactTeaserText != "" and contactTeaserText != null %}
+                <p class="text-muted">{{ contactTeaserText | default: "" }}</p>
+              {% endif %}
+          </div>
+          <input id="companyIdNumber" type="text" name="companyIdNumber" placeholder="Company ID number*" value="" />
+          <input id="_gotcha" type="text" name="_gotcha" placeholder="What is 2+two*" value="" />
+          <input id="pageFrom" type="hidden" name="pageFrom" value="{{ page.url }}" />
+          <input type="hidden" name="_next" value="#" />
+          <input type="hidden" name="access_key" value="" />
+        </div>
+      </form>
     </div>
   </div>
-</section>
+</div>
 <!-- End Contact -->

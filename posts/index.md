@@ -2,7 +2,7 @@
 layout: page
 navtype: absolute
 lang: fi
-meta_title: "Askel Edellä - kirjoitukset"
+meta_title: "Näkemykset"
 meta_description: "Kirjoituksia tekoälystrategiasta, tekoälykäytännöistä ja muutoksen johtamisesta."
 ---
 {% assign curlang = site.languages | where: "code", page.lang | first %}

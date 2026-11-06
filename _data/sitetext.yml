@@ -166,6 +166,7 @@ en: &DEFAULT_EN
     categories:
       ai-strategy: "AI Strategy"
       leadership: "Leadership"
+      self-development: "Self Development"
     in-category: in
     previous-article: "&#x2039; Previous article"
     next-article: "Next article &#x203A;"
@@ -381,7 +382,7 @@ fi: &DEFAULT_FI
 #            icon: fab fa-linkedin-in
   # The posts section
   posts:
-    title: Näkemyksiä
+    title: Näkemykset
     back-to-posts: "Listaukseen"
     highlights-title: "Viimeisimmät ajatukset"
     text: "Käytännön näkemyksiä tekoälystä, AI-käytännöistä ja muutoksen johtamisesta."
@@ -392,9 +393,10 @@ fi: &DEFAULT_FI
     categories:
       ai-strategy: "Tekoälystrategia"
       leadership: "Johtaminen"
+      self-development: "Kehittyminen"
     in-category: "@"
-    previous-article: "&laquo; Edellinen artikkeli"
-    next-article: "Seuraava artikkeli &raquo;"
+    previous-article: "&#x2039; Edellinen artikkeli"
+    next-article: "Seuraava artikkeli &#x203A;"
 
   # The newsletter subscription
   newsletter:
@@ -402,7 +404,7 @@ fi: &DEFAULT_FI
     text: "Tulossa loppuvuodesta 2026!<br />Saat sähköpostiisi näkemyksiä tekoälystrategiasta ja muutoksen johtamisesta 1-2 kertaa kuussa."
     placeholder: "Sähköpostiosoitteesi"
     submit: "Tilaa"
-    success: "Kiitos. Seuraava Askel Edellä on tulossa."
+    success: "Kiitos. Seuraavat Näkemykset ovat matkalla."
     modal-title: "Ennen kuin menet.."
     modal-text: "Haluatko sähköpostiisi näkemyksiä tekoälystrategiasta ja muutoksen johtamisesta 1-2 kertaa kuussa? Voit aina hypätä pois kyydistä myöhemmin. Alkaa loppuvuodesta 2026!"
     close: "Sulje"
@@ -413,7 +415,7 @@ fi: &DEFAULT_FI
     action: "https://api.web3forms.com/submit"
 
   contact:
-    title: "Aloitetaan keskustelu."
+    title: "Aloita keskustelu."
     text: "Kartoitetaan tilanteenne ja tarpeenne ilman sitoumuksia."
     section: contact
     name: "Nimi*"
@@ -426,7 +428,7 @@ fi: &DEFAULT_FI
     message-validation: "Jätä viesti."
     subject: "Yhteydenotto"
     submit: "Lähetä"
-    contact-now: Aloitetaan keskustelu.
+    contact-now: Aloita keskustelu.
     action: "https://api.web3forms.com/submit"
 
   cookie-consent:

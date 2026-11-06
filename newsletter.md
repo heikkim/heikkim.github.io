@@ -3,7 +3,7 @@ layout: page
 navtype: absolute
 lang: fi
 isNewsLetterPage: true
-meta_title: "Tekoälyuutiskirje: Askel Edellä"
+meta_title: "StrongPoint Consultingin tekoälyuutiskirje: Näkemyksiä"
 meta_description: "Näkemyksiä tekoälystrategiasta, AI-käytännöistä ja muutoksen johtamisesta."
 ---
 {% assign curlang = site.languages | where: "code", page.lang | first %}

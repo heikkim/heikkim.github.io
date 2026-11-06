@@ -1,7 +1,9 @@
-# StrongPoint Consulting web page project (AKA heikkim.github.io)
+# StrongPoint Consulting web page project
 
 This is a Jekyll static website project using Bootstrap, JQuery and select Google fonts. SASS/SCSS is widely used.
 The site is published through Github.
+
+Page is served through https://strongpointconsulting.fi
 
 ## Project structure
 
@@ -77,4 +79,3 @@ Check container breakpoints in `_sass/base/bootstrap_variables.scss` variable `$
 - Avoid corporate language such as "synergy" "leverage", "unlock potential", "game-changing", "revolutionize", "in today's fast-paced world".
 - Content tone is confident and warm, but not soft. 
 - Dry Finnish-style humour is allowed where it sits well with content, but does not need to be always present.
-- The site is to introduce and showcase Heikki's professional solo AI consultancy, therefore the content often takes a first person perspective.

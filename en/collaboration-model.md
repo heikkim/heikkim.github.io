@@ -15,7 +15,6 @@ meta_description: "Simple collaboration models for SMEs: an ongoing fractional A
   </p>
 </section>
 
-<!-- 2. The models -->
 <section id="collaboration-models">
   <h2>Engagement through services</h2>
   <div class="row">
@@ -64,7 +63,6 @@ meta_description: "Simple collaboration models for SMEs: an ongoing fractional A
   </div>
 </section>
 
-<!-- 3. What is always included -->
 <section id="included">
   <h2>Always Included</h2>
   <ul class="service-list common-list">
@@ -75,14 +73,11 @@ meta_description: "Simple collaboration models for SMEs: an ongoing fractional A
   </ul>
 </section>
 
-<!-- 4. Next steps -->
-<section class="service-cta" id="next-steps">
+<section id="contact">
   <h2>Let's Talk AI.</h2>
   <p class="service-lead">
     Not sure which model fits? That is exactly what the discovery call is for. Let's book it!
   </p>
-</section>
 
-<div class="container unpad-100">
-{% include contact.html lang=page.lang cta-btn-text="Start a conversation" headless=true %}
-</div>
+  {% include contact.html lang=page.lang cta-btn-text="Start a conversation" headless=true %}
+</section>
