@@ -21,7 +21,7 @@ list_image: *hero
 list_image_alt: *hero_alt
 content_image: "/assets/img/posts/content-ai-strategy.svg"
 content_image_alt: AI Strategy content image
-lang_vers: 2026-11-06-tekoalymuutos-alkaa-mahdollisuuden-ymmartamisesta
+lang_vers: 
 highlighted: true
 published: true
 visible: false
