@@ -97,7 +97,7 @@ meta_description: "One-to-one, hands-on AI coaching for senior leaders and board
         <strong>Bring a real task. Leave with it done.</strong>
         <br /><br />
       </p>
-      <ul class="common-list">
+      <ul class="success-list">
         <li><strong>A diagnostic of your current AI workflow:</strong> where time is lost, which tasks are ready to delegate and which are not.</li>
         <li><strong>Your personal prompt library:</strong> reusable, structured prompts for the work you actually repeat, e.g. board updates, decisions, memos, one-on-ones.</li>
         <li><strong>Live one-to-one sessions:</strong> built around your real tasks and your time availability.</li>
@@ -109,7 +109,7 @@ meta_description: "One-to-one, hands-on AI coaching for senior leaders and board
 
   <section id="fit">
       <h2>This is for</h2>
-      <ul class="common-list">
+      <ul class="success-list">
         <li>Senior leaders, executives and board members who are accountable for the output but not yet using AI to produce it.</li>
         <li>Leaders who already use AI daily and want to move from asking to delegating, and to use AI for judgement, not only drafting.</li>
         <li>Busy executives who want to learn quick, not another course to attend.</li>

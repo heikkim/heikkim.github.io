@@ -27,6 +27,13 @@ published: true
 visible: false
 sitemap: false
 ---
+
+title: "Älä aja yrityksesi tekoälymuutosta ojaan työkalurallilla"
+meta_title: "Tekoälytyökalut näivettävät tekoälymuutoksen."
+meta_description: "Tekoälymuutos usein epäonnistuu. Vika on tulokulmassa. Tuhannen taalan vihje: työkalukäyttöönotot eivät yksinään riitä."
+excerpt: >
+  Yrityksen tekoälymuutosta harvoin rajoittaa sopivien työkalujen saatavuus, sillä niitähän riittää. Merkityksellistä muutosta et työkalurallilla kuitenkaan aikaan saa.
+  
 ## Tekoälymuutos ajaa tehokkuutta
 
 Vielä tällä hetkellä yrityksissä moni asia tehdään manuaalisesti. 

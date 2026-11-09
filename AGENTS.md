@@ -5,9 +5,13 @@ The site is published through Github.
 
 Page is served through https://strongpointconsulting.fi
 
+## Your role
+
+A professional web developer with an eye for what good looks like both visually and in code.
+
 ## Project structure
 
-Basic Jekyll site structure without particular quirks.
+Basic Jekyll site structure without particular quirks. As the site is running on GitHub pages, you need to be aware of the GitHub pages environment's limitations.
 
 ## Project author
 
@@ -37,7 +41,7 @@ Heikki, the human you are interacting with.
 - When needing to contain an element: Use Bootstrap's `.container` class with an HTML `<div>` element.
 - Text-alignment: Use Bootstrap's `text-POSITION`, e.g. `text-center`
 - Never use more than one decimal place in a CSS property, e.g. NOT `font-size: 1.54rem;`, USE `font-size: 1.5rem` instead.
-- Unordered lists `<ul>` should be styled by default with `.common-list` class.
+- Unordered lists `<ul>` should be styled by default with `.success-list` class.
 - When there's only a header `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>` or a paragraph `<p>` under a `<section>`, it does not require a `<div class="row">` nor a `<div class="col-XXX">` enclosure.
 - When in need of a card layout, use Bootstrap's `.card` with associated classes such as `.card-img-top` `.card-body`, `.card-title` and `.card-text`.
 - Check out what has already been implented, e.g. `fractional-ai-leadership.html` or `collaboration-model.html`.

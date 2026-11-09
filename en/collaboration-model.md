@@ -23,7 +23,7 @@ meta_description: "Simple collaboration models for SMEs: an ongoing fractional A
         <h5 class="text-secondary">#1 Fractional AI Leadership</h5>
         <p class="basis">Ongoing engagement / monthly retainer</p>
         <p class="detail">Agreed on required capacity, starting from 1+ days per week.</p>
-        <ul class="common-list">
+        <ul class="success-list">
           <li>Embedded in your leadership team</li>
           <li>Strategy, governance and hands-on delivery</li>
           <li>Roadmap, policy and board reporting included</li>
@@ -37,7 +37,7 @@ meta_description: "Simple collaboration models for SMEs: an ongoing fractional A
         <h5 class="text-secondary">#2 AI Coaching</h5>
         <p class="basis">1 to 4 week program</p>
         <p class="detail">One program for the whole period, confirmed after the discovery call.</p>
-        <ul class="common-list">
+        <ul class="success-list">
           <li>One-to-one, live, on your own work</li>
           <li>Diagnostic of your workflow</li>
           <li>Prompt library, automations and agentic</li>
@@ -51,7 +51,7 @@ meta_description: "Simple collaboration models for SMEs: an ongoing fractional A
         <h5 class="text-secondary">#3 AI Consulting</h5>
         <p class="basis">Project-based or n days</p>
         <p class="detail">Fixed scope for smaller projects. <br />Time&materials based for longer assignments.</p>
-        <ul class="common-list">
+        <ul class="success-list">
           <li>A specific problem, defined and solved</li>
           <li>Assessment, business case or execution plan</li>
           <li>Scope agreed in writing up front</li>
@@ -65,7 +65,7 @@ meta_description: "Simple collaboration models for SMEs: an ongoing fractional A
 
 <section id="included">
   <h2>Always Included</h2>
-  <ul class="service-list common-list">
+  <ul class="service-list success-list">
     <li><strong>A no-commitment discovery call</strong> maps your situation before anything else.</li>
     <li><strong>A written scope</strong> is agreed before the work starts, with no surprises in between.</li>
     <li><strong>Documentation and handover</strong> ensures everything stays in your company (no outside dependency).</li>

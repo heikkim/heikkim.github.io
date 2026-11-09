@@ -23,7 +23,7 @@ meta_description: "Selkeät yhteistyömallit PK-yrityksille: jatkuva fractional 
         <h5 class="text-secondary">#1 Fractional AI Leadership</h5>
         <p class="basis">Jatkuva yhteistyö / kuukausiallokaatio</p>
         <p class="detail">Sovitaan tarvittava kapasiteetti, alkaen 1+ päivästä viikossa.</p>
-        <ul class="common-list">
+        <ul class="success-list">
           <li>Osana yrityksen johtoryhmää</li>
           <li>Strategia, käytännöt ja toteutus</li>
           <li>Roadmap, AI-käytänteet ja hallitusraportointi</li>
@@ -37,7 +37,7 @@ meta_description: "Selkeät yhteistyömallit PK-yrityksille: jatkuva fractional 
           <h5 class="text-secondary">#2 AI-valmennus</h5>
           <p class="basis">1-4 viikon ohjelma</p>
           <p class="detail">Yksi ohjelma koko jaksolle, vahvistetaan kartoituskeskustelun jälkeen.</p>
-          <ul class="common-list">
+          <ul class="success-list">
             <li>Henkkoht valmennus, kohteena oma työsi</li>
             <li>Työnkulun tarkastelu ja ratkaisujen määritys</li>
             <li>Kehotekirjasto, automaatiot ja agentit</li>
@@ -51,7 +51,7 @@ meta_description: "Selkeät yhteistyömallit PK-yrityksille: jatkuva fractional 
           <h5 class="text-secondary">#3 AI-konsultointi</h5>
           <p class="basis">Projektiperustainen tai n päivää</p>
           <p class="detail">Kiinteä laajuus pienempiin projekteihin. <br />Päivälaskutus pidempiin toimeksiantoihin.</p>
-          <ul class="common-list">
+          <ul class="success-list">
             <li>Ongelman määrittely ja ratkaiseminen</li>
             <li>Arviointi, business case tai toteutussuunnitelma</li>
             <li>Fasilitoitu workshop tai koulutus</li>
@@ -65,7 +65,7 @@ meta_description: "Selkeät yhteistyömallit PK-yrityksille: jatkuva fractional 
 
   <section id="included">
     <h2>Palveluun sisältyy aina</h2>
-    <ul class="service-list common-list">
+    <ul class="service-list success-list">
       <li><strong>Kartoituskeskustelu ilman sitoumuksia:</strong> yhteinen pohja edetä.</li>
       <li><strong>Laajuus sovitaan kirjallisesti:</strong> aina ennen työn aloitusta.</li>
       <li><strong>Dokumentaatio ja työn luovutus:</strong> kaikki tieto jää yritykseen (ei ulkoista riippuvuutta).</li>

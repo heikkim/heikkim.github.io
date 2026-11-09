@@ -18,7 +18,7 @@ p {
   line-height: 1.8;
 }
 
-.prose {
+.prose-simple {
   h1 {
     margin-top: unset;
   }
@@ -32,7 +32,7 @@ p {
     //padding: 1em;
   }
 
-  ul.common-list {
+  ul.common-list, ul.success-list, ul.fail-list {
     margin: 0;
   }
 }
@@ -115,27 +115,38 @@ ul {
   }
 }
 
-ul.common-list {
+ul.common-list, ul.success-list, ul.fail-list {
   max-width: 780px;
   margin: 2.5em 0 0;
 
   li {
     margin-bottom: 0.8em;
     padding-left: 1.3em;
-    
-    &::before {
-      position: absolute;
-      left: 0;
-      content: "\2713";
-      color: $light;
-    }
   }
 }
 
-ul.common-no-list li {
+ul.common-list li {
   &::before {
     position: absolute;
-    left: 0.2em;
+    left: 0;
+    content: "\203A";
+    color: $light;
+  }
+}
+
+ul.success-list li {
+  &::before {
+    position: absolute;
+    left: 0;
+    content: "\2713";
+    color: $light;
+  }
+}
+
+ul.fail-list li {
+  &::before {
+    position: absolute;
+    left: 0;
     content: "\10102";
     color: $light;
   }

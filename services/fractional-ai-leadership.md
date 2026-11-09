@@ -95,7 +95,7 @@ meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityk
     <p>
       Aktiviteetteja ja tuotoksia, joilla yrityksen tekoälykypsyyttä kehitetään:
     </p>
-    <ul class="common-list">
+    <ul class="success-list">
       <li><strong>AI-tiekartta:</strong> priorisoitu ja kulutietoinen tiekartta, jossa omistajat, riippuvuudet ja virstanpylväät.</li>
       <li><strong>Käyttötapausten kartoitus ja business case:</strong> tehdään yhdessä tiimien kanssa, jotka käyttävät tekoälyä.</li>
       <li><strong>Toimittajien arviointi:</strong> riippumattomat kriteerit, shortlist johon voit luottaa, pilottisuunnitelma ja TCO.</li>
@@ -109,7 +109,7 @@ meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityk
 
   <section id="fit">
     <h2>Palvelu on suunnattu</h2>
-    <ul class="common-list">
+    <ul class="success-list">
       <li>PK-yrityksille ja hallituksille, joilla tekoäly on agendalla, mutta omistajuus on vaillinaista tai hanke ei etene.</li>
       <li>Johtoryhmille, jotka ovat jo ajaneet pilottihankkeita ja etsivät nyt keinoja skaalata tekoälyn käyttöä.</li>
       <li>Hallituksille, jotka haluavat riippumattoman näkemyksen tekoälystrategiasta ja riskeistä.</li>

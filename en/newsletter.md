@@ -21,7 +21,7 @@ meta_description: "Occasional notes on AI strategy, governance and leading the c
       companies usually get stuck.
     </p>
     <h2>Topics</h2>
-    <ul class="common-list">
+    <ul class="success-list">
       <li><strong>AI strategy:</strong> where AI strategy really starts, and why it does not begin with the tool.</li>
       <li><strong>Governance:</strong> practical decisions and practical rules, not documentation work.</li>
       <li><strong>Leadership:</strong> how AI changes what a leader actually does at work.</li>

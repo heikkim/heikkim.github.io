@@ -96,7 +96,7 @@ meta_description: "Henkilökohtaista, käytännönläheistä AI-valmennusta joht
       <p>
         <strong>Valitse tehtävistäsi pahimmat ajanviejät. Tehdään niistä ajan vapauttaja tärkeämpään työhön.</strong>
       </p>
-      <ul class="common-list">
+      <ul class="success-list">
         <li><strong>Nykyisen työnkulkusi tarkastelu:</strong> mihin aika palaa, mitkä tehtävät voi automatisoida ja mitä ei kannata.</li>
         <li><strong>Oma kehotekirjasto:</strong> uudelleenkäyttettävät kehotteet työlle, jota toistat jatkuvasti.</li>
         <li><strong>1:1 tapaamiset (etä tai kasvotusten):</strong> rakennetaan aikataulusi huomioiden.</li>
@@ -108,7 +108,7 @@ meta_description: "Henkilökohtaista, käytännönläheistä AI-valmennusta joht
 
   <section id="fit">
       <h2>Palvelu on suunnattu</h2>
-      <ul class="common-list">
+      <ul class="success-list">
         <li>Johtajille ja hallitusjäsenille, joilla tekoälyn käyttö on jäänyt arjen kiireiden jalkoihin.</li>
         <li>Johtajille, jotka käyttävät jo tekoälyä päivittäin ja haluavat seuraavaksi kehittyä tehokäyttäjiksi.</li>
         <li>Kiireisille johtajille, jotka haluavat oppia nopeasti eikä aika riitä verkko-oppimiseen.</li>

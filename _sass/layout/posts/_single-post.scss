@@ -58,6 +58,7 @@ div.single-post {
       }
 
       blockquote {
+        position: relative;
         margin: 50px 20px;
         padding: 0.5em 0em .2em 1.4em;
         border-left: 3px solid $secondary;
@@ -65,10 +66,24 @@ div.single-post {
         font-style: italic;
         color: $secondary;
         @include serif-font;
+        padding-top: 4rem;
+        
+        &::before {
+          content: "”";
+          font-size: 8rem;
+          position: absolute;
+          left: 1rem;
+          top: -60px;
+        }
 
         p {
-          font-size: 1.5rem;
+          font-size: 1.3rem;
         }
+      }
+
+      ul {
+        margin-bottom: 2em;
+        margin-left: 1em;
       }
     }
 

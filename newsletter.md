@@ -13,7 +13,7 @@ meta_description: "Näkemyksiä tekoälystrategiasta, AI-käytännöistä ja muu
 {% endif %}
 
 <section class="content-narrow mx-auto page-hero">
-  <div class="prose">
+  <div class="prose-simple">
     <h1>{{ newsletterText.title }}</h1>
     <p class="excerpt">{{ newsletterText.text }}</p>
     
@@ -23,7 +23,7 @@ meta_description: "Näkemyksiä tekoälystrategiasta, AI-käytännöistä ja muu
     </p>
 
     <h2>Aihealueet</h2>
-    <ul class="common-list">
+    <ul class="success-list">
       <li><strong>Tekoälystrategia:</strong> mistä strategia oikeasti alkaa ja miksi se lähtee ongelmasta, ei työkalusta.</li>
       <li><strong>Hallinta:</strong> käytännön päätökset ja käytännön säännöt tekoälyn käytössä yrityksissä.</li>
       <li><strong>Johtaminen:</strong> miten tekoäly muuttaa johtajan työarkea.</li>

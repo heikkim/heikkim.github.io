@@ -81,7 +81,7 @@ meta_description: "Specific solutions to specific AI and data problems for SMEs 
 
   <section id="scope">
       <h2>The "lense" and prescription, possible outcomes for the company</h2>
-      <ul class="common-list">
+      <ul class="success-list">
         <li><strong>Opportunity assessment:</strong> a prioritized mapping of AI use cases across the company.</li>
         <li><strong>AI readiness and data audit:</strong> what data you hold, where it lives, and what it can be used for.</li>
         <li><strong>Business case and investment plan:</strong> costs, benefits and ROI written out.</li>
@@ -95,7 +95,7 @@ meta_description: "Specific solutions to specific AI and data problems for SMEs 
 
   <section id="fit">
       <h2>This is for</h2>
-      <ul class="common-list">
+      <ul class="success-list">
         <li>SMEs with a specific, AI or data problem, a regulatory constraint or a project that has stalled.</li>
         <li>Boards and executive teams who need an independent view on specific AI investment or use case.</li>
         <li>Business units needing an outside expert, e.g. use cases, opportunity sizing, AI operating model.</li>

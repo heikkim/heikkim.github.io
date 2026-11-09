@@ -86,7 +86,7 @@ meta_description: "Senior AI strategy, governance and hands-on execution for SME
       <p>
         Activities for developing company AI maturity:
       </p>
-      <ul class="common-list">
+      <ul class="success-list">
         <li><strong>AI roadmap:</strong> a prioritised, cost-aware roadmap with clear owners, dependencies and milestones.</li>
         <li><strong>Use-case discovery tied to business case:</strong> run with the teams who will actually use the tools.</li>
         <li><strong>Vendor evaluation:</strong> objective criteria, a shortlist you can rely on, a pilot plan and TCO.</li>
@@ -100,7 +100,7 @@ meta_description: "Senior AI strategy, governance and hands-on execution for SME
 
   <section id="fit">
       <h2>This is for</h2>
-      <ul class="common-list">
+      <ul class="success-list">
         <li>SMEs and their boards, where AI is on the agenda but nobody owns it or start keeps stalling.</li>
         <li>Leadership teams that have outgrown pilots and now need scale, cost control and compliance.</li>
         <li>Boards that want an independent view on AI strategy and risk.</li>

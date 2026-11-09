@@ -87,7 +87,7 @@ meta_description: "Ratkaisut PK-yritysten tekoäly- ja dataongelmiin. Myös fasi
 
   <section id="scope">
       <h2>Ymmärryksen kasvattamisen työkalupakki</h2>
-      <ul class="common-list">
+      <ul class="success-list">
         <li><strong>Mahdollisuuksien arviointi:</strong> priorisoitu tiekartta yrityksen tekoälykäyttötapauksista.</li>
         <li><strong>AI- ja datavalmiusarviointi:</strong> mitä tietoa, missä ja mihin sitä voi käyttää.</li>
         <li><strong>Business case ja investointisuunnitelma:</strong> kustannukset, hyödyt ja ROI avattuna.</li>
@@ -101,7 +101,7 @@ meta_description: "Ratkaisut PK-yritysten tekoäly- ja dataongelmiin. Myös fasi
 
   <section id="fit">
       <h2>Palvelu on suunnattu</h2>
-      <ul class="common-list">
+      <ul class="success-list">
         <li>PK-yrityksille, joilla on konkreettinen tekoäly- tai datahaaste, tai jumiutunut hanke.</li>
         <li>Hallituksille ja johtoryhmille, jotka tarvitsevat riippumattoman näkemyksen tietystä tekoälyinvestoinnista tai käyttötapauksesta.</li>
         <li>Liiketoimintayksiköille, jotka tarvitsevat ulkoisen asiantuntijan: käyttötapaukset, mahdollisuuksien arviointi, AI-toimintamalli.</li>

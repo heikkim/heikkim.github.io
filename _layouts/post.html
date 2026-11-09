@@ -56,7 +56,7 @@ layout: default
           <span class="categories">{{ postCatTexts }}</span>
         </p>
         <div class="post-meta">
-          <img class="author" src="/assets/img/headshot_sq-small.jpg"/>
+          <img class="author" src="/assets/img/headshot_sq-micro.jpg"/>
           <span class="author"> {{ author.name }}</span><br/>
           <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: postsText.date-format }}</time>
         </div>
@@ -87,7 +87,7 @@ layout: default
       {% if related.size > 0 %}
       <div class="article-related">
           <h2>{{ postsText.related-title }}</h2>
-          <ul class="common-list relevant-list">
+          <ul class="success-list relevant-list">
             {% for post in related %}
               {% if post.url != page.url %} 
               <li>
