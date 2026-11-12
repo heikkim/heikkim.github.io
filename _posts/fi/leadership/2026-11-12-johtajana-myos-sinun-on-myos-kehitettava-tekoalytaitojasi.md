@@ -34,7 +34,7 @@ sitemap: true
 
 Näiden kahden luvun väliin mahtuva 65 % kerryttävät osaamisvajetta, ja sen umpeen kurominen alkaa peiliin katsomalla.
 
-> Jos olet toistanut tiimille parin viime vuoden ajan "tekoälyllä on merkitystä" -mantraa, muttet ole koskaan käyttänyt sitä itse, olet **taatusti** opettanut heille jotain.
+> Jos olet viimeiset pari vuotta toistanut tiimille "tekoälyllä on merkitystä" -mantraa, muttet ole koskaan käyttänyt sitä itse, olet **taatusti** opettanut heille jotain.
 
 Tämä on enemmän johtamisongelma kuin tekninen haaste. Heillä, joilla on eniten sananvaltaa työn tekemisen malleihin, on usein vähiten aikaa opetella uusia työkaluja. Muu organisaatio ottaa heidän toiminnastaan kuitenkin mallia, joko tarkoituksella tai tahtomattaan.
 
@@ -51,7 +51,7 @@ Johtaja, joka luonnostelee tekstejä tekoälyllä ja valmistelee sen avulla esit
   <li>Muodostaa konkreettisen mielipiteen tekoälyn hyödyllisyydestä.</li>
 </ul>
 
-Jos olet toistanut tiimille parin viime vuoden ajan "tekoälyllä on merkitystä" -mantraa, muttet ole koskaan käyttänyt sitä itse, olet **taatusti** opettanut heille jotain. Ihmiset seuraavat aina johtajaa, sekä hyvässä, että pahassa.
+Jos olet viimeiset pari vuotta toistanut tiimille "tekoälyllä on merkitystä" -mantraa, muttet ole koskaan käyttänyt sitä itse, olet **taatusti** opettanut heille jotain. Ihmiset seuraavat aina johtajaa, sekä hyvässä, että pahassa.
 
 Tunti käytännön tekoälykokeilua omien työtehtävien parissa opettaa enemmän kuin kokonainen päivä esityksiä aiheesta. Tekemällä kun näkee välittömästi, missä tekoäly auttaa ja missä taasen ei. Kun olet oppinut soveltamaan tekoälyä omassa työssäsi, kerrytät arvokasta ymmärrystä sen hyödyntämisestä:
 <ul class="success-list">
