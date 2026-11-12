@@ -32,7 +32,7 @@ en: &DEFAULT_EN
       section: posts
       url: /en/posts/
       page: true
-      inDev: true
+      inDev: false
     - title: "Collaboration Model"
       section: collaboration
       url: /en/collaboration-model.html

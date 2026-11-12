@@ -14,8 +14,8 @@ section#about {
 
         div.headshot {
           float: left; 
-          margin-right: 20px;
           padding-left: 0;
+          padding-top: 5px;
           width: min-content;
           max-width: 434px;
 
@@ -47,7 +47,7 @@ section#about {
   }
 }
 
-@media (min-width: 922px) {
+@media (min-width: 992px) {
   section#about {
     div.container {
       div.row {

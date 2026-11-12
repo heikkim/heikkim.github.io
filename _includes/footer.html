@@ -25,7 +25,7 @@
   </div>
   {% endif %}
   <div class="container">
-    <div class="row align-items-center">
+    <div class="row align-items-center justify-content-between">
       <div class="col-md-4">
         <span class="copyright">&copy; {{ site.title }} {{ 'now' | date: "%Y" }}</span>
       </div>
@@ -35,8 +35,8 @@
           {% for link in footerSection.social %}
           <li class="list-inline-item">
             {% if link.url %}
-            <a href="{{ link.url }}">
-              {% if link.icon %}<i class="{{ link.icon }}"></i>{% endif %}
+            <a class="{{ link.icon-class }}" href="{{ link.url }}">
+              {{ link.text }}
             </a>
             {% endif %}
           </li>

@@ -7,10 +7,7 @@ layout: default
 
 {% include /home/services.html lang=page.lang %}
 
-{% if jekyll.environment == "development"  %}
-    NOT SHOWN IN PRODUCTION CURRENTLY!
-    {% include /home/posts-carousel.html lang=page.lang %}
-{% endif %}
+{% include /home/posts-carousel.html lang=page.lang %}
 
 {% include /home/about.html lang=page.lang %}
 

@@ -1,5 +1,5 @@
 const __SPC_PERIODIC_REFRESH = false;
-const __SPC_DEBUG = false;
+const __SPC_DEBUG = true;
 
 function spc_init() {
     spc_initContactButtonShowForm();
@@ -20,9 +20,18 @@ function spc_init() {
 
     spc_bindCookieChangeToLangMenu();
 
+    if(__SPC_DEBUG === true) {
+        spc_printInfo();
+    }
+
     if(__SPC_PERIODIC_REFRESH === true) {
         setTimeout(function() {window.location.reload();}, 700);
     }
+}
+
+function spc_printInfo() {
+    console.log("Window.innerWidth: " + window.innerWidth);
+    //alert("Window.innerWidth: " + window.innerWidth);
 }
 
 function spc_getContactFormContainer() {

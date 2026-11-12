@@ -50,9 +50,8 @@ a {
   font-weight: 300;
 
   &:hover {
-    //color: color.adjust($secondary, $lightness: -5%, $space: hsl);
-    color: inherit;
-  }
+    color: darken($body, 5%);
+    }
 }
 
 a.link {
@@ -77,7 +76,7 @@ a.linkedin-link {
   background-position: left;
   background-repeat: no-repeat;
   background-size: contain;
-  padding-left: 24px;
+  padding-left: 28px;
 }
 
 img {
@@ -104,7 +103,6 @@ h6 { font-size: 1.2rem; }
 
 ul {
   text-align: left;
-  line-height: 1.7;
   list-style-type: none;
 
   margin: 0;
@@ -118,6 +116,7 @@ ul {
 ul.common-list, ul.success-list, ul.fail-list {
   max-width: 780px;
   margin: 2.5em 0 0;
+  line-height: 1.7;
 
   li {
     margin-bottom: 0.8em;
@@ -125,7 +124,7 @@ ul.common-list, ul.success-list, ul.fail-list {
   }
 }
 
-ul.common-list li {
+ul.common-list li, ul li.li-common {
   &::before {
     position: absolute;
     left: 0;
@@ -134,7 +133,7 @@ ul.common-list li {
   }
 }
 
-ul.success-list li {
+ul.success-list li, ul li.li-success {
   &::before {
     position: absolute;
     left: 0;
@@ -143,7 +142,7 @@ ul.success-list li {
   }
 }
 
-ul.fail-list li {
+ul.fail-list li, ul li.li-fail {
   &::before {
     position: absolute;
     left: 0;
@@ -164,7 +163,7 @@ ul.fail-list li {
 }
 
 section {
-  margin: 5em 0;
+  margin: 3em 0 5em 0;
   padding: 1em 0;
 }
 
@@ -182,12 +181,12 @@ section {
 
 // Highlight color customization
 ::-moz-selection {
-  background: $primary;
+  background: $gray-800;
   text-shadow: none;
 }
 
 ::selection {
-  background: $primary;
+  background: $gray-800;
   text-shadow: none;
 }
 

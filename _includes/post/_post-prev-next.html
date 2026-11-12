@@ -1,13 +1,21 @@
 {% assign _post = include.post %}
 {% assign _linkText = include.linkText %}
 
+{%- assign _postCatTexts=_post.categories | join: ", " -%}
+{%- for _postCat in _post.categories -%}
+  {%- assign _postCatText=postsText.categories[_postCat] -%}
+  {%- if _postCatText -%} 
+    {%- assign _postCatTexts=_postCatTexts |  replace: _postCat, _postCatText   -%}
+  {%- endif -%}
+{%- endfor -%}
+
 {% if _post != null %}
 <article class="card">
     <a href="{{ _post.url | relative_url }}">
         {% comment  %}  
         {% assign imgSrc = _post.list_image  %}
         {% if imgSrc == "" or imgSrc == nil %}
-        {% assign imgSrc = "/assets/img/default.svg"  %}
+        {% assign imgSrc = "/assets/img/posts/stardust-field_1600x900.jpg"  %}
         {% endif %}
         <img class="card-img-top" src="{{ imgSrc }}" alt="{{ _post.list_image_alt }}" height="100%"/>
         {% endcomment %}
@@ -17,11 +25,16 @@
         <h5 class="card-title">{{ _post.title }}</h5>
         
         <p class="post-meta">
+            {% comment  %} 
             <time class="date" datetime="{{ _post.date | date_to_xmlschema }}">{{ _post.date | date: postsText.date-format }}</time>            
-            <span class="categories">{{ postCatTexts }}</span>
+            {% endcomment %}
+            <span class="categories">{{ _postCatTexts }}</span>
+            {% if _post.reading_time %}
+            <span class="reading-time">{{ postsText.reading-time | replace: "%time%", _post.reading_time | replace: ".5", ""}}</span>
+          {% endif %}
         </p>
         
-        <p class="card-text">{{ _post.excerpt | strip_html | strip | truncate: 110}}</p>
+        <p class="card-text">{{ _post.excerpt | strip_html | strip | truncate: 80 | rstrip }}</p>
         
         {% comment %}
         <div class="post-meta card-bottom">

@@ -30,23 +30,26 @@
         <a href="{{ post.url | relative_url }}">
           {% assign imgSrc = post.list_image  %}
           {% if imgSrc == "" or imgSrc == nil %}
-            {% assign imgSrc = "/assets/img/default.svg"  %}
+            {% assign imgSrc = "/assets/img/posts/stardust-field_1600x900.jpg"  %}
           {% endif %}
           <img class="card-img-top" src="{{ imgSrc }}" alt="{{ post.list_image_alt }}" />
           <div class="card-body">
             
           <h5 class="card-title">{{ post.title }}</h5>
             
-            <p class="post-meta">
-              <time class="date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: postsText.date-format }}</time>            
+            <p class="post-meta">         
               <span class="categories">{{ postCatTexts }}</span>
+              {% if post.reading_time %}
+                <span class="reading-time">{{ postsText.reading-time | replace: "%time%", post.reading_time | replace: ".5", ""}}</span>
+              {% endif %}
             </p>
             
-            <p class="card-text">{{ post.excerpt | strip_html | strip | truncate: 110 }}</p>
+            <p class="card-text">{{ post.excerpt | strip_html | strip | truncate: 80 | rstrip }}</p>
             
             <div class="post-meta card-bottom">
               <img class="author" src="/assets/img/headshot_sq-micro.jpg" />
-              <span class="author">{{ author.name }}</span>
+              <span class="author">{{ author.name }}</span><br />
+              <time class="date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: postsText.date-format }}</time>   
             </div>
           
           </div>

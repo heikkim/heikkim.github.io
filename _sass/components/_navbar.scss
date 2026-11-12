@@ -2,7 +2,7 @@
 @use "sass:color";
 nav#mainNav {
   //background-color: green;
-  background-color: $dark-rgb-opa-0_7;
+  background-color: $nav-2nd-color;
   backdrop-filter: blur(5px);
   padding: 0.5em;
 
@@ -268,7 +268,7 @@ nav#mainNav {
       padding-top: 0;
       padding-bottom: 0;
       position: fixed;
-      background-color: $dark-rgb-opa-0_7;
+      background-color: $nav-2nd-color;
       //background-color: green;
       backdrop-filter: blur(5px);
       
@@ -332,7 +332,7 @@ nav#mainNav {
       transition: all 0.3s;
       -moz-transition: all 0.3s;
       transition: all 0.3s;
-      background-color: $dark-rgb-opa-0_7;
+      background-color: $nav-2nd-color;
       top: 63.9px;
     }
 
@@ -344,7 +344,7 @@ nav#mainNav {
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   nav#mainNav {
     ul.navbar-nav, ul#lang-chooser {
       li.nav-item {

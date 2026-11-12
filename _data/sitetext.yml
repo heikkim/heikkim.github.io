@@ -157,19 +157,25 @@ en: &DEFAULT_EN
   # The posts section
   posts:
     title: Insights
+    read-in-other-lang: 
+      fi: 
+        text: "Lue artikkeli suomeksi &#x203A;"
+        alt: "Suomenkielinen kieliversio artikkelista"
     back-to-posts: "Back to Insights"
-    highlights-title: "Latest thinking"
+    highlights-title: "Latest Insights"
     text: "Practical notes on AI, governance and leading the change."
     read-more: "Read the article"
     related-title: "Related articles"
-    date-format: "%d %B %Y"
+    date-format: "%d %b %Y"
+    # %time% is replaced with the post's reading time
+    reading-time: "%time% min read"
     categories:
       ai-strategy: "AI Strategy"
       leadership: "Leadership"
       self-development: "Self Development"
     in-category: in
-    previous-article: "&#x2039; Previous article"
-    next-article: "Next article &#x203A;"
+    previous-article: "Previous article &#x203A;"
+    next-article: "&#x2039; Next article"
 
   # The newsletter subscription
   newsletter:
@@ -223,16 +229,9 @@ en: &DEFAULT_EN
     legal: "Privacy Policy"
     legal-url: "/en/legal.html"
     social:
-#      - url: https://x.com
-#        icon: "fab fa-twitter"
-#      - url: https://facebook.com
-#        icon: "fab fa-facebook-f"
-#      - url: https://linkedin.com
-#        icon: "fab fa-linkedin-in"
-#      - url: https://github.com/raviriley/agency-jekyll-theme
-#        icon: "fab fa-github"
-#      - url: https://instagram.com
-#        icon: "fab fa-instagram"
+      - url: https://www.linkedin.com/company/strongpointconsulting/
+        icon-class: "linkedin-link"
+        text: StrongPoint Consulting @ LinkedIn
 en-US:
   <<: *DEFAULT_EN
 en-CA:
@@ -302,14 +301,14 @@ fi: &DEFAULT_FI
 
   about:
     title: Käytännön kokemusta tuloksekkaaseen johtamiseen
-    text: Palvelen PK-yrityksiä AI Leaderina fractional-mallilla. Teen myös johdon AI-valmennuksia ja AI-konsultointeja yritysten täsmätarpeisiin.
+    text: Palvelen PK-yrityksiä AI Leaderina fractional-mallilla. Teen myös johdon AI-valmen&shy;nuksia ja AI-konsul&shy;tointeja yritysten täsmä&shy;tarpeisiin.
     body: >
-      Minulla on 20 vuoden kokemus IT-konsultointi- ja softakehitys-liiketoiminnasta sekä SaaS-liiketoiminnasta.
-      Urallani olen toiminut toimitusjohtajana, käynnistänyt data- ja AI-osaamiseen perustuvia liiketoimintoja sekä johtanut tuote- ja teknologiakehitystä.
-      Erityisosaamistani johtamisen ohella ovat data- ja tekoälyosaamista vaativat hankkeet, sekä toiminta vahvasti reguloidussa tietointensiivisessä ympäristössä.
+      Minulla on 20 vuoden kokemus IT-konsultointi- ja ohjelmisto&shy;kehitysliike&shy;toiminnasta sekä SaaS-liike&shy;toiminnasta.
+      Urallani olen toiminut toimitus&shy;johtajana, käynnistänyt data- ja AI-osaamiseen perustuvia liike&shy;toimintoja sekä johtanut tuote- ja teknologia&shy;kehitystä.
+      Erityis&shy;osaamistani johtamisen ohella ovat data- ja tekoäly&shy;osaamista vaativat hankkeet, sekä toiminta vahvasti reguloidussa tieto&shy;intensii&shy;visessä ympäristössä.
       <br /><br />
       Toimin nopeasti, ottamalla omistajuuden hankkeen edistämisestä ryhdikkäästi ja määrätietoisesti. Yrityksenne tarpeista ja tavoitteista lähtemällä muodostamme 
-      toiminta- ja investointi-suunnitelman mittaristoineen. Fractional-malli mahdollistaa asiakkailleni kustannustehokkaan ja riskittömän tavan saada johtoryhmään mukaan 
+      toiminta- ja investointi&shy;suunnitelman mittaris&shy;toineen. Fractional-malli mahdollistaa asiakkailleni kustannus&shy;tehokkaan ja riskittömän tavan saada johtoryhmään mukaan 
       kokenut ulkopuolinen johtaja.
       <br /><br />
       Viimeisin koulutukseni on Aalto Executive Educationin MBA (2022), josta valmistuin erinomaisin arvosanoin.
@@ -383,20 +382,26 @@ fi: &DEFAULT_FI
   # The posts section
   posts:
     title: Näkemykset
+    read-in-other-lang: 
+      en: 
+        text: "Read article in English &#x203A;"
+        alt: "English language version of the article"
     back-to-posts: "Listaukseen"
-    highlights-title: "Viimeisimmät ajatukset"
+    highlights-title: "Viimeisimmät Näkemykset"
     text: "Käytännön näkemyksiä tekoälystä, AI-käytännöistä ja muutoksen johtamisesta."
     index-lead: "Muistiinpanoja tekoälystrategiasta, hallinnasta ja muutoksen johtamisesta PK-yrityksessä."
     read-more: "Lue artikkeli"
     related-title: "Aiheeseen liittyvät artikkelit"
     date-format: "%d.%m.%Y"
+    # %time% is replaced with the post's reading time
+    reading-time: "lukuaika %time% min"
     categories:
       ai-strategy: "Tekoälystrategia"
       leadership: "Johtaminen"
       self-development: "Kehittyminen"
     in-category: "@"
-    previous-article: "&#x2039; Edellinen artikkeli"
-    next-article: "Seuraava artikkeli &#x203A;"
+    previous-article: "Edellinen artikkeli &#x203A;"
+    next-article: "&#x2039; Seuraava artikkeli"
 
   # The newsletter subscription
   newsletter:
@@ -450,15 +455,8 @@ fi: &DEFAULT_FI
     legal: "Tietosuojaseloste"
     legal-url: "/legal.html"
     social:
-#      - url: https://x.com
-#        icon: "fab fa-x-twitter"
-#      - url: https://facebook.com
-#        icon: "fab fa-facebook-f"
-#      - url: https://linkedin.com
-#        icon: "fab fa-linkedin-in"
-#      - url: https://github.com/raviriley/agency-jekyll-theme
-#        icon: "fab fa-github"
-#      - url: https://instagram.com
-#        icon: "fab fa-instagram"
+      - url: https://www.linkedin.com/company/strongpointconsulting/
+        icon-class: "linkedin-link"
+        text: StrongPoint Consulting @ LinkedIn
 fi-FI:
   <<: *DEFAULT_FI

@@ -37,6 +37,13 @@
                 {%- assign href = href | prepend: "_posts" | append: page.categories[0] | append: "/" | append: page.lang_vers | append: ".md" -%}
                 {%- capture href -%}{%- link {{ href }} -%}{%- endcapture -%}
                 {% endcomment %}
+
+                {% comment %} 
+                    Setting post href to a "global" variable so it can be reused in post.html (after all the commotion it took to resolve it here).
+                    Same thing for the language so that it can be used later in post.html.
+                {% endcomment %}
+                {%- assign CURRENT_POST_LANG_VERS_HREF = href -%}
+                {%- assign OTHER_LANG = language %}
             {%- else -%}
                 {%- assign href = href | append: "posts" |  replace_first: "/fi/", "/" -%}
             {%- endif -%}

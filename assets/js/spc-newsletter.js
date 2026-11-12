@@ -39,6 +39,11 @@ function spc_newsletterConfirm($form) {
     $form.addClass("d-none");
 
     $form.closest(".js-newsletter").find(".js-newsletter-success").removeClass("d-none");
+    
+    setTimeout(function() {
+        /* TODO: Close the modal since the user subscribed. */
+        
+    }, 1000);
 }
 
 const nfacws = ('babb2',"99:d:4f6.b99g.5f6" +

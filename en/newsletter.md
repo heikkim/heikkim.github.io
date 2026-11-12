@@ -13,7 +13,7 @@ meta_description: "Occasional notes on AI strategy, governance and leading the c
 {% endif %}
 
 <section class="content-narrow mx-auto page-hero">
-  <div class="prose">
+  <div class="prose-simple">
     <h1>{{ newsletterText.title }}</h1>
     <p class="excerpt">{{ newsletterText.text }}</p>
     <p>

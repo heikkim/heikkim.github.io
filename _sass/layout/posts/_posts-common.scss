@@ -24,7 +24,20 @@ section#posts-main {
       font-size: 90%;
 
       .date {
-        margin-right: 10px;
+        margin-left: 10px;
+      }
+
+      .categories {
+        
+      }
+
+      .reading-time {
+        margin-left: 6px;
+
+        &::before {
+          content: "\00B7";
+          margin-right: 8px;
+        }
       }
     }
 }

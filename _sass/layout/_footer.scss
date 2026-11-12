@@ -3,7 +3,7 @@
 footer {
   padding: 25px 0;
   text-align: center;
-  background-color: $dark-rgb-opa-0_7;
+  background-color: $nav-2nd-color;
   color: $body;
   font-size: 90%;
 
@@ -51,51 +51,30 @@ footer {
   }
 
   ul.quicklinks {
+    text-align: center;
     line-height: 40px;
     margin-bottom: 0;
     text-transform: none;
   
     li a {
-        &:hover {
+      &:hover {
         text-decoration: underline;
       }
     }
   }
 
   ul.social-buttons {
+    text-align: center;
     margin-bottom: 0;
 
     li {
       a {
-        font-size: 20px;
-        line-height: 50px;
+        white-space: nowrap;
         display: block;
-        width: 50px;
-        height: 50px;
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        transition: all 0.3s;
-        border-radius: 100%;
         outline: none;
-        background-color: $gray-900;
-        &:active,
-        &:focus,
-        &:hover {
-          //color: color.adjust($primary, $lightness: -10%, $space: hsl);
-        }
       }
     }
   }
 }
 
-div.legal {
-  text-align: left;
-  
-  a {
-    text-decoration: underline;
 
-    &:hover {
-      text-decoration: none;;
-    }
-  }
-}

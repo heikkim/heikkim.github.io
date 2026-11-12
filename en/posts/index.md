@@ -2,8 +2,8 @@
 layout: page
 navtype: absolute
 lang: en
-meta_title: "A Step Ahead - posts"
-meta_description: "Writing on AI strategy, AI governance and leading the change."
+meta_title: "Insights"
+meta_description: "Writings on AI strategy, AI governance and leading the change."
 ---
 {% assign curlang = site.languages | where: "code", page.lang | first %}
 {% assign postsText = site.data.sitetext.posts %}
