@@ -71,7 +71,7 @@ fi: &DEFAULT_FI
       section: posts
       url: /posts/
       page: true
-      inDev: true
+      inDev: false
     - title: "Yhteistyömalli"
       section: collaboration
       url: /collaboration-model.html
