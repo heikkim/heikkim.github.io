@@ -1,0 +1,10 @@
+{% comment %}
+  The DRAFT! marker for articles that are not published yet.
+
+  Parameters:
+  - article: the article to check. Defaults to the current page.
+{% endcomment %}
+{%- assign badgeArticle = include.article | default: page -%}
+{%- if badgeArticle.published == false -%}
+<span class="badge badge-warning draft-badge">DRAFT!</span>
+{%- endif -%}

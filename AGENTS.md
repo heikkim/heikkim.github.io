@@ -13,6 +13,64 @@ A professional web developer with an eye for what good looks like both visually 
 
 Basic Jekyll site structure without particular quirks. As the site is running on GitHub pages, you need to be aware of the GitHub pages environment's limitations.
 
+## Articles (blog posts)
+
+The articles are a Jekyll **collection**, not posts. This matters, because a Jekyll post takes its date from the file name and puts it into the URL, which makes a piece of writing look old just by looking at its address.
+
+```
+_articles/<lang>/<category>/<slug>.md      e.g. _articles/fi/leadership/johtajana-...md
+```
+
+- `lang` is `fi` or `en`, `category` is the category slug (`leadership`, `ai-strategy`).
+- The public URL has no date: `/articles/<category>/<slug>/` and `/en/articles/<category>/<slug>/`.
+- The collection is exposed to Liquid as `site.articles`, not `site.posts`.
+
+**Front matter keys:**
+- `date` - the publish date, ISO 8601 with an offset, e.g. `2026-11-12T09:00:00+02:00`. YAML turns this into a real timestamp, so `| date:` and `| date_to_xmlschema` work on it. This is the date that is shown and sorted on. Jekyll holds an article back when the date is in the future, so an article goes live on the day it is dated.
+- `last_modified_at` - same format. Fill it in, otherwise the sitemap falls back to the build time and the lastmod date changes on every build.
+- `lang_vers` - the **full URL** of the article in the other language, e.g. `/en/articles/leadership/as-a-leader-.../`. The language chooser and the "read in other language" link read this key.
+- `published` - Jekyll builds only the articles with `published: true`. An article with `published: false` is a draft and does not exist on the site at all.
+- `visible` - `true` shows the article in the listing and in the carousel.
+- `sitemap` - `true` lists the article in `sitemap.xml`.
+- `highlighted` - `true` puts the article on the homepage carousel.
+
+**Drafts** are ordinary articles with `published: false` and they live in `_articles/` next to the finished ones, so that everything is in one place.
+
+- Jekyll does not build an article with `published: false`, so a draft is nowhere on the site: not in the listing, not in the carousel, not in the sitemap, and its own address gives a 404.
+- A draft that is built is marked with a yellow **DRAFT!** badge in the listing, in the carousel and on the article page.
+- To see the drafts locally, run `jekyll serve --unpublished`. Note that `--drafts` only renders the `_drafts` folder, which this site does not use.
+- A draft that is dated in the future also needs `--future`, because Jekyll holds future dated articles back. `jekyll serve --unpublished --future` shows everything.
+- `visible` and `highlighted` decide where a draft shows up in the listing and in the carousel once it is built.
+
+**Writing a new article:**
+1. Add the file under `_articles/<lang>/<category>/<slug>.md`, no date in the file name.
+2. Fill in `date`, `last_modified_at`, `lang_vers` and the flags.
+3. If it is a new category, add the folder, an entry in the `defaults` in `_config.yml` and the visible name in `_data/sitetext.yml`.
+
+**Checking the articles before a push:** run `./check-posts.sh`. It lists the articles that are not published with their dates, flags and missing metadata, reports the language versions that do not resolve and the articles whose flags do not match each other, and ends with a summary of the published and the unfinished articles.
+
+**Old URLs:** the articles that were published under `/posts/` keep their old address working through a small static page with a meta refresh, e.g. `posts/2026/11/12/<slug>/index.html`. GitHub Pages cannot send a real HTTP 301, so the canonical link on that page does the work for the search engines.
+
+## Web searches
+
+A local SearXNG instance runs at `http://localhost:11434`. Prefer it over other web search tools.
+
+**How to query it:**
+```bash
+curl -s "http://localhost:11434/search?q=<url-encoded+query>&format=json"
+```
+
+The JSON response has a `results` array with `url`, `title` and `content` fields. Use `jq` to filter it, e.g.:
+```bash
+curl -s "http://localhost:11434/search?q=jekyll+collections&format=json" | jq -r '.results[] | "\(.title)\n\(.url)\n\(.content)\n"'
+```
+
+Add `&language=fi` (or `en`) to restrict the search language, and `&categories=general` to pick the engine groups.
+
+**Notes:**
+- The instance is local only, so it is fast and does not rate-limit, but it may be unreachable in some sessions. Fall back to the built-in web search tool if the request times out.
+- Fetching a page with `webfetch` still works normally for reading documentation.
+
 ## Project author
 
 Heikki, the human you are interacting with.

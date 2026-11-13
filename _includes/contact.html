@@ -36,7 +36,7 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <input name="name" class="form-control" id="name" type="text"
+              <input name="name" class="form-control" id="name" type="text" autocomplete="name"
                 placeholder="{{ contentSection.name | default: "Name*" }}"
                 required="required" data-validation-required-message="{{ contentSection.name-validation | default: "Please enter your name." }}">
               <p class="help-block text-warning"></p>
@@ -45,13 +45,13 @@
               <input name="username" class="form-control" id="username" type="text" tabindex="-1" autocomplete="off">
             </div>
             <div class="form-group">
-              <input name="email" class="form-control" id="email" type="email"
+              <input name="email" class="form-control" id="email" type="email" autocomplete="work email home email"
                 placeholder="{{ contentSection.email | default: "Email*" }}"
                 required="required" data-validation-required-message="{{ contentSection.email-validation | default: "Please enter your email address." }}">
               <p class="help-block text-warning"></p>
             </div>
             <div class="form-group">
-              <input name="phone" class="form-control" id="phone" type="tel"
+              <input name="phone" class="form-control" id="phone" type="tel" autocomplete="work tel home tel"
                 placeholder="{{ contentSection.phone | default: "Phone Number*" }}"
                 data-validation-required-message="{{ contentSection.phone-validation | default: "Please enter your phone number." }}">
               <p class="help-block text-warning"></p>

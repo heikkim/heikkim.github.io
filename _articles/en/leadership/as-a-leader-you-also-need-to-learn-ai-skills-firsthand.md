@@ -3,7 +3,8 @@ layout: post
 lang: en
 author: HM
 tags: []
-last_modified_at:
+date: 2026-11-12T09:00:00+02:00
+last_modified_at: 2026-11-12T09:00:00+02:00
 title: "As a leader you also need to learn AI skills firsthand"
 meta_title: "Why your own AI skills decide what the company gets"
 meta_description: "Eighty percent of CEOs say AI will change roles and skills more than headcount. Only 15% reinvest the gains in people. Leaders' AI fluency counts, too."
@@ -21,7 +22,7 @@ meta_og_image: *hero
 meta_og_image_alt: *hero_alt
 list_image: *hero
 list_image_alt: *hero_alt
-lang_vers: /posts/2026/11/12/johtajana-myos-sinun-on-myos-kehitettava-tekoalytaitojasi
+lang_vers: /articles/leadership/johtajana-myos-sinun-on-myos-kehitettava-tekoalytaitojasi/
 highlighted: true
 published: true
 visible: true

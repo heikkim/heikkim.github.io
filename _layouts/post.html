@@ -32,9 +32,9 @@ layout: default
   {%- endif -%}
 {%- endfor -%}
 
-{%- assign hrefBackToPosts = "/posts" -%}
+{%- assign hrefBackToPosts = "/articles" -%}
 {%- if page.lang == "en" -%}
-  {%- assign hrefBackToPosts = "/en/posts" -%} 
+  {%- assign hrefBackToPosts = "/en/articles" -%}
 {%- endif -%}
 
 {% include nav.html lang=page.lang navtype=page.navtype %}
@@ -50,7 +50,7 @@ layout: default
   <section id="post" class="content-narrow">
     <article class="main">
       <div class="article-head">
-        <h1>{{ page.title }}</h1>
+        <h1>{{ page.title }}{% include /post/_draft-badge.html %}</h1>
         <p class="post-meta">
           <span class="categories">{{ postCatTexts }}</span>
           {% if page.reading_time %}
@@ -91,7 +91,7 @@ layout: default
       {% assign where_exp_crit = "p.categories contains '_cat_'" %}
       {% assign where_exp_crit = where_exp_crit | replace: "_cat_", page.categories[0] %}
       
-      {% assign related = site.posts | where: "lang", page.lang | where_exp: "p", where_exp_crit | sort: "date" | sort: "categories" %}
+      {% assign related = site.articles | where: "lang", page.lang | where_exp: "p", where_exp_crit | sort: "date" | sort: "categories" %}
 
       {% if related.size > 0 %}
       <div class="article-related">
@@ -112,11 +112,15 @@ layout: default
     </article>
   </section>
 
-  {% assign sitePosts = site.posts | where: "lang", page.lang | sort: "date" | sort: "categories" %}
+  {% comment %}
+    sitePosts is intended to be a list of all visible same language articles sorted by date.
+      - article categories or tags are not taken into account by design.
+  {% endcomment %}
+  {% assign sitePosts = site.articles | where: "lang", page.lang | where: "visible", true | sort: "date" | reverse %}
   {% assign currentPostIndex = -1 %}
-  {% for _p in sitePosts %}  
-    {% if _p.date == page.date %}  
-      {% if _p.title == page.title %}  
+  {% for _p in sitePosts %}
+    {% if _p.date == page.date %}
+      {% if _p.title == page.title %}
         {% assign currentPostIndex = forloop.index0 %}
       {% endif %}
     {% endif %}

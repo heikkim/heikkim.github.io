@@ -30,13 +30,11 @@
             {%- endif -%}
 
             {%- if hasExplicitLangVers == true -%}
-                {%- assign href = page.lang_vers -%}
                 {% comment %}
-                Taken out since it does not work in GitHub Pages' Jekyll version.
-
-                {%- assign href = href | prepend: "_posts" | append: page.categories[0] | append: "/" | append: page.lang_vers | append: ".md" -%}
-                {%- capture href -%}{%- link {{ href }} -%}{%- endcapture -%}
+                An article carries the full URL of its other language version in
+                the "lang_vers" front matter key.
                 {% endcomment %}
+                {%- assign href = page.lang_vers -%}
 
                 {% comment %} 
                     Setting post href to a "global" variable so it can be reused in post.html (after all the commotion it took to resolve it here).

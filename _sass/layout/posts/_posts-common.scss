@@ -6,6 +6,16 @@ section#posts-main {
   margin-bottom: 0;
 }
 
+/*
+ * The DRAFT! marker of an unfinished article.
+ * The colour comes from the theme warning colour, the badge text colour is
+ * picked by Bootstrap to match it.
+ */
+.draft-badge {
+  letter-spacing: 0.1em;
+  vertical-align: middle;
+}
+
  article {
   margin-bottom: 8em;
 

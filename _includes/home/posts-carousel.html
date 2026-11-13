@@ -14,7 +14,7 @@
   {% assign postsText = site.data.sitetext[curlang.locale].posts %}
 {% endif %}
 
-{% assign highlighted = site.posts | where: "lang", lang | where: "highlighted", true | sort: "date" | reverse %}
+{% assign highlighted = site.articles | where: "lang", lang | where: "highlighted", true | where: "visible", true | sort: "date" | reverse %}
 
 {% if highlighted.size > 0 %}
   {% assign highlighted = highlighted | slice: 0, 6 %} 
@@ -32,7 +32,7 @@
           <div class="carousel-slide" style="background-image: url('{{ post.hero_image | relative_url }}');" role="img" aria-label="{{ post.title }}">
             <div class="carousel-caption">
               <time class="date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: postsText.date-format }}</time>
-              <h4 class="carousel-title">{{ post.title }}</h4>
+              <h4 class="carousel-title">{{ post.title }}{% include /post/_draft-badge.html article=post %}</h4>
               <p class="carousel-excerpt">{{ post.excerpt | strip_html | strip | truncate: 130 | rstrip }}</p>
               <a class="btn btn-primary" href="{{ post.url | relative_url }}">{{ postsText.read-more }}</a>
             </div>

@@ -1,0 +1,25 @@
+---
+layout: none
+sitemap: false
+---
+<!DOCTYPE html>
+<!--
+  The articles moved from /posts/ to /articles/. This page keeps the old
+  address working.
+
+  GitHub Pages cannot send a real HTTP 301, so the redirect is done with a
+  meta refresh. The canonical link tells the search engines where the content
+  actually lives.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0; url={{ "/en/articles/" | absolute_url }}">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="{{ "/en/articles/" | absolute_url }}">
+  <title>Insights has moved</title>
+</head>
+<body>
+  <p>Insights has moved to <a href="{{ "/en/articles/" | absolute_url }}">articles</a>.</p>
+</body>
+</html>

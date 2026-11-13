@@ -11,7 +11,7 @@
   {% assign postsText = site.data.sitetext[curlang.locale].posts %}
 {% endif %}
 
-{% assign posts = site.posts | where: "lang", lang | sort: "date" | reverse %}
+{% assign posts = site.articles | where: "lang", lang | where: "visible", true | sort: "date" | reverse %}
 
 <section id="posts-list">
   <div class="container grid">
@@ -35,7 +35,7 @@
           <img class="card-img-top" src="{{ imgSrc }}" alt="{{ post.list_image_alt }}" />
           <div class="card-body">
             
-          <h5 class="card-title">{{ post.title }}</h5>
+          <h5 class="card-title">{{ post.title }}{% include /post/_draft-badge.html article=post %}</h5>
             
             <p class="post-meta">         
               <span class="categories">{{ postCatTexts }}</span>

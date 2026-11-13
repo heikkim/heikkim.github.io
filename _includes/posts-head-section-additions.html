@@ -6,7 +6,7 @@
 {%- assign articlePublishedDate = page.date | date_to_xmlschema  -%}
 {%- assign articleAuthor = site.data.authors.list | where: "initials", page.author | first -%}
 
-<link href="/assets/css/posts-readability.css" rel="stylesheet" />
+{% comment  %}<link href="/assets/css/posts-readability.css" rel="stylesheet" /> {% endcomment %}
 
 <meta property="og:type" content="article" />
 

@@ -33,7 +33,8 @@
       <div class="col-sm-8">
         <label class="sr-only" for="newsletter-email-{{ formId }}">{{ newsletterText.placeholder }}</label>
         <input type="email" class="form-control js-newsletter-email" id="newsletter-email-{{ formId }}"
-          name="email" placeholder="{{ newsletterText.placeholder }}" required="required">
+          name="email" placeholder="{{ newsletterText.placeholder }}" required="required"
+          autocomplete="work email home email">
       </div>
       <div class="col-sm-4 mt-2 mt-sm-0">
         <button type="submit" class="btn btn-secondary btn-block js-newsletter-submit">{{ newsletterText.submit }}</button>

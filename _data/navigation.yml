@@ -30,7 +30,7 @@ en: &DEFAULT_EN
 #      section: team
     - title: "Insights"
       section: posts
-      url: /en/posts/
+      url: /en/articles/
       page: true
       inDev: false
     - title: "Collaboration Model"
@@ -69,7 +69,7 @@ fi: &DEFAULT_FI
 #      section: timeline
     - title: "Näkemykset"
       section: posts
-      url: /posts/
+      url: /articles/
       page: true
       inDev: false
     - title: "Yhteistyömalli"

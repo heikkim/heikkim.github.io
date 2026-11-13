@@ -16,24 +16,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description" content="{{ page.meta_description | default: site.description }}" />
   <meta name="author" content="{{ site.author }}" />
-  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-
+  <meta name="robots" content="index, follow">
+  
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  <link rel="describedby" href="{{ "/llms.txt" | absolute_url }}">
   <title>{% if page.meta_title %}{{ page.meta_title }}{% else %}{{ site.title }}{% endif %}</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon-32x32.png" | absolute_url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon-16x16.png" | absolute_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | absolute_url }}">
+  <link rel="manifest" href="{{ "/site.webmanifest" | absolute_url }}">
+  <link rel="icon" href="{{ "/favicon.ico" | absolute_url }}">
 
   <meta property="og:title" content="{% if page.meta_title %}{{ page.meta_title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:description" content="{{ page.meta_description | default: site.description }}" />
-  <meta property="og:image" content="{% if page.meta_og_image %}{{ page.meta_og_image }}{% else %}/assets/img/logo_300x300_bgblack.png{% endif %}" />
+  <meta property="og:image" content="{% if page.meta_og_image %}{{ page.meta_og_image | absolute_url }}{% else %}{{ "/assets/img/logo_300x300_bgblack.png" | absolute_url }}{% endif %}" />
   <meta property="og:image:alt" content="{% if page.meta_og_image_alt %}{{ page.meta_og_image_alt }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:locale" content="{{ curlang.htmllang }}" />
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:url" content="{{ page.url | absolute_url }}" />
   <meta property="og:site_name" content="{{ site.title }}" />
   
+  {% feed_meta %}
+
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />

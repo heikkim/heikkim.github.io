@@ -27,7 +27,7 @@ meta_description: "Occasional notes on AI strategy, governance and leading the c
       <li><strong>Leadership:</strong> how AI changes what a leader actually does at work.</li>
     </ul>
 
-    <h2>Frequence</h2>
+    <h2>Frequency</h2>
     <p>
       Once or twice a month. The first one will be out late 2026.
     </p>

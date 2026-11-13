@@ -3,7 +3,8 @@ layout: post
 lang: fi
 author: HM
 tags: []
-last_modified_at:
+date: 2026-11-12T09:00:00+02:00
+last_modified_at: 2026-11-12T09:00:00+02:00
 title: "Johtajana myös sinun on kehitettävä tekoälytaitojasi"
 meta_title: "Omat tekoälytaitosi määrittävät, mitä yrityksesi saavuttaa. Kehitä siis myös omia tekoälytaitojasi."
 meta_description: "80 % toimitusjohtajista arvioi tekoälyn muuttavan rooleja enemmän kuin henkilöstömäärää. Vain 15 % investoi hyödyt takaisin ihmisiin. Myös johdon tekoälytaidoilla on väliä."
@@ -21,7 +22,7 @@ meta_og_image: *hero
 meta_og_image_alt: *hero_alt
 list_image: *hero
 list_image_alt: *hero_alt
-lang_vers: /en/posts/2026/11/12/as-a-leader-you-also-need-to-learn-ai-skills-firsthand
+lang_vers: /en/articles/leadership/as-a-leader-you-also-need-to-learn-ai-skills-firsthand/
 highlighted: true
 published: true
 visible: true
