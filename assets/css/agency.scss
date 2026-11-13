@@ -45,6 +45,7 @@ $contact-image: "{{ site.data.style.contact-image }}";
 @import "layout/posts/post-list.scss";
 @import "layout/posts/posts-common.scss";
 @import "layout/home/posts-carousel.scss";
+@import "layout/posts/posts-preview.scss";
 @import "layout/newsletter-subscribe.scss";
 //@import "layout/portfolio.scss";
 //@import "layout/timeline.scss";

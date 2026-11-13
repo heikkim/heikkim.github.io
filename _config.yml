@@ -16,6 +16,14 @@
 
 DEBUG  : false
 
+# Branch feature/dateless-post-preview only.
+# Keeps the posts that are not published yet, and the ones with a date in the
+# future, in site.posts, so the post preview page can show them. The side
+# effect is that those posts also become real pages in this branch build.
+# Remove this when the branch is merged.
+unpublished: true
+future: true
+
 url    : "" #"https://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /posts. Do not set to "/" to avoid wrong canonical meta link path 
 
