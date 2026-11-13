@@ -45,7 +45,17 @@ _articles/<lang>/<category>/<slug>.md      e.g. _articles/fi/leadership/johtajan
 **Writing a new article:**
 1. Add the file under `_articles/<lang>/<category>/<slug>.md`, no date in the file name.
 2. Fill in `date`, `last_modified_at`, `lang_vers` and the flags.
-3. If it is a new category, add the folder, an entry in the `defaults` in `_config.yml` and the visible name in `_data/sitetext.yml`.
+3. If it is a new category, add the folder, an entry in the `defaults` in `_config.yml`, the visible name in `_data/sitetext.yml` and a page of its own.
+
+**Category pages:** every category has a page of its own at `/articles/<category>/` and `/en/articles/<category>/`, where the articles of that one category can be skimmed through. The page is the Insights listing, filtered to one category.
+
+- The page file is `articles/<category>/index.md` and `en/articles/<category>/index.md`. The file is thin: the headline, the description and the listing all come from the include.
+- The categories live in `categories` in the sitetext, one entry per category with a `slug`, a `label` and a `desc`. The label is the name of the category and the desc is the text under the headline on the page. Every language needs its own entry.
+- The listing is the same one as on the Insights page, `_includes/posts-list.html`, with the `category` parameter. The name of the category on the article page links to the page of the category.
+- The Insights page itself, `/articles/`, is the same include without a category and without a tag, and it lists every article of the language.
+- `./check-posts.sh` reports a category that has no page of its own or no description in every language.
+
+**Tag pages:** the same machinery serves the tags. A tag page gives the `tag` parameter instead of the `category` one, and the tags live in `tags` in the sitetext in the same shape as the categories: a `slug`, a `label` and a `desc`.
 
 **Checking the articles before a push:** run `./check-posts.sh`. It lists the articles that are not published with their dates, flags and missing metadata, reports the language versions that do not resolve and the articles whose flags do not match each other, and ends with a summary of the published and the unfinished articles.
 
