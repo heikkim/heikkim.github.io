@@ -51,6 +51,22 @@ _articles/<lang>/<category>/<slug>.md      e.g. _articles/fi/leadership/johtajan
 
 **Old URLs:** the articles that were published under `/posts/` keep their old address working through a small static page with a meta refresh, e.g. `posts/2026/11/12/<slug>/index.html`. GitHub Pages cannot send a real HTTP 301, so the canonical link on that page does the work for the search engines.
 
+## The tools folder
+
+```
+tools/<lang>/<page>.md      e.g. tools/en/articles-preview.md
+```
+
+Utility pages that are not part of the site. They are not in the navigation and they are kept out of the sitemap.
+
+- The permalink in the front matter decides the address of the page, so the folder only decides where the source lives. `tools/en/articles-preview.md` is served at `/en/articles-preview/`.
+- The `defaults` in `_config.yml` set `sitemap: false` for everything under `tools/`.
+- The folder is not a Jekyll collection, so the pages are ordinary pages.
+
+**The article preview** (`/articles-preview/` and `/en/articles-preview/`) renders every article of the language in the look of the homepage carousel, without the date, so that a screenshot of one can be used as a share card. Each article gets an id of its own, `article-<slug>`, so that a single one can be captured.
+
+- The preview shows the published articles in a normal build. Build locally with `jekyll serve --unpublished --future` to see the drafts and the articles dated in the future as well. They carry the DRAFT! badge, so they are easy to tell apart.
+
 ## Web searches
 
 A local SearXNG instance runs at `http://localhost:11434`. Prefer it over other web search tools.
@@ -68,7 +84,8 @@ curl -s "http://localhost:11434/search?q=jekyll+collections&format=json" | jq -r
 Add `&language=fi` (or `en`) to restrict the search language, and `&categories=general` to pick the engine groups.
 
 **Notes:**
-- The instance is local only, so it is fast and does not rate-limit, but it may be unreachable in some sessions. Fall back to the built-in web search tool if the request times out.
+- The instance is local only, so it is fast and does not rate-limit.
+- If the instance is down, **report it to Heikki and wait**. Heikki starts it, so do not fall back to the built-in web search tool and do not work around it.
 - Fetching a page with `webfetch` still works normally for reading documentation.
 
 ## Project author

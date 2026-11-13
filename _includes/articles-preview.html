@@ -1,0 +1,43 @@
+{% comment %}
+  The article preview page.
+
+  Renders every article of the language in the look of the homepage carousel,
+  but without the date, so a screenshot of one can be used as a share card.
+  The carousel itself is left alone.
+
+  The articles that are not published yet are in the collection only when the
+  site is built with --unpublished, and the ones dated in the future need
+  --future as well. Build locally with both to see them all.
+
+  Parameters:
+  - lang:   the language of the articles, "fi" by default
+{% endcomment %}
+{% assign lang = include.lang | default: "fi" %}
+{% assign curlang = site.languages | where: "code", lang | first %}
+{% comment %} The texts of the articles live in the posts section of the sitetext {% endcomment %}
+{% assign articlesText = site.data.sitetext.posts %}
+{% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
+  {% assign articlesText = site.data.sitetext[curlang.locale].posts %}
+{% endif %}
+
+{% comment %} Every article of the language, the ones not published yet included {% endcomment %}
+{% assign articles = site.articles | where: "lang", lang | sort: "date" | reverse %}
+
+<section id="articles-preview">
+  <div class="container">
+    {% comment %} The carousel class brings the slide styling with it {% endcomment %}
+    <div class="carousel articles-preview">
+      {% for article in articles %}
+      <article class="article-preview" id="article-{{ article.slug }}" data-ispublished="{{ article.published }}">
+        <div class="carousel-slide" style="background-image: url('{{ article.hero_image | relative_url }}');" role="img" aria-label="{{ article.title }}">
+          <div class="carousel-caption">
+            <h4 class="carousel-title" style="padding-bottom: 0.5em;">{{ article.title }}</h4>
+            <p class="carousel-excerpt">{{ article.excerpt | strip_html | strip }}</p>
+            <a class="btn btn-primary" href="{{ article.url | relative_url }}">{{ articlesText.read-more }}</a>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>

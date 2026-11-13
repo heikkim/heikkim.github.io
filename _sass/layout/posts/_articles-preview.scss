@@ -1,0 +1,12 @@
+// --------------------------------------------------------------
+  //  The article preview page
+//
+//  The articles are rendered in the look of the homepage carousel,
+//  without the date. The slide styling comes from the carousel
+//  styles, so only the spacing lives here.
+// --------------------------------------------------------------
+.articles-preview {
+  .article-preview {
+    margin-bottom: 1.5rem;
+  }
+}

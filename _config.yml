@@ -1,21 +1,4 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole site, values
-# which you are expected to set up once and rarely edit after that.
-# This file is *NOT* reloaded automatically when you use 'bundle exec jekyll serve'.
-# If you change this file, please restart the server process.
-
-# Site settings
-# are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-
-#theme: jekyll-agency
-#remote_theme: raviriley/agency-jekyll-theme
-
-DEBUG  : false
-
+# StrongPoint Consulting!
 url    : "https://strongpointconsulting.fi" #"https://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/" # the subpath of your site, e.g. /posts.
 show_dir_listing: false
@@ -24,6 +7,8 @@ title      : "StrongPoint Consulting" # Also check _data/_sitetext.yml for what'
 description: Fractional AI Leadership, AI coaching and AI consulting agency # This is used only if there is no specific description available for the page
 email      : noreply@nop.nop #this is also the email contact forms will go to
 author     : Heikki Malkamäki
+
+DEBUG  : false
 
 analytics:
   google: G-5HZGV8ZNEF
@@ -81,8 +66,6 @@ feed:
       path: null
     articles:
       path: "/feed.xml"
-
-
 
 defaults:
   # ---- The default language of an article ----------------------
@@ -146,6 +129,16 @@ defaults:
       type: "articles"
     values:
       categories: [leadership]
+
+  # ---- The tools folder ----------------------------------------
+  # Utility pages that are not part of the site, like the preview
+  # page for the share cards. They are kept out of the sitemap.
+  # The permalink of a page decides its address, so the folder only
+  # decides where the source of the page lives.
+  - scope:
+      path: "tools"
+    values:
+      sitemap: false
 
 languages:
   - code: fi
