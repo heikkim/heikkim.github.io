@@ -36,6 +36,10 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
   <meta property="og:site_name" content="{{ site.title }}" />
   
+  {%- if page.layout == "post" or page.path contains "posts/index.md" -%}
+    {%- include posts-head-section-additions.html -%}
+  {%- endif -%}
+
   {% feed_meta %}
 
   <!-- Fonts -->
@@ -48,9 +52,4 @@
 
   <!-- Custom styles for this theme --> 
   <link href="/assets/css/agency.css" rel="stylesheet" />
-
-
-  {% if page.layout == "post" or page.path contains "posts/index.md"%}
-    {% include posts-head-section-additions.html %}
-  {% endif %}
 </head>
