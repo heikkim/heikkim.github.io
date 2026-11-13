@@ -3,7 +3,8 @@
 
 {%- assign _postCatTexts=_post.categories | join: ", " -%}
 {%- for _postCat in _post.categories -%}
-  {%- assign _postCatText=postsText.categories[_postCat] -%}
+  {%- assign _postCatEntry = postsText.categories | where: "slug", _postCat | first -%}
+  {%- assign _postCatText=_postCatEntry.label -%}
   {%- if _postCatText -%} 
     {%- assign _postCatTexts=_postCatTexts |  replace: _postCat, _postCatText   -%}
   {%- endif -%}

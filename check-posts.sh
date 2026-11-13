@@ -131,6 +131,19 @@ url_exists() {
   grep -Fxq "$1" "$urls_file"
 }
 
+# Prints how many of the language blocks of the sitetext describe the given
+# category, and how many of them have categories at all. A category that is
+# described in one language only is missing a description in the others.
+category_descriptions() {
+  awk -v slug="$1" '
+    /^    categories:/ { inblock = 1; blocks++; inentry = 0; next }
+    inblock && /^      - slug:/ { inentry = ($3 == slug); next }
+    inblock && /^        desc:/ { if (inentry) described++; next }
+    inblock && /^    [^ ]/ { inblock = 0; inentry = 0 }
+    END { print described + 0, blocks + 0 }
+  ' _data/sitetext.yml
+}
+
 # ----------------------------------------------------------------- reports ---
 
 echo "Article check"
@@ -229,6 +242,29 @@ for file in "${files[@]}"; do
 
   if [ -n "$lang_vers" ] && ! url_exists "$lang_vers"; then
     problems="$problems\n  - lang_vers does not resolve to an article: $lang_vers"
+  fi
+
+  # Every category has a page of its own, so that the articles of the
+  # category can be skimmed through in one place.
+  rel=${file#"$ARTICLES_DIR/"}
+  lang=${rel%%/*}
+  category=${rel#*/}
+  category=${category%%/*}
+
+  if [ "$lang" = "en" ]; then
+    category_page="en/articles/$category/index.md"
+  else
+    category_page="articles/$category/index.md"
+  fi
+  if [ ! -f "$category_page" ]; then
+    problems="$problems\n  - the category has no page of its own: $category_page is missing"
+  fi
+
+  # The page shows the description of the category under its headline, so
+  # every language needs one in the sitetext.
+  read -r described description_blocks < <(category_descriptions "$category")
+  if [ "$description_blocks" -gt 0 ] && [ "$described" -lt "$description_blocks" ]; then
+    problems="$problems\n  - the category has no description in every language of the sitetext"
   fi
 
   if [ -n "$problems" ]; then

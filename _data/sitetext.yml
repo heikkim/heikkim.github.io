@@ -166,13 +166,17 @@ en: &DEFAULT_EN
     text: "Practical notes on AI, governance and leading the change."
     read-more: "Read the article"
     related-title: "Related articles"
+    no-articles: "No articles here yet."
     date-format: "%d %b %Y"
     # %time% is replaced with the post's reading time
     reading-time: "%time% min read"
     categories:
-      ai-strategy: "AI Strategy"
-      leadership: "Leadership"
-      self-development: "Self Development"
+      - slug: ai-strategy
+        label: AI Strategy
+        desc: "Insights on creating an impactful AI strategy and lasting competetive advantage."
+      - slug: leadership
+        label: Leadership
+        desc: "Insights on effective leadership and how leadership is transforming in the AI age."
     in-category: in
     previous-article: "Previous article &#x203A;"
     next-article: "&#x2039; Next article"
@@ -392,13 +396,17 @@ fi: &DEFAULT_FI
     index-lead: "Muistiinpanoja tekoälystrategiasta, hallinnasta ja muutoksen johtamisesta PK-yrityksessä."
     read-more: "Lue artikkeli"
     related-title: "Aiheeseen liittyvät artikkelit"
+    no-articles: "Ei ole vielä artikkeleita."
     date-format: "%d.%m.%Y"
     # %time% is replaced with the post's reading time
     reading-time: "lukuaika %time% min"
     categories:
-      ai-strategy: "Tekoälystrategia"
-      leadership: "Johtaminen"
-      self-development: "Kehittyminen"
+      - slug: ai-strategy
+        label: Tekoälystrategia
+        desc: "Näkemyksiä vaikuttavan tekoälystrategian luomisesta ja pysyvän kilpailuedun saavuttamisesta."
+      - slug: leadership
+        label: Johtaminen
+        desc: "Näkemyksiä tekoälymuutoksen johtamisesta ja johtamisen muutoksesta tekoälyn aikakaudella."
     in-category: "@"
     previous-article: "Edellinen artikkeli &#x203A;"
     next-article: "&#x2039; Seuraava artikkeli"

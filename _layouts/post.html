@@ -24,18 +24,24 @@ layout: default
 
 {%- assign author = site.data.authors.list | where: "initials", page.author | first -%}
 
-{%- assign postCatTexts=page.categories | join: ", " -%}
-{%- for postCat in page.categories -%}
-  {%- assign postCatText=postsText.categories[postCat] -%}
-  {%- if postCatText -%} 
-    {%- assign postCatTexts=postCatTexts |  replace: postCat, postCatText   -%}
-  {%- endif -%}
-{%- endfor -%}
-
 {%- assign hrefBackToPosts = "/articles" -%}
 {%- if page.lang == "en" -%}
   {%- assign hrefBackToPosts = "/en/articles" -%}
 {%- endif -%}
+
+{%- comment -%}
+  The categories of the article, linked to the page of the category.
+{%- endcomment -%}
+{%- assign postCatLinks = "" -%}
+{%- for postCat in page.categories -%}
+  {%- assign postCatEntry = postsText.categories | where: "slug", postCat | first -%}
+  {%- assign postCatText = postCatEntry.label | default: postCat -%}
+  {%- capture postCatLink -%}<a href="{{ hrefBackToPosts }}/{{ postCat }}/">{{ postCatText }}</a>{%- endcapture -%}
+  {%- unless postCatLinks == "" -%}
+    {%- assign postCatLinks = postCatLinks | append: ", " -%}
+  {%- endunless -%}
+  {%- assign postCatLinks = postCatLinks | append: postCatLink -%}
+{%- endfor -%}
 
 {% include nav.html lang=page.lang navtype=page.navtype %}
 <div class="container single-post" id="single-page-container">
@@ -52,7 +58,7 @@ layout: default
       <div class="article-head">
         <h1>{{ page.title }}{% include /post/_draft-badge.html %}</h1>
         <p class="post-meta">
-          <span class="categories">{{ postCatTexts }}</span>
+          <span class="categories">{{ postCatLinks }}</span>
           {% if page.reading_time %}
             <span class="reading-time">{{ postsText.reading-time | replace: "%time%", page.reading_time | replace: ".5", ""}}</span>
           {% endif %}

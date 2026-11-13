@@ -1,26 +1,47 @@
 {% comment %}
-  The post listing of the posts index page, grouped by category.
+  The listing of the articles.
+
+  Without a filter it lists every article of the language, the way the
+  Insights page does. With a category or a tag it lists only the articles
+  of that one, which is what the category and the tag pages use.
 
   Parameters:
-  - lang:   the language of the posts, "fi" by default
+  - lang:      the language of the articles, "fi" by default
+  - category:  the slug of a category, e.g. "leadership"
+  - tag:       the slug of a tag, e.g. "getting-off-the-ground-with-ai"
 {% endcomment %}
-{% assign lang = include.lang | default: "fi" %}
-{% assign curlang = site.languages | where: "code", lang | first %}
-{% assign postsText = site.data.sitetext.posts %}
-{% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
-  {% assign postsText = site.data.sitetext[curlang.locale].posts %}
-{% endif %}
+{%- assign lang = include.lang | default: "fi" -%}
+{%- assign curlang = site.languages | where: "code", lang | first -%}
+{%- assign postsText = site.data.sitetext.posts -%}
+{%- if curlang.locale and curlang.locale != "" and curlang.locale != nil -%}
+  {%- assign postsText = site.data.sitetext[curlang.locale].posts -%}
+{%- endif -%}
 
-{% assign posts = site.articles | where: "lang", lang | where: "visible", true | sort: "date" | reverse %}
+{%- assign posts = site.articles | where: "lang", lang | where: "visible", true -%}
+{%- if include.category -%}
+  {%- assign category = include.category -%}
+  {%- assign posts = posts | where_exp: "p", "p.categories contains category" -%}
+{%- endif -%}
+{%- if include.tag -%}
+  {%- assign tag = include.tag -%}
+  {%- assign posts = posts | where_exp: "p", "p.tags contains tag" -%}
+{%- endif -%}
+{%- assign posts = posts | sort: "date" | reverse -%}
 
 <section id="posts-list">
+  {% if posts.size == 0 %}
+    <div class="container">
+      <p class="no-articles">{{ postsText.no-articles }}</p>
+    </div>
+  {% endif %}
   <div class="container grid">
     {% for post in posts %}
       {% assign author = site.data.authors.list | where: "initials", post.author | first %}
 
       {% assign postCatTexts=post.categories | join: ", " %}
       {% for postCat in post.categories %}
-        {% assign postCatText=postsText.categories[postCat] %}
+        {% assign postCatEntry = postsText.categories | where: "slug", postCat | first %}
+        {% assign postCatText=postCatEntry.label %}
         {% if postCatText %} 
           {% assign postCatTexts=postCatTexts |  replace: postCat, postCatText   %}
         {% endif %}
@@ -62,20 +83,7 @@
 <div class="clearfix"></div>
 
 {% comment %} 
-The following is for showing posts per category.
-
-  {% for entry in postsText.categories %}
-    {% assign slug = entry[0] %}
-    {% assign name = entry[1] %}
-    {% assign catPosts = posts | where_exp: "p", "p.categories contains slug" %}
-    
-    <h2>{{ name }}</h2>
-
-    {% if catPosts.size > 0 %}
-      {% for post in catPosts %}
-        .. Logic for showing posts
-      {% endfor %}
-
-    {% endif %}
-  {% endfor %}
+The articles of one category have a page of their own, see
+articles-collection.html. The listing of a single category is this same
+listing with the "category" parameter.
 {% endcomment %}
