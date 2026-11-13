@@ -64,8 +64,8 @@ layout: default
           <time class="date" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: postsText.date-format }}</time>
 
           <span class="post-lang-vers" style="float: right;">
-            {% if CURRENT_POST_LANG_VERS_HREF != null %}
-              <a href="{{ CURRENT_POST_LANG_VERS_HREF }}" alt="{{ postsText.read-in-other-lang[OTHER_LANG.code].alt }}">{{ postsText.read-in-other-lang[OTHER_LANG.code].text }}</a>
+            {% if page.lang_vers != null %}
+              <a href="{{ page.lang_vers }}" alt="{{ postsText.read-in-other-lang[OTHER_LANG.code].alt }}">{{ postsText.read-in-other-lang[OTHER_LANG.code].text }}</a>
             {% endif %}
           </span>
         </div>

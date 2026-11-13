@@ -4,11 +4,6 @@
 {%- if site.languages != nil -%} 
 {%- for language in site.languages -%} 
     {%- if curlang.locale != language.locale -%}  
-        {%- assign isPost = false -%}
-        {%- if page.layout == "post" -%}
-            {%- assign isPost = true -%}
-        {%- endif -%}
-
         {%- if curlang.code == "fi" -%}
             {%- assign href = page.url | prepend: "/en"  -%}
         {%- elsif curlang.code == "en" -%}
@@ -17,37 +12,29 @@
             {%- assign href = language.url -%}
         {%- endif -%}
 
-        {%- if isPost == true -%}
+        {%- if page.layout == "post" -%}
+            {% comment %} The page is an article {% endcomment %}
+
             {% if curlang.code == "fi" %} 
                 {%- assign href = "/en/"  -%}
             {%- elsif curlang.code == "en" -%}
                 {%- assign href = "/fi/"  -%}
             {% endif %}
 
-            {%- assign hasExplicitLangVers = false %}
-            {%- if page.lang_vers != null and page.lang_vers != "" -%} 
-                {%- assign hasExplicitLangVers = true %}
-            {%- endif -%}
-
-            {%- if hasExplicitLangVers == true -%}
+            {%- if page.lang_vers != null and page.lang_vers != "" -%}
                 {% comment %}
                 An article carries the full URL of its other language version in
                 the "lang_vers" front matter key.
                 {% endcomment %}
                 {%- assign href = page.lang_vers -%}
-
-                {% comment %} 
-                    Setting post href to a "global" variable so it can be reused in post.html (after all the commotion it took to resolve it here).
-                    Same thing for the language so that it can be used later in post.html.
-                {% endcomment %}
-                {%- assign CURRENT_POST_LANG_VERS_HREF = href -%}
-                {%- assign OTHER_LANG = language %}
+                {%- assign OTHER_LANG = language -%}
             {%- else -%}
-                {%- assign href = href | append: "posts" |  replace_first: "/fi/", "/" -%}
+                {% comment %} If no language version, language switch leads to article listing. {% endcomment %}
+                {%- assign href = href | append: "articles" |  replace_first: "/fi/", "/" -%}
             {%- endif -%}
         {%- endif -%}
     
-    <li class="nav-item">               
+    <li class="nav-item">      
         <a class="nav-link js-scroll-trigger" href="{{ href }}" data-lang="{{ language.code }}"><img src="/assets/img/Globe_icon.svg" alt="{{ language.label }}" />{{ language.text }}</a>
     </li>
     {%- endif -%}
