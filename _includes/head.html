@@ -36,11 +36,11 @@
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
   <meta property="og:site_name" content="{{ site.title }}" />
   
-  {%- if page.layout == "post" or page.path contains "posts/index.md" -%}
-    {%- include posts-head-section-additions.html -%}
-  {%- endif -%}
+  {% if page.layout == "post" or page.path contains "posts/index.md" %}
+    {% include posts-head-section-additions.html %}
+  {% endif %}
 
-  {% feed_meta %}
+  <link type="application/atom+xml" rel="alternate" href="{{ "/feed.xml" | absolute_url }}" title="Insights | StrongPoint Consulting" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
