@@ -9,8 +9,9 @@
 
 {% comment  %}<link href="/assets/css/posts-readability.css" rel="stylesheet" /> {% endcomment %}
   <meta property="og:type" content="article" />
+  <meta name="author" content="{{ articleAuthor.name | default: site.author }}" />
   
-  <meta property="article:author" content="{{ articleAuthor.name | default: "Heikki Malkamäki" }}" />
+  <meta property="article:author" content="{{ articleAuthor.name | default: site.author }}" />
   <meta property="article:publisher" content="{{ site.title }}" />
   {% if firstArticleCategory %}<meta property="article:section" content="{{ firstArticleCategoryEntry.label | default: firstArticleCategory }}">{% endif %}
   <meta property="article:published_time" content="{{ articlePublishedDate }}" />

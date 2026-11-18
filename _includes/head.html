@@ -13,9 +13,12 @@
   {% assign curlang = site.languages | where: "code", page.lang | first %}
 
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Language" content="{{ curlang.code }}">
+    
+  <meta name="StrongPoint Consulting" />
+  <meta name="keywords" content="{{ page.meta_keywords | default: "ai consulting,ai coaching,fractional ai leadership,ai transformation,ai strategy,agentic ai" }}" />
   <meta name="description" content="{{ page.meta_description | default: site.description }}" />
-  <meta name="author" content="{{ site.author }}" />
   <meta name="robots" content="index, follow">
   
   <link rel="canonical" href="{{ page.url | absolute_url }}" />
@@ -30,15 +33,24 @@
 
   <meta property="og:title" content="{% if page.meta_title %}{{ page.meta_title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:description" content="{{ page.meta_description | default: site.description }}" />
-  <meta property="og:image" content="{% if page.meta_og_image %}{{ page.meta_og_image | absolute_url }}{% else %}{{ "/assets/img/logo_300x300_bgblack.png" | absolute_url }}{% endif %}" />
+  <meta property="og:image" content="{{ "/assets/img/logo_300x300_bgblack.png" | absolute_url }}" />
   <meta property="og:image:alt" content="{% if page.meta_og_image_alt %}{{ page.meta_og_image_alt }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:locale" content="{{ curlang.htmllang }}" />
+  <meta itemprop="name" content="{{ site.title }}">
+  <meta itemprop="image" content="{{ "/assets/img/logo_300x300_bgblack.png" | absolute_url }}">
   <meta property="og:url" content="{{ page.url | absolute_url }}" />
   <meta property="og:site_name" content="{{ site.title }}" />
   
   {% if page.layout == "post" or page.path contains "posts/index.md" %}
+    {% comment  %} 
+    <meta property="og:type" is is set by posts-head-section-additions.html!
+    {% endcomment %}
     {% include posts-head-section-additions.html %}
+  {% else %}
+    <meta property="og:type" content="website" />
   {% endif %}
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
   <link type="application/atom+xml" rel="alternate" href="{{ "/feed.xml" | absolute_url }}" title="Insights | StrongPoint Consulting" />
 
