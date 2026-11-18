@@ -82,10 +82,8 @@ Whatever the pursuit, the leadership team needs to be clear which one AI is poin
 
 What the last two have in common is that you can point at them at the end of the month and say yes or no. The goal names the outcome, so the team acts on it with the same understanding you had.
 
-Setting priorities at the leadership level stops the organisation working on its own problem. Priorities set once and understood everywhere beat every team working in its own silo.
+## Undarstanding first, tools later
 
-## Opportunity first, then let the tools follow
-
-The order matters more than the speed. An answer to what AI is capable of **today** first, then a goal, then a tool, then the skills to use it, with useful experimentation running alongside the whole way.
+The order matters more than the speed. Setting priorities at the leadership level stops the organisation working on its own problem. Priorities set once and understood everywhere beat every team working in its own silo.
 
 Our [AI Consulting engagement]({% link en/services/ai-consulting.md %}) begins with a no-commitment conversation about where AI would change the outcome in your company.

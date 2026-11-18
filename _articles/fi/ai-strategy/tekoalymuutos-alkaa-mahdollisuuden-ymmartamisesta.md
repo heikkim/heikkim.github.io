@@ -84,10 +84,8 @@ Yleisluontoiset tavoitteet eivät toimi. Ne saattavat kuulostaa kunnianhimoisilt
 
 Kahdelle jälkimmäiselle on yhteistä se, että kuukauden lopussa voit arvioida objektiivisesti edistyttiinkö vaiko ei. Keskeistä on, että tavoite nimeää konkreettisen lopputuloksen, jota kohti tiimi kykenee työskentelemään. Tähän kytkeytyy erottamattomasti johdon fasilitoima yhteinen tilannekuva.
 
-Prioriteettien linjaaminen johtotasolla varmistaa, ettei organisaation AI-muutoshanke pirstaloidu ratkomaan kunkin tiimin omia ongelmia. Kerran asetetut ja kaikkialla ymmärretyt prioriteetit voittavat irralliset, tiimikohtaiset ja siiloutuneet hankkeet.
-
 ## Ymmärrä ensin, hanki työkalut sitten
 
-Etenemisjärjestys on nopeutta tärkeämpää. Ensin on ymmärrettävä, mihin tekoäly kykenee **nyt**. Vasta sen jälkeen asetetaan tavoite, valitaan sopiva työkalu ja varmistetaan henkilöstön osaaminen, pitäen samalla hyödyllistä kokeilukulttuuria yllä.
+Etenemisjärjestys on nopeutta tärkeämpää. Prioriteettien linjaaminen johtotasolla varmistaa, ettei organisaation AI-muutoshanke pirstaloidu ratkomaan kunkin tiimin omia ongelmia. Kerran asetetut ja kaikkialla ymmärretyt prioriteetit voittavat irralliset, tiimikohtaiset ja siiloutuneet hankkeet.
 
 Yrityksille ja organisaatioille suunnattu [AI Consulting -palvelumme]({% link services/ai-consulting.md %}) alkaa sitoumuksettomalla keskustelulla siitä, miten tekoäly aidosti muuttaisi yrityksenne toimintatapaa.
