@@ -31,6 +31,8 @@
   <link rel="manifest" href="{{ "/site.webmanifest" | absolute_url }}">
   <link rel="icon" href="{{ "/favicon.ico" | absolute_url }}">
 
+  {% include head-link-alternate.html %}
+
   <meta property="og:title" content="{% if page.meta_title %}{{ page.meta_title }}{% else %}{{ site.title }}{% endif %}" />
   <meta property="og:description" content="{{ page.meta_description | default: site.description }}" />
   <meta property="og:image" content="{{ "/assets/img/logo_300x300_bgblack.png" | absolute_url }}" />

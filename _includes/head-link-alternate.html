@@ -1,0 +1,42 @@
+{% comment %}
+This exact logic is also in lang-chooser.html!
+{% endcomment %}
+{%- assign curlang = site.languages | where: "code", page.lang | first -%}
+{%- if site.languages != nil -%} 
+{%- for language in site.languages -%} 
+    {%- if curlang.locale != language.locale -%}  
+        {%- if curlang.code == "fi" -%}
+            {%- assign href = page.url | prepend: "/en"  -%}
+        {%- elsif curlang.code == "en" -%}
+            {%- assign href = page.url | replace_first: "/en", ""  -%}
+        {%- else -%}
+            {%- assign href = language.url -%}
+        {%- endif -%}
+
+        {%- if page.layout == "post" -%}
+            {% comment %} The page is an article {% endcomment %}
+
+            {% if curlang.code == "fi" %} 
+                {%- assign href = "/en/"  -%}
+            {%- elsif curlang.code == "en" -%}
+                {%- assign href = "/fi/"  -%}
+            {% endif %}
+
+            {%- if page.lang_vers != null and page.lang_vers != "" -%}
+                {% comment %}
+                An article carries the full URL of its other language version in
+                the "lang_vers" front matter key.
+                {% endcomment %}
+                {%- assign href = page.lang_vers -%}
+                {%- assign OTHER_LANG = language -%}
+            {%- else -%}
+                {% comment %} If no language version, language switch leads to article listing. {% endcomment %}
+                {%- assign href = href | append: "articles" |  replace_first: "/fi/", "/" -%}
+            {%- endif -%}
+        {%- endif -%}
+
+  <link rel="alternate" hreflang="{{ language.hreflang }}" href="{{ href | absolute_url }}" />
+    {%- endif -%}
+{%- endfor -%}
+{%- endif -%}
+
