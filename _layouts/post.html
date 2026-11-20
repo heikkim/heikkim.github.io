@@ -71,7 +71,7 @@ layout: default
 
           <span class="post-lang-vers" style="float: right;">
             {% if page.lang_vers != null %}
-              <a href="{{ page.lang_vers }}" alt="{{ postsText.read-in-other-lang[OTHER_LANG.code].alt }}">{{ postsText.read-in-other-lang[OTHER_LANG.code].text }}</a>
+              <a href="{{ page.lang_vers }}" alt="{{ postsText.read-in-other-lang[OTHER_LANG.code].alt }}" rel="alternate" hreflang="{{ OTHER_LANG.hreflang }}">{{ postsText.read-in-other-lang[OTHER_LANG.code].text }}</a>
             {% endif %}
           </span>
         </div>
