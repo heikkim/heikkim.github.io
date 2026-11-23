@@ -10,15 +10,18 @@ meta_description: "Henkilökohtaista, käytännönläheistä AI-valmennusta joht
 
 <div class="service-page">
   <section class="page-hero">
+    <div class="content-narrow">
       <h1>{{ service.title }}</h1>
       <h5>Käytännön tekoälyvalmennusta johtajille, jotka valitsevat johtaa.</h5>
       <p>
         Tekoälyn tehokas käyttäminen omassa työssä on tuottavuuden uusi perustaso myös johtajille. Paras aika oppia käyttämään
         tekoälyä tuomaan lisää aikaa kiireiseen yritysarkeen <strong>on juuri nyt</strong>.
       </p>
+    </div>
   </section>
 
   <section id="the-challenge">
+    <div class="content-narrow right">
       <h2>Haaste</h2>
       <p>
         Tekoäly etenee vauhdilla, joka tekee sen johtamisesta haastavaa. Joku tiimistäsi on jo todennäköisesti edennyt tekoälyn
@@ -34,9 +37,11 @@ meta_description: "Henkilökohtaista, käytännönläheistä AI-valmennusta joht
       <p>
         Kaiken tämän keskellä vastuusi aikatauluineen painaa päälle. Tehokkuuslisälle on huutava tarve.
       </p>
+    </div>
   </section>
 
   <section id="the-solution">
+    <div class="content-narrow">
       <h2>Ratkaisu</h2>
       <p>
         Uusien taitojen oppiminen on ainoa ratkaisu. Yritys-erehdys -taktiikka vie eteenpäin, mutta tahti ei
@@ -54,9 +59,10 @@ meta_description: "Henkilökohtaista, käytännönläheistä AI-valmennusta joht
         työnkulut ja automaatiot yhdessä. Kaikki aikaansaatu jää sinulle, mukaan lukien toteutukset, jotka toimivat oikein
         juuri sinulle, koska rakensit ne itse.
       </p>
+    </div>
   </section>
 
-  <section id="the-roadmap">
+  <section id="the-roadmap" class="text-center">
       <h2>Kehity tekoälyn tehokäyttäjäksi</h2>
       <div class="small-box-header">
         <h4>Kehityspolku</h4>
@@ -87,6 +93,7 @@ meta_description: "Henkilökohtaista, käytännönläheistä AI-valmennusta joht
   </section>
 
   <section id="scope">
+    <div class="content-narrow">
       <h2>Mitä tästä saa?</h2>
       <p>
         Jos käytät jo tekoälyä päivittäin, jätämme perusteet väliin ja siirrymme suoraan <strong>vaativampaan käyttöön</strong>:
@@ -104,9 +111,11 @@ meta_description: "Henkilökohtaista, käytännönläheistä AI-valmennusta joht
         <li><strong>Tekoälygentti:</strong> agenttitaitojen hyödyntäminen tehtävissä, joissa niistä on aitoa hyötyä.</li>
         <li><strong>Tekoälykäsikirja:</strong> kehotteet, säännöt ja käytännöt dokumentoituna.</li>
       </ul>
+    </div>
   </section>
 
   <section id="fit">
+    <div class="content-narrow">
       <h2>Palvelu on suunnattu</h2>
       <ul class="success-list">
         <li>Johtajille ja hallitusjäsenille, joilla tekoälyn käyttö on jäänyt arjen kiireiden jalkoihin.</li>
@@ -122,6 +131,11 @@ meta_description: "Henkilökohtaista, käytännönläheistä AI-valmennusta joht
           <br /><a class="content-link" href="/services/ai-consulting.html">Lue lisää tekoälykonsultoinnista yrityksille ja organisaatioille</a></li>
         </ul>
       </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    {% include faq.html lang=page.lang items=service.faq id="faq-ai-coaching" %}
   </section>
 
   {% include service-cta-contact.html %}

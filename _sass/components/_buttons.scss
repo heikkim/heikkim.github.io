@@ -1,5 +1,9 @@
 // Button Styles
 @use "sass:color";
+button:focus, button:focus-visible {
+  outline: none;
+}
+
 .btn {
   @include heading-font;
   font-weight: 700;

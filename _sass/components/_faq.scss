@@ -1,0 +1,102 @@
+/*
+ * The FAQ block: a header and a list of questions. A question opens with a
+ * "+" and closes with an "x". The icons are drawn with the same technique
+ * as the navbar toggler: lines made of the background colour of the pseudo
+ * elements and turned with the rotate property.
+ */
+.faq {
+  .faq-intro {
+    margin-bottom: 2em;
+  }
+
+  // The line that separates the questions from each other
+  .faq-item {
+    border-bottom: 1px solid $gray-800;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .faq-question-heading {
+    margin: 0;
+  }
+
+  .faq-question {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em 0;
+    border: 0;
+    background: none;
+    color: $body;
+    font-family: inherit;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-align: left;
+    cursor: pointer;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  // The "+" and the "x" of a question
+  .faq-icon {
+    position: relative;
+    flex: 0 0 18px;
+    width: 18px;
+    height: 18px;
+    margin-left: 1.5em;
+
+    // One bar of the "+" and one arm of the "x"
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8.5px;
+      left: 0;
+      width: 18px;
+      height: 1px;
+      background-color: currentColor;
+      rotate: 0deg;
+      transition: rotate 0.2s;
+    }
+
+    // The other bar of the "+" and the other arm of the "x"
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8.5px;
+      left: 0;
+      width: 18px;
+      height: 1px;
+      background-color: currentColor;
+      rotate: 90deg;
+      transition: rotate 0.2s;
+    }
+  }
+
+  // Open: the two bars cross each other
+  .faq-question:not(.collapsed) .faq-icon {
+    &::before {
+      rotate: 45deg;
+    }
+
+    &::after {
+      rotate: -45deg;
+    }
+  }
+
+  .faq-answer {
+    padding-bottom: 1.2em;
+
+    p {
+      margin: 0;
+      padding-top: 0;
+      padding-right: 1em;
+      color: $text-muted;
+      line-height: 1.7;
+    }
+  }
+}

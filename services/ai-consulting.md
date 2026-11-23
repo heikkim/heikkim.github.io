@@ -10,18 +10,21 @@ meta_description: "Ratkaisut PK-yritysten tekoäly- ja dataongelmiin. Myös fasi
 
 <div class="service-page">
   <section class="page-hero">
+    <div class="content-narrow">
       <h1>{{ service.title }}</h1>
       <h5>Konkreettinen ratkaisu konkreettiseen ongelmaan.</h5>
       <p>
         
         Tekoälyhaasteeseen, jossa nykyiset ratkaisumallit eivät tuota toivottua lopputulosta. 
         Ongelman tai liiketoimintamahdollisuuden hahmottamiseen, työstämään business casea, 
-        joka kaipaa tarkempaa määrittelyä tai <strong>tekoälystrategian muotoilun avuksi, kun hyödytte toisesta kokeneesta silmäparista.</strong>
+        joka kaipaa tarkempaa määrittelyä tai <strong>tekoälystrategiaa muotoilemaan, kun kaipaatte kokenutta silmäparia.</strong>
         Muotoillaan ongelma kysymykseksi ja muunnetaan se toteutettavaksi suunnitelmaksi.
       </p>
+    </div>
   </section>
 
   <section id="the-challenge">
+    <div class="content-narrow right">
       <h2>Haaste</h2>
       <p>
         Iso osa tekoälyhankkeista jää lähtötelineisiin tai kokeiluasteelle. Data on hajallaan,
@@ -36,9 +39,11 @@ meta_description: "Ratkaisut PK-yritysten tekoäly- ja dataongelmiin. Myös fasi
       <p>
         Usein yrityksessä ollaan itse liian lähellä ongelmaa, eikä sitä tämän vuoksi nähdä tarkasti.
       </p>
+    </div>
   </section>
 
   <section id="the-solution">
+    <div class="content-narrow">
       <h2>Ratkaisu</h2>
       <p>
         Lähde liikkeelle ongelman ymmärtämisestä, älä työkaluista tai menetelmistä.
@@ -53,9 +58,10 @@ meta_description: "Ratkaisut PK-yritysten tekoäly- ja dataongelmiin. Myös fasi
         Toteuta hallitusti ja mittaa säännöllisesti, jotta tiedät eteneväsi oikeeaan suuntaan.
         Harvoin tekoäly- ja datahaasteet ratkeavat yksin pohtimalla, puhumattakaan tuottavuudesta.
       </p>
+    </div>
   </section>
 
-  <section id="the-framework">
+  <section id="the-framework" class="text-center">
       <h2>Keskittyminen käsillä olevaan haasteeseen</h2>
       <div class="small-box-header">
         <h4>Kehittymisen elinkaari</h4>
@@ -86,6 +92,7 @@ meta_description: "Ratkaisut PK-yritysten tekoäly- ja dataongelmiin. Myös fasi
   </section>
 
   <section id="scope">
+    <div class="content-narrow">
       <h2>Ymmärryksen kasvattamisen työkalupakki</h2>
       <ul class="success-list">
         <li><strong>Mahdollisuuksien arviointi:</strong> priorisoitu tiekartta yrityksen tekoälykäyttötapauksista.</li>
@@ -97,9 +104,11 @@ meta_description: "Ratkaisut PK-yritysten tekoäly- ja dataongelmiin. Myös fasi
         <li><strong>Ensimmäiset ratkaisut:</strong> konkreettiset tuottavuutta lisäävät ratkaisut, tuotannossa.</li>
         <li><strong>Luovutus:</strong> dokumentaatio ja koulutus, jotta työ jatkuu katkeamatta.</li>
       </ul>
+    </div>
   </section>
 
   <section id="fit">
+    <div class="content-narrow">
       <h2>Palvelu on suunnattu</h2>
       <ul class="success-list">
         <li>PK-yrityksille, joilla on konkreettinen tekoäly- tai datahaaste, tai jumiutunut hanke.</li>
@@ -115,6 +124,11 @@ meta_description: "Ratkaisut PK-yritysten tekoäly- ja dataongelmiin. Myös fasi
           <li><strong>AI-valmennus</strong>, kun haluat kehittää omaa AI-osaamistasi, kehotteiden rakentamistaitoasi tai automatisoida töitäsi.<br /><a class="content-link" href="/services/ai-coaching.html">Lue lisää johdon ja hallituksen AI-valmennuksesta</a></li>
         </ul>
       </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    {% include faq.html lang=page.lang items=service.faq id="faq-ai-consulting" %}
   </section>
 
   {% include service-cta-contact.html %}

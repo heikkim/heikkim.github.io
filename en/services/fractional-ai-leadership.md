@@ -9,15 +9,18 @@ meta_description: "Senior AI strategy, governance and hands-on execution for SME
 {% assign service=site.data.sitetext[page.lang].services.list | where: "sid", "fractional-ai-leadership" | first %}
 <div class="service-page">
   <section class="page-hero">
+    <div class="content-narrow">
       <h1>{{ service.title }}</h1>
       <h5>Strategic AI leadership without executive overhead.</h5>
       <p>
         Your company does not need another tool. It needs someone accountable for turning AI ambition into
         governed, scaled and measurable results.
       </p>
+    </div>
   </section>
 
   <section id="the-challenge">
+    <div class="content-narrow right">
       <h2>The Challenge</h2>
       <p>
         You already know AI matters. Maybe somebody has already run the pilots, bought the licences and started the
@@ -33,9 +36,11 @@ meta_description: "Senior AI strategy, governance and hands-on execution for SME
         stitching pilots together and hope scale happens on its own. Both cost you time, and both cost you
         credibility internally.
       </p>
+    </div>
   </section>
 
   <section id="the-solution">
+    <div class="content-narrow">
       <h2>The Solution</h2>
       <p>
         A senior leader who has the expertise, bandwith, and the capacity, to take decisions and steer actions across the company is the right call. Having a seat in the management team is a must, otherwise the change can lose momentum due to inadequate management attention and care.
@@ -46,9 +51,10 @@ meta_description: "Senior AI strategy, governance and hands-on execution for SME
       <p>
         The rest is about giving a mandate to act, while staying informed through appropriate control points. The Fractional AI Leadership model is a low-threshold, risk-free approach for solving the challenge.
       </p>
+    </div>
   </section>
 
-  <section id="the-model">
+  <section id="the-model" class="text-center">
       <h2>One Owner, One Accountability</h2>
       <div class="small-box-header">
         <h4>Fractional AI Leader</h4>
@@ -79,6 +85,7 @@ meta_description: "Senior AI strategy, governance and hands-on execution for SME
   </section>
 
   <section id="scope">
+    <div class="content-narrow">
       <h2>Fractional AI Leadership Service for Companies</h2>
       <p>
         Fractional AI Leader takes the full responsibility of the AI agenda in the company and good care in moving it forward.
@@ -96,9 +103,11 @@ meta_description: "Senior AI strategy, governance and hands-on execution for SME
         <li><strong>Change enablement:</strong> a champion network inside the business and adoption metrics.</li>
         <li><strong>Hands-on delivery:</strong> the first automations and use cases built with your people.</li>
       </ul>
+    </div>
   </section>
 
   <section id="fit">
+    <div class="content-narrow">
       <h2>This is for</h2>
       <ul class="success-list">
         <li>SMEs and their boards, where AI is on the agenda but nobody owns it or start keeps stalling.</li>
@@ -113,6 +122,11 @@ meta_description: "Senior AI strategy, governance and hands-on execution for SME
           <li><strong>AI Coaching</strong> to build your own AI skills, prompts and workflows.<br /><a class="content-link" href="/en/services/ai-coaching.html">Read more about AI Coaching for Senior Leaders</a></li>
         </ul>
       </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    {% include faq.html lang=page.lang items=service.faq id="faq-fractional-ai-leadership" %}
   </section>
 
 {% include service-cta-contact.html %}

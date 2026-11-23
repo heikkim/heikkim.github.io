@@ -1,0 +1,12 @@
+{% assign curlang = site.languages | where: "code", page.lang | first %}
+{% assign genfaq = site.data.sitetext.genfaq %}
+{% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
+  {% assign genfaq = site.data.sitetext[curlang.locale].genfaq %}
+{% endif %}
+<!-- General FAQ -->
+<section id="faq">
+  <div class="container">
+    {% include /faq.html lang=page.lang items=genfaq id="faq-general" %}
+  </div>
+</section>
+<!-- End General FAQ -->

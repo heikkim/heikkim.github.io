@@ -10,14 +10,17 @@ meta_description: "One-to-one, hands-on AI coaching for senior leaders and board
 
 <div class="service-page">
   <section class="page-hero">
+    <div class="content-narrow">
       <h1>{{ service.title }}</h1>
       <h5>Hands-on AI fluency for leaders who want to lead, not just watch.</h5>
       <p>
         Effective use of AI in your own work is the new baseline for executive productivity. The best time to learn how to use AI effectively is <strong>now</strong>.
       </p>
+    </div>
   </section>
 
   <section id="the-challenge">
+    <div class="content-narrow right">
       <h2>The Challenge</h2>
       <p>
         AI keeps moving faster than the people who are supposed to lead it. Some in your team may have already adopted it.
@@ -32,9 +35,11 @@ meta_description: "One-to-one, hands-on AI coaching for senior leaders and board
       <p>
         At the same time you've a business to run. You need the efficiency boost.
       </p>
+    </div>
   </section>
 
   <section id="the-solution">
+    <div class="content-narrow">
       <h2>The Solution</h2>
       <p>
         Getting down the the business of learning new skills is the only way out. Trial and error gets you forward, but
@@ -54,9 +59,10 @@ meta_description: "One-to-one, hands-on AI coaching for senior leaders and board
         <strong>Every session is hands-on:</strong> you drive, in guidance. We build the prompts, the workflows and the automations
         live, on your screen. You keep everything we build, including the parts that work exactly for you, because you made them.
       </p>
+    </div>
   </section>
 
-  <section id="the-roadmap">
+  <section id="the-roadmap" class="text-center">
       <h2>Becoming The AI Power User</h2>
       <div class="small-box-header">
         <h4>The Roadmap</h4>
@@ -87,6 +93,7 @@ meta_description: "One-to-one, hands-on AI coaching for senior leaders and board
   </section>
 
   <section id="scope">
+    <div class="content-narrow">
       <h2>What's Included</h2>
       <p>
         If you are already using AI daily, we skip the basics and go straight to the <strong>harder layer</strong>: using AI for
@@ -105,9 +112,11 @@ meta_description: "One-to-one, hands-on AI coaching for senior leaders and board
         <li><strong>A working agent:</strong> using Agent Skills where they add real value.</li>
         <li><strong>Your AI operating manual:</strong> tools, prompts, rules and shortcuts documented,.</li>
       </ul>
+    </div>
   </section>
 
   <section id="fit">
+    <div class="content-narrow">
       <h2>This is for</h2>
       <ul class="success-list">
         <li>Senior leaders, executives and board members who are accountable for the output but not yet using AI to produce it.</li>
@@ -123,6 +132,11 @@ meta_description: "One-to-one, hands-on AI coaching for senior leaders and board
           <br /><a class="content-link" href="/en/services/ai-consulting.html">Read more about AI Consulting for Companies</a></li>
         </ul>
       </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    {% include faq.html lang=page.lang items=service.faq id="faq-ai-coaching" %}
   </section>
 
   {% include service-cta-contact.html %}

@@ -61,6 +61,25 @@ _articles/<lang>/<category>/<slug>.md      e.g. _articles/fi/leadership/johtajan
 
 **Old URLs:** the articles that were published under `/posts/` keep their old address working through a small static page with a meta refresh, e.g. `posts/2026/11/12/<slug>/index.html`. GitHub Pages cannot send a real HTTP 301, so the canonical link on that page does the work for the search engines.
 
+## The sitetext
+
+`_data/sitetext.yml` holds the texts of the site. It has one block per language: `en` and `fi`. Each of them is also repeated under a locale key, `en-US`, `en-CA`, `en-GB`, `en-AU` and `fi-FI`, which merge the default block with a YAML anchor.
+
+- Write a new key into the `en` and the `fi` block only. The locale keys inherit it, they do not need to be touched.
+- The templates read the text through the locale of the language, e.g. `site.data.sitetext[curlang.locale].posts`. A key that is missing from the locale block is missing from the page.
+
+## The FAQ blocks
+
+The service pages and the home page have a FAQ: a list of questions that opens with a "+" and closes with an "x".
+
+- The block is `_includes/faq.html`. The questions come with the `items` parameter and the prefix of the id of the answers with the `id` parameter, which has to be unique in the page.
+- The questions of a service are in the `faq` of the service entry in `services.list`, the questions of the home page in the top level `genfaq`. Both are a list of a `question` and an `answer`.
+- The header of every FAQ block is in the top level `faq` key: a `title` and a `text`.
+- The open and the close use the Bootstrap collapse plugin, the same way the navbar toggler does. Bootstrap adds and removes the `collapsed` class of the question button, and the icon of `_sass/components/_faq.scss` follows it. The icon is drawn with the same technique as the navbar: lines made of the pseudo elements and turned with the `rotate` property.
+- On the service pages the FAQ is a plain include in a `<section id="faq">`, right before the contact CTA. On the home page it is in the container of the section.
+
+**The layout of a service page:** the content of the sections is in a `div.content-narrow` (max 850px). One of the sections, the challenge, is in a `div.content-narrow right`, which pushes it to the right side of the page with `margin-left: auto`. The section with the four boxes is centred with `text-center` and is not in a narrow div, and the FAQ is full width.
+
 ## The tools folder
 
 ```

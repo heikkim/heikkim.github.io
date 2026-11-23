@@ -31,6 +31,34 @@ en: &DEFAULT_EN
           Integrating directly with your management team to help you define, plan, coordinate, initiate and maintain momentum of your company's AI initiative, at scale.
         url: /en/services/fractional-ai-leadership.html
         link-text: Read more about Fractional AI Leadership
+        faq:
+          - question: "What does Fractional mean, and why should I be interested?"
+            answer: >-
+              A fractional leader works with your company part-time for an agreed period, acting as an interim leader. The key advantages of the fractional model are eliminating hiring risks and delivering fast results.
+          - question: "How is this different from hiring a full-time AI leader?"
+            answer: >-
+              A full-time hire is a fixed cost that starts before the benefits are measurable. In the
+              fractional model the capacity is set to what is needed now, from 1+ days per week upwards,
+              and it can be adjusted as the situation changes. The way of working is the same as with
+              a full-time leader: in the management team, in the decisions and in the delivery.
+          - question: "What does the Fractional AI Leader do?"
+            answer: >-
+              Fractional AI Leader takes full responsibility of the AI transformation agenda in the company. This includes, but is not limited to:
+              maps out the current situation, creates an AI transformation roadmap tailored for the company by taking account company's AI maturity level, identifying change champions and enabling them to spread the word, arranges workshops and information sharing sessions.
+              AI Leader is accountable for the CEO or other top management team member depending on the organisation, keeps them informed at all times and ensures the AI agenda is moving forward.
+          - question: "What is the recommended length of a commitment?"
+            answer: >-
+              Upwards from at least 3 months is advisable for 4+ days a week commitments. A longer timeframe for lesser days a week commitments.
+              It is important to give enough time for the change to get traction.
+          - question: "What if the AI initiative fails?"
+            answer: >-
+              The AI initiative is taken forward with utmost care and responsibility. The initial right scoping of the initiative and creating correct metrics are very important and ensure success best.
+              You will at all times be well informed about the situation. In case the mutually agreed metrics are not developing to the right direction, we will know why it is so and decide accordingly.
+              There is almost always a solution.
+          - question: "How does the engagement end?"
+            answer: >-
+              The collaboration is reviewed periodically and after the first month there is a 30-day
+              notice period. The collaboration continues as long as the customer has a need.
       - sid: ai-coaching
         title: "#2 AI Coaching"
         brief: ""
@@ -42,6 +70,27 @@ en: &DEFAULT_EN
           utilising Agent Skills.
         url: /en/services/ai-coaching.html
         link-text: Read more about AI Coaching
+        faq:
+          - question: "Who is the coaching for?"
+            answer: >-
+              For leaders and board members who want to get the most out of AI. The programme is personal rather than course-like, and is focused on your own work.
+          - question: "How long does the coaching take?"
+            answer: >-
+              A typical programme runs 1 to 4 weeks. After the discovery call one programme is agreed
+              for the whole period.
+          - question: "What do I keep afterwards?"
+            answer: >-
+              Everything we build together: your own prompt library, the automations, the agents and
+              a documented AI operating manual.
+          - question: "Is this just learning the tools?"
+            answer: >-
+              No. The tools change every few months, the work does not. In the coaching you build
+              your own way of working with AI as a part of the day: the first automation, then the
+              next one, and finally an agent that takes care of repetitive work for you.
+          - question: "How does the coaching start?"
+            answer: >-
+              The first session maps the work that repeats daily and carries value, such as email,
+              customer feedback and reporting. After that the effort goes where the pressure is highest.
 #      - sid: ai-tooling
 #        title: "AI Tooling"
 #        brief: ""
@@ -58,6 +107,28 @@ en: &DEFAULT_EN
           Any matter related to company AI use which benefits having an external view.
         url: /en/services/ai-consulting.html
         link-text: Read more about AI Consulting
+        faq:
+          - question: "Where do we need AI Consulting?"
+            answer: >-
+              Companies usually struggle in one flavor of these: getting AI transformation moving, identifying AI use cases, deciding on an AI investment or just in having a facilitated workshop pulling all opinions together in a structured manner.
+              The scope is agreed in writing before the work starts.
+          - question: "When do we need an outside view?"
+            answer: >-
+              When the company is too close to the problem to see it clearly, or when there is an AI
+              investment that deserves a second pair of eyes before a "GO". An expert outside view also helps scrutinize an idea or concept.
+          - question: "How long does a project take?"
+            answer: >-
+              Usually from a few weeks to a few months. The short form is a workshop or an assessment,
+              the long form an implementation plan that continues into production.
+          - question: "How do you make sure the work stays with us?"
+            answer: >-
+              The documentation, the practices and the training stay with you. The work continues without a
+              break when the consulting assignment ends.
+          - question: "How does an AI consulting assignment start?"
+            answer: >-
+              Understanding the problem first, not throwing AI tools ot it. First it is settled what problem is being
+              solved and what affects the outcome. Then an experiment is designed that raises the odds of
+              success, and the implementation is done in a controlled way with regular measuring.
 #      - sid: agentic-ai
 #        title: "Agentic AI"
 #        brief: ""
@@ -74,6 +145,37 @@ en: &DEFAULT_EN
     title: "Take the next step."
     text: "Every engagement starts with a brief, no-commitment discovery call to map your current situation: what you have tried, what is stuck, and what success would look like."
     cta: "Start a Conversation"
+
+  # The header of a FAQ block. The questions of a service are in the faq of
+  # the service and the questions of the home page are in the general faq.
+  faq:
+    title: "Frequently asked questions"
+    text: 
+
+  # The general FAQ of the home page: the most important questions across the services
+  genfaq:
+    - question: "How do we get started?"
+      answer: >-
+        The first conversation is short and without commitment. We go through your current situation,
+        what you have tried, what is stuck and what success would look like. Best way to reach us is via our contact form at the bottom of the page.
+    - question: "Which service is right for me or my company?"
+      answer: >-
+        A company's AI transformation needs a dedicated owner and continuity, therefore the right fit is <a href="/en/services/fractional-ai-leadership.html" class="content-link">Fractional AI Leadership</a><br />
+        Becoming an AI power user happens through <a href="/en/services/ai-coaching.html" class="content-link">AI Coaching</a><br /> 
+        Sharpening your strategy, solving specific data and AI challenges, and running workshops or trainings are covered by <a href="/en/services/ai-consulting.html" class="content-link">AI Consulting</a><br />
+        A discovery call will clarify the best path forward. We will also tell you if none of our services are the right fit at this time.
+    - question: "What does Fractional mean, and why should I be interested?"
+      answer: >-
+        A fractional leader works with your company part-time for an agreed period, acting as an interim leader. The key advantages of the fractional model are eliminating hiring risks and delivering fast results.
+    - question: "What should AI be used for?"
+      answer: >-
+        The best targets are repetitive tasks where a person can easily tell whether the output is good or bad. Strong use cases include analyzing customer feedback, reviewing content, categorizing information, and summarizing or drafting text.
+    - question: "Which tasks remain for humans?"
+      answer: >-
+        Humans need to direct the AI and make the decisions. Defining and selecting the right courses of action also remains a human responsibility for now.
+    - question: "Do you also handle implementation?"
+      answer: >-
+        We have a network of trusted partners through which we can deliver both technical and consultative engagements.
 
   about:
     title: "Real experience for getting real results"
@@ -275,6 +377,34 @@ fi: &DEFAULT_FI
           yrityksen tekoälyhankkeiden vauhtia, samalla huomioiden yrityksen kulttuurin ja yksilölliset toimintatavat.
         url: /services/fractional-ai-leadership.html
         link-text: Lue lisää Fractional AI Leadership palvelusta
+        faq:
+          - question: "Mitä Fractional tarkoittaa ja miksi pitäisi olla kiinnostunut?"
+            answer: >-
+              Fractional-mallilla toimiva johtaja toimii yrityksessä osa-aikaisena ja vain sovitun ajan, ollen ns. vuokrajohtaja. Fractional-mallin etu on rekrytointiin liittyvien riskien eliminointi ja nopeat tulokset.
+          - question: "Miten tämä eroaa kokoaikaisen tekoälyjohtajan palkkaamisesta?"
+            answer: >-
+              Kokoaikainen rekrytointi on kiinteä kustannus, joka alkaa juosta ennen kuin hyödyt ovat mitattavissa.
+              Fractional-mallissa kapasiteetti mitoitetaan nykyhetken tarpeen mukaan, alkaen 1+ päivästä viikossa ylöspäin,
+              ja sitä voidaan säätää joustavasti tilanteen muuttuessa. Työskentelytapa on sama, kuin
+              kokoaikaisella johtajalla: mukana johtoryhmässä, päätöksenteossa ja käytännön läpiviennissä.
+          - question: "Mitä Fractional AI Leader tekee?"
+            answer: >-
+              Fractional AI Leader ottaa kokonaisvastuun yrityksen tekoälymuutoksen läpiviennistä. Tehtäviin kuuluu muun muassa
+              nykytilan kartoitus, yrityksen tekoälykypsyystason huomioivan tiekartan laatiminen, muutosta ajavien työntekijöiden tunnistaminen ja auttaminen viemään viestiä eteenpäin sekä työpajojen ja tiedonjakotilaisuuksien järjestäminen.
+              AI Leader raportoi organisaatiosta riippuen suoraan toimitusjohtajalle tai muulle johtoryhmän jäsenelle, pitää johdon jatkuvasti ajan tasalla ja varmistaa, että tekoälyagenda etenee suunnitellusti.
+          - question: "Mikä on suositeltu kesto yhteistyölle?"
+            answer: >-
+              Vähintään kolmen kuukauden jakso on suositeltava, kun panostus on vähintään neljä päivää viikossa. Pienemmällä viikkopanoksella suositeltava aikajänne on pidempi.
+              Muutokselle on tärkeää antaa riittävästi aikaa saada jalansijaa.
+          - question: "Entä jos tekoälyhanke epäonnistuu?"
+            answer: >-
+              Tekoälyhanketta viedään eteenpäin huolella ja vastuullisesti. Hankkeen oikea rajaus heti alussa sekä tarkoituksenmukaisten mittareiden asettaminen ovat ratkaisevia tekijöitä onnistumiselle.
+              Pysyt koko ajan täysin ajan tasalla tilanteesta. Jos yhdessä sovitut mittarit eivät kehity oikeaan suuntaan, selvitämme syyt ja teemme tarvittavat päätökset sen mukaisesti.
+              Ratkaisu löytyy lähes aina.
+          - question: "Miten yhteistyö päättyy?"
+            answer: >-
+              Yhteistyön etenemistä arvioidaan säännöllisesti, ja ensimmäisen kuukauden jälkeen on 30 päivän
+              irtisanomisaika. Yhteistyö jatkuu niin kauan kuin asiakkaalla on sille tarve.
       - sid: ai-coaching
         title: "#2 AI-valmennus"
         brief: ""
@@ -286,6 +416,30 @@ fi: &DEFAULT_FI
           monimutkaisemmissa tehtävissä agenttitaitojen (Agent Skills) avulla.
         url: /services/ai-coaching.html
         link-text: Lue lisää johdon AI-valmennuksesta
+        faq:
+          - question: "Kenelle valmennus on tarkoitettu?"
+            answer: >-
+              Johtajille ja hallitusjäsenille, jotka haluavat ottaa AI:sta kaiken irti. 
+              Ohjelma on henkilökohtainen, ja lähtökohtana on
+              oma työsi, ei yleinen teoriatieto.
+          - question: "Miten kauan valmennus kestää?"
+            answer: >-
+              Tyypillinen ohjelma on 1-4 viikkoa. Ohjelman pituus sovitaan kartoituskeskustelun jälkeen
+              koko jaksolle.
+          - question: "Mitä minulle jää käteen tästä?"
+            answer: >-
+              Kaikki, mitä yhdessä rakennamme: oma kehotekirjasto, automaatiot, agentit ja
+              dokumentoitu AI-käsikirja.
+          - question: "Onko tämä vain työkalujen opettelua?"
+            answer: >-
+              Ei. Työkalut muuttuvat jatkuvasti, työ ei. Valmennuksessa rakennetaan
+              oma tapa työskennellä tekoälyn kanssa: ensin ensimmäinen automaatio, sitten seuraava ja
+              lopuksi agentti hoitamaan toistuvaa työtä puolestasi.
+          - question: "Miten valmennus alkaa?"
+            answer: >-
+              Ensimmäisessä sessiossa kartoitamme päivittäin toistuvan työn, esimerkiksi
+              sähköpostit, asiakaspalautteet ja raportoinnin. Sen jälkeen aika käytetään automatisoimaan tehtäviä, missä
+              saadaan paras panostus-tuottosuhde.
       - sid: ai-consulting
         title: "#3 AI-konsultointi"
         brief: ""
@@ -296,12 +450,62 @@ fi: &DEFAULT_FI
           Ulkopuolisen asiantuntijanäkemyksen saamiseen yrityksen tekoälyn käyttöön liittyvään asiaan. Fasilitoidut workshopit ja tekoälykoulutukset.
         url: /services/ai-consulting.html
         link-text: Lue lisää tekoälykonsultoinnista
+        faq:
+          - question: "Missä tilanteissa tarvitsemme AI-konsultointia?"
+            answer: >-
+              Yritykset painivat tyypillisesti jonkin haasteen kanssa, kuten: tekoälymuutoksen saaminen liikkeelle, tekoälyn käyttökohteiden tunnistaminen, päätöksenteko tekoälyinvestoinnista tai tarve fasilitoidulle työpajalle, joka kokoaa eri näkemykset yhteen jäsennellysti.
+              Työn laajuus sovitaan kirjallisesti ennen aloitusta.
+          - question: "Milloin tarvitsemme ulkopuolista näkemystä?"
+            answer: >-
+              Toisinaan yritys on liian lähellä ongelmaa nähdäkseen sen kirkkaasti, tai kun aikeissa on tekoälyinvestointi, joka kaipaa konsulttiarviota ennen aloituspäätöstä. Ulkopuolinen asiantuntijanäkemys auttaa myös haastamaan ja arvioimaan uutta ideaa tai konseptia kriittisesti.
+          - question: "Kuinka kauan projekti kestää?"
+            answer: >-
+              Muutamasta viikosta muutamaan kuukauteen. Lyhimmillään kyseessä on yksittäinen työpaja tai nykytila-arvio, laajimmillaan toteutussuunnitelma, joka viedään tuotantoon asti.
+          - question: "Miten varmistatte, että työ ja tulokset jäävät meille?"
+            answer: >-
+              Kaikki työ dokumentoidaan huolellisesti. Työ jatkuu saumattomasti ilman katkoksia toimeksiannon päätyttyä.
+          - question: "Miten AI-konsultointihanke lähtee liikkeelle?"
+            answer: >-
+              Aloitamme ongelman ymmärtämisestä. Tekoälytyökalujen käyttöönottosuositukset tulevat myöhemmin perustellusti. Aluksi määritetään ratkaistava ongelma ja mitkä tekijät vaikuttavat lopputulokseen. Sen jälkeen suunnitellaan kokeilu, joka lisää onnistumisen todennäköisyyttä. 
+              Toteutus viedään hallitusti ja säännöllisesti mittaamalla läpi.
 
   # The closing call to action of the service pages
   service-cta:
     title: "Ota seuraava askel."
     text: "Jokainen toimeksianto alkaa lyhyellä kartoituskeskustelulla, joka ei sido teitä. Kartoituksessa käymme läpi nykytilanteen: mitä on yritetty, missä ollaan jumissa ja miltä onnistuminen näyttäisi."
     cta: "Aloita Keskustelu"
+
+  # The header of a FAQ block. The questions of a service are in the faq of
+  # the service and the questions of the home page are in the general faq.
+  faq:
+    title: "Usein kysytyt kysymykset"
+    text: 
+
+  # The general FAQ of the home page: the most important questions across the services
+  genfaq:
+    - question: "Miten yhteistyö alkaa?"
+      answer: >-
+        Lyhyellä kartoituskeskustelulla, jossa käydään läpi nykytila, mitä on kokeiltu,
+        missä ollaan jumissa ja miltä onnistuminen näyttäisi. Keskustelu ei sido mihinkään.
+        Helpoiten meihin yhteyden saat sivun alaosasta löytyvällä yhteydenottolomakkeella.
+    - question: "Mikä palvelu on oikea minulle tai yritykselleni?"
+      answer: >-
+        Yrityksen tekoälymuutos tarvitsee omistajan ja jatkuvuutta, tällöin oikea on <a href="/services/fractional-ai-leadership.html" class="content-link">Fractional AI Leadership</a><br />
+        Kehittyminen tekoälyn tehokäyttäjäksi onnistuu <a href="/services/ai-coaching.html" class="content-link">AI-valmennuksella</a><br /> 
+        Strategian kirkastaminen, yksittäiset data- ja tekoälyongelmat, workshoppien järjestäminen ja koulutukset ratkeavat <a href="/services/ai-consulting.html" class="content-link">AI-konsultoinnilla</a><br />
+        Kartoituskeskustelu ratkaisee asian. Kerromme myös jos mikään palveluistamme ei sovellu.
+    - question: "Mitä Fractional tarkoittaa ja miksi pitäisi olla kiinnostunut?"
+      answer: >-
+        Fractional-mallilla toimiva johtaja toimii yrityksessä osa-aikaisena ja vain sovitun ajan, ollen ns. vuokrajohtaja. Fractional-mallin etu on rekrytointiin liittyvien riskien eliminointi ja nopeat tulokset.
+    - question: "Mihin tekoälyä kannattaa käyttää?"
+      answer: >-
+        Paras kohde ovat toistuvat työtehtävät, joissa ihminen kykenee helposti tunnistamaan onko lopputulos hyvä vai huono. Hyviä käyttötapauksia ovat esim. asiakaspalautteiden analysointi, sisällön tarkastaminen, asioiden luokittelu ja tekstin tiivistäminen & luonnostelu.
+    - question: "Mitkä tehtävät jäävät ihmiselle?"
+      answer: >-
+        Ihmisen tulee ohjata tekoälyä ja tehdä päätökset. Myöskin oikeiden toimenpidevaihtoehtojen valinta ja määrittäminen on toistaiseksi ihmisen tehtävä.
+    - question: "Teettekö myös toteutuksia?"
+      answer: >-
+        Meillä on luotettujen kumppanien verkosto, jonka kautta pystymme toteuttamaan teknisiä ja konsultatiivisia toimeksiantoja.
 
   about:
     title: Käytännön kokemusta tuloksekkaaseen johtamiseen

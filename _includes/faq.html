@@ -1,0 +1,41 @@
+{% comment %}
+  A FAQ block: a header and a list of questions. A question opens with a
+  "+" and closes with an "x". The questions come from the sitetext, either
+  from the faq of a service or from the general faq of the home page.
+
+  Parameters:
+  - lang:   the language of the questions, "fi" by default
+  - items:  the questions and the answers
+  - id:     the prefix of the id of the answers, unique in the page
+{% endcomment %}
+{% assign lang = include.lang | default: "fi" %}
+{% assign curlang = site.languages | where: "code", lang | first %}
+{% assign faqText = site.data.sitetext.faq %}
+{% if curlang.locale and curlang.locale != "" and curlang.locale != nil %}
+  {% assign faqText = site.data.sitetext[curlang.locale].faq %}
+{% endif %}
+{% assign faqId = include.id | default: "faq" %}
+
+<div class="faq">
+  <h2>{{ faqText.title }}</h2>
+  {% if faqText.text and faqText.text != "" %}
+    <p class="faq-intro">{{ faqText.text }}</p>
+  {% endif %}
+
+  {% for item in include.items %}
+    {% assign itemId = faqId | append: "-" | append: forloop.index %}
+    <div class="faq-item">
+      <h3 class="faq-question-heading">
+        <button class="faq-question collapsed" type="button" data-toggle="collapse" data-target="#{{ itemId }}" aria-expanded="false" aria-controls="{{ itemId }}">
+          <span class="faq-question-text">{{ item.question }}</span>
+          <span class="faq-icon" aria-hidden="true"></span>
+        </button>
+      </h3>
+      <div class="collapse" id="{{ itemId }}">
+        <div class="faq-answer">
+          <p>{{ item.answer }}</p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>

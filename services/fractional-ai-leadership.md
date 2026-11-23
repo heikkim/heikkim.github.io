@@ -10,15 +10,17 @@ meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityk
 
 <div class="service-page">
   <section class="page-hero">
+    <div class="content-narrow">
       <h1>{{ service.title }}</h1>
       <h5>Strategista tekoälyjohtajuutta ja muutoksen aikaansaantia.</h5>
       <p>
-        Ilman etenemissuunnitelmaa on seuraava hankkimasi tekoälytyökalu käytännössä tarpeeton. Suunnitelman lisäksi tarvitset johtajan, 
-        jonka vastuulla on muuttaa tekoälyn käytölle asetetut odotukset ja tavoitteet mitattaviksi tuloksiksi, hallitusti ja skaalautuvasti.
+        Tekoälytyökalut ilman muutossunnitelmaa hyödyttävät vain rajallisesti. Suunnitelman lisäksi tarvitset johtajan, jonka vastuulla on muuttaa tekoälyn käytölle asetetut odotukset ja tavoitteet mitattaviksi tuloksiksi, hallitusti ja skaalautuvasti.
       </p>
+    </div>
   </section>
 
   <section id="the-challenge">
+    <div class="content-narrow right">
       <h2>Haaste</h2>
       <p>
         Olet varmasti jo noteerannut tekoälyn kehitysvauhdin. Joku yrityksessä on ehkä jo ajanut pilottihankkeita, hankkinut lisenssejä
@@ -36,9 +38,11 @@ meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityk
         business case on vedenpitävä</strong>, tai nivot kokeilutilkkutäkkiä yhteen ja toivot, että tekoäly skaalautuu
         kaikkien innokkuuden ajamana, kuin itsestään. Poltat tässä aikaa ja uskottavuutta.
       </p>
+    </div>
   </section>
 
   <section id="the-solution">
+    <div class="content-narrow">
       <h2>Ratkaisu</h2>
       <p>
         Oikealla osaamisella varustettu kokenut johtaja, jolla on kyky tehdä päätöksiä ja toimeenpanna niitä sekä ohjata toimia koko yrityksen
@@ -55,9 +59,10 @@ meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityk
         Johtaja tarvitsee toiminnalle tukesi, mutta samaan aikaan sinun on tärkeää pysyä ajan tasalla.<br />
         Fractional AI Leadership -malli on matalan kynnyksen riskitön tapa selättää tekoälyhaaste.
       </p>
+    </div>
   </section>
 
-  <section id="the-model">
+  <section id="the-model" class="text-center">
       <h2>Yksi omistaja, yksi vastuu</h2>
       <div class="small-box-header">
         <h4>Fractional AI Leader</h4>
@@ -88,40 +93,48 @@ meta_description: "Tekoälystrategia, käytännöt ja muutosjohtaminen PK-yrityk
   </section>
 
   <section id="scope">
-    <h2>Fractional AI Leadership -palvelu yrityksille</h2>
-    <p>
-      Fractional AI Leader ottaa täyden vastuun yrityksen tekoälyagendasta ja huolehtii etenemisestä.
-    </p>
-    <p>
-      Aktiviteetteja ja tuotoksia, joilla yrityksen tekoälykypsyyttä kehitetään:
-    </p>
-    <ul class="success-list">
-      <li><strong>AI-tiekartta:</strong> priorisoitu ja kulutietoinen tiekartta, jossa omistajat, riippuvuudet ja virstanpylväät.</li>
-      <li><strong>Käyttötapausten kartoitus ja business case:</strong> tehdään yhdessä tiimien kanssa, jotka käyttävät tekoälyä.</li>
-      <li><strong>Toimittajien arviointi:</strong> riippumattomat kriteerit, shortlist johon voit luottaa, pilottisuunnitelma ja TCO.</li>
-      <li><strong>AI-hallinta ja -käytännöt:</strong> hyväksytyt työkalut, säännöt, datan käsittely ja riskien tunnistaminen.</li>
-      <li><strong>Tietoturva, tietosuoja ja lainmukaisuus:</strong> yrityksen sääntely-ympäristö huomioiden, ml. AI Act.</li>
-      <li><strong>Johdon raportointi:</strong> bi-weeklynä AIn tilasta yrityksessä, mikä eteni, mitä seuraavaksi & päätösasiat.</li>
-      <li><strong>Muutoksen mahdollistaminen:</strong> AIn aikaiset omaksujat yrityksessä ja oleelliset mittarit.</li>
-      <li><strong>Käytännön toteutus:</strong> ensimmäiset automaatiot ja käyttötapaukset, käyttöönotettuina.</li>
-    </ul>
+    <div class="content-narrow">
+      <h2>Fractional AI Leadership -palvelu yrityksille</h2>
+      <p>
+        Fractional AI Leader ottaa täyden vastuun yrityksen tekoälyagendasta ja huolehtii etenemisestä.
+      </p>
+      <p>
+        Aktiviteetteja ja tuotoksia, joilla yrityksen tekoälykypsyyttä kehitetään:
+      </p>
+      <ul class="success-list">
+        <li><strong>AI-tiekartta:</strong> priorisoitu ja kulutietoinen tiekartta, jossa omistajat, riippuvuudet ja virstanpylväät.</li>
+        <li><strong>Käyttötapausten kartoitus ja business case:</strong> tehdään yhdessä tiimien kanssa, jotka käyttävät tekoälyä.</li>
+        <li><strong>Toimittajien arviointi:</strong> riippumattomat kriteerit, shortlist johon voit luottaa, pilottisuunnitelma ja TCO.</li>
+        <li><strong>AI-hallinta ja -käytännöt:</strong> hyväksytyt työkalut, säännöt, datan käsittely ja riskien tunnistaminen.</li>
+        <li><strong>Tietoturva, tietosuoja ja lainmukaisuus:</strong> yrityksen sääntely-ympäristö huomioiden, ml. AI Act.</li>
+        <li><strong>Johdon raportointi:</strong> bi-weeklynä AIn tilasta yrityksessä, mikä eteni, mitä seuraavaksi & päätösasiat.</li>
+        <li><strong>Muutoksen mahdollistaminen:</strong> AIn aikaiset omaksujat yrityksessä ja oleelliset mittarit.</li>
+        <li><strong>Käytännön toteutus:</strong> ensimmäiset automaatiot ja käyttötapaukset, käyttöönotettuina.</li>
+      </ul>
+    </div>
   </section>
 
   <section id="fit">
-    <h2>Palvelu on suunnattu</h2>
-    <ul class="success-list">
-      <li>PK-yrityksille ja hallituksille, joilla tekoäly on agendalla, mutta omistajuus on vaillinaista tai hanke ei etene.</li>
-      <li>Johtoryhmille, jotka ovat jo ajaneet pilottihankkeita ja etsivät nyt keinoja skaalata tekoälyn käyttöä.</li>
-      <li>Hallituksille, jotka haluavat riippumattoman näkemyksen tekoälystrategiasta ja riskeistä.</li>
-      <li>Yrityksille, jotka suhtautuvat tekoälyyn vakavasti, ja ovat valmiita tekemään panostuksia.</li>
-    </ul>
-        <div class="oth-crosslinks">
-          <h5>Palveluita eri tarpeisiin</h5>
-          <ul>
-            <li><strong>AI-konsultointi</strong>, kun kyseessä on yksittäinen projekti, ratkaistava ongelma tai workshop.<br /><a class="content-link" href="/services/ai-consulting.html">Lue lisää tekoälykonsultoinnista yrityksille ja organisaatioille</a></li>
-            <li><strong>AI-valmennus</strong>, kun haluat kehittää omaa AI-osaamistasi, kehotteiden rakentamistaitoasi tai automatisoida töitäsi.<br /><a class="content-link" href="/services/ai-coaching.html">Lue lisää johdon ja hallituksen AI-valmennuksesta</a></li>
-          </ul>
-        </div>
+    <div class="content-narrow">
+      <h2>Palvelu on suunnattu</h2>
+      <ul class="success-list">
+        <li>PK-yrityksille ja hallituksille, joilla tekoäly on agendalla, mutta omistajuus on vaillinaista tai hanke ei etene.</li>
+        <li>Johtoryhmille, jotka ovat jo ajaneet pilottihankkeita ja etsivät nyt keinoja skaalata tekoälyn käyttöä.</li>
+        <li>Hallituksille, jotka haluavat riippumattoman näkemyksen tekoälystrategiasta ja riskeistä.</li>
+        <li>Yrityksille, jotka suhtautuvat tekoälyyn vakavasti, ja ovat valmiita tekemään panostuksia.</li>
+      </ul>
+      <div class="oth-crosslinks">
+        <h5>Palveluita eri tarpeisiin</h5>
+        <ul>
+          <li><strong>AI-konsultointi</strong>, kun kyseessä on yksittäinen projekti, ratkaistava ongelma tai workshop.<br /><a class="content-link" href="/services/ai-consulting.html">Lue lisää tekoälykonsultoinnista yrityksille ja organisaatioille</a></li>
+          <li><strong>AI-valmennus</strong>, kun haluat kehittää omaa AI-osaamistasi, kehotteiden rakentamistaitoasi tai automatisoida töitäsi.<br /><a class="content-link" href="/services/ai-coaching.html">Lue lisää johdon ja hallituksen AI-valmennuksesta</a></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    {% include faq.html lang=page.lang items=service.faq id="faq-fractional-ai-leadership" %}
   </section>
 
 {% include service-cta-contact.html lang=page.lang cta-btn-text="Ota yhteyttä" headless=true %}

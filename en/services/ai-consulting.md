@@ -10,6 +10,7 @@ meta_description: "Specific solutions to specific AI and data problems for SMEs 
 
 <div class="service-page">
   <section class="page-hero">
+    <div class="content-narrow">
       <h1>{{ service.title }}</h1>
       <h5>Specific solution to specific problem.</h5>
       <p>
@@ -17,9 +18,11 @@ meta_description: "Specific solutions to specific AI and data problems for SMEs 
         you cannot size, a business case you need to understand<strong>or an AI strategy that requiring overhaul.</strong><br />Bring in the outside view, define the real problem and
         turn it into an executable plan.
       </p>
+    </div>
   </section>
 
   <section id="the-challenge">
+    <div class="content-narrow right">
       <h2>The Challenge</h2>
       <p>
         Most AI work stalls at the question stage. The reality is the data is scattered, the
@@ -35,9 +38,11 @@ meta_description: "Specific solutions to specific AI and data problems for SMEs 
         And there is one gap nobody can fill. Might be you're too close to the problem to see it clearly,
         and every vendor you speak to has a product to sell you before they have understood it.
       </p>
+    </div>
   </section>
 
   <section id="the-solution">
+    <div class="content-narrow">
       <h2>The Solution</h2>
       <p>
         Start from the problem, not from a tool or a method.
@@ -51,9 +56,10 @@ meta_description: "Specific solutions to specific AI and data problems for SMEs 
       <p>
         Rarely it is possible, let alone productive, to figure out things alone.
       </p>
+    </div>
   </section>
 
-  <section id="the-framework">
+  <section id="the-framework" class="text-center">
       <h2>Kickstart focus on the problem</h2>
       <div class="row">
         <div class="col-md-6 col-lg-3 small-box">
@@ -80,6 +86,7 @@ meta_description: "Specific solutions to specific AI and data problems for SMEs 
   </section>
 
   <section id="scope">
+    <div class="content-narrow">
       <h2>The "lense" and prescription, possible outcomes for the company</h2>
       <ul class="success-list">
         <li><strong>Opportunity assessment:</strong> a prioritized mapping of AI use cases across the company.</li>
@@ -91,9 +98,11 @@ meta_description: "Specific solutions to specific AI and data problems for SMEs 
         <li><strong>First solutions:</strong> actual productivity increasing solutions.</li>
         <li><strong>Handover:</strong> documentation, training and internal capability, so the work keeps running.</li>
       </ul>
+    </div>
   </section>
 
   <section id="fit">
+    <div class="content-narrow">
       <h2>This is for</h2>
       <ul class="success-list">
         <li>SMEs with a specific, AI or data problem, a regulatory constraint or a project that has stalled.</li>
@@ -108,6 +117,11 @@ meta_description: "Specific solutions to specific AI and data problems for SMEs 
           <li><strong>AI Coaching</strong> when you want to boost your own productivity through 1-to-1 AI skills development. <a class="content-link" href="/en/services/ai-coaching.html"><span class="line">Read more about AI Coaching for senior leaders</span></a></li>
         </ul>
       </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    {% include faq.html lang=page.lang items=service.faq id="faq-ai-consulting" %}
   </section>
 
   {% include service-cta-contact.html %}
