@@ -32,7 +32,7 @@ sitemap: true
 
 Tekoälyn tuottavuusyhtälö on toistaiseksi ratkaisematta.
 
-*"97 prosenttia organisaatioista ei saavuta kustannussäästötavoitteitaan pelkän tuottavuuden kasvun avulla."* ([Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-10-26-gartner-hr-research-finds-77-percent-of-board-members-expect-ai-to-deliver-productivity-and-cost-savings-yet-just-3-percent-of-organizations-exceed-cost-savings-goals-via-productivity), lokakuu 2026). Ristiriita odotusten kanssa on jyrkkä, sillä neljä viidestä hallituksen jäsenestä *"odottaa tekoälyn lisäävän tuottavuutta ja tuovan kustannussäästöjä."*
+*"97 prosenttia organisaatioista ei saavuta kustannussäästötavoitteitaan pelkän tuottavuuden kasvun avulla."* ([Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-10-26-gartner-hr-research-finds-77-percent-of-board-members-expect-ai-to-deliver-productivity-and-cost-savings-yet-just-3-percent-of-organizations-exceed-cost-savings-goals-via-productivity), lokakuu 2026). Ristiriita odotusten kanssa on jyrkkä, sillä neljä viidestä hallitusammattilaisesta *"odottaa tekoälyn lisäävän tuottavuutta ja tuovan kustannussäästöjä."*
 
 Kyllä se niin on, että **tekoälyssä on potentiaalia nostamaan tuottavuutta yrityksissä**. Hyödyt kuitenkin muuttuvat konkreettisiksi vasta, kun arjessa tehtävä työ muuttuu tehokkaammaksi, laadukkaammaksi tai nopeammaksi. Aloita tunnistamalla liiketoiminnasta paikka, jossa muutos toisi tuntuvaa hyötyä. Toista tätä tunnistamistyötä, kunnes listattuna on 5-10 kpl tekoälyn käyttötapauksia. Saatavan hyödyn mitattavuus on tärkeää, joten keskity aluksi selkeämpiin tapauksiin.
 

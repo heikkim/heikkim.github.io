@@ -32,7 +32,7 @@ sitemap: true
 
 The AI productivity puzzle is yet to be solved.
 
-*"Ninety-seven percent of organisations cannot reach their cost savings goals through productivity alone."* ([Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-10-26-gartner-hr-research-finds-77-percent-of-board-members-expect-ai-to-deliver-productivity-and-cost-savings-yet-just-3-percent-of-organizations-exceed-cost-savings-goals-via-productivity), October 2026). This is contrasted by strong belief in AI, as four out of every five board members *"expect AI will deliver productivity and cost savings."*
+*"Ninety-seven percent of organisations cannot reach their cost savings goals through productivity alone."* ([Gartner](https://www.gartner.com/en/newsroom/press-releases/2026-10-26-gartner-hr-research-finds-77-percent-of-board-members-expect-ai-to-deliver-productivity-and-cost-savings-yet-just-3-percent-of-organizations-exceed-cost-savings-goals-via-productivity), October 2026). This is contrasted by strong belief in AI, as four out of every five board professionals *"expect AI will deliver productivity and cost savings."*
 
 The story really short is that **AI has the potential to increase productivity**. The benefits of AI become tangible when the work being carried out actually changes for the better. It all starts with naming one place in your business where the change would matter, and then repeating this discovery. What you want in practice is a concrete list of AI use cases where value can be uncovered. 
 
